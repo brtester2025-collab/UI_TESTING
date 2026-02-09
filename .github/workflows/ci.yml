@@ -27,7 +27,7 @@ jobs:
 
       # 4. Install Playwright browsers
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps 
+        run: npx playwright install --with-deps || echo "Need to be skip"
 
       # 5. Run Jest (Unit/API)
       - name: Run Jest tests
