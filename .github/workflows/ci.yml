@@ -31,7 +31,7 @@ jobs:
 
       # 5. Run Jest (Unit/API)
       - name: Run Jest tests
-        run: npm run test:backend
+        run: npm run test:unit
 
       # 6. Run Playwright (E2E/UI)
       - name: Run Playwright tests
