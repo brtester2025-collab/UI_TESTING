@@ -6,6 +6,7 @@
   },
   "scripts": {
     "test:unit": "jest",
+    "test:watch": "jest --watch",
     "test:e2e": "playwright test",
     "test:all": "npm run test:backend && npm run test:e2e"
   }
