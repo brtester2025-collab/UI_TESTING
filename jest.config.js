@@ -10,5 +10,6 @@ module.exports = {
                 expand: true,
             },
         ],
-    ],  // only unit folder
+    ],
+    fullyParallel: true,  // only unit folder
 };
