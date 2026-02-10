@@ -9,6 +9,7 @@ describe('Email Validation', () => {
             const result = validateEmail('test123@gmail.com');
             expect(result.valid).toBe(true)
             expect(result.errors).toHaveLength(0)
+            expect(result.normalized).toBe('test123@gmail.com')
         })
 
 
@@ -32,6 +33,61 @@ describe('Email Validation', () => {
         })
 
 
+        test('checking for email type', () => {
+            const result = validateEmail(12334)
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Email must be a string')
+        })
+
+        test('checking for lowerCase', () => {
+            const result = validateEmail('USER123@GMAIL.COM')
+            expect(result.valid).toBe(true)
+            expect(result.normalized).toBe('user123@gmail.com')
+        })
+
+        test('checking for empty space', () => {
+            const result = validateEmail(" user123@gmail.com ")
+            expect(result.valid).toBe(true)
+            expect(result.normalized).toBe('user123@gmail.com')
+        })
+
+        test('checking for invalid email', () => {
+            const result = validateEmail('user123@.com')
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Invalid email format')
+        })
+
+        test('checking for invalid email 2', () => {
+            const result = validateEmail('user@')
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Invalid email format')
+
+        })
+
+        test('email with fake id s', () => {
+            const result = validateEmail('user@tempmail.com')
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Disposable email addresses are not allowed')
+        })
+
+        test('email with fake id s 2', () => {
+            const result = validateEmail('user@throwaway.com')
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Disposable email addresses are not allowed')
+        })
+
+        test('email with fake id s 3', () => {
+            const result = validateEmail('user@fakeemail.com')
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Disposable email addresses are not allowed')
+        })
+
+        test(' Long email character length', () => {
+            const longEmail = 'a'.repeat(254) + '@mail.com'
+            const result = validateEmail(longEmail)
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Email must be less than 254 characters')
+        })
 
     })
 })
