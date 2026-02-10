@@ -1,4 +1,4 @@
-const { validateEmail } = require('./emailvalidation')
+const { validateEmail, extractDomain } = require('./emailvalidation')
 
 describe('Email Validation', () => {
 
@@ -64,6 +64,12 @@ describe('Email Validation', () => {
 
         })
 
+        test('checking for invalid email 3', () => {
+            const result = validateEmail('user @mail.com')
+            expect(result.valid).toBe(false)
+            expect(result.errors).toContain('Invalid email format')
+        })
+
         test('email with fake id s', () => {
             const result = validateEmail('user@tempmail.com')
             expect(result.valid).toBe(false)
@@ -89,5 +95,36 @@ describe('Email Validation', () => {
             expect(result.errors).toContain('Email must be less than 254 characters')
         })
 
+    })
+
+
+
+    describe('Extract Domain', () => {
+
+        test('email extract domain from it', () => {
+            const domain = extractDomain('user@example.com')
+            expect(domain).toBe('example.com')
+        })
+
+        test('email extract domain from it', () => {
+            const domain = extractDomain(null)
+            expect(domain).toBeNull()
+
+        })
+
+        test('email extract domain from it', () => {
+            const domain = extractDomain("")
+            expect(domain).toBeNull()
+        })
+
+        test('email extract domain from it 2', () => {
+            const domain = extractDomain('Invalid-email')
+            expect(domain).toBeNull()
+        })
+
+        test('email extract domain from it 3', () => {
+            const domain = extractDomain('user@@@mail.com')
+            expect(domain).toBeNull
+        })
     })
 })
