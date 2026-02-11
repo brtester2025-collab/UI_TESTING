@@ -110,14 +110,38 @@ describe('Make User service', () => {
         })
 
         test('check the user id is not found', async () => {
-            await expect(userService.getUserById('u99'))
+            await expect(userService.getUserById('u1'))
                 .rejects.toMatchObject({
-                    message: ''
+                    message: 'User not found',
+                    status: 404
                 })
+
         })
     })
 
 
+    describe('Update user', () => {
 
+        test('checking the existing user', async () => {
+            userRepo.findById.mockResolvedValue({
+                id: 't1',
+                name: 'john'
+            })
+            userRepo.update.mockResolvedValue({
+                id: 't1',
+                name: 'tester'
+            })
+
+            const result = await userService.updateUser('t1', { name: 'tester' })
+            expect(userRepo.update).toHaveBeenCalledWith('t1', { name: 'tester' })
+            expect(result.name).toBe('tester')
+        })
+
+
+        test('checking if no id is present', async () => {
+            userRepo.findById.mockResolvedValue({
+            })
+        })
+    })
 })
 
