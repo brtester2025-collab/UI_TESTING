@@ -8,7 +8,7 @@ describe('Make User service', () => {
     beforeEach(() => {
         userRepo = {
             findByEmail: jest.fn(),
-            findByRole: jest.fn(),
+            findById: jest.fn(),
             findAll: jest.fn(),
             create: jest.fn(),
             update: jest.fn(),
@@ -27,10 +27,12 @@ describe('Make User service', () => {
 
         test('user created successfully', async () => {
 
+            //creating the fake database for testing
+
             userRepo.findByEmail.mockResolvedValue(null)
             userRepo.create.mockResolvedValue({
                 id: 'u1',
-                name: 'john',
+                name: 'johnathan',
                 email: 'john@example.com',
                 role: 'user',
             })
@@ -50,7 +52,68 @@ describe('Make User service', () => {
                 createdAt: expect.any(Date)
             })
             expect(result.id).toBe('u1')
+        })
 
+        test('check for the name is empty', async () => {
+            await expect(userService.createUser({ email: 'john@example.com' }))
+                .rejects.toMatchObject({
+                    message: 'Name and email are required',
+                    status: 400
+                })
+
+            expect(userRepo.create).not.toHaveBeenCalled()
+        })
+
+        test('check for the email is empty', async () => {
+            await expect(userService.createUser({ name: 'john' }))
+                .rejects.toMatchObject({
+                    message: 'Name and email are required',
+                    status: 400
+                })
+
+            expect(userRepo.create).not.toHaveBeenCalled()
+        })
+
+        test('check for user id already exists', async () => {
+            userRepo.findByEmail.mockResolvedValue({ id: 'existing' })
+            await expect(userService.createUser({ name: 'john', email: 'john@example.com' }))
+                .rejects.toMatchObject({
+                    message: 'User already exists',
+                    status: 409
+                })
+            expect(userRepo.create).not.toHaveBeenCalled()
+        })
+    })
+
+    describe('GetUser By id', () => {
+        test('check the user id', async () => {
+
+            // creating the fake user DataBase
+            userRepo.findById.mockResolvedValue(null)
+            userRepo.findById.mockResolvedValue({
+                id: 'u1',
+                name: 'test',
+                email: 'test@gmail.com'
+            })
+            const result = await userService.getUserById('u1')
+            expect(userRepo.findById).toHaveBeenCalledWith('u1')
+            expect(result.name).toBe('test')
+        })
+
+        test('check the user with blank id', async () => {
+            await expect(userService.getUserById())
+                .rejects.toMatchObject({
+                    message: 'User ID is required',
+                    status: 400
+                })
+            expect(userRepo.findById).not.toHaveBeenCalled()
+        })
+
+        test('check the user id is not found', async () => {
+            await expect(userService.getUserById('u99'))
+                .rejects.toMatchObject({
+                    message: ''
+                })
         })
     })
 
