@@ -224,11 +224,22 @@ describe('Make User service', () => {
             })
             expect(result.users).toHaveLength(2);
             expect(result.pagination).toEqual({
-                imit: 10,
+                page: 1,
+                limit: 10,
                 total: 25,
                 totalPages: 3,
-
             })
+        })
+
+
+        test('check the page for correct offset 3', async () => {
+            userRepo.findAll.mockResolvedValue([])
+            await expect(userRepo.findAll).toHaveBeenCalledWith({
+                offset: 10,
+                limit: 20,
+                filters: {}
+            })
+
         })
 
     })
