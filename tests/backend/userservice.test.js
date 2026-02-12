@@ -205,8 +205,31 @@ describe('Make User service', () => {
     describe('List user', () => {
 
         test('To check the number of users in the DB', async () => {
+            userRepo.findAll.mockResolvedValue([
+                {
+                    id: 'u1',
+                    name: 'john'
+                },
+                {
+                    id: 'u2',
+                    name: 'test'
+                }
+            ])
+            userRepo.count.mockResolvedValue(25);
+            const result = await userService.listUsers({ page: 1, limit: 10 })
+            expect(userRepo.findAll).toHaveBeenCalledWith({
+                offset: 0,
+                limit: 10,
+                filters: {}
+            })
+            expect(result.users).toHaveLength(2);
+            expect(result.pagination).toEqual({
+                page: 1,
+                limit: 10,
+                total: 25,
+                totalPages: 3,
 
-
+            })
         })
 
     })
