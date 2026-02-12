@@ -234,9 +234,11 @@ describe('Make User service', () => {
 
         test('check the page for correct offset 3', async () => {
             userRepo.findAll.mockResolvedValue([])
-            await expect(userRepo.findAll).toHaveBeenCalledWith({
-                offset: 10,
-                limit: 20,
+            userRepo.count.mockResolvedValue(0)
+            await userService.listUsers({ page: 3, limit: 10 });
+            expect(userRepo.findAll).toHaveBeenCalledWith({
+                offset: 20,
+                limit: 10,
                 filters: {}
             })
 
