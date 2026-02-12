@@ -33,6 +33,28 @@ describe('MakeToken service', () => {
             )
             expect(token).toBe('mock-secret')
         })
+
+        test('Checking the user with additional information', () => {
+            jwt.sign.mockReturnValue('mock-secret')
+
+            const token = tokenService.generateAccessToken({
+                userId: 'T1',
+                username: 'tester',
+                email: 'test@email.com'
+            })
+
+            expect(jwt.sign).toHaveBeenCalledWith(
+                {
+                    userId: 'T1',
+                    username: 'tester',
+                    email: 'test@email.com'
+                }, jwtSecret,
+                {
+                    expiresIn: jwtExpiresIn
+                }
+            )
+
+        })
     })
 
 })
