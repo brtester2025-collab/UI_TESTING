@@ -8,7 +8,8 @@ function makeTokenService({ jwtSecret, jwtExpiresIn = "1h" }) {
                 throw new Error("userId is required in payload");
             }
 
-            return jwt.sign(payload, jwtSecret, { expiresIn: jwtExpiresIn });
+            return jwt.sign(payload, jwtSecret,
+                { expiresIn: jwtExpiresIn });
         },
 
         generateRefreshToken() {

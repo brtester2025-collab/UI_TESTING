@@ -53,6 +53,24 @@ describe('MakeToken service', () => {
                     expiresIn: jwtExpiresIn
                 }
             )
+        })
+
+
+
+    })
+
+
+    describe('GetRefresh token', () => {
+
+        test('to check the cases for Refresh token', () => {
+            const mocktoken = Buffer.from('a'.repeat(64))
+            crypto.randomBytes.mockReturnValue(mocktoken)
+
+            const token = tokenService.generateRefreshToken()
+
+            expect(crypto.randomBytes).toHaveBeenCalledWith(64)
+            expect(typeof token).toBe('string')
+            expect(token.length).toBeGreaterThan(0)
 
         })
     })
