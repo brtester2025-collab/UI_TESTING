@@ -224,8 +224,7 @@ describe('Make User service', () => {
             })
             expect(result.users).toHaveLength(2);
             expect(result.pagination).toEqual({
-                page: 1,
-                limit: 10,
+                imit: 10,
                 total: 25,
                 totalPages: 3,
 
