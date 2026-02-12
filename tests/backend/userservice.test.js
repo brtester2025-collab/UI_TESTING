@@ -137,11 +137,78 @@ describe('Make User service', () => {
             expect(result.name).toBe('tester')
         })
 
-
-        test('checking if no id is present', async () => {
-            userRepo.findById.mockResolvedValue({
-            })
+        test('checking if user id is not present', async () => {
+            await expect(userService.updateUser(null, { name: 'test' }))
+                .rejects.toMatchObject({
+                    message: 'User ID is required',
+                    status: 400
+                })
         })
+
+        test('checking the user is not found', async () => {
+            await expect(userService.updateUser('t1', { name: '' }))
+                .rejects.toMatchObject({
+                    message: 'User not found',
+                    status: 404
+                })
+        })
+
+        test('user without any input field', async () => {
+            await expect(userService.updateUser(null, { invalid: 'field' }))
+                .rejects.toMatchObject({
+                    status: 400
+                })
+        })
+
+        test('user without any invalid id and name', async () => {
+            await expect(userService.updateUser('', { name: "" }))
+                .rejects.toMatchObject({
+                    status: 400
+                })
+        })
+    })
+
+
+    describe("Delete the user ", () => {
+        test('Checking the existing user', async () => {
+            userRepo.findById.mockResolvedValue({
+                id: 't1',
+            })
+            userRepo.delete.mockResolvedValue(true)
+            const result = await userService.deleteUser('t1')
+
+            expect(userRepo.delete).toHaveBeenCalledWith('t1')
+            expect(result.success).toBe(true)
+        })
+
+        test('Checking the user id not found', async () => {
+            await expect(userService.deleteUser())
+                .rejects.toMatchObject({
+                    message: "User ID is required",
+                    status: 400
+                })
+        })
+
+        test('Checking the user is not found', async () => {
+            userRepo.findById.mockResolvedValue(null)
+            await expect(userService.deleteUser('u999'))
+                .rejects.toMatchObject({
+                    message: 'User not found',
+                    status: 404
+                })
+            expect(userRepo.delete).not.toHaveBeenCalled()
+        })
+    })
+
+
+
+    describe('List user', () => {
+
+        test('To check the number of users in the DB', async () => {
+
+
+        })
+
     })
 })
 
