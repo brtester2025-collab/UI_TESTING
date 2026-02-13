@@ -63,8 +63,8 @@ describe('MakeToken service', () => {
     describe('GetRefresh token', () => {
 
         test('to check the cases for Refresh token', () => {
-            const mocktoken = Buffer.from('a'.repeat(64))
-            crypto.randomBytes.mockReturnValue(mocktoken)
+            const mockToken = Buffer.from('a'.repeat(64))
+            crypto.randomBytes.mockReturnValue(mockToken)
 
             const token = tokenService.generateRefreshToken()
 
@@ -73,6 +73,53 @@ describe('MakeToken service', () => {
             expect(token.length).toBeGreaterThan(0)
 
         })
+    })
+
+    describe('Verify Access token', () => {
+
+        test('verifying token', () => {
+            const mockPayload = { userId: 't1', twi: '123', exp: '456' }
+            jwt.verify.mockReturnValue(mockPayload)
+
+            const result = tokenService.verifyAccessToken('test-id')
+
+            expect(jwt.verify).toHaveBeenCalledWith('test-id', jwtSecret)
+            expect(result.valid).toBe(true)
+            expect(result.payload).toEqual(mockPayload)
+        })
+
+        test('verifying the token ID requirement', () => {
+            expect(() => {
+                tokenService.verifyAccessToken(null)
+            }).toThrow('Token is required')
+
+        })
+
+        test('verification of expired token', () => {
+            const ExpiredError = new Error('jwt-expired')
+            ExpiredError.name = 'TokenExpiredError'
+            jwt.verify.mockImplementation(() => {
+                throw ExpiredError
+            })
+
+            const result = tokenService.verifyAccessToken('expired-token')
+
+            expect(result.valid).toBe(false)
+            expect(result.error).toBe('TOKEN_EXPIRED')
+        })
+
+
+        test('verification of web Token', () => {
+            const ExpiredError = new Error('WebToken Expired')
+            ExpiredError.name = 'JsonWebTokenError'
+            jwt.verify.mockImplementation(() => {
+                throw ExpiredError
+            })
+            const result = tokenService.verifyAccessToken('expired-token')
+            expect(result.valid).toBe(false)
+            expect(result.error).toBe('TOKEN_INVALID')
+        })
+
     })
 
 })
