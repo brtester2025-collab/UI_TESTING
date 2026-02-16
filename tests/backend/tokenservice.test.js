@@ -2,6 +2,7 @@ const { makeTokenService } = require('./tokenservice')
 
 const jwt = require('jsonwebtoken')
 const crypto = require('crypto')
+const { error } = require('console')
 
 
 jest.mock('jsonwebtoken')
@@ -120,6 +121,41 @@ describe('MakeToken service', () => {
             expect(result.error).toBe('TOKEN_INVALID')
         })
 
+        test('token written error for unknown error', () => {
+            jwt.verify.mockImplementation(() => {
+                throw new error('Unknown error')
+            })
+            const result = tokenService.verifyAccessToken('some-token')
+            expect(result.valid).toBe(false)
+            expect(result.error).toBe('TOKEN_ERROR')
+        })
+
+    })
+
+
+    describe('Decode token without verification', () => {
+        test('if the token is null', () => {
+            jwt.decode.mockReturnValue({ userId: 'r1', exp: 1234 })
+            const result = tokenService.decodeToken('some-token')
+
+            expect(jwt.decode).toHaveBeenCalledWith('some-token')
+            expect(result.userId).toBe('r1')
+
+        })
+
+        test('token is null', () => {
+            const result = tokenService.decodeToken(null)
+            expect(result).toBeNull()
+        })
+
+        test('Run error on decode-error', () => {
+            jwt.decode.mockImplementation(() => {
+                throw new Error('Decode Error')
+            })
+
+            const result = tokenService.decodeToken('error-token')
+            expect(result).toBeNull()
+        })
     })
 
 })
