@@ -35,7 +35,13 @@ jobs:
 
       # 4. Install Playwright browsers
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps || echo "Skipping browser install"
+        run: |
+          if [ ! -d "$HOME/.cache/ms-playwright" ]; then
+           npx playwright install --with-deps
+          else
+            echo "Playwright browsers restored from cache ✅"
+          fi
+
 
       # 5. Run Jest
       - name: Run Jest tests
