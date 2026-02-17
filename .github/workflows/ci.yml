@@ -81,45 +81,34 @@ jobs:
           /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
   deploy-report:
-   runs-on: ubuntu-latest
-   needs: test
+    runs-on: ubuntu-latest
+    needs: test   # run after jest job
 
-   permissions:
-    pages: write
-    id-token: write
-    contents: read
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
 
-   steps:
-    - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-    - name: Download Jest Report Artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: jest-report
-        path: jest-report
+      - name: Download Jest Report Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: jest-report
+          path: jest-report
 
-    - name: Rename report to index.html
-      run: |
-        echo "Checking jest-report folder"
-        ls -R jest-report || echo "jest-report missing"
+      # If using parallel shards, download all
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
 
-        if [ -f "jest-report/report.html" ]; then
-          mv jest-report/report.html jest-report/index.html
-          echo "Renamed report.html -> index.html"
-        else
-          echo "report.html not found"
-        fi
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: jest-report
 
-    - name: Setup GitHub Pages
-      uses: actions/configure-pages@v5
-
-    - name: Upload Pages Artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: jest-report
-
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
 
 
 

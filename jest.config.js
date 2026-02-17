@@ -11,5 +11,5 @@ module.exports = {
             },
         ],
     ],
-    fullyParallel: true,  // only unit folder
+    // only unit folder
 };
