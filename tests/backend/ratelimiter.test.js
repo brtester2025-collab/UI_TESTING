@@ -62,4 +62,33 @@ describe('RateLimiter-Testing', () => {
         })
     })
 
+    describe('Reset key', () => {
+        test('Reset delete the data', () => {
+            ratelimiter.record('user1')
+            ratelimiter.record('user1')
+            ratelimiter.record('user2')
+
+            ratelimiter.reset('user1')
+
+            expect(ratelimiter.getAttempts('user1')).toBe(0)
+            expect(ratelimiter.getAttempts('user2')).toBe(1)
+        })
+    })
+
+    describe('Clear', () => {
+        test('testing service', () => {
+            ratelimiter.record('user1')
+            ratelimiter.record('user2')
+            ratelimiter.record('user3')
+
+            ratelimiter.clear()
+
+            expect(ratelimiter.getAttempts('user1')).toBe(0)
+            expect(ratelimiter.getAttempts('user2')).toBe(0)
+            expect(ratelimiter.getAttempts('user3')).toBe(0)
+
+        })
+
+    })
+
 })
