@@ -137,7 +137,7 @@ jobs:
 
   deploy-report:
     runs-on: ubuntu-latest
-    needs: jest   # run after jest job
+    needs: test   # run after jest job
 
     permissions:
       pages: write
@@ -154,11 +154,6 @@ jobs:
           path: jest-report
 
       # If using parallel shards, download all
-      - name: Download Jest Report Shard 2
-        uses: actions/download-artifact@v4
-        with:
-          name: jest-report-2
-          path: jest-report
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
