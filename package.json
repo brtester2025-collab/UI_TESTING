@@ -11,6 +11,7 @@
     "test:all": "npm run test:backend && npm run test:e2e"
   },
   "dependencies": {
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "k6": "^0.0.0"
   }
 }
