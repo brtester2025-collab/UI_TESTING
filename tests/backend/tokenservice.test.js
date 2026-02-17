@@ -2,7 +2,7 @@ const { makeTokenService } = require('./tokenservice')
 
 const jwt = require('jsonwebtoken')
 const crypto = require('crypto')
-const { error } = require('console')
+const { error, time } = require('console')
 
 
 jest.mock('jsonwebtoken')
@@ -145,7 +145,7 @@ describe('MakeToken service', () => {
 
         test('token is null', () => {
             const result = tokenService.decodeToken(null)
-            expect(result).toBeNull()
+            expect(result).toBe(null)
         })
 
         test('Run error on decode-error', () => {
@@ -155,6 +155,27 @@ describe('MakeToken service', () => {
 
             const result = tokenService.decodeToken('error-token')
             expect(result).toBeNull()
+        })
+    })
+
+    describe('Get Token expiry details', () => {
+        test('Token check for the empty conditions', () => {
+            const futureTime = Math.floor(Date.now() / 1000) + 3600;
+            jwt.decode.mockReturnValue({ exp: futureTime })
+
+            const result = tokenService.isTokenExpired('valid-token')
+
+            expect(result).toBe(false);
+        })
+
+        test('To check the token is empty', () => {
+            const pastTime = Math.floor(Date.now() / 1000) - 3600;
+            jwt.decode.mockReturnValue({ exp: pastTime })
+
+            const result = tokenService.isTokenExpired('invalid - token')
+
+            expect(result).toBe(true)
+
         })
     })
 
