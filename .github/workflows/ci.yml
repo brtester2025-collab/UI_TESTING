@@ -135,6 +135,41 @@ jobs:
           jekyll/builder:latest \
           /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
+  deploy-report:
+    runs-on: ubuntu-latest
+    needs: jest   # run after jest job
+
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Jest Report Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: jest-report-1
+          path: jest-report
+
+      # If using parallel shards, download all
+      - name: Download Jest Report Shard 2
+        uses: actions/download-artifact@v4
+        with:
+          name: jest-report-2
+          path: jest-report
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: jest-report
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
 
 
 
