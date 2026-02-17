@@ -1,5 +1,5 @@
 module.exports = {
-    testMatch: ['**/tests/backend/**/*.test.js'],
+    testMatch: ['**/tests/**/*.test.js'],
     reporters: [
         'default',
         [
