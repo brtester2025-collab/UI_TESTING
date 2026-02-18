@@ -12,7 +12,7 @@ describe('RateLimiter-Testing', () => {
         test('To check for the records', () => {
             const result = ratelimiter.check('user1')
             expect(result.allowed).toBe(true)
-            expect(result.remaining).toBe(2)
+            expect(result.remaining).toBe(1)
         })
 
         test('Allow attempt within the limit', () => {

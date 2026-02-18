@@ -7,7 +7,7 @@ function makeRateLimiter({ maxAttempts = 5, windowMs = 60000 }) {
             const record = attempts.get(key);
 
             if (!record) {
-                return { allowed: true, remaining: maxAttempts - 2 };
+                return { allowed: true, remaining: maxAttempts - 1 };
             }
 
             // Reset if window expired
