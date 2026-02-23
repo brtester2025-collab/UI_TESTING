@@ -132,11 +132,22 @@ describe('session service', () => {
             expect(result.success).toBe(true)
 
         })
-
         test('To check session id is not null', async () => {
             await expect(sessionService.invalidateSession()).rejects.toThrow(
                 'sessionId is required'
             )
         })
+    })
+
+    describe('invalidate All userSessions', () => {
+        test('to check for the invalidate user', async () => {
+            sessionRepo.findByUserId.mockResolvedValue(
+                { id: 'sess-1' },
+                { id: 'sess-2' },
+                { id: 'sess-3' }
+            )
+            sessionRepo.update.mockResolvedValue(true)
+        })
+
     })
 })
