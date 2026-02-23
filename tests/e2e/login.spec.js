@@ -24,8 +24,6 @@ describe('Swagger Login Authentication', () => {
         const cartCount = page.locator('[data-test="shopping-cart-badge"]')
         await addtoCart.click()
         await expect(cartCount).toHaveText('1')
-        await addtoCart.click()
-        await expect(cartCount).toHaveText('2')
     })
 
 

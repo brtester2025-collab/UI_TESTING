@@ -49,7 +49,7 @@ jobs:
 
       # 6. Run Playwright
       - name: Run Playwright tests
-        run: npm run test:e2e || echo "No Playwright tests found, skipping..."
+        run: npm run test:frontend || echo "No Playwright tests found, skipping..."
 
       # 7. Upload Jest Report
       - name: Upload Jest Report
