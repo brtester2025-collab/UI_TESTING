@@ -58,7 +58,7 @@ test.describe('Login form', () => {
         await page.locator('#login-button').click()
 
         await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
-        await expect(page.locator('.title')).toHaveText('Product')
+        await expect(page.locator('.title')).toHaveText('Assist')
     })
 })
 
