@@ -1,0 +1,73 @@
+<!-- public/pages/products.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Products</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-container">
+            <a href="/" class="logo">MyApp</a>
+            <button class="hamburger-menu" data-testid="hamburger-menu" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/products" class="nav-link active">Products</a>
+                <a href="/contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="/cart" class="cart-link" data-testid="cart-icon">
+                    🛒 <span data-testid="cart-badge" class="cart-badge">0</span>
+                </a>
+                <a href="/login" class="btn btn-outline">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="/">Home</a> <span>/</span> <span>Products</span>
+        </div>
+
+        <h1>Products</h1>
+
+        <div class="table-toolbar">
+            <div style="display:flex; gap:10px; align-items:center;">
+                <input type="text" data-testid="product-search" placeholder="Search products..." class="search-input">
+                <select data-testid="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="sports">Sports</option>
+                    <option value="home">Home</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+            <button class="btn btn-outline" data-testid="refresh-products">🔄 Refresh</button>
+        </div>
+
+        <div class="loading-spinner" id="products-loading">Loading...</div>
+        <div class="error-message" id="products-error" style="display:none;"></div>
+        <button class="btn btn-primary retry-button" id="retry-btn" style="display:none;">Retry</button>
+
+        <div class="product-grid" id="products-grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/products.js"></script>
+</body>
+
+</html>

@@ -41,7 +41,25 @@ test.describe('Login form', () => {
     })
 
 
+    test('For the invalid username and password', async ({ page }) => {
+        await page.locator('#user-name').fill('245345234')
+        await page.locator('#password').fill('45345345')
+        await page.locator('#login-button').click()
 
+        const errorMsg = await page.locator('[data-test="error"]')
+
+        await expect(errorMsg).toBeVisible()
+        await expect(errorMsg).toHaveText('Epic sadface: Username and password do not match any user in this service')
+    })
+
+    test('for the successfully login details', async ({ page }) => {
+        await page.locator('#user-name').fill('standard_user')
+        await page.locator('#password').fill('secret_sauce')
+        await page.locator('#login-button').click()
+
+        await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
+        await expect(page.locator('.title')).toHaveText('Product')
+    })
 })
 
 
