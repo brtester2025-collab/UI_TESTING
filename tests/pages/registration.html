@@ -1,0 +1,284 @@
+<!-- public/pages/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Register</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-container">
+            <a href="/" class="logo">MyApp</a>
+            <button class="hamburger-menu" data-testid="hamburger-menu" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/products" class="nav-link">Products</a>
+                <a href="/contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="/login" class="btn btn-outline">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form-container" style="max-width: 700px;">
+            <h1>Create Account</h1>
+            <p style="margin-bottom:20px; color:var(--secondary);">Fill in the form below to register.</p>
+
+            <div class="success-message" id="register-success">Registration successful!</div>
+
+            <form id="register-form" novalidate>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" placeholder="First name" required>
+                        <div class="error-text" id="firstName-error">First name is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="your@email.com" required aria-label="Email">
+                    <div class="error-text" id="email-error">Email is required</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="1234567890" aria-label="Phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" placeholder="Create a password" required aria-label="Password">
+                    <div class="password-strength"></div>
+                    <div class="error-text" id="password-error">Password is required</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password *</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                    <div class="error-text" id="confirmPassword-error">Passwords do not match</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" aria-label="Date of birth">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country *</label>
+                    <select id="country" required>
+                        <option value="">Select country</option>
+                        <option value="US">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="CA">Canada</option>
+                        <option value="AU">Australia</option>
+                        <option value="IN">India</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" id="gender-male" value="male"> Male</label>
+                        <label><input type="radio" name="gender" id="gender-female" value="female"> Female</label>
+                        <label><input type="radio" name="gender" id="gender-other" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Interests</label>
+                    <select id="interests" multiple size="4">
+                        <option value="sports">Sports</option>
+                        <option value="music">Music</option>
+                        <option value="tech">Technology</option>
+                        <option value="art">Art</option>
+                        <option value="travel">Travel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience-range">Experience: <span id="experience-value">0 years</span></label>
+                    <input type="range" id="experience-range" min="0" max="20" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="avatar">Profile Picture</label>
+                    <input type="file" id="avatar" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group" style="flex-direction:column; align-items:flex-start;">
+                        <label><input type="checkbox" id="terms" required> I agree to the Terms & Conditions *</label>
+                        <label><input type="checkbox" id="newsletter"> Subscribe to newsletter</label>
+                    </div>
+                </div>
+
+                <div style="display:flex; gap:10px;">
+                    <button type="submit" class="btn btn-primary" style="flex:1;">Register</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script>
+        // Registration form logic
+        const form = document.getElementById('register-form');
+        const successMessage = document.getElementById('register-success');
+
+        // Password strength checker
+        const passwordInput = document.getElementById('password');
+        const strengthEl = document.querySelector('.password-strength');
+
+        passwordInput.addEventListener('input', () => {
+            const val = passwordInput.value;
+            strengthEl.style.display = val ? 'block' : 'none';
+
+            if (val.length < 6) {
+                strengthEl.textContent = 'Weak';
+                strengthEl.className = 'password-strength weak';
+            } else if (val.length < 10 || !/[A-Z]/.test(val) || !/[0-9]/.test(val)) {
+                strengthEl.textContent = 'Medium';
+                strengthEl.className = 'password-strength medium';
+            } else {
+                strengthEl.textContent = 'Strong';
+                strengthEl.className = 'password-strength strong';
+            }
+        });
+
+        passwordInput.addEventListener('blur', () => {
+            if (!passwordInput.value) {
+                strengthEl.style.display = 'none';
+            }
+        });
+
+        // Confirm password validation
+        const confirmInput = document.getElementById('confirmPassword');
+        confirmInput.addEventListener('blur', () => {
+            const errorEl = document.getElementById('confirmPassword-error');
+            if (confirmInput.value && confirmInput.value !== passwordInput.value) {
+                errorEl.classList.add('visible');
+                confirmInput.classList.add('error');
+            } else {
+                errorEl.classList.remove('visible');
+                confirmInput.classList.remove('error');
+            }
+        });
+
+        // Experience range
+        const rangeInput = document.getElementById('experience-range');
+        const rangeValue = document.getElementById('experience-value');
+        rangeInput.addEventListener('input', () => {
+            rangeValue.textContent = `${rangeInput.value} years`;
+        });
+
+        // Form submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let hasErrors = false;
+
+            // Validate required fields
+            const firstName = document.getElementById('firstName');
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+
+            // First name
+            if (!firstName.value.trim()) {
+                document.getElementById('firstName-error').classList.add('visible');
+                firstName.classList.add('error');
+                hasErrors = true;
+            } else {
+                document.getElementById('firstName-error').classList.remove('visible');
+                firstName.classList.remove('error');
+            }
+
+            // Email
+            if (!email.value.trim()) {
+                const emailErr = document.getElementById('email-error');
+                emailErr.textContent = 'Email is required';
+                emailErr.classList.add('visible');
+                email.classList.add('error');
+                hasErrors = true;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                const emailErr = document.getElementById('email-error');
+                emailErr.textContent = 'Please enter a valid email address';
+                emailErr.classList.add('visible');
+                email.classList.add('error');
+                hasErrors = true;
+            } else {
+                document.getElementById('email-error').classList.remove('visible');
+                email.classList.remove('error');
+            }
+
+            // Password
+            if (!password.value) {
+                document.getElementById('password-error').classList.add('visible');
+                password.classList.add('error');
+                hasErrors = true;
+            } else {
+                document.getElementById('password-error').classList.remove('visible');
+                password.classList.remove('error');
+            }
+
+            if (hasErrors) return;
+
+            // Submit to API
+            try {
+                const res = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        firstName: firstName.value,
+                        lastName: document.getElementById('lastName').value,
+                        email: email.value,
+                        password: password.value,
+                    }),
+                });
+
+                if (res.ok) {
+                    successMessage.classList.add('visible');
+                    form.reset();
+                    strengthEl.style.display = 'none';
+                }
+            } catch (err) {
+                console.error('Registration error:', err);
+            }
+        });
+
+        // Reset clears errors
+        form.addEventListener('reset', () => {
+            document.querySelectorAll('.error-text').forEach(el => el.classList.remove('visible'));
+            document.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+            successMessage.classList.remove('visible');
+            strengthEl.style.display = 'none';
+            rangeValue.textContent = '0 years';
+        });
+    </script>
+</body>
+
+</html>

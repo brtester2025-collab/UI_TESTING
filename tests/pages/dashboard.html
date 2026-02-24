@@ -1,0 +1,156 @@
+<!-- public/pages/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-container">
+            <a href="/" class="logo">MyApp</a>
+            <div class="nav-links">
+                <a href="/dashboard" class="nav-link active">Dashboard</a>
+                <a href="/products" class="nav-link">Products</a>
+                <a href="/settings" class="nav-link">Settings</a>
+            </div>
+            <div class="nav-actions">
+                <div data-testid="search" style="display:flex;">
+                    <input type="text" data-testid="dashboard-search" placeholder="Search..." class="search-input">
+                </div>
+                <div class="user-menu-container" data-testid="user-menu">
+                    <div class="user-avatar" data-testid="user-avatar">TU</div>
+                    <div class="dropdown-menu" id="user-dropdown">
+                        <div class="dropdown-menu-item"><a href="/profile">Profile</a></div>
+                        <div class="dropdown-menu-item"><a href="/settings">Settings</a></div>
+                        <div class="dropdown-menu-item" data-testid="logout" id="logout-btn">Logout</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-with-sidebar">
+        <aside class="sidebar" data-testid="sidebar">
+            <h3>Menu</h3>
+            <ul style="list-style:none; padding:0;">
+                <li><a href="/dashboard" style="display:block; padding:10px;">📊 Overview</a></li>
+                <li><a href="/products" style="display:block; padding:10px;">📦 Products</a></li>
+                <li><a href="/settings" style="display:block; padding:10px;">⚙️ Settings</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div data-testid="welcome-message">
+                <h1>Dashboard</h1>
+                <p>Welcome back, <span id="user-name">Test User</span>!</p>
+            </div>
+
+            <div class="loading-spinner" id="dashboard-loading">Loading...</div>
+
+            <div class="stats-grid" id="stats-grid">
+                <div class="stats-card" data-testid="total-orders">
+                    <h3>Total Orders</h3>
+                    <div class="stat-value" id="stat-orders">-</div>
+                </div>
+                <div class="stats-card" data-testid="total-spent">
+                    <h3>Total Revenue</h3>
+                    <div class="stat-value" id="stat-revenue">-</div>
+                </div>
+                <div class="stats-card">
+                    <h3>Customers</h3>
+                    <div class="stat-value" id="stat-customers">-</div>
+                </div>
+                <div class="stats-card">
+                    <h3>Pending</h3>
+                    <div class="stat-value" id="stat-pending">-</div>
+                </div>
+            </div>
+
+            <div class="data-content" id="data-content" style="margin-top:20px;">
+                <h2>Recent Activity</h2>
+                <div class="timestamp" id="last-updated"></div>
+                <div id="activity-list"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script>
+        // Check authentication
+        async function checkAuth() {
+            try {
+                const res = await fetch('/auth/check');
+                if (!res.ok) {
+                    window.location.href = '/login?redirect=' + encodeURIComponent(window.location.pathname);
+                    return;
+                }
+                const data = await res.json();
+                document.getElementById('user-name').textContent = data.user.name;
+            } catch (err) {
+                // Allow page to load for testing
+            }
+        }
+
+        // Load dashboard stats
+        async function loadStats() {
+            const loading = document.getElementById('dashboard-loading');
+            loading.classList.add('visible');
+
+            try {
+                const res = await fetch('/api/dashboard/stats');
+                const data = await res.json();
+
+                document.getElementById('stat-orders').textContent = data.totalOrders;
+                document.getElementById('stat-revenue').textContent = `$${data.totalRevenue.toLocaleString()}`;
+                document.getElementById('stat-customers').textContent = data.totalCustomers;
+                document.getElementById('stat-pending').textContent = data.pendingOrders;
+                document.getElementById('last-updated').textContent = `Last updated: ${new Date().toLocaleString()}`;
+            } catch (err) {
+                console.error('Failed to load stats:', err);
+            } finally {
+                loading.classList.remove('visible');
+            }
+        }
+
+        // User menu
+        const userMenu = document.querySelector('[data-testid="user-menu"]');
+        const userDropdown = document.getElementById('user-dropdown');
+
+        userMenu.addEventListener('click', () => {
+            userDropdown.classList.toggle('open');
+        });
+
+        // Logout
+        document.getElementById('logout-btn').addEventListener('click', async () => {
+            await fetch('/auth/logout', { method: 'POST' });
+            document.cookie = 'session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            window.location.href = '/login';
+        });
+
+        // Search
+        const searchInput = document.querySelector('[data-testid="dashboard-search"]');
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    console.log('Searching:', searchInput.value);
+                }
+            });
+        }
+
+        checkAuth();
+        loadStats();
+    </script>
+</body>
+
+</html>
