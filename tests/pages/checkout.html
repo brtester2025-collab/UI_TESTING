@@ -1,0 +1,98 @@
+<!-- public/pages/cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Cart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-container">
+            <a href="/" class="logo">MyApp</a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/products" class="nav-link">Products</a>
+                <a href="/cart" class="nav-link active">Cart</a>
+            </div>
+            <div class="nav-actions">
+                <a href="/cart" class="cart-link" data-testid="cart-icon">
+                    🛒 <span data-testid="cart-badge" class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Shopping Cart</h1>
+        <div id="cart-items"></div>
+
+        <div id="empty-cart" style="text-align:center; padding:40px; display:none;">
+            <h2>Your cart is empty</h2>
+            <a href="/products" class="btn btn-primary" style="margin-top:15px;">Browse Products</a>
+        </div>
+
+        <div class="cart-summary" id="cart-summary" style="display:none;">
+            <!-- Coupon Section -->
+            <div class="coupon-section">
+                <input type="text" data-testid="coupon-input" placeholder="Enter coupon code" class="search-input">
+                <button class="btn btn-outline" data-testid="apply-coupon">Apply</button>
+            </div>
+            <div class="coupon-success" id="coupon-success" style="display:none;"></div>
+            <div class="discount-amount" id="discount-amount" style="display:none;"></div>
+
+            <hr style="margin: 15px 0;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:18px;">Total:</span>
+                <span class="cart-total" id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary" data-testid="checkout-btn" style="width:100%; margin-top:15px;">
+                Proceed to Checkout
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/cart.js"></script>
+    <script>
+        renderCart();
+
+        // Coupon handling
+        document.querySelector('[data-testid="apply-coupon"]').addEventListener('click', async () => {
+            const code = document.querySelector('[data-testid="coupon-input"]').value;
+            try {
+                const res = await fetch('/api/coupon/validate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code }),
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    document.getElementById('coupon-success').textContent = `Coupon ${data.code} applied!`;
+                    document.getElementById('coupon-success').style.display = 'block';
+                    document.getElementById('discount-amount').textContent = data.type === 'percentage'
+                        ? `-${data.discount}%` : `-$${data.discount}`;
+                    document.getElementById('discount-amount').style.display = 'block';
+                }
+            } catch (err) {
+                console.error('Coupon error:', err);
+            }
+        });
+
+        // Checkout redirect
+        document.querySelector('[data-testid="checkout-btn"]').addEventListener('click', () => {
+            window.location.href = '/checkout';
+        });
+    </script>
+</body>
+
+</html>
