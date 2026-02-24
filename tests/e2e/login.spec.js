@@ -1,4 +1,4 @@
-import { test, expect, describe } from '@playwright/test';
+const { test, expect, describe } = require('@playwright/test');
 
 
 test.describe('Login form', () => {
@@ -58,7 +58,7 @@ test.describe('Login form', () => {
         await page.locator('#login-button').click()
 
         await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
-        await expect(page.locator('.title')).toHaveText('Assist')
+        await expect(page.locator('.title')).toHaveText('Products')
     })
 })
 
