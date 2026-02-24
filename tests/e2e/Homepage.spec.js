@@ -10,5 +10,4 @@ test.describe('HomePage', () => {
         await expect(page).toHaveTitle(/Swag Labs/);
     })
 
-    test('should have visible hero section')
 })
