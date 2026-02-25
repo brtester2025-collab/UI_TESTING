@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3788,
+                      "duration": 1153,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:28.384Z",
+                      "startTime": "2026-02-25T10:31:20.833Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -145,12 +145,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3779,
+                      "duration": 1314,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:28.428Z",
+                      "startTime": "2026-02-25T10:31:20.762Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -176,15 +176,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1093,
+                      "duration": 1681,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:32.656Z",
+                      "startTime": "2026-02-25T10:31:22.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -210,15 +210,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1228,
+                      "duration": 1793,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:32.684Z",
+                      "startTime": "2026-02-25T10:31:22.349Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -244,15 +244,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1273,
+                      "duration": 1292,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:33.793Z",
+                      "startTime": "2026-02-25T10:31:24.006Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -278,15 +278,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1128,
+                      "duration": 1151,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:33.933Z",
+                      "startTime": "2026-02-25T10:31:24.182Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -315,12 +315,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1404,
+                      "duration": 1726,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:35.079Z",
+                      "startTime": "2026-02-25T10:31:25.354Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -351,7 +351,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Checking the inventory count",
+              "title": "Checking the Product count",
               "ok": true,
               "tags": [],
               "tests": [
@@ -366,12 +366,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1281,
+                      "duration": 1815,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T11:14:35.089Z",
+                      "startTime": "2026-02-25T10:31:25.361Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -379,9 +379,43 @@
                   "status": "expected"
                 }
               ],
-              "id": "acdf0ae4f62a43156007-8eb615a3f0b3246398b8",
+              "id": "acdf0ae4f62a43156007-38dc0305940676fbe195",
               "file": "product.spec.js",
               "line": 16,
+              "column": 5
+            },
+            {
+              "title": "checking the product has price,image and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1182,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-25T10:31:27.119Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-b451ed4eab5c42be9176",
+              "file": "product.spec.js",
+              "line": 22,
               "column": 5
             }
           ]
@@ -391,9 +425,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-24T11:14:25.532Z",
-    "duration": 11522.608,
-    "expected": 8,
+    "startTime": "2026-02-25T10:31:17.847Z",
+    "duration": 11304.757,
+    "expected": 9,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
