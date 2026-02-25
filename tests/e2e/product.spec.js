@@ -18,7 +18,6 @@ test.describe('Product Page', () => {
         await expect(countItems).toHaveCount(6)
 
     })
-
     test('checking the product has price,image and description', async ({ page }) => {
 
         const firstProduct = await page.locator('.inventory_item').first()
@@ -27,7 +26,4 @@ test.describe('Product Page', () => {
         await expect(firstProduct.locator('.inventory_item_name ')).toBeVisible()
         await expect(firstProduct.locator('.inventory_item_price')).toBeVisible()
     })
-
-
-
 })
