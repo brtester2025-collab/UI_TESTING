@@ -26,4 +26,14 @@ test.describe('Product Page', () => {
         await expect(firstProduct.locator('.inventory_item_name ')).toBeVisible()
         await expect(firstProduct.locator('.inventory_item_price')).toBeVisible()
     })
+
+    test('To have the price tag of dollar', async ({ page }) => {
+        const prices = await page.locator('.inventory_item_price').allTextContents()
+        prices.forEach((price) => {
+            expect(price).toMatch(/^\$\d+\.\d{2}$/)
+        })
+
+    })
+
+
 })
