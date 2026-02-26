@@ -66,8 +66,6 @@ test.describe('Product Page', () => {
         await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click()
         await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click()
         await page.locator('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click()
-
-
         await expect(page.locator('.shopping_cart_badge')).toHaveText('3')
     })
 
@@ -77,7 +75,4 @@ test.describe('Product Page', () => {
         await expect(page.locator('.shopping_cart_badge')).not.toBeVisible()
 
     })
-
-
-
 })

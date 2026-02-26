@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1278,
+                      "duration": 1171,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:38.478Z",
+                      "startTime": "2026-02-26T10:11:36.521Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -145,12 +145,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1088,
+                      "duration": 1160,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:38.562Z",
+                      "startTime": "2026-02-26T10:11:36.520Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -176,15 +176,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1207,
+                      "duration": 884,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:39.958Z",
+                      "startTime": "2026-02-26T10:11:37.934Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -210,15 +210,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1068,
+                      "duration": 1241,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:39.980Z",
+                      "startTime": "2026-02-26T10:11:37.951Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -247,12 +247,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1173,
+                      "duration": 1365,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:41.074Z",
+                      "startTime": "2026-02-26T10:11:38.849Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -281,12 +281,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1071,
+                      "duration": 1132,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:41.190Z",
+                      "startTime": "2026-02-26T10:11:39.223Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -315,12 +315,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1291,
+                      "duration": 1472,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:42.266Z",
+                      "startTime": "2026-02-26T10:11:40.233Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -366,12 +366,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1382,
+                      "duration": 1218,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:42.289Z",
+                      "startTime": "2026-02-26T10:11:40.378Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -397,15 +397,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1240,
+                      "duration": 1609,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:43.606Z",
+                      "startTime": "2026-02-26T10:11:41.642Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -431,15 +431,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1393,
+                      "duration": 1306,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:43.690Z",
+                      "startTime": "2026-02-26T10:11:41.729Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -468,12 +468,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1496,
+                      "duration": 1418,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:44.868Z",
+                      "startTime": "2026-02-26T10:11:43.062Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -502,12 +502,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1350,
+                      "duration": 1266,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:45.099Z",
+                      "startTime": "2026-02-26T10:11:43.271Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -536,12 +536,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1477,
+                      "duration": 1198,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:46.383Z",
+                      "startTime": "2026-02-26T10:11:44.498Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -570,12 +570,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1322,
+                      "duration": 1354,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:46.485Z",
+                      "startTime": "2026-02-26T10:11:44.553Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -589,7 +589,41 @@
               "column": 5
             },
             {
-              "title": "Cart badge is not visible when no product is visible",
+              "title": "Cart badge is not visible when no product is added to the cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1314,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T10:11:45.713Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-04f4bbd6508642dcbcc9",
+              "file": "product.spec.js",
+              "line": 74,
+              "column": 5
+            },
+            {
+              "title": "User should navigate to the cart page when the user is clicking the cart button",
               "ok": true,
               "tags": [],
               "tests": [
@@ -604,12 +638,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1194,
+                      "duration": 1087,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-26T06:10:47.833Z",
+                      "startTime": "2026-02-26T10:11:45.927Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -617,9 +651,141 @@
                   "status": "expected"
                 }
               ],
-              "id": "acdf0ae4f62a43156007-195873e8ab11fef7b59a",
+              "id": "acdf0ae4f62a43156007-59458bebe9a514e554b2",
               "file": "product.spec.js",
-              "line": 74,
+              "line": 81,
+              "column": 5
+            },
+            {
+              "title": "should proceed to checkout",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 33093,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\product.spec.js",
+                            "column": 54,
+                            "line": 88
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"checkout\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 86 |\u001b[39m\n \u001b[90m 87 |\u001b[39m     test(\u001b[32m'should proceed to checkout'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 88 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 89 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/checkout-step-one/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 90 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 91 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\product.spec.js:88:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T10:11:47.035Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\product-Product-Page-should-proceed-to-checkout\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\product-Product-Page-should-proceed-to-checkout\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\product-Product-Page-should-proceed-to-checkout\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-be100bb400da57f38ab5",
+              "file": "product.spec.js",
+              "line": 87,
+              "column": 5
+            },
+            {
+              "title": "should show error for the empty checkout form",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 33132,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\product.spec.js",
+                            "column": 54,
+                            "line": 93
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"checkout\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     test(\u001b[32m'should show error for the empty checkout form'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"checkout\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"error\"]'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Error: First Name is required'\u001b[39m)\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\product.spec.js:93:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T10:11:47.047Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\product-Product-Page-shoul-e381f-for-the-empty-checkout-form\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\product-Product-Page-shoul-e381f-for-the-empty-checkout-form\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\product-Product-Page-shoul-e381f-for-the-empty-checkout-form\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-c7acad0136008493c860",
+              "file": "product.spec.js",
+              "line": 92,
               "column": 5
             }
           ]
@@ -629,11 +795,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-26T06:10:35.764Z",
-    "duration": 13395.039,
-    "expected": 15,
+    "startTime": "2026-02-26T10:11:34.139Z",
+    "duration": 46203.245,
+    "expected": 16,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }
