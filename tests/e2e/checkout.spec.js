@@ -31,15 +31,35 @@ test.describe('checkout page', () => {
 
     test('Cart Checkout page', async ({ page }) => {
 
-        await page.locator('[data-test="continue"]').click();
+        await page.locator('[data-test="checkout"]').click();
         await expect(page).toHaveURL(/checkout-step-one/)
 
     })
 
     test('show the error for the empty field', async ({ page }) => {
-        // await page.locator('[data-test="checkout"]').click()
+        await page.locator('[data-test="checkout"]').click()
         await page.locator('[data-test="continue"]').click();
         await expect(page.locator('[data-test="error"]')).toHaveText('Error: First Name is required')
+    })
+
+    test('should enter the product deatils for the page', async ({ page }) => {
+        await page.locator('[data-test="checkout"]').click()
+        await page.locator('#first-name').fill('john')
+        await page.locator('#last-name').fill('doe')
+        await page.locator('#postal-code').fill('123456')
+        await page.locator('#continue').click()
+        await expect(page).toHaveURL(/checkout-step-two/)
+
+        await expect(page.locator('.summary_subtotal_label')).toBeVisible()
+        await expect(page.locator('.summary_tax_label')).toBeVisible()
+        await expect(page.locator('.summary_total_label')).toBeVisible()
+
+        await page.locator('[data-test="finish"]').click()
+        await expect(page).toHaveURL(/checkout-complete/)
+        await expect(page.locator('[data-test="complete-header"]')).toHaveText('Thank you for your order!')
+
+
+
     })
 
 

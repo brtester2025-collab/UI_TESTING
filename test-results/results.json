@@ -66,20 +66,20 @@
   },
   "suites": [
     {
-      "title": "checkout.spec.js",
-      "file": "checkout.spec.js",
+      "title": "responsive.spec.js",
+      "file": "responsive.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "checkout page",
-          "file": "checkout.spec.js",
+          "title": "responsive",
+          "file": "responsive.spec.js",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "should display cart item correctly",
+              "title": "login page visual snapshot",
               "ok": true,
               "tags": [],
               "tests": [
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12756,
+                      "duration": 1659,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-27T13:04:38.758Z",
+                      "startTime": "2026-03-02T06:50:44.976Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -107,13 +107,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "24e4b3ac21f7f473b7e5-74eaa783be4494695cdb",
-              "file": "checkout.spec.js",
-              "line": 16,
+              "id": "68833bfb7a01a66a4f98-1d9ecc2fdb2710a51ab7",
+              "file": "responsive.spec.js",
+              "line": 5,
               "column": 5
             },
             {
-              "title": "should remove item from cart page",
+              "title": "should be responsive on mobile port",
               "ok": true,
               "tags": [],
               "tests": [
@@ -128,12 +128,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 12754,
+                      "duration": 1314,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-27T13:04:38.823Z",
+                      "startTime": "2026-03-02T06:50:44.983Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -141,13 +141,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "24e4b3ac21f7f473b7e5-edc89f40ae6f3f8098f5",
-              "file": "checkout.spec.js",
-              "line": 22,
+              "id": "68833bfb7a01a66a4f98-d71b03f8171303bb6776",
+              "file": "responsive.spec.js",
+              "line": 13,
               "column": 5
             },
             {
-              "title": "should continue shopping from cart",
+              "title": "should be responsive on table port",
               "ok": true,
               "tags": [],
               "tests": [
@@ -162,12 +162,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2580,
+                      "duration": 1482,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-27T13:04:54.066Z",
+                      "startTime": "2026-03-02T06:50:46.532Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -175,14 +175,14 @@
                   "status": "expected"
                 }
               ],
-              "id": "24e4b3ac21f7f473b7e5-68a0111186cc4d1a9778",
-              "file": "checkout.spec.js",
-              "line": 27,
+              "id": "68833bfb7a01a66a4f98-7cf55d902542467eac31",
+              "file": "responsive.spec.js",
+              "line": 20,
               "column": 5
             },
             {
-              "title": "Cart Checkout page",
-              "ok": false,
+              "title": "should be responsive on laptop port",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -195,162 +195,13 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 33613,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\automation\\tests\\e2e\\checkout.spec.js",
-                            "column": 54,
-                            "line": 34
-                          },
-                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"continue\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 32 |\u001b[39m     test(\u001b[32m'Cart Checkout page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 33 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/checkout-step-one/\u001b[39m)\n \u001b[90m 36 |\u001b[39m\n \u001b[90m 37 |\u001b[39m     })\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\checkout.spec.js:34:54\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:04:54.077Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\automation\\test-results\\checkout-checkout-page-Cart-Checkout-page\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\automation\\test-results\\checkout-checkout-page-Cart-Checkout-page\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\automation\\test-results\\checkout-checkout-page-Cart-Checkout-page\\error-context.md"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "24e4b3ac21f7f473b7e5-9aea5c358571e6373ba1",
-              "file": "checkout.spec.js",
-              "line": 32,
-              "column": 5
-            },
-            {
-              "title": "show the error for the empty field",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "timedOut",
-                      "duration": 34075,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\automation\\tests\\e2e\\checkout.spec.js",
-                            "column": 54,
-                            "line": 41
-                          },
-                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"continue\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m     test(\u001b[32m'show the error for the empty field'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 40 |\u001b[39m         \u001b[90m// await page.locator('[data-test=\"checkout\"]').click()\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"error\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Error: First Name is required'\u001b[39m)\n \u001b[90m 43 |\u001b[39m     })\n \u001b[90m 44 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\checkout.spec.js:41:54\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:04:56.673Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\automation\\test-results\\checkout-checkout-page-show-the-error-for-the-empty-field\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\automation\\test-results\\checkout-checkout-page-show-the-error-for-the-empty-field\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\automation\\test-results\\checkout-checkout-page-show-the-error-for-the-empty-field\\error-context.md"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "24e4b3ac21f7f473b7e5-5c38fbc13c4caf989a45",
-              "file": "checkout.spec.js",
-              "line": 39,
-              "column": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Homepage.spec.js",
-      "file": "Homepage.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "HomePage",
-          "file": "Homepage.spec.js",
-          "line": 4,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should have correct title",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1619,
+                      "duration": 1219,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-27T13:05:31.745Z",
+                      "startTime": "2026-03-02T06:50:46.854Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -358,519 +209,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "c390ab8e6da1717769ef-83360e57bb2358ead319",
-              "file": "Homepage.spec.js",
-              "line": 9,
-              "column": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Login form",
-          "file": "login.spec.js",
-          "line": 4,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Test to contain all the elements",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1580,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:33.630Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-099cb8c2078947d4d001",
-              "file": "login.spec.js",
-              "line": 10,
-              "column": 5
-            },
-            {
-              "title": "Test for the correct placeholder Test",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1323,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:37.806Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-8ee3ba534931b2b16220",
-              "file": "login.spec.js",
-              "line": 21,
-              "column": 5
-            },
-            {
-              "title": "To show username is empty",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1499,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:35.234Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-27ee23b134b9245a7167",
-              "file": "login.spec.js",
+              "id": "68833bfb7a01a66a4f98-2ce01bb24265d5419bdc",
+              "file": "responsive.spec.js",
               "line": 26,
-              "column": 5
-            },
-            {
-              "title": "To show password is empty",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1214,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:36.757Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-2d52746a87a0799a1e78",
-              "file": "login.spec.js",
-              "line": 34,
-              "column": 5
-            },
-            {
-              "title": "For the invalid username and password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5688,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:37.991Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-badede7e0119fb6d19ee",
-              "file": "login.spec.js",
-              "line": 44,
-              "column": 5
-            },
-            {
-              "title": "for the successfully login details",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2132,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:39.391Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-83845545334d5594ae08",
-              "file": "login.spec.js",
-              "line": 55,
-              "column": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "product.spec.js",
-      "file": "product.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Product Page",
-          "file": "product.spec.js",
-          "line": 5,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Checking the Product count",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2118,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:41.577Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-38dc0305940676fbe195",
-              "file": "product.spec.js",
-              "line": 16,
-              "column": 5
-            },
-            {
-              "title": "checking the product has price,image and description",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1547,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:43.704Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-b451ed4eab5c42be9176",
-              "file": "product.spec.js",
-              "line": 21,
-              "column": 5
-            },
-            {
-              "title": "To have the price tag of dollar",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1560,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:43.730Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-cd479ecf1f44c5902b38",
-              "file": "product.spec.js",
-              "line": 30,
-              "column": 5
-            },
-            {
-              "title": "Sorting of price from low to high",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1713,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:45.272Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-792975f6be90a67f6da8",
-              "file": "product.spec.js",
-              "line": 37,
-              "column": 5
-            },
-            {
-              "title": "Sorting the price from high to low",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1819,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:45.314Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-1ca2669ac91d7603fa90",
-              "file": "product.spec.js",
-              "line": 48,
-              "column": 5
-            },
-            {
-              "title": "Sort the product A-Z",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1842,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:47.005Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-bf7e20512df45c96c566",
-              "file": "product.spec.js",
-              "line": 58,
-              "column": 5
-            },
-            {
-              "title": "To add the multiple products and check the cart count",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1781,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:47.151Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-c31be6f2e089cca0c077",
-              "file": "product.spec.js",
-              "line": 65,
-              "column": 5
-            },
-            {
-              "title": "Cart badge is not visible when no product is added to the cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2102,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-27T13:05:48.874Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "acdf0ae4f62a43156007-04f4bbd6508642dcbcc9",
-              "file": "product.spec.js",
-              "line": 72,
               "column": 5
             }
           ]
@@ -880,11 +221,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-27T13:04:35.054Z",
-    "duration": 76214.189,
-    "expected": 18,
+    "startTime": "2026-03-02T06:50:42.412Z",
+    "duration": 5921.048000000001,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }
