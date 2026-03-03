@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "",
         "name": "",
@@ -66,20 +66,20 @@
   },
   "suites": [
     {
-      "title": "responsive.spec.js",
-      "file": "responsive.spec.js",
+      "title": "Accessibility.spec.js",
+      "file": "Accessibility.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "responsive",
-          "file": "responsive.spec.js",
+          "title": "Accessibility UI test",
+          "file": "Accessibility.spec.js",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "login page visual snapshot",
+              "title": "All the images should have alt text",
               "ok": true,
               "tags": [],
               "tests": [
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1659,
+                      "duration": 1656,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-02T06:50:44.976Z",
+                      "startTime": "2026-03-03T06:17:28.238Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -107,111 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "68833bfb7a01a66a4f98-1d9ecc2fdb2710a51ab7",
-              "file": "responsive.spec.js",
-              "line": 5,
-              "column": 5
-            },
-            {
-              "title": "should be responsive on mobile port",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1314,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-02T06:50:44.983Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "68833bfb7a01a66a4f98-d71b03f8171303bb6776",
-              "file": "responsive.spec.js",
-              "line": 13,
-              "column": 5
-            },
-            {
-              "title": "should be responsive on table port",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1482,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-02T06:50:46.532Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "68833bfb7a01a66a4f98-7cf55d902542467eac31",
-              "file": "responsive.spec.js",
-              "line": 20,
-              "column": 5
-            },
-            {
-              "title": "should be responsive on laptop port",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1219,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-02T06:50:46.854Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "68833bfb7a01a66a4f98-2ce01bb24265d5419bdc",
-              "file": "responsive.spec.js",
-              "line": 26,
+              "id": "6f3fddf37186c72b552e-5fa6798b6adc48f19166",
+              "file": "Accessibility.spec.js",
+              "line": 4,
               "column": 5
             }
           ]
@@ -221,9 +119,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-02T06:50:42.412Z",
-    "duration": 5921.048000000001,
-    "expected": 4,
+    "startTime": "2026-03-03T06:17:26.162Z",
+    "duration": 4370.269,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
