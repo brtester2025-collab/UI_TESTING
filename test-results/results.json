@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "",
         "name": "",
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1656,
+                      "duration": 1382,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-03T06:17:28.238Z",
+                      "startTime": "2026-03-09T05:00:40.979Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -111,6 +111,40 @@
               "file": "Accessibility.spec.js",
               "line": 4,
               "column": 5
+            },
+            {
+              "title": "form inputs should have associated labels or aria labels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1226,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:00:40.954Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3fddf37186c72b552e-fb5cdb897e6bb79fc110",
+              "file": "Accessibility.spec.js",
+              "line": 19,
+              "column": 5
             }
           ]
         }
@@ -119,9 +153,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-03T06:17:26.162Z",
-    "duration": 4370.269,
-    "expected": 1,
+    "startTime": "2026-03-09T05:00:39.124Z",
+    "duration": 3605.494,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

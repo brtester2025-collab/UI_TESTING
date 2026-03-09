@@ -10,11 +10,23 @@ test.describe('Accessibility UI test', () => {
         const images = page.locator('img')
         const count = await images.count()
 
-
         for (let i = 0; i < count; i++) {
             const alt = await images.nth(i).getAttribute('alt')
             expect(alt, `Images ${i} missing alt text`).toBeTruthy()
         }
 
     })
+    test('form inputs should have associated labels or aria labels', async ({ page }) => {
+        await page.goto('https://www.saucedemo.com')
+        const username = page.locator('#user-name')
+        const password = page.locator('#password')
+
+        const userPlaceHolder = await username.getAttribute('placeHolder')
+        const passPlaceHolder = await password.getAttribute('placeholder')
+
+        expect(userPlaceHolder).toBeTruthy();
+        expect(passPlaceHolder).toBeTruthy();
+    })
+
+
 })
