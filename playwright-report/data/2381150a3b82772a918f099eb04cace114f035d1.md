@@ -1,0 +1,793 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "Find Banquet" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Find Banquet" [ref=e10]
+        - generic [ref=e12]:
+          - generic:
+            - img
+          - textbox "Search For Banquets, Makeup Artist…" [ref=e13]
+        - generic [ref=e14]:
+          - button "Manage Users" [active] [ref=e15]:
+            - img [ref=e17]
+            - generic [ref=e19]: Manage Users
+          - button "Manage Your Business" [ref=e20]:
+            - img [ref=e22]
+            - generic [ref=e24]: Manage Your Business
+      - navigation [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "All" [ref=e29] [cursor=pointer]:
+              - /url: /vendors/all
+              - text: All
+          - listitem [ref=e30]:
+            - link "Mehndi" [ref=e31] [cursor=pointer]:
+              - /url: /vendors/mehndi
+              - text: Mehndi
+          - listitem [ref=e32]:
+            - link "Makeup Artist" [ref=e33] [cursor=pointer]:
+              - /url: /vendors/makeup-artist
+              - text: Makeup Artist
+          - listitem [ref=e34]:
+            - link "Banquet Hall" [ref=e35] [cursor=pointer]:
+              - /url: /vendors/banquet-hall
+              - text: Banquet Hall
+          - listitem [ref=e36]:
+            - link "Fashion" [ref=e37] [cursor=pointer]:
+              - /url: /vendors/fashion
+              - text: Fashion
+          - listitem [ref=e38]:
+            - link "Resort" [ref=e39] [cursor=pointer]:
+              - /url: /vendors/resort
+              - text: Resort
+          - listitem [ref=e40]:
+            - link "Hotels" [ref=e41] [cursor=pointer]:
+              - /url: /vendors/hotels
+              - text: Hotels
+          - listitem [ref=e42]:
+            - link "Restaurants" [ref=e43] [cursor=pointer]:
+              - /url: /vendors/restaurants
+              - text: Restaurants
+          - listitem [ref=e44]:
+            - link "Photographer" [ref=e45] [cursor=pointer]:
+              - /url: /vendors/photographer
+              - text: Photographer
+          - listitem [ref=e46]:
+            - link "Decorators" [ref=e47] [cursor=pointer]:
+              - /url: /vendors/decorators
+              - text: Decorators
+    - complementary [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - img "Find Banquet" [ref=e51]
+          - generic [ref=e52]: Menu
+        - button [ref=e53]:
+          - img [ref=e54]
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - img [ref=e60]
+          - generic [ref=e62]:
+            - generic [ref=e63]: Welcome Back!
+            - generic [ref=e64]: Sign in to your account
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - link "Mehndi" [ref=e69] [cursor=pointer]:
+              - /url: /vendors/mehndi
+          - listitem [ref=e70]:
+            - link "Makeup Artist" [ref=e72] [cursor=pointer]:
+              - /url: /vendors/makeup-artist
+          - listitem [ref=e73]:
+            - link "Banquet Hall" [ref=e75] [cursor=pointer]:
+              - /url: /vendors/banquet-hall
+          - listitem [ref=e76]:
+            - link "Fashion" [ref=e78] [cursor=pointer]:
+              - /url: /vendors/fashion
+          - listitem [ref=e79]:
+            - link "Resort" [ref=e81] [cursor=pointer]:
+              - /url: /vendors/resort
+          - listitem [ref=e82]:
+            - link "Hotels" [ref=e84] [cursor=pointer]:
+              - /url: /vendors/hotels
+          - listitem [ref=e85]:
+            - link "Restaurants" [ref=e87] [cursor=pointer]:
+              - /url: /vendors/restaurants
+          - listitem [ref=e88]:
+            - link "Photographer" [ref=e90] [cursor=pointer]:
+              - /url: /vendors/photographer
+          - listitem [ref=e91]:
+            - link "Decorators" [ref=e93] [cursor=pointer]:
+              - /url: /vendors/decorators
+        - generic [ref=e94]:
+          - link "User Sign In / User Register" [ref=e95] [cursor=pointer]:
+            - /url: /login
+            - img [ref=e96]
+            - generic [ref=e98]: User Sign In / User Register
+          - link "Manage Your Business" [ref=e99] [cursor=pointer]:
+            - /url: /vendor/register
+            - img [ref=e100]
+            - generic [ref=e102]: Manage Your Business
+  - generic [ref=e105]:
+    - generic [ref=e106]:
+      - heading "Welcome Back" [level=2] [ref=e107]
+      - paragraph [ref=e108]: Sign in to your account
+    - generic [ref=e109]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - generic [ref=e114]:
+            - img [ref=e115]
+            - text: Mobile Number
+          - generic [ref=e117]:
+            - generic:
+              - generic: "+91"
+            - textbox "Mobile Number" [ref=e118]:
+              - /placeholder: Enter 10-digit number
+        - button "Send OTP" [disabled] [ref=e119]:
+          - generic [ref=e120]:
+            - img [ref=e121]
+            - text: Send OTP
+      - paragraph [ref=e126]:
+        - text: Don't have an account?
+        - link "Sign up now" [ref=e127] [cursor=pointer]:
+          - /url: /register
+  - contentinfo [ref=e129]:
+    - generic [ref=e130]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - img "Find Banquet" [ref=e135]
+          - paragraph [ref=e136]: Your go to destination for booking perfect venues and services for life’s most special moments. From weddings to corporate events, we connect you with trusted venues and expert event professionals.
+          - generic [ref=e137]:
+            - heading "Investors" [level=4] [ref=e138]
+            - button "Interested in Investing?" [ref=e140]
+            - paragraph [ref=e141]: Learn about investment opportunities
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - heading "Quick Links" [level=3] [ref=e144]: Quick Links
+            - list [ref=e146]:
+              - listitem [ref=e147]:
+                - link "Home" [ref=e148] [cursor=pointer]:
+                  - /url: /
+                  - img [ref=e149]
+                  - text: Home
+              - listitem [ref=e151]:
+                - link "About Us" [ref=e152] [cursor=pointer]:
+                  - /url: /about-us
+                  - img [ref=e153]
+                  - text: About Us
+              - listitem [ref=e155]:
+                - link "How It Works" [ref=e156] [cursor=pointer]:
+                  - /url: /how-it-work
+                  - img [ref=e157]
+                  - text: How It Works
+              - listitem [ref=e159]:
+                - link "Contact Us" [ref=e160] [cursor=pointer]:
+                  - /url: /contact
+                  - img [ref=e161]
+                  - text: Contact Us
+              - listitem [ref=e163]:
+                - link "Gallery" [ref=e164] [cursor=pointer]:
+                  - /url: /gallery
+                  - img [ref=e165]
+                  - text: Gallery
+              - listitem [ref=e167]:
+                - link "Blog" [ref=e168] [cursor=pointer]:
+                  - /url: http://findbanquet.com/blog
+                  - img [ref=e169]
+                  - text: Blog
+          - generic [ref=e171]:
+            - heading "Get In Touch" [level=3] [ref=e172]: Get In Touch
+            - list [ref=e174]:
+              - listitem [ref=e175]:
+                - img [ref=e177]
+                - generic [ref=e179]:
+                  - paragraph [ref=e180]: +91-888-279-0616
+                  - paragraph [ref=e181]: Mon-Fri, 11AM-5PM
+              - listitem [ref=e182]:
+                - img [ref=e184]
+                - generic [ref=e186]:
+                  - paragraph [ref=e187]: media@findbanquet.com
+                  - paragraph [ref=e188]: 24/7 Support
+              - listitem [ref=e189]:
+                - img [ref=e191]
+                - generic [ref=e194]:
+                  - paragraph [ref=e195]: Head Office
+                  - paragraph [ref=e196]: Delhi, India
+            - generic [ref=e197]:
+              - heading "Follow Us" [level=4] [ref=e198]
+              - generic [ref=e199]:
+                - link [ref=e200] [cursor=pointer]:
+                  - /url: https://www.instagram.com/find_banquet/
+                  - img [ref=e201]
+                - link [ref=e203] [cursor=pointer]:
+                  - /url: https://www.facebook.com/findbanquet
+                  - img [ref=e204]
+                - link [ref=e206] [cursor=pointer]:
+                  - /url: https://x.com/banquetfind?s=11
+                  - img [ref=e207]
+                - link [ref=e209] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@findbanquet
+                  - img [ref=e210]
+          - generic [ref=e212]:
+            - heading "Download App" [level=3] [ref=e213]: Download App
+            - generic [ref=e215]:
+              - link "App Store Download on iOS" [ref=e216] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/find-banquet/id1547801752
+                - img [ref=e218]
+                - generic [ref=e220]:
+                  - generic [ref=e221]: App Store
+                  - generic [ref=e222]: Download on iOS
+              - link "Google Play Get it on Android" [ref=e223] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.findbanquet&hl=en_IN
+                - img [ref=e225]
+                - generic [ref=e227]:
+                  - generic [ref=e228]: Google Play
+                  - generic [ref=e229]: Get it on Android
+            - generic [ref=e230]:
+              - heading "User Account" [level=4] [ref=e231]
+              - generic [ref=e232]:
+                - link "Sign In" [ref=e233] [cursor=pointer]:
+                  - /url: /login
+                - link "Register" [ref=e234] [cursor=pointer]:
+                  - /url: /register
+            - generic [ref=e235]:
+              - heading "List Business" [level=4] [ref=e236]
+              - generic [ref=e237]:
+                - link "Sign In" [ref=e238] [cursor=pointer]:
+                  - /url: /vendor/login
+                - link "Register" [ref=e239] [cursor=pointer]:
+                  - /url: /vendor/register
+      - generic [ref=e241]:
+        - heading "Popular Destinations" [level=2] [ref=e242]: Popular Destinations
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - heading "New Delhi Delhi" [level=3] [ref=e246]:
+              - img [ref=e247]
+              - text: New Delhi
+              - generic [ref=e250]: Delhi
+            - generic [ref=e251]:
+              - link "Banquet Hall |" [ref=e252] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/new-delhi
+              - link "Flowers |" [ref=e253] [cursor=pointer]:
+                - /url: /vendors/flowers/new-delhi
+              - link "Makeup Artist |" [ref=e254] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/new-delhi
+              - link "Photographer |" [ref=e255] [cursor=pointer]:
+                - /url: /vendors/photographer/new-delhi
+              - link "Music Band |" [ref=e256] [cursor=pointer]:
+                - /url: /vendors/music-band/new-delhi
+              - link "Music DJ |" [ref=e257] [cursor=pointer]:
+                - /url: /vendors/music-dj/new-delhi
+              - link "Planner |" [ref=e258] [cursor=pointer]:
+                - /url: /vendors/planner/new-delhi
+              - link "Fashion" [ref=e259] [cursor=pointer]:
+                - /url: /vendors/fashion/new-delhi
+          - generic [ref=e260]:
+            - heading "Dehradun Uttarakhand" [level=3] [ref=e261]:
+              - img [ref=e262]
+              - text: Dehradun
+              - generic [ref=e265]: Uttarakhand
+            - generic [ref=e266]:
+              - link "Banquet Hall |" [ref=e267] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/dehradun
+              - link "Flowers |" [ref=e268] [cursor=pointer]:
+                - /url: /vendors/flowers/dehradun
+              - link "Makeup Artist |" [ref=e269] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/dehradun
+              - link "Photographer |" [ref=e270] [cursor=pointer]:
+                - /url: /vendors/photographer/dehradun
+              - link "Music Band |" [ref=e271] [cursor=pointer]:
+                - /url: /vendors/music-band/dehradun
+              - link "Music DJ |" [ref=e272] [cursor=pointer]:
+                - /url: /vendors/music-dj/dehradun
+              - link "Planner" [ref=e273] [cursor=pointer]:
+                - /url: /vendors/planner/dehradun
+          - generic [ref=e274]:
+            - heading "Noida Uttar Pradesh" [level=3] [ref=e275]:
+              - img [ref=e276]
+              - text: Noida
+              - generic [ref=e279]: Uttar Pradesh
+            - generic [ref=e280]:
+              - link "Banquet Hall |" [ref=e281] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/noida
+              - link "Flowers |" [ref=e282] [cursor=pointer]:
+                - /url: /vendors/flowers/noida
+              - link "Makeup Artist |" [ref=e283] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/noida
+              - link "Photographer |" [ref=e284] [cursor=pointer]:
+                - /url: /vendors/photographer/noida
+              - link "Music Band |" [ref=e285] [cursor=pointer]:
+                - /url: /vendors/music-band/noida
+              - link "Music DJ |" [ref=e286] [cursor=pointer]:
+                - /url: /vendors/music-dj/noida
+              - link "Planner |" [ref=e287] [cursor=pointer]:
+                - /url: /vendors/planner/noida
+              - link "Fashion |" [ref=e288] [cursor=pointer]:
+                - /url: /vendors/fashion/noida
+              - link "Restaurants" [ref=e289] [cursor=pointer]:
+                - /url: /vendors/restaurants/noida
+          - generic [ref=e290]:
+            - heading "Chandigarh Chandigarh" [level=3] [ref=e291]:
+              - img [ref=e292]
+              - text: Chandigarh
+              - generic [ref=e295]: Chandigarh
+            - generic [ref=e296]:
+              - link "Banquet Hall |" [ref=e297] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/chandigarh
+              - link "Flowers |" [ref=e298] [cursor=pointer]:
+                - /url: /vendors/flowers/chandigarh
+              - link "Makeup Artist |" [ref=e299] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/chandigarh
+              - link "Photographer |" [ref=e300] [cursor=pointer]:
+                - /url: /vendors/photographer/chandigarh
+              - link "Music Band |" [ref=e301] [cursor=pointer]:
+                - /url: /vendors/music-band/chandigarh
+              - link "Music DJ |" [ref=e302] [cursor=pointer]:
+                - /url: /vendors/music-dj/chandigarh
+              - link "Planner" [ref=e303] [cursor=pointer]:
+                - /url: /vendors/planner/chandigarh
+          - generic [ref=e304]:
+            - heading "Aravali Hills Haryana" [level=3] [ref=e305]:
+              - img [ref=e306]
+              - text: Aravali Hills
+              - generic [ref=e309]: Haryana
+            - generic [ref=e310]:
+              - link "Banquet Hall |" [ref=e311] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/aravali-hills
+              - link "Flowers |" [ref=e312] [cursor=pointer]:
+                - /url: /vendors/flowers/aravali-hills
+              - link "Makeup Artist |" [ref=e313] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/aravali-hills
+              - link "Photographer |" [ref=e314] [cursor=pointer]:
+                - /url: /vendors/photographer/aravali-hills
+              - link "Music Band |" [ref=e315] [cursor=pointer]:
+                - /url: /vendors/music-band/aravali-hills
+              - link "Music DJ |" [ref=e316] [cursor=pointer]:
+                - /url: /vendors/music-dj/aravali-hills
+              - link "Planner" [ref=e317] [cursor=pointer]:
+                - /url: /vendors/planner/aravali-hills
+          - generic [ref=e318]:
+            - heading "Amritsar Punjab" [level=3] [ref=e319]:
+              - img [ref=e320]
+              - text: Amritsar
+              - generic [ref=e323]: Punjab
+            - generic [ref=e324]:
+              - link "Banquet Hall |" [ref=e325] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/amritsar
+              - link "Flowers |" [ref=e326] [cursor=pointer]:
+                - /url: /vendors/flowers/amritsar
+              - link "Makeup Artist |" [ref=e327] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/amritsar
+              - link "Photographer |" [ref=e328] [cursor=pointer]:
+                - /url: /vendors/photographer/amritsar
+              - link "Music Band |" [ref=e329] [cursor=pointer]:
+                - /url: /vendors/music-band/amritsar
+              - link "Music DJ |" [ref=e330] [cursor=pointer]:
+                - /url: /vendors/music-dj/amritsar
+              - link "Planner" [ref=e331] [cursor=pointer]:
+                - /url: /vendors/planner/amritsar
+          - generic [ref=e332]:
+            - heading "Mumbai Maharashtra" [level=3] [ref=e333]:
+              - img [ref=e334]
+              - text: Mumbai
+              - generic [ref=e337]: Maharashtra
+            - generic [ref=e338]:
+              - link "Banquet Hall |" [ref=e339] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/mumbai
+              - link "Flowers |" [ref=e340] [cursor=pointer]:
+                - /url: /vendors/flowers/mumbai
+              - link "Makeup Artist |" [ref=e341] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/mumbai
+              - link "Photographer |" [ref=e342] [cursor=pointer]:
+                - /url: /vendors/photographer/mumbai
+              - link "Music Band |" [ref=e343] [cursor=pointer]:
+                - /url: /vendors/music-band/mumbai
+              - link "Music DJ |" [ref=e344] [cursor=pointer]:
+                - /url: /vendors/music-dj/mumbai
+              - link "Planner |" [ref=e345] [cursor=pointer]:
+                - /url: /vendors/planner/mumbai
+              - link "Hotels |" [ref=e346] [cursor=pointer]:
+                - /url: /vendors/hotels/mumbai
+              - link "Clubs |" [ref=e347] [cursor=pointer]:
+                - /url: /vendors/clubs/mumbai
+              - link "Fashion" [ref=e348] [cursor=pointer]:
+                - /url: /vendors/fashion/mumbai
+          - generic [ref=e349]:
+            - heading "Shimla Himachal Pradesh" [level=3] [ref=e350]:
+              - img [ref=e351]
+              - text: Shimla
+              - generic [ref=e354]: Himachal Pradesh
+            - generic [ref=e355]:
+              - link "Banquet Hall |" [ref=e356] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/shimla
+              - link "Flowers |" [ref=e357] [cursor=pointer]:
+                - /url: /vendors/flowers/shimla
+              - link "Makeup Artist |" [ref=e358] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/shimla
+              - link "Photographer |" [ref=e359] [cursor=pointer]:
+                - /url: /vendors/photographer/shimla
+              - link "Music Band |" [ref=e360] [cursor=pointer]:
+                - /url: /vendors/music-band/shimla
+              - link "Music DJ |" [ref=e361] [cursor=pointer]:
+                - /url: /vendors/music-dj/shimla
+              - link "Planner |" [ref=e362] [cursor=pointer]:
+                - /url: /vendors/planner/shimla
+              - link "Resort |" [ref=e363] [cursor=pointer]:
+                - /url: /vendors/resort/shimla
+              - link "Hotels |" [ref=e364] [cursor=pointer]:
+                - /url: /vendors/hotels/shimla
+              - link "Restaurants |" [ref=e365] [cursor=pointer]:
+                - /url: /vendors/restaurants/shimla
+              - link "Decorators |" [ref=e366] [cursor=pointer]:
+                - /url: /vendors/decorators/shimla
+              - link "Lightings" [ref=e367] [cursor=pointer]:
+                - /url: /vendors/lightings/shimla
+          - generic [ref=e368]:
+            - heading "Kolkata West Bengal" [level=3] [ref=e369]:
+              - img [ref=e370]
+              - text: Kolkata
+              - generic [ref=e373]: West Bengal
+            - generic [ref=e374]:
+              - link "Banquet Hall |" [ref=e375] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/kolkata
+              - link "Flowers |" [ref=e376] [cursor=pointer]:
+                - /url: /vendors/flowers/kolkata
+              - link "Makeup Artist |" [ref=e377] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/kolkata
+              - link "Photographer |" [ref=e378] [cursor=pointer]:
+                - /url: /vendors/photographer/kolkata
+              - link "Music Band |" [ref=e379] [cursor=pointer]:
+                - /url: /vendors/music-band/kolkata
+              - link "Music DJ |" [ref=e380] [cursor=pointer]:
+                - /url: /vendors/music-dj/kolkata
+              - link "Planner |" [ref=e381] [cursor=pointer]:
+                - /url: /vendors/planner/kolkata
+              - link "Restaurants |" [ref=e382] [cursor=pointer]:
+                - /url: /vendors/restaurants/kolkata
+              - link "Hotels |" [ref=e383] [cursor=pointer]:
+                - /url: /vendors/hotels/kolkata
+              - link "Party Places |" [ref=e384] [cursor=pointer]:
+                - /url: /vendors/party-places/kolkata
+              - link "Catering" [ref=e385] [cursor=pointer]:
+                - /url: /vendors/catering/kolkata
+          - generic [ref=e386]:
+            - heading "Haldwani Uttarakhand" [level=3] [ref=e387]:
+              - img [ref=e388]
+              - text: Haldwani
+              - generic [ref=e391]: Uttarakhand
+            - generic [ref=e392]:
+              - link "Banquet Hall |" [ref=e393] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/haldwani
+              - link "Flowers |" [ref=e394] [cursor=pointer]:
+                - /url: /vendors/flowers/haldwani
+              - link "Makeup Artist |" [ref=e395] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/haldwani
+              - link "Photographer |" [ref=e396] [cursor=pointer]:
+                - /url: /vendors/photographer/haldwani
+              - link "Music Band |" [ref=e397] [cursor=pointer]:
+                - /url: /vendors/music-band/haldwani
+              - link "Music DJ |" [ref=e398] [cursor=pointer]:
+                - /url: /vendors/music-dj/haldwani
+              - link "Planner" [ref=e399] [cursor=pointer]:
+                - /url: /vendors/planner/haldwani
+          - generic [ref=e400]:
+            - heading "Haryana Haryana" [level=3] [ref=e401]:
+              - img [ref=e402]
+              - text: Haryana
+              - generic [ref=e405]: Haryana
+            - generic [ref=e406]:
+              - link "Banquet Hall |" [ref=e407] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/haryana
+              - link "Flowers |" [ref=e408] [cursor=pointer]:
+                - /url: /vendors/flowers/haryana
+              - link "Makeup Artist |" [ref=e409] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/haryana
+              - link "Photographer |" [ref=e410] [cursor=pointer]:
+                - /url: /vendors/photographer/haryana
+              - link "Music Band |" [ref=e411] [cursor=pointer]:
+                - /url: /vendors/music-band/haryana
+              - link "Music DJ |" [ref=e412] [cursor=pointer]:
+                - /url: /vendors/music-dj/haryana
+              - link "Planner" [ref=e413] [cursor=pointer]:
+                - /url: /vendors/planner/haryana
+          - generic [ref=e414]:
+            - heading "Jalandhar Punjab" [level=3] [ref=e415]:
+              - img [ref=e416]
+              - text: Jalandhar
+              - generic [ref=e419]: Punjab
+            - generic [ref=e420]:
+              - link "Banquet Hall |" [ref=e421] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/jalandhar
+              - link "Flowers |" [ref=e422] [cursor=pointer]:
+                - /url: /vendors/flowers/jalandhar
+              - link "Makeup Artist |" [ref=e423] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/jalandhar
+              - link "Photographer |" [ref=e424] [cursor=pointer]:
+                - /url: /vendors/photographer/jalandhar
+              - link "Music Band |" [ref=e425] [cursor=pointer]:
+                - /url: /vendors/music-band/jalandhar
+              - link "Music DJ |" [ref=e426] [cursor=pointer]:
+                - /url: /vendors/music-dj/jalandhar
+              - link "Planner" [ref=e427] [cursor=pointer]:
+                - /url: /vendors/planner/jalandhar
+          - generic [ref=e428]:
+            - heading "Khuyanpura Punjab" [level=3] [ref=e429]:
+              - img [ref=e430]
+              - text: Khuyanpura
+              - generic [ref=e433]: Punjab
+            - generic [ref=e434]:
+              - link "Banquet Hall |" [ref=e435] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/khuyanpura
+              - link "Flowers |" [ref=e436] [cursor=pointer]:
+                - /url: /vendors/flowers/khuyanpura
+              - link "Makeup Artist |" [ref=e437] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/khuyanpura
+              - link "Photographer |" [ref=e438] [cursor=pointer]:
+                - /url: /vendors/photographer/khuyanpura
+              - link "Music Band |" [ref=e439] [cursor=pointer]:
+                - /url: /vendors/music-band/khuyanpura
+              - link "Music DJ |" [ref=e440] [cursor=pointer]:
+                - /url: /vendors/music-dj/khuyanpura
+              - link "Planner" [ref=e441] [cursor=pointer]:
+                - /url: /vendors/planner/khuyanpura
+          - generic [ref=e442]:
+            - heading "Nashik Maharashtra" [level=3] [ref=e443]:
+              - img [ref=e444]
+              - text: Nashik
+              - generic [ref=e447]: Maharashtra
+            - generic [ref=e448]:
+              - link "Banquet Hall |" [ref=e449] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/nashik
+              - link "Flowers |" [ref=e450] [cursor=pointer]:
+                - /url: /vendors/flowers/nashik
+              - link "Makeup Artist |" [ref=e451] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/nashik
+              - link "Photographer |" [ref=e452] [cursor=pointer]:
+                - /url: /vendors/photographer/nashik
+              - link "Music Band |" [ref=e453] [cursor=pointer]:
+                - /url: /vendors/music-band/nashik
+              - link "Music DJ |" [ref=e454] [cursor=pointer]:
+                - /url: /vendors/music-dj/nashik
+              - link "Planner" [ref=e455] [cursor=pointer]:
+                - /url: /vendors/planner/nashik
+          - generic [ref=e456]:
+            - heading "Chennai Tamil Nadu" [level=3] [ref=e457]:
+              - img [ref=e458]
+              - text: Chennai
+              - generic [ref=e461]: Tamil Nadu
+            - generic [ref=e462]:
+              - link "Banquet Hall |" [ref=e463] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/chennai
+              - link "Flowers |" [ref=e464] [cursor=pointer]:
+                - /url: /vendors/flowers/chennai
+              - link "Makeup Artist |" [ref=e465] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/chennai
+              - link "Photographer |" [ref=e466] [cursor=pointer]:
+                - /url: /vendors/photographer/chennai
+              - link "Music Band |" [ref=e467] [cursor=pointer]:
+                - /url: /vendors/music-band/chennai
+              - link "Music DJ |" [ref=e468] [cursor=pointer]:
+                - /url: /vendors/music-dj/chennai
+              - link "Planner |" [ref=e469] [cursor=pointer]:
+                - /url: /vendors/planner/chennai
+              - link "Catering |" [ref=e470] [cursor=pointer]:
+                - /url: /vendors/catering/chennai
+              - link "Jewellery |" [ref=e471] [cursor=pointer]:
+                - /url: /vendors/jewellery/chennai
+              - link "Mehndi" [ref=e472] [cursor=pointer]:
+                - /url: /vendors/mehndi/chennai
+          - generic [ref=e473]:
+            - heading "Panchkula Haryana" [level=3] [ref=e474]:
+              - img [ref=e475]
+              - text: Panchkula
+              - generic [ref=e478]: Haryana
+            - generic [ref=e479]:
+              - link "Banquet Hall |" [ref=e480] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/panchkula
+              - link "Flowers |" [ref=e481] [cursor=pointer]:
+                - /url: /vendors/flowers/panchkula
+              - link "Makeup Artist |" [ref=e482] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/panchkula
+              - link "Photographer |" [ref=e483] [cursor=pointer]:
+                - /url: /vendors/photographer/panchkula
+              - link "Music Band |" [ref=e484] [cursor=pointer]:
+                - /url: /vendors/music-band/panchkula
+              - link "Music DJ |" [ref=e485] [cursor=pointer]:
+                - /url: /vendors/music-dj/panchkula
+              - link "Planner" [ref=e486] [cursor=pointer]:
+                - /url: /vendors/planner/panchkula
+          - generic [ref=e487]:
+            - heading "Raipur Chhattisgarh" [level=3] [ref=e488]:
+              - img [ref=e489]
+              - text: Raipur
+              - generic [ref=e492]: Chhattisgarh
+            - generic [ref=e493]:
+              - link "Banquet Hall |" [ref=e494] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/raipur
+              - link "Flowers |" [ref=e495] [cursor=pointer]:
+                - /url: /vendors/flowers/raipur
+              - link "Makeup Artist |" [ref=e496] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/raipur
+              - link "Photographer |" [ref=e497] [cursor=pointer]:
+                - /url: /vendors/photographer/raipur
+              - link "Music Band |" [ref=e498] [cursor=pointer]:
+                - /url: /vendors/music-band/raipur
+              - link "Music DJ |" [ref=e499] [cursor=pointer]:
+                - /url: /vendors/music-dj/raipur
+              - link "Planner" [ref=e500] [cursor=pointer]:
+                - /url: /vendors/planner/raipur
+          - generic [ref=e501]:
+            - heading "Telipara Chhattisgarh" [level=3] [ref=e502]:
+              - img [ref=e503]
+              - text: Telipara
+              - generic [ref=e506]: Chhattisgarh
+            - generic [ref=e507]:
+              - link "Banquet Hall |" [ref=e508] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/telipara
+              - link "Flowers |" [ref=e509] [cursor=pointer]:
+                - /url: /vendors/flowers/telipara
+              - link "Makeup Artist |" [ref=e510] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/telipara
+              - link "Photographer |" [ref=e511] [cursor=pointer]:
+                - /url: /vendors/photographer/telipara
+              - link "Music Band |" [ref=e512] [cursor=pointer]:
+                - /url: /vendors/music-band/telipara
+              - link "Music DJ |" [ref=e513] [cursor=pointer]:
+                - /url: /vendors/music-dj/telipara
+              - link "Planner" [ref=e514] [cursor=pointer]:
+                - /url: /vendors/planner/telipara
+          - generic [ref=e515]:
+            - heading "Ludhiana Punjab" [level=3] [ref=e516]:
+              - img [ref=e517]
+              - text: Ludhiana
+              - generic [ref=e520]: Punjab
+            - generic [ref=e521]:
+              - link "Banquet Hall |" [ref=e522] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/ludhiana
+              - link "Flowers |" [ref=e523] [cursor=pointer]:
+                - /url: /vendors/flowers/ludhiana
+              - link "Makeup Artist |" [ref=e524] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/ludhiana
+              - link "Photographer |" [ref=e525] [cursor=pointer]:
+                - /url: /vendors/photographer/ludhiana
+              - link "Music Band |" [ref=e526] [cursor=pointer]:
+                - /url: /vendors/music-band/ludhiana
+              - link "Music DJ |" [ref=e527] [cursor=pointer]:
+                - /url: /vendors/music-dj/ludhiana
+              - link "Planner" [ref=e528] [cursor=pointer]:
+                - /url: /vendors/planner/ludhiana
+          - generic [ref=e529]:
+            - heading "Udaipur Rajasthan" [level=3] [ref=e530]:
+              - img [ref=e531]
+              - text: Udaipur
+              - generic [ref=e534]: Rajasthan
+            - generic [ref=e535]:
+              - link "Banquet Hall |" [ref=e536] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/udaipur
+              - link "Flowers |" [ref=e537] [cursor=pointer]:
+                - /url: /vendors/flowers/udaipur
+              - link "Makeup Artist |" [ref=e538] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/udaipur
+              - link "Photographer |" [ref=e539] [cursor=pointer]:
+                - /url: /vendors/photographer/udaipur
+              - link "Music Band |" [ref=e540] [cursor=pointer]:
+                - /url: /vendors/music-band/udaipur
+              - link "Music DJ |" [ref=e541] [cursor=pointer]:
+                - /url: /vendors/music-dj/udaipur
+              - link "Planner |" [ref=e542] [cursor=pointer]:
+                - /url: /vendors/planner/udaipur
+              - link "Resort |" [ref=e543] [cursor=pointer]:
+                - /url: /vendors/resort/udaipur
+              - link "Hotels |" [ref=e544] [cursor=pointer]:
+                - /url: /vendors/hotels/udaipur
+              - link "Decorators |" [ref=e545] [cursor=pointer]:
+                - /url: /vendors/decorators/udaipur
+              - link "Auditorium |" [ref=e546] [cursor=pointer]:
+                - /url: /vendors/auditorium/udaipur
+              - link "Lightings" [ref=e547] [cursor=pointer]:
+                - /url: /vendors/lightings/udaipur
+          - generic [ref=e548]:
+            - heading "Meerut Uttar Pradesh" [level=3] [ref=e549]:
+              - img [ref=e550]
+              - text: Meerut
+              - generic [ref=e553]: Uttar Pradesh
+            - generic [ref=e554]:
+              - link "Banquet Hall |" [ref=e555] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/meerut
+              - link "Flowers |" [ref=e556] [cursor=pointer]:
+                - /url: /vendors/flowers/meerut
+              - link "Makeup Artist |" [ref=e557] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/meerut
+              - link "Photographer |" [ref=e558] [cursor=pointer]:
+                - /url: /vendors/photographer/meerut
+              - link "Music Band |" [ref=e559] [cursor=pointer]:
+                - /url: /vendors/music-band/meerut
+              - link "Music DJ |" [ref=e560] [cursor=pointer]:
+                - /url: /vendors/music-dj/meerut
+              - link "Planner" [ref=e561] [cursor=pointer]:
+                - /url: /vendors/planner/meerut
+          - generic [ref=e562]:
+            - heading "Kushi nagar Uttar Pradesh" [level=3] [ref=e563]:
+              - img [ref=e564]
+              - text: Kushi nagar
+              - generic [ref=e567]: Uttar Pradesh
+            - generic [ref=e568]:
+              - link "Banquet Hall |" [ref=e569] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/kushi-nagar
+              - link "Flowers |" [ref=e570] [cursor=pointer]:
+                - /url: /vendors/flowers/kushi-nagar
+              - link "Makeup Artist |" [ref=e571] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/kushi-nagar
+              - link "Photographer |" [ref=e572] [cursor=pointer]:
+                - /url: /vendors/photographer/kushi-nagar
+              - link "Music Band |" [ref=e573] [cursor=pointer]:
+                - /url: /vendors/music-band/kushi-nagar
+              - link "Music DJ |" [ref=e574] [cursor=pointer]:
+                - /url: /vendors/music-dj/kushi-nagar
+              - link "Planner" [ref=e575] [cursor=pointer]:
+                - /url: /vendors/planner/kushi-nagar
+          - generic [ref=e576]:
+            - heading "Mohali Punjab" [level=3] [ref=e577]:
+              - img [ref=e578]
+              - text: Mohali
+              - generic [ref=e581]: Punjab
+            - generic [ref=e582]:
+              - link "Banquet Hall |" [ref=e583] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/mohali
+              - link "Flowers |" [ref=e584] [cursor=pointer]:
+                - /url: /vendors/flowers/mohali
+              - link "Makeup Artist |" [ref=e585] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/mohali
+              - link "Photographer |" [ref=e586] [cursor=pointer]:
+                - /url: /vendors/photographer/mohali
+              - link "Music Band |" [ref=e587] [cursor=pointer]:
+                - /url: /vendors/music-band/mohali
+              - link "Music DJ |" [ref=e588] [cursor=pointer]:
+                - /url: /vendors/music-dj/mohali
+              - link "Planner" [ref=e589] [cursor=pointer]:
+                - /url: /vendors/planner/mohali
+          - generic [ref=e590]:
+            - heading "Dhakoli Punjab" [level=3] [ref=e591]:
+              - img [ref=e592]
+              - text: Dhakoli
+              - generic [ref=e595]: Punjab
+            - generic [ref=e596]:
+              - link "Banquet Hall |" [ref=e597] [cursor=pointer]:
+                - /url: /vendors/banquet-hall/dhakoli
+              - link "Flowers |" [ref=e598] [cursor=pointer]:
+                - /url: /vendors/flowers/dhakoli
+              - link "Makeup Artist |" [ref=e599] [cursor=pointer]:
+                - /url: /vendors/makeup-artist/dhakoli
+              - link "Photographer |" [ref=e600] [cursor=pointer]:
+                - /url: /vendors/photographer/dhakoli
+              - link "Music Band |" [ref=e601] [cursor=pointer]:
+                - /url: /vendors/music-band/dhakoli
+              - link "Music DJ |" [ref=e602] [cursor=pointer]:
+                - /url: /vendors/music-dj/dhakoli
+              - link "Planner" [ref=e603] [cursor=pointer]:
+                - /url: /vendors/planner/dhakoli
+      - generic [ref=e606]:
+        - generic [ref=e607]:
+          - paragraph [ref=e608]:
+            - text: © 2026
+            - link "FindBanquet.com" [ref=e609] [cursor=pointer]:
+              - /url: https://findbanquet.com/
+            - text: . All Rights Reserved.
+          - paragraph [ref=e610]: FindBanquet is a product of Seven Luxe Pvt Ltd.
+        - generic [ref=e611]:
+          - link "Terms & Conditions" [ref=e612] [cursor=pointer]:
+            - /url: /terms-conditions
+            - text: Terms & Conditions
+          - link "Privacy Policy" [ref=e613] [cursor=pointer]:
+            - /url: /privacy-policy
+            - text: Privacy Policy
+          - link "Data Protection" [ref=e614] [cursor=pointer]:
+            - /url: /data-protection
+            - text: Data Protection
+          - link "FAQ's" [ref=e615] [cursor=pointer]:
+            - /url: /faqs
+            - text: FAQ's
+```

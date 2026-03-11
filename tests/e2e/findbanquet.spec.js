@@ -11,11 +11,15 @@ test.describe('Find banquet', () => {
 
     test('login page for user', async ({ page }) => {
         await page.goto('https://findbanquet.com/');
-        await page.getByRole('button', { name: 'Sign In' }).click()
+        await page.getByRole('button', { name: 'Manage Users' }).click()
         await expect(page).toHaveURL('https://findbanquet.com/login')
+        await page.getByRole('button', { name: 'Sign up now' }).click()
+        await expect(page).toHaveURL('https://findbanquet.com/register')
     })
 
-    test('user registration for Vendor')
+    test('user registration for Vendor', async ({ page }) => {
+        await page.goto('https://findbanquet.com/');
+    })
 
 })
 
