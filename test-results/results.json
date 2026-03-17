@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "",
         "name": "",
@@ -66,20 +66,20 @@
   },
   "suites": [
     {
-      "title": "findbanquetregiester.spec.js",
-      "file": "findbanquetregiester.spec.js",
+      "title": "createaccount.spec.js",
+      "file": "createaccount.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Register Page",
-          "file": "findbanquetregiester.spec.js",
+          "file": "createaccount.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "Create Account page",
+              "title": "to contain tne element is visible",
               "ok": true,
               "tags": [],
               "tests": [
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3489,
+                      "duration": 10018,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T05:36:11.499Z",
+                      "startTime": "2026-03-17T04:42:44.618Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -107,9 +107,151 @@
                   "status": "expected"
                 }
               ],
-              "id": "5759877e605344e94d48-e1a0ebd6981faf31e5b2",
-              "file": "findbanquetregiester.spec.js",
-              "line": 10,
+              "id": "be7dea37474dbccb9988-7342949934438d928bc5",
+              "file": "createaccount.spec.js",
+              "line": 14,
+              "column": 5
+            },
+            {
+              "title": "Create Account page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8851,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-17T04:42:44.685Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "be7dea37474dbccb9988-24898b116f459067f692",
+              "file": "createaccount.spec.js",
+              "line": 30,
+              "column": 5
+            },
+            {
+              "title": "Error for the first Name validation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 11417,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('email is required')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('email is required')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('email is required')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('email is required')\u001b[22m\n\n    at D:\\automation\\tests\\e2e\\createaccount.spec.js:48:35",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                          "column": 35,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_last)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 47 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_mobile)\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_email)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_address)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 50 |\u001b[39m     })\n \u001b[90m 51 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 35,
+                            "line": 48
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('email is required')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('email is required')\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_last)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 47 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_mobile)\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_email)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_address)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 50 |\u001b[39m     })\n \u001b[90m 51 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:48:35\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-17T04:42:53.758Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-2e268-r-the-first-Name-validation\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-2e268-r-the-first-Name-validation\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-2e268-r-the-first-Name-validation\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                        "column": 35,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "be7dea37474dbccb9988-2bb1d62b4ddd09958230",
+              "file": "createaccount.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "Error for the last name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7272,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-17T04:42:54.848Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "be7dea37474dbccb9988-f690158889f618e02f06",
+              "file": "createaccount.spec.js",
+              "line": 52,
               "column": 5
             }
           ]
@@ -119,11 +261,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-12T05:36:09.662Z",
-    "duration": 5599.25,
-    "expected": 1,
+    "startTime": "2026-03-17T04:42:42.037Z",
+    "duration": 23256.904000000002,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

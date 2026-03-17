@@ -91,7 +91,6 @@ describe('session service', () => {
 
         test('if the sessionID is null', async () => {
             sessionRepo.findByUserId.mockResolvedValue(null)
-
             const result = await sessionService.getSession('sess_121')
             expect(result).toBeNull()
         })

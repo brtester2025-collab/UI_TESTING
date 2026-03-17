@@ -27,6 +27,9 @@ test.describe('Accessibility UI test', () => {
         expect(userPlaceHolder).toBeTruthy();
         expect(passPlaceHolder).toBeTruthy();
     })
+    test('Checking the discount', async ({ page }) => {
+
+    })
 
 
 })

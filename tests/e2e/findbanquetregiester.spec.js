@@ -3,8 +3,6 @@ const { test, expect } = require('@playwright/test')
 
 test.describe('Register Page', () => {
     test.beforeEach('Home Page', async ({ page }) => {
-
-
     });
 
     test('Create Account page', async ({ page }) => {
@@ -15,6 +13,7 @@ test.describe('Register Page', () => {
         await page.click('text=Sign up now')
         await expect(page).toHaveURL('https://findbanquet.com/register')
     })
+
 
 })
 
