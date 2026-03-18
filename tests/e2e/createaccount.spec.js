@@ -38,7 +38,6 @@ test.describe('Register Page', () => {
     test('Error for the Empty field validation', async ({ page }) => {
         await page.click('button[type="submit"]')
         const error_first = page.getByText('First Name is required')
-        const error_last = page.getByText('Last name is required')
         const error_mobile = page.getByText('Valid 10-digit mobile number is required')
         const error_email = page.getByText('email is required')
         const error_address = page.getByText('Address is required')
@@ -49,12 +48,15 @@ test.describe('Register Page', () => {
         await expect(error_address).toBeVisible()
     })
 
-    test('Error for the last name', async ({ page }) => {
+    test('form Submit', async ({ page }) => {
+        const firstName = page.getByPlaceholder('Enter first name')
+        await page.fill('[formcontrolname="firstName"]', 'John')
+        await page.fill('[formcontrolname="lastName"]', 'doe')
+        await page.fill('[formcontrolname="mobile"]', '5464364356')
+        await page.fill('[formcontrolname="emailId"]', 'test@mailinator.com')
+        await page.getByPlaceholder('Enter you full address').fill('tamil nadu')
+        await page.click('button[type="submit"]')
+
     })
-
-
-
-
-
 })
 

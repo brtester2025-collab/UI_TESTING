@@ -66,88 +66,20 @@
   },
   "suites": [
     {
-      "title": "createaccount.spec.js",
-      "file": "createaccount.spec.js",
+      "title": "home_page.spec.js",
+      "file": "home_page.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Register Page",
-          "file": "createaccount.spec.js",
-          "line": 4,
+          "title": "Main Page",
+          "file": "home_page.spec.js",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "to contain tne element is visible",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 10018,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-17T04:42:44.618Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "be7dea37474dbccb9988-7342949934438d928bc5",
-              "file": "createaccount.spec.js",
-              "line": 14,
-              "column": 5
-            },
-            {
-              "title": "Create Account page",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8851,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-17T04:42:44.685Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "be7dea37474dbccb9988-24898b116f459067f692",
-              "file": "createaccount.spec.js",
-              "line": 30,
-              "column": 5
-            },
-            {
-              "title": "Error for the first Name validation",
+              "title": "Popular Categories",
               "ok": false,
               "tags": [],
               "tests": [
@@ -159,69 +91,66 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 11417,
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 42560,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('email is required')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('email is required')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('email is required')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('email is required')\u001b[22m\n\n    at D:\\automation\\tests\\e2e\\createaccount.spec.js:48:35",
-                        "location": {
-                          "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                          "column": 35,
-                          "line": 48
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_last)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 47 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_mobile)\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_email)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_address)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 50 |\u001b[39m     })\n \u001b[90m 51 |\u001b[39m\u001b[0m"
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
                           "location": {
-                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                            "column": 35,
-                            "line": 48
+                            "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                            "column": 64,
+                            "line": 22
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('email is required')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('email is required')\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_last)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 47 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_mobile)\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_email)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_address)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 50 |\u001b[39m     })\n \u001b[90m 51 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:48:35\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByAltText('Health and wellness')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByAltText('Health and wellness')\u001b[22m\n\n\n\u001b[0m \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m'Fashion'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m'flowers'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m'Health and wellness'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m'Homestay'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 24 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m'Hotels'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m'Jewellery'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\home_page.spec.js:22:64\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-17T04:42:53.758Z",
+                      "startTime": "2026-03-18T10:13:30.415Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-2e268-r-the-first-Name-validation\\test-failed-1.png"
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Popular-Categories\\test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-2e268-r-the-first-Name-validation\\video.webm"
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Popular-Categories\\video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-2e268-r-the-first-Name-validation\\error-context.md"
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Popular-Categories\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Popular-Categories\\trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                        "column": 35,
-                        "line": 48
-                      }
+                      ]
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "be7dea37474dbccb9988-2bb1d62b4ddd09958230",
-              "file": "createaccount.spec.js",
-              "line": 38,
+              "id": "6c2c5843d1d13bdd83a6-4b595660e6a1b47d7db0",
+              "file": "home_page.spec.js",
+              "line": 8,
               "column": 5
             },
             {
-              "title": "Error for the last name",
+              "title": "Quick Links",
               "ok": true,
               "tags": [],
               "tests": [
@@ -233,25 +162,255 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 7272,
+                      "duration": 18273,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-17T04:42:54.848Z",
+                      "startTime": "2026-03-18T10:13:30.432Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Quick-Links\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "be7dea37474dbccb9988-f690158889f618e02f06",
-              "file": "createaccount.spec.js",
-              "line": 52,
+              "id": "6c2c5843d1d13bdd83a6-e9eb2ca686ed04d15c1d",
+              "file": "home_page.spec.js",
+              "line": 40,
+              "column": 5
+            },
+            {
+              "title": "Home link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 20400,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-18T10:13:53.764Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Home-link\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-072875983fef912520ad",
+              "file": "home_page.spec.js",
+              "line": 53,
+              "column": 5
+            },
+            {
+              "title": "About link",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 2020,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://findbanquet.com/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://findbanquet.com/\", waiting until \"load\"\u001b[22m\n\n    at D:\\automation\\tests\\e2e\\home_page.spec.js:5:20",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                          "column": 20,
+                          "line": 5
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Main Page'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m'Home Page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://findbanquet.com/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m     test(\u001b[32m'Popular Categories'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                            "column": 20,
+                            "line": 5
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://findbanquet.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Main Page'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m'Home Page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://findbanquet.com/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m     test(\u001b[32m'Popular Categories'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\home_page.spec.js:5:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-18T10:14:17.571Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-About-link\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                        "column": 20,
+                        "line": 5
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-b16b50a30e524594d611",
+              "file": "home_page.spec.js",
+              "line": 58,
+              "column": 5
+            },
+            {
+              "title": "how it works link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14109,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-18T10:14:24.010Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-how-it-works-link\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-afaa81b01fa5b18ebf97",
+              "file": "home_page.spec.js",
+              "line": 64,
+              "column": 5
+            },
+            {
+              "title": "Contact us link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11294,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-18T10:14:28.758Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Contact-us-link\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-b61ab08cfddc45dc37a9",
+              "file": "home_page.spec.js",
+              "line": 70,
+              "column": 5
+            },
+            {
+              "title": "Gallery",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10140,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-18T10:14:40.930Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Gallery\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-d90d01c511dba16c51bc",
+              "file": "home_page.spec.js",
+              "line": 76,
               "column": 5
             }
           ]
@@ -261,11 +420,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-17T04:42:42.037Z",
-    "duration": 23256.904000000002,
-    "expected": 3,
+    "startTime": "2026-03-18T10:13:25.465Z",
+    "duration": 87182.5830000001,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 2,
     "flaky": 0
   }
 }
