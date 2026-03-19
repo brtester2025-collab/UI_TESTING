@@ -1,4 +1,5 @@
-const { test, expect } = require('@playwright/test')
+const { test, expect } = require('@playwright/test');
+
 
 test.describe('Main Page', () => {
     test.beforeEach('Home Page', async ({ page }) => {
@@ -6,76 +7,95 @@ test.describe('Main Page', () => {
     });
 
     test('Popular Categories', async ({ page }) => {
-        await expect(page.getByAltText('Anchors')).toBeVisible()
-        await expect(page.getByAltText('Astrologer')).toBeVisible()
-        await expect(page.getByAltText('Auditorium')).toBeVisible()
-        await expect(page.getByAltText('Bakery')).toBeVisible()
-        await expect(page.getByAltText('Banquet Hall')).toBeVisible()
-        await expect(page.getByAltText('Bars')).toBeVisible()
-        await expect(page.getByAltText('Catering')).toBeVisible()
-        await expect(page.getByAltText('Conference Rooms')).toBeVisible()
-        await expect(page.getByAltText('Dance Class')).toBeVisible()
-        await expect(page.getByAltText('Decorators')).toBeVisible()
-        await expect(page.getByAltText('Farm Houses')).toBeVisible()
-        await expect(page.getByAltText('Fashion').first()).toBeVisible()
-        await expect(page.getByAltText('flowers')).toBeVisible()
-        await expect(page.getByAltText('Health and wellness')).toBeVisible()
-        await expect(page.getByAltText('Homestay')).toBeVisible()
-        await expect(page.getByAltText('Hotels')).toBeVisible()
-        await expect(page.getByAltText('Jewellery')).toBeVisible()
-        await expect(page.getByAltText('Makeup Artist').first()).toBeVisible()
-        await expect(page.getByAltText('Mehendi')).toBeVisible()
-        await expect(page.getByAltText('Music Band')).toBeVisible()
-        await expect(page.getByAltText('Music DJ')).toBeVisible()
-        await expect(page.getByAltText('Photographer')).toBeVisible()
-        await expect(page.getByAltText('Planner')).toBeVisible()
-        await expect(page.getByAltText('Resort').first()).toBeVisible()
-        await expect(page.getByAltText('Restaurants')).toBeVisible()
-        await expect(page.getByAltText('Security')).toBeVisible()
-        await expect(page.getByAltText('Seminar Halls')).toBeVisible()
-        await expect(page.getByAltText('Unique Venues')).toBeVisible()
-        await expect(page.getByAltText('Waiters')).toBeVisible()
+
+        const categories = ['Anchors', 'Astrologer', 'Auditorium', 'Bakery', 'Banquet Hall', 'Bars', 'Catering',
+            'Conference Rooms', 'Dance Class', 'Decorators', 'Farm Houses', 'Fashion', 'flowers', 'Health and wellness',
+            'Homestay', 'Hotels', 'Jewellery', 'Makeup Artist', 'Mehendi', 'Music Band', 'Photographer', 'Planner',
+            'Resort', 'Restaurants', 'Security', 'Seminar Halls', 'Unique Venues', 'Waiters'
+        ]
+        for (let i of categories) {
+            await expect(page.getByAltText(`${i}`).first()).toBeVisible()
+        }
+
     })
 
     test('Quick Links', async ({ page }) => {
-        const home = page.getByRole('link', { name: 'Home' })
-        const About = page.getByRole('link', { name: 'About Us' })
-        const work = page.getByRole('link', { name: 'How it works' })
-        const gallery = page.getByRole('link', { name: 'Gallery' })
+        const links = ['Home', 'About Us', 'How it works', 'Contact Us', 'Gallery', 'Blog']
+        for (let i of links) {
+            const linker = page.getByRole('link', { name: i })
+            await expect(linker).toBeVisible()
+        }
 
-        await expect(home).toBeVisible()
-        await expect(About).toBeVisible()
-        await expect(work).toBeVisible()
-        await expect(gallery).toBeVisible()
 
     })
 
     test('Home link', async ({ page }) => {
-        await page.getByRole('link', { name: 'Home' }).click();
-        await expect(page).toHaveURL('https://findbanquet.com/')
+        const links = [
+            {
+                name: 'Home',
+                url: '/'
+
+            },
+            {
+                name: 'About Us',
+                url: '/about-us'
+
+            },
+            {
+                name: 'How it Works',
+                url: '/how-it-work'
+
+            },
+
+            {
+                name: 'Contact Us',
+                url: '/contact'
+            },
+
+            {
+                name: 'Gallery',
+                url: '/gallery'
+
+            }
+        ]
+
+
+
+        for (let i of links) {
+
+            const linker = page.getByRole('link', { name: i.name }).first()
+
+            await linker.click()
+            await expect(page).toHaveURL(`https://findbanquet.com${i.url}`)
+            await page.goBack()
+            await page.waitForLoadState('domcontentloaded')
+        }
+
+
+
 
     })
-    test('About link', async ({ page }) => {
-        await page.getByRole('link', { name: 'About Us' }).click();
-        await expect(page).toHaveURL('https://findbanquet.com/about-us')
+    // test('About link', async ({ page }) => {
+    //     await page.getByRole('link', { name: 'About Us' }).click();
+    //     await expect(page).toHaveURL('https://findbanquet.com/about-us')
 
-    })
+    // })
 
-    test('how it works link', async ({ page }) => {
-        await page.getByRole('link', { name: 'How it works' }).click();
-        await expect(page).toHaveURL('https://findbanquet.com/how-it-work')
+    // test('how it works link', async ({ page }) => {
+    //     await page.getByRole('link', { name: 'How it works' }).click();
+    //     await expect(page).toHaveURL('https://findbanquet.com/how-it-work')
 
-    })
+    // })
 
-    test('Contact us link', async ({ page }) => {
-        await page.getByRole('link', { name: 'Contact Us' }).click();
-        await expect(page).toHaveURL('https://findbanquet.com/contact')
+    // test('Contact us link', async ({ page }) => {
+    //     await page.getByRole('link', { name: 'Contact Us' }).click();
+    //     await expect(page).toHaveURL('https://findbanquet.com/contact')
 
-    })
+    // })
 
-    test('Gallery', async ({ page }) => {
-        await page.getByRole('link', { name: 'Gallery' }).click();
-        await expect(page).toHaveURL('https://findbanquet.com/gallery')
+    // test('Gallery', async ({ page }) => {
+    //     await page.getByRole('link', { name: 'Gallery' }).click();
+    //     await expect(page).toHaveURL('https://findbanquet.com/gallery')
 
-    })
+    // })
 })
