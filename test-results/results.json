@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8068,
+                      "duration": 15325,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-19T09:49:49.745Z",
+                      "startTime": "2026-03-23T04:36:20.900Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -110,6 +110,40 @@
               "id": "6c2c5843d1d13bdd83a6-4b595660e6a1b47d7db0",
               "file": "home_page.spec.js",
               "line": 9,
+              "column": 5
+            },
+            {
+              "title": "Categories header section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 16389,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-23T04:36:20.786Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-6ae1113257f46ff48e98",
+              "file": "home_page.spec.js",
+              "line": 23,
               "column": 5
             },
             {
@@ -125,15 +159,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5698,
+                      "duration": 9027,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-19T09:49:49.682Z",
+                      "startTime": "2026-03-23T04:36:37.701Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -143,12 +177,12 @@
               ],
               "id": "6c2c5843d1d13bdd83a6-e9eb2ca686ed04d15c1d",
               "file": "home_page.spec.js",
-              "line": 22,
+              "line": 33,
               "column": 5
             },
             {
-              "title": "Home link",
-              "ok": false,
+              "title": "About link",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -161,50 +195,125 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "timedOut",
-                      "duration": 32564,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
-                            "column": 26,
-                            "line": 68
-                          },
-                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'About Us' }).first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 66 |\u001b[39m             \u001b[36mconst\u001b[39m linker \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m i\u001b[33m.\u001b[39mname })\u001b[33m.\u001b[39mfirst()\n \u001b[90m 67 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m             \u001b[36mawait\u001b[39m linker\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`https://findbanquet.com${i.url}`\u001b[39m)\n \u001b[90m 70 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoBack()\n \u001b[90m 71 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'domcontentloaded'\u001b[39m)\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\home_page.spec.js:68:26\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 8854,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-19T09:49:55.598Z",
+                      "startTime": "2026-03-23T04:36:37.740Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Home-link\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Home-link\\video.webm"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "6c2c5843d1d13bdd83a6-072875983fef912520ad",
+              "id": "6c2c5843d1d13bdd83a6-b16b50a30e524594d611",
               "file": "home_page.spec.js",
-              "line": 32,
+              "line": 84,
+              "column": 5
+            },
+            {
+              "title": "how it works link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8484,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-23T04:36:46.646Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-afaa81b01fa5b18ebf97",
+              "file": "home_page.spec.js",
+              "line": 90,
+              "column": 5
+            },
+            {
+              "title": "Contact us link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6521,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-23T04:36:46.751Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-b61ab08cfddc45dc37a9",
+              "file": "home_page.spec.js",
+              "line": 96,
+              "column": 5
+            },
+            {
+              "title": "Gallery",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5792,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-23T04:36:53.295Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-d90d01c511dba16c51bc",
+              "file": "home_page.spec.js",
+              "line": 102,
               "column": 5
             }
           ]
@@ -214,11 +323,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-19T09:49:47.184Z",
-    "duration": 41193.038,
-    "expected": 2,
+    "startTime": "2026-03-23T04:36:18.019Z",
+    "duration": 41186.545,
+    "expected": 7,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
