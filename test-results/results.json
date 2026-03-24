@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "",
         "name": "",
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4207,
+                      "duration": 7113,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T06:28:22.964Z",
+                      "startTime": "2026-03-24T07:14:30.556Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -110,7 +110,159 @@
               "id": "6c2c5843d1d13bdd83a6-80a7dd1e8538b75f9799",
               "file": "home_page.spec.js",
               "line": 10,
-              "column": 10
+              "column": 5
+            },
+            {
+              "title": "Popular Categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7806,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T07:14:30.569Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-4b595660e6a1b47d7db0",
+              "file": "home_page.spec.js",
+              "line": 33,
+              "column": 5
+            },
+            {
+              "title": "Categories Header Section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6520,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T07:14:38.066Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-4653b7154f5c8100a22f",
+              "file": "home_page.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "Quick Links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10849,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T07:14:38.588Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-e9eb2ca686ed04d15c1d",
+              "file": "home_page.spec.js",
+              "line": 57,
+              "column": 5
+            },
+            {
+              "title": "Footer Section Link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13635,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "https://findbanquet.com/\n"
+                        },
+                        {
+                          "text": "https://findbanquet.com/\n"
+                        },
+                        {
+                          "text": "https://findbanquet.com/\n"
+                        },
+                        {
+                          "text": "https://findbanquet.com/\n"
+                        },
+                        {
+                          "text": "https://findbanquet.com/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T07:14:44.614Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-40a4a7ef50ec2d9e575f",
+              "file": "home_page.spec.js",
+              "line": 65,
+              "column": 5
             }
           ]
         }
@@ -119,9 +271,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-24T06:28:20.940Z",
-    "duration": 6569.765000000001,
-    "expected": 1,
+    "startTime": "2026-03-24T07:14:28.119Z",
+    "duration": 30243.132,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
