@@ -6,6 +6,30 @@ test.describe('Main Page', () => {
         await page.goto('https://findbanquet.com/');
     });
 
+
+    test.only('Searching the Shop', async ({ page }) => {
+
+        const serviceName = 'fish'
+        await page.getByRole('textbox').fill(serviceName)
+        const suggestion = page.getByText(serviceName, { exact: true }).first();
+        const noResult = page.getByText('No results found')
+
+
+        if (await noResult.count() > 0) {
+            await expect(noResult).toBeVisible();
+        }
+        else if (await suggestion.count() > 0) {
+            await expect(suggestion).toBeVisible();
+            await suggestion.click();
+            const url = serviceName.toLowerCase().replace(/\s+/g, '-')
+            await expect(page).toHaveURL(new RegExp(`${url}`))
+
+        }
+        else {
+            throw new Error('No result')
+        }
+    })
+
     test('Popular Categories', async ({ page }) => {
 
         const categories = ['Anchors', 'Astrologer', 'Auditorium', 'Bakery', 'Banquet Hall', 'Bars', 'Catering',

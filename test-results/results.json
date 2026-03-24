@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "",
         "name": "",
@@ -79,7 +79,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Popular Categories",
+              "title": "Searching the Shop",
               "ok": true,
               "tags": [],
               "tests": [
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15325,
+                      "duration": 4207,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-23T04:36:20.900Z",
+                      "startTime": "2026-03-24T06:28:22.964Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -107,214 +107,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "6c2c5843d1d13bdd83a6-4b595660e6a1b47d7db0",
+              "id": "6c2c5843d1d13bdd83a6-80a7dd1e8538b75f9799",
               "file": "home_page.spec.js",
-              "line": 9,
-              "column": 5
-            },
-            {
-              "title": "Categories header section",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 16389,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-23T04:36:20.786Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6c2c5843d1d13bdd83a6-6ae1113257f46ff48e98",
-              "file": "home_page.spec.js",
-              "line": 23,
-              "column": 5
-            },
-            {
-              "title": "Quick Links",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 9027,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-23T04:36:37.701Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6c2c5843d1d13bdd83a6-e9eb2ca686ed04d15c1d",
-              "file": "home_page.spec.js",
-              "line": 33,
-              "column": 5
-            },
-            {
-              "title": "About link",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8854,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-23T04:36:37.740Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6c2c5843d1d13bdd83a6-b16b50a30e524594d611",
-              "file": "home_page.spec.js",
-              "line": 84,
-              "column": 5
-            },
-            {
-              "title": "how it works link",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8484,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-23T04:36:46.646Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6c2c5843d1d13bdd83a6-afaa81b01fa5b18ebf97",
-              "file": "home_page.spec.js",
-              "line": 90,
-              "column": 5
-            },
-            {
-              "title": "Contact us link",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6521,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-23T04:36:46.751Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6c2c5843d1d13bdd83a6-b61ab08cfddc45dc37a9",
-              "file": "home_page.spec.js",
-              "line": 96,
-              "column": 5
-            },
-            {
-              "title": "Gallery",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5792,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-23T04:36:53.295Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6c2c5843d1d13bdd83a6-d90d01c511dba16c51bc",
-              "file": "home_page.spec.js",
-              "line": 102,
-              "column": 5
+              "line": 10,
+              "column": 10
             }
           ]
         }
@@ -323,9 +119,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-23T04:36:18.019Z",
-    "duration": 41186.545,
-    "expected": 7,
+    "startTime": "2026-03-24T06:28:20.940Z",
+    "duration": 6569.765000000001,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
