@@ -58,6 +58,8 @@ test.describe('Main Page', () => {
         }
     })
 
+
+    //to iterate or visit every link
     test('Footer Section Link', async ({ page }) => {
         const links = [
             {
@@ -98,4 +100,19 @@ test.describe('Main Page', () => {
             await expect(page.getByRole('link', { name: 'Home' })).toBeVisible();
         }
     })
+
+
+    // to trigger a event for the new page 
+    test.only('Download App link ', async ({ page }) => {
+        const [appPage] = await Promise.all([page.context().waitForEvent('page'),
+        await page.getByRole('link', { name: 'App Store Download on iOS' }).click()])
+        await expect(appPage).toHaveURL("https://apps.apple.com/in/app/find-banquet/id1547801752")
+
+        const [androidPage] = await Promise.all([page.context().waitForEvent('page'),
+        await page.getByRole('link', { name: 'Google Play Get it on Android' }).click()])
+        await expect(androidPage).toHaveURL('https://play.google.com/store/apps/details?id=com.findbanquet&hl=en_IN')
+
+    })
+
+
 })
