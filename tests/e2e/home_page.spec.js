@@ -4,6 +4,7 @@ const { test, expect } = require('@playwright/test');
 test.describe('Main Page', () => {
     test.beforeEach('Home Page', async ({ page }) => {
         await page.goto('https://findbanquet.com/');
+        await page.waitForLoadState('domcontentloaded')
     });
 
     test('Searching the Shop', async ({ page }) => {
@@ -41,7 +42,7 @@ test.describe('Main Page', () => {
 
 
     test('Categories Header Section', async ({ page }) => {
-        const categories = ['Mehendi', 'Makeup Artist', 'Makeup Artist', 'Banquet Hall', 'Fashion'
+        const categories = ['Mehendi', 'Makeup Artist', 'Banquet Hall', 'Fashion'
             , 'Resort', 'Hotel', 'Restaurants', 'Photographer', 'Decorators']
 
         for (let i of categories) {
@@ -94,22 +95,21 @@ test.describe('Main Page', () => {
             await expect(linker).toBeVisible()
             await linker.click()
             await expect(page).toHaveURL(`https://findbanquet.com${i.url}`)
-            await page.goBack()
-            await page.goto('https://findbanquet.com');
-            await page.waitForLoadState('domcontentloaded')
+            await page.goto('/');
+
             await expect(page.getByRole('link', { name: 'Home' })).toBeVisible();
         }
     })
 
 
     // to trigger a event for the new page 
-    test.only('Download App link ', async ({ page }) => {
+    test('Download App link ', async ({ page }) => {
         const [appPage] = await Promise.all([page.context().waitForEvent('page'),
-        await page.getByRole('link', { name: 'App Store Download on iOS' }).click()])
+        page.getByRole('link', { name: 'App Store Download on iOS' }).click()])
         await expect(appPage).toHaveURL("https://apps.apple.com/in/app/find-banquet/id1547801752")
 
         const [androidPage] = await Promise.all([page.context().waitForEvent('page'),
-        await page.getByRole('link', { name: 'Google Play Get it on Android' }).click()])
+        page.getByRole('link', { name: 'Google Play Get it on Android' }).click()])
         await expect(androidPage).toHaveURL('https://play.google.com/store/apps/details?id=com.findbanquet&hl=en_IN')
 
     })
