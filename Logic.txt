@@ -1,0 +1,159 @@
+For each one, your task should be:
+
+✅ identify rules
+✅ write boundary cases
+✅ write edge cases
+✅ write negative cases
+✅ write decision table
+
+
+
+
+✅ 1) Discount Coupon Logic
+
+if (cartValue > 1000) discount = 10;
+if (isPremium) discount += 5;
+if (coupon === "SAVE20") discount += 20;
+
+Practice thinking:
+boundary = 1000 / 1001
+premium + coupon together
+invalid coupon
+max discount?
+
+
+
+
+✅ 2) Login Lock Logic
+
+if (failedAttempts >= 3) lockAccount = true;
+if (isAdmin) failedAttemptsLimit = 5;
+
+Solve:
+normal user
+admin user
+boundary 2,3,4
+negative attempts
+null user role
+
+
+✅ 3) Shipping Cost Logic
+
+if (amount < 500) shipping = 50;
+else if (amount <= 1000) shipping = 30;
+else shipping = 0;
+
+Must solve:
+499
+500
+1000
+1001
+negative value
+
+✅ 4) Salary Bonus Logic
+
+if (experience >= 5) bonus = 10000;
+if (rating === "A") bonus += 5000;
+
+Logical combinations:
+4 years + A
+5 years + B
+5 years + A
+invalid rating
+
+
+✅ 5) OTP Verification Logic
+
+if (otp === enteredOtp && currentTime < expiryTime) success = true;
+
+
+Practice:
+exact expiry boundary
+wrong OTP
+expired OTP
+null OTP
+empty OTP
+
+
+✅ 6) E-commerce Return Policy
+
+if (days <= 7) returnAllowed = true;
+if (isDamaged) returnAllowed = true;
+
+Good logic cases:
+day 7
+day 8
+damaged + 30 days
+null days
+
+
+✅ 7) Attendance Eligibility
+
+if (attendance >= 75) eligible = true;
+if (medicalCertificate) eligible = true;
+
+Must cover:
+74
+75
+76
+certificate override
+invalid attendance 110
+
+
+✅ 8) Bank Loan Eligibility
+
+if (salary >= 50000 && cibil >= 750) eligible = true;
+
+Important:
+salary boundary
+cibil boundary
+one pass one fail
+both fail
+negative values
+
+
+✅ 9) Subscription Renewal
+if (daysLeft <= 5) sendReminder = true;
+if (autoRenew) chargeCustomer = true;
+
+Solve:
+5 days
+6 days
+0 days
+auto renew + expired
+invalid days
+
+
+
+✅ 10) Exam Result Logic
+
+if (marks >= 40) pass = true;
+if (attendance < 75) pass = false;
+
+Best logical combinations:
+pass marks + low attendance
+fail marks + good attendance
+exact 40
+exact 75
+
+
+
+
+
+✅ L-B-E-N Formula
+
+L → Logic paths
+
+Find all if / else combinations
+
+B → Boundary
+
+Check exact threshold numbers
+
+E → Edge
+
+null, undefined, 0, empty, NaN
+
+N → Negative
+
+invalid types, negative values, wrong strings

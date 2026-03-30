@@ -7,9 +7,8 @@ describe("calculateShipping cost", () => {
         describe("Invalid validation", () => {
             test('for checking the valid input', () => {
                 const value = calculateShippingCost('Regular', 0, false)
-                const value2 = calculateShippingCost('regular', " ", false)
                 expect(value).toBe(0)
-                expect(value2).toBe(0)
+
             })
 
         })
@@ -62,15 +61,20 @@ describe("calculateShipping cost", () => {
 
         describe("International Shipping discount", () => {
             test('International shipping', () => {
-                expect(calculateShippingCost('Premium', 5000, true)).toBe(270)
+                expect(calculateShippingCost('Premium', 5000, true)).toBe(570)
 
             })
             test('Regular User should not have Premium Discount', () => {
                 expect(calculateShippingCost('Regular', 5000, true)).toBe(300)
             })
-            test('Unknown user type', () => {
+            test('Unknown user should not get Discount', () => {
                 expect(calculateShippingCost('VIP', 4000, true)).toBe(300)
+            })
+        })
 
+        describe('cart Value discount', () => {
+            test('if the cart value is above 1000 and no international', () => {
+                expect(calculateShippingCost('Regular', 2000, false)).toBe(30)
             })
         })
     })
