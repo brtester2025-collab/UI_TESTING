@@ -26,5 +26,12 @@ test.describe('Register Page', () => {
 
     })
 
+    test('Input validation test', async ({ page }) => {
+        const firstName = page.getByPlaceholder('Enter first name').fill('')
+
+        await expect(firstName).t
+
+    })
+
 })
 
