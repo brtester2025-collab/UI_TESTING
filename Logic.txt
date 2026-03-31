@@ -9,7 +9,7 @@ For each one, your task should be:
 
 
 
-✅ 1) Discount Coupon Logic
+✅ 1) Discount Coupon Logic  ----  ( DONE )
 
 if (cartValue > 1000) discount = 10;
 if (isPremium) discount += 5;
@@ -20,8 +20,6 @@ boundary = 1000 / 1001
 premium + coupon together
 invalid coupon
 max discount?
-
-
 
 
 ✅ 2) Login Lock Logic
