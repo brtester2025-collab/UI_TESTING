@@ -1,0 +1,1 @@
+if (otp === enteredOtp && currentTime < expiryTime) success = true;
