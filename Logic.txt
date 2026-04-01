@@ -22,7 +22,7 @@ invalid coupon
 max discount?
 
 
-✅ 2) Login Lock Logic
+✅ 2) Login Lock Logic  ----- (DONE)
 
 if (failedAttempts >= 3) lockAccount = true;
 if (isAdmin) failedAttemptsLimit = 5;

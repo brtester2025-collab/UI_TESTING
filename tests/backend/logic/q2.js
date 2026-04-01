@@ -1,20 +1,19 @@
 
+
 function testing(failedAttempts, isAdmin) {
+    let failedAttemptsLimit = 3;
 
-    let failedAttemptsLimit = 0;
-
-    let lockAccount = false
-
-    if (failedAttempts >= 3) {
-        lockAccount = true;
-    }
+    let lockAccount = false;
 
     if (isAdmin) {
         failedAttemptsLimit = 5;
     }
 
-    return failedAttempts
+    if (failedAttempts >= failedAttemptsLimit) {
+        lockAccount = true;
+    }
 
+    return lockAccount;
 }
 
 module.exports = { testing }
