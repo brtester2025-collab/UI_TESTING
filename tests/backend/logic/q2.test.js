@@ -39,6 +39,11 @@ describe('Login lock logic', () => {
             expect(result).toBe(false)
         })
 
+        test('if the user is null', () => {
+            const result = testing(2, null)
+            expect(result).toBe(false)
+        })
+
 
     })
 
