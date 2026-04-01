@@ -1,7 +1,7 @@
 function calculateShippingCost(userType, cartValue, isInternational) {
     // Normalize user type
     const type = userType === 'Premium' ? 'Premium' : 'Regular';
-
+    // const coupon = code === 'SAVE20';
     // 1. Invalid input
     if (cartValue <= 0) return 0;
 
@@ -30,10 +30,20 @@ function calculateShippingCost(userType, cartValue, isInternational) {
         }
 
         if (type === 'Premium') {
-            shippingCost = shippingCost - (shippingCost * 0.1);
+            shippingCost = shippingCost - (shippingCost * 0.1) + shippingCost;
         }
 
         return shippingCost;
+    }
+
+    if (cartValue > 1000) {
+        discount = 10;
+    }
+    if (type === 'Premium') {
+        discount += 5;
+    }
+    if (coupon === "SAVE20") {
+        discount += 20;
     }
 
     return 0;
