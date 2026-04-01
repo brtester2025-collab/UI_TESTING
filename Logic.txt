@@ -22,7 +22,7 @@ invalid coupon
 max discount?
 
 
-✅ 2) Login Lock Logic
+✅ 2) Login Lock Logic  ----- (DONE)
 
 if (failedAttempts >= 3) lockAccount = true;
 if (isAdmin) failedAttemptsLimit = 5;
@@ -35,7 +35,7 @@ negative attempts
 null user role
 
 
-✅ 3) Shipping Cost Logic
+✅ 3) Shipping Cost Logic ---- (DONE)
 
 if (amount < 500) shipping = 50;
 else if (amount <= 1000) shipping = 30;
@@ -48,7 +48,7 @@ Must solve:
 1001
 negative value
 
-✅ 4) Salary Bonus Logic
+✅ 4) Salary Bonus Logic ---- (DONE)
 
 if (experience >= 5) bonus = 10000;
 if (rating === "A") bonus += 5000;
