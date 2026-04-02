@@ -1,5 +1,5 @@
 function testing(otp, currentTime) {
-    let enteredOtp = 12345;
+    let enteredOtp = 1234;
     let expiryTime = 30;
 
     let success = false
