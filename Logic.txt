@@ -60,7 +60,7 @@ Logical combinations:
 invalid rating
 
 
-✅ 5) OTP Verification Logic
+✅ 5) OTP Verification Logic  (DONE)
 
 if (otp === enteredOtp && currentTime < expiryTime) success = true;
 

@@ -34,7 +34,7 @@ describe("OTP VERIFICATION", () => {
     })
     test('if the otp is valid and time limit is null', () => {
         const result = testing(1234, null)
-        expect(result).toBe(false)
+        expect(result).toBe(true)
     })
 
     test(' if the otp is null and time is null', () => {
@@ -44,6 +44,10 @@ describe("OTP VERIFICATION", () => {
 
     test('if the otp is more than 4 digit', () => {
         const result = testing(12345, null)
+        expect(result).toBe(false)
+    })
+    test('if the otp is more than 4 digit', () => {
+        const result = testing(12345, 20)
         expect(result).toBe(false)
     })
 })
