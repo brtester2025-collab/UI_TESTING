@@ -1,0 +1,26 @@
+// postman api for testing  the fetch user 
+
+
+pm.test("status code of the response should be 200",()=>{
+    pm.response.to.have.status(200)
+})
+
+pm.test('response of the user should be an array',()=>{
+    const result = pm.response.json()
+    pm.expect(result.length).to.eql(10)
+})
+
+pm.test('response of the the user should have an array id',()=>{
+    const result = pm.response.json()
+    pm.expect(result.length).to.eql(10)
+})
+
+pm.test('all the user must have following property',()=>{
+    const result = pm.response.json()
+    result.forEach(users=>{
+        pm.expect(users).to.have.property("id")
+        pm.expect(users).to.have.property("name")
+        pm.expect(users).to.have.property("email")
+        pm.expect(users).to.have.property('address')
+    })
+})

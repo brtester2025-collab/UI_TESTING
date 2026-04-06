@@ -30,7 +30,7 @@ test.describe('Register Page', () => {
     // test('Create Account page', async ({ page }) => {
     //     await page.getByPlaceholder('Enter first name').fill('test')
     //     await page.getByPlaceholder('Enter last name').fill('one')
-    //     await page.getByPlaceholder('Enter 10-digit number').fill('8126361535')
+    //     await page.getByPlaceholder('Enter 10-digit number').fill('34345355')
     //     await page.getByPlaceholder('Enter email address').fill('testone@mailinator.com')
     //     await page.getByPlaceholder('Enter your full address').fill('Hill Drive, Bhavnagar, Bhavnagar, Gujarat, India')
     // })

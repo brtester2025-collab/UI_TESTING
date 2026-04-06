@@ -12,7 +12,6 @@ test.describe('checkout page', () => {
 
     })
 
-
     test('should display cart item correctly', async ({ page }) => {
         await expect(page.locator('.cart_item')).toHaveCount(1);
         await expect(page.locator('.inventory_item_name')).toHaveText('Sauce Labs Backpack');
@@ -57,13 +56,7 @@ test.describe('checkout page', () => {
         await page.locator('[data-test="finish"]').click()
         await expect(page).toHaveURL(/checkout-complete/)
         await expect(page.locator('[data-test="complete-header"]')).toHaveText('Thank you for your order!')
-
-
-
     })
-
-
-
 })
 
 

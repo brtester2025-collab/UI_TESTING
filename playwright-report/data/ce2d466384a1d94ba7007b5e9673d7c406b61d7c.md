@@ -12,7 +12,7 @@
           - generic:
             - img
           - textbox [ref=e13]
-          - generic: Search For Banquet Halls...
+          - generic: Search For Makeup Artists...
         - generic [ref=e14]:
           - button "Manage Users" [ref=e16]:
             - img [ref=e18]
