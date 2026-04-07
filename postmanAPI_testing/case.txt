@@ -24,3 +24,57 @@ pm.test('all the user must have following property',()=>{
         pm.expect(users).to.have.property('address')
     })
 })
+
+
+
+
+
+
+
+/*
+duplicate replay
+invalid userId (done)
+empty title  (done)
+large body
+special chars (done)
+*/
+
+pm.test("title should not be empty",()=> {
+    const key = pm.response.json().title;
+    pm.expect(key).not.be.empty;
+});
+
+// improve version
+
+pm.test('check it should no be empty',()=>{
+    const id = pm.response.json().title
+    pm.expect(id).to.be.a('string')
+    pm.expect(id.trim().length).to.be.greaterThan(0)
+})
+
+
+
+pm.test('userId should be Greater than 0',()=> {
+    const key = pm.response.json().userId;
+    pm.expect(key).to.be.a('number');
+    pm.expect(key).to.be.greaterThan(0)
+});
+
+pm.test('text should have the special character',()=> {
+    const key = pm.response.json().body;
+    pm.expect(key).to.be.include('@');
+});
+
+pm.test('id should be a number and greater than 100', () => {
+    const key = pm.response.json().id
+    pm.expect(key).to.be.a('number')
+    pm.expect(key).to.be.greaterThan(100);
+});
+
+pm.test('to check for the duplicate value',()=>{
+    const res = pm.response.json();
+    if(pm.collectionVariables.get('title@after')=== res.title){
+        console.log("duplicate title value")
+    }
+    pm.collectionVariables.set('last title',res.title)
+})
