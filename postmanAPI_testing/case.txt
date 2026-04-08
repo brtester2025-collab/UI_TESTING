@@ -25,6 +25,22 @@ pm.test('all the user must have following property',()=>{
     })
 })
 
+pm.test('to check the response status for the code', () => {
+        pm.response.to.have.status(401)
+})
+pm.test('to check the error response from the json'), () => {
+        const res =  pm.response.json()
+        pm.expect(res.error).to.eql("missing_api_key")
+}
+pm.test('to add the message for error response',()=>{
+        const res = pm.response.json()
+        pm.expect(res.message).to.include("The x-api-key header is required for this endpoint.")
+})
+
+pm.test("test1",()=>{
+        pm.expect(pm.response.code).to.eql()
+})      
+
 
 
 
@@ -39,6 +55,10 @@ large body
 special chars (done)
 */
 
+------------------------------------API TESTING Practice--------------------------------------------------------------
+
+
+
 pm.test("title should not be empty",()=> {
     const key = pm.response.json().title;
     pm.expect(key).not.be.empty;
@@ -49,7 +69,7 @@ pm.test("title should not be empty",()=> {
 pm.test('check it should no be empty',()=>{
     const id = pm.response.json().title
     pm.expect(id).to.be.a('string')
-    pm.expect(id.trim().length).to.be.greaterThan(0)
+    pm.expect(id.trim().length).to.be.greaterThan(0) 
 })
 
 

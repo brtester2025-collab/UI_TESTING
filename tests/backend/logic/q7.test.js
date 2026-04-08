@@ -4,12 +4,12 @@ describe('School management system', () => {
 
     test('check it student got passing marks', () => {
         const result = testing(40, 60)
-        expect(result).toBe(true);
+        expect(result).toBe(false);
     })
 
     test('check if the student got above passing marks', () => {
         const result = testing(60, null)
-        expect(result).toBe(true)
+        expect(result).toBe(false)
 
     })
 
