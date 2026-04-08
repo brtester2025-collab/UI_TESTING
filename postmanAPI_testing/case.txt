@@ -98,3 +98,53 @@ pm.test('to check for the duplicate value',()=>{
     }
     pm.collectionVariables.set('last title',res.title)
 })
+
+
+
+
+-----------------------------------------------API CONCEPT-------------------------------------
+
+🚀 Real senior insight
+
+This response is a goldmine for negative API testing.
+
+From this one error, you can create:
+
+Medium
+missing header
+invalid header
+empty header
+malformed header
+Hard
+expired token
+revoked key
+rate-limited key
+tenant mismatch
+permission scope mismatch
+replayed token
+token rotation issue
+
+This is exactly how senior SDET engineers expand test coverage.
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+🎯 Your next task
+
+Now add the x-api-key header in Postman and make it pass.
+
+In Headers:
+
+Key: x-api-key
+Value: your_generated_key
+
+Then test:
+
+200 success
+token returned
+negative wrong key = 401
+missing key = 401
+
+This becomes a full auth test suite 🚀
