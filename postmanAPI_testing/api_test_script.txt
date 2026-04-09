@@ -148,3 +148,61 @@ negative wrong key = 401
 missing key = 401
 
 This becomes a full auth test suite 🚀
+
+
+
+-------------------------------------------------------------------------------------------
+
+TEST CASES FOR THE RESPONSE STATUS FOR THE API
+
+pm.test('Status code of both the response ', () => {
+        pm.expect(pm.response.code).to.be.oneOf([200, 404])
+})
+
+pm.test("the total no of pages", () => {
+        const res = pm.response.json()
+        pm.expect(res.total).to.be.eql(12)
+})
+
+pm.test("to check for the condition if the token is present or not", () => {
+        const res = pm.response.json().token;
+
+        // console.log(res)
+        pm.expect(res).to.be.undefined
+        pm.expect(res).to.not.be.null
+})
+
+pm.test("it should have data of object greater Than in it", () => {
+        const res = pm.response.json().data
+        pm.expect(res).to.be.an("array")
+        pm.expect(res.length).to.be.greaterThan(5)
+})
+
+function hasData(value) {
+        return value !== null && value !== undefined && value.toString().trim().length > 0
+}
+pm.test("name should be above four character", () => {
+        const res = pm.response.json().data[0].first_name
+        pm.expect(hasData(res)).to.not.be.null;
+        pm.expect(res.length).to.be.above(4)
+})
+
+pm.test("first name should be above four characters", () => {
+        const firstName = pm.response.json().data[0].first_name;
+        console.log(firstName)
+        pm.expect(hasData(firstName)).to.be.true;
+        pm.expect(firstName.length).to.be.above(4);
+});
+
+
+function test(value){
+        return value !== undefined  && value !==null 
+}
+pm.test("if the id is not defined",()=>{
+        const userId = pm.response.json().data
+        userId.forEach(user_no =>{
+                pm.expect(test(user_no.id)).to.be.a("number")
+                pm.expect(test(user_no.id)).to.be.above(0)
+        })
+        
+})

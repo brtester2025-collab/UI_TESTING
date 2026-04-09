@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "",
         "name": "",
@@ -59,7 +59,7 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.58.2",
     "workers": 2,
     "webServer": null
@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10884,
+                      "duration": 14805,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-03T12:04:52.428Z",
+                      "startTime": "2026-04-09T11:17:05.304Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -111,146 +111,6 @@
               "file": "createaccount.spec.js",
               "line": 14,
               "column": 5
-            },
-            {
-              "title": "Error for the Empty field validation",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 10790,
-                      "error": {
-                        "message": "ReferenceError: error_last is not defined",
-                        "stack": "ReferenceError: error_last is not defined\n    at D:\\automation\\tests\\e2e\\createaccount.spec.js:45:22",
-                        "location": {
-                          "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                          "column": 22,
-                          "line": 45
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 43 |\u001b[39m         \u001b[36mconst\u001b[39m error_address \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Address is required'\u001b[39m)\n \u001b[90m 44 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_first)\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_last)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_mobile)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 47 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_email)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_address)\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                            "column": 22,
-                            "line": 45
-                          },
-                          "message": "ReferenceError: error_last is not defined\n\n\u001b[0m \u001b[90m 43 |\u001b[39m         \u001b[36mconst\u001b[39m error_address \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Address is required'\u001b[39m)\n \u001b[90m 44 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_first)\u001b[33m.\u001b[39mtoBeVisible()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_last)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_mobile)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 47 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_email)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m expect(error_address)\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:45:22\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-03T12:04:52.482Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-d853b--the-Empty-field-validation\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-d853b--the-Empty-field-validation\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-d853b--the-Empty-field-validation\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                        "column": 22,
-                        "line": 45
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "be7dea37474dbccb9988-689d8a502cd9ef529a78",
-              "file": "createaccount.spec.js",
-              "line": 38,
-              "column": 5
-            },
-            {
-              "title": "form Submit",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30416,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
-                            "column": 63,
-                            "line": 57
-                          },
-                          "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter you full address')\u001b[22m\n\n\n\u001b[0m \u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'[formcontrolname=\"mobile\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'5464364356'\u001b[39m)\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'[formcontrolname=\"emailId\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'test@mailinator.com'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Enter you full address'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'tamil nadu'\u001b[39m)\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button[type=\"submit\"]'\u001b[39m)\n \u001b[90m 59 |\u001b[39m\n \u001b[90m 60 |\u001b[39m     })\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:57:63\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-03T12:05:03.537Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Page-form-Submit\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Page-form-Submit\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\automation\\test-results\\createaccount-Register-Page-form-Submit\\error-context.md"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "be7dea37474dbccb9988-31dd3ae1ca85a0c962fb",
-              "file": "createaccount.spec.js",
-              "line": 51,
-              "column": 5
             }
           ]
         }
@@ -259,11 +119,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-03T12:04:49.655Z",
-    "duration": 44455.107,
+    "startTime": "2026-04-09T11:16:59.061Z",
+    "duration": 24165.596000000005,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }

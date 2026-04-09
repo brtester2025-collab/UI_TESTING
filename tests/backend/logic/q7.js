@@ -15,8 +15,6 @@ function testing(marks, attendance) {
     return pass
 
 
-
-
 }
 
 module.exports = { testing }
