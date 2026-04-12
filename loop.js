@@ -62,23 +62,69 @@
 // }
 // console.log(cnt);
 
-let n = 4
+// let n = 4
 
-for (let i = 0; i < n; i++) {
-    let data = ""
-    for (let j = 0; j < n - i - 1; j++) {
-        data += " "
-    }
-    for (let s = 0; s <= i; s++) {
-        data += "*"
-    }
-    console.log(data);
+// for (let i = 0; i < n; i++) {
+//     let data = ""
+//     for (let j = 0; j < n - i - 1; j++) {
+//         data += " "
+//     }
+//     for (let s = 0; s <= i; s++) {
+//         data += "*"
+//     }
+//     console.log(data);
+// }
+
+
+
+
+
+
+// let n = 4;
+
+// for (let i = 0; i < n; i++) {
+//     let data = ""
+//     for (j = n - i - 1; j > 0; j--) {  /// for space looping 
+//         data += " "
+//     }
+//     for (let s = 0; s < 2 * i + 1; s++) {  /// for printing the numbers
+
+//         data += s + 1
+//     }
+//     console.log(data);
+
+// }
+
+
+// let text = "  hello world  ";
+
+// console.log(text.trim());
+// console.log(text.replace("world", "BR"));
+
+
+
+// let data = "apple.banana.mango";
+// console.log(data.split("."));
+
+
+
+
+
+
+
+let ed = "hello";
+let r = "";
+
+let i
+for (i = ed.length - 1; i >= 0; i--) {
+    console.log([i]);
+
+
 }
+r += ed[i]
+console.log(r);
 
 
-//     *
-//    **
-//   ***
-//  ****
-// *****
+// palindrome
+
 
