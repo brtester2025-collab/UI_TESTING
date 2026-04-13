@@ -128,3 +128,44 @@ console.log(r);
 // palindrome
 
 
+
+
+
+
+
+// Duplicate users
+
+const users = [
+    { id: 1, status: "pass" },
+    { id: 2, status: "fail" }
+];
+
+let cnt = 0;
+
+for (let i = 0; i < users.length; i++) {
+    if (users[i].status == "fail") {
+        cnt++;
+    }
+}
+
+console.log(cnt);
+
+const num = [1, 2, 2, 3, 4, 4]
+
+
+let s = 0;
+let j = 1
+
+let result = []
+
+while (j < num.length) {
+    if (num[s] === num[j]) {
+        result.push(num[s])
+    }
+    s++;
+    j++;
+}
+console.log(result);
+
+
+
