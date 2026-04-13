@@ -136,6 +136,29 @@ for(let i = str.length-1 ;i>=0;i--){
 console.log(ch);
 
 
+// extract order id from "Order-12345"
+
+
+const id = "Order-1234Z5"
+console.log(id.replace(/\D/g,''));
+
+const otp = 'Or1213TTIJ3'
+
+console.log(otp.replace(/\D/g, ''));
+
+const check  = 'ove1233its'
+console.log(check.replace(/\D/g,''));
+
+
+const sz = "abcdei";
+let cnt =0
+
+for(let i = 0;i<sz.length;i++){
+    if(sz[i]=='a' || sz[i] == 'e' || sz[i] == 'i' || sz[i] == 'o' || sz[i] == 'u'){
+        cnt++;
+    }
+}
+console.log(cnt);
 
 
 
