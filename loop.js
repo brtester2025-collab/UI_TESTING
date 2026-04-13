@@ -119,40 +119,12 @@ let i
 for (i = ed.length - 1; i >= 0; i--) {
     console.log([i]);
 
+
 }
 r += ed[i]
 console.log(r);
 
 
 // palindrome
-
-
-
-let arr = [1, 2, 4, 6, 8];
-let target = 10;
-
-
-let left = 0;
-let right = arr.length - 1
-
-
-while (left < right) {
-    let sum = arr[left] + arr[right]
-
-    if (sum === target) {
-        console.log("got it well done");
-        break;
-
-    }
-    else if (sum < target) {
-        left++;
-    }
-    else {
-        right++;
-    }
-}
-
-
-
 
 
