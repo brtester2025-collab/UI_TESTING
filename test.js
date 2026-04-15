@@ -49,6 +49,39 @@
 
 //Remove duplicate
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const arr = [1, 1, 2, 2, 3, 4, 4]
 let i = 0;
 let j = 1
@@ -59,7 +92,6 @@ while (i < j) {
 
     if (arr[i] != arr[j]) {
         console.log([i]);
-        break;
 
 
     }
@@ -69,32 +101,15 @@ while (i < j) {
         j++;
     }
 
-}
 
 
-let n = 5
-let row
-for (let i = 0; i < n; i++) {
-    row = " ";
-    for (let j = 0; j < n; j++) {
-        row += "*"
-    }
-    console.log(row);
-}
 
 
-for (let i = 0; i < n; i++) {
-    let row = " ";
 
-    for (let j = n; j >= 0; j--) {
-        row += i;
 
-    }
-    console.log(row);
+
 
 }
-
-
 
 
 
