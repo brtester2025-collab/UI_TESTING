@@ -100,14 +100,11 @@ console.log(val);
 let n = 4
 
 for (let i = 0; i < n; i++) {
-    console.log('*');
 
-
-
-
-}
-for (let j = i; j < n; j++) {
-    console.log('');
+    for (let j = 0; j < n; j++) {
+        console.log('*');
+    }
+    console.log(" ");
 }
 
 
