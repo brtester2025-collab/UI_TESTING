@@ -49,34 +49,76 @@
 
 //Remove duplicate
 
-const arr = [1, 1, 2, 2, 3, 4, 4]
-let i = 0;
-let j = 1
+// const arr = [1, 1, 2, 2, 3, 4, 4]
+// let i = 0;
+// let j = 1
+// while (i < j) {
+//     if (arr[i] != arr[j]) {
+//         console.log([i]);
 
 
-while (i < j) {
+//     }
+//     else {
+//         i++;
+//         j++;
+//     }
+// }
 
 
-    if (arr[i] != arr[j]) {
-        console.log([i]);
 
 
+
+// for sorted array 
+//Brute force approach
+const a1 = [1, 3, 23, 32, 43, 32] //6-1 = 5 
+let st = 0;
+for (let i = 1; i < a1.length; i++) {
+    if (a1[st] !== a1[i]) {
+        st++;
+        a1[st] = a1[i]
     }
-
-    else {
-        i++;
-        j++;
-    }
+}
+console.log('testing ');
+console.log(a1.slice(0, st + 1))
 
 
+// Brute force
 
 
 
+
+
+
+
+// for  the unsorted array data structure (SET) is used
+const val = [... new Set(a1)]
+console.log(val);
+
+
+// star pattern
+
+let n = 4
+
+for (let i = 0; i < n; i++) {
+    console.log('*');
 
 
 
 
 }
+for (let j = i; j < n; j++) {
+    console.log('');
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

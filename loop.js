@@ -148,15 +148,17 @@ for (let i = 0; i < users.length; i++) {
     }
 }
 
+
 console.log(cnt);
 
-const num = [1, 2, 2, 3, 4, 4]
+const num = [1, 4, 2, 3, 1, 4]
 
 
 let s = 0;
 let j = 1
 
 let result = []
+num.sort((s, j) => s - j)
 
 while (j < num.length) {
     if (num[s] === num[j]) {
@@ -166,6 +168,4 @@ while (j < num.length) {
     j++;
 }
 console.log(result);
-
-
 
