@@ -59,6 +59,7 @@ while (i < j) {
 
     if (arr[i] != arr[j]) {
         console.log([i]);
+        break;
 
 
     }
@@ -68,15 +69,32 @@ while (i < j) {
         j++;
     }
 
+}
 
 
+let n = 5
+let row
+for (let i = 0; i < n; i++) {
+    row = " ";
+    for (let j = 0; j < n; j++) {
+        row += "*"
+    }
+    console.log(row);
+}
 
 
+for (let i = 0; i < n; i++) {
+    let row = " ";
 
+    for (let j = n; j >= 0; j--) {
+        row += i;
 
-
+    }
+    console.log(row);
 
 }
+
+
 
 
 
