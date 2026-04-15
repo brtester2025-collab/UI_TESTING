@@ -84,31 +84,16 @@
 
 const arr = [1, 1, 2, 2, 3, 4, 4]
 let i = 0;
-let j = 1
-
+let j = 1;
 
 while (i < j) {
-
-
     if (arr[i] != arr[j]) {
         console.log([i]);
-
-
     }
-
     else {
         i++;
         j++;
     }
-
-
-
-
-
-
-
-
-
 }
 
 
