@@ -134,6 +134,21 @@ for (let i = 1; i <= 3; i++) {
 }
 
 
+console.log(" today  are printing");
+
+
+let resulte = 0;
+
+for (let i = 1; i <= 3; i++) {
+    let temp = 0;
+    for (let j = 1; j <= i; j++) {
+        temp += j;
+    }
+    resulte += temp;
+}
+
+console.log(resulte);
+
 
 
 
