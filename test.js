@@ -152,4 +152,14 @@ console.log(resulte);
 
 
 
+let arr = [1, 2, 3];
 
+for (let i = 0; i < arr.length; i++) {
+    let str = "";
+
+    for (let j = 0; j < arr.length; j++) {
+        str += arr[i];
+    }
+
+    console.log(str);
+}
