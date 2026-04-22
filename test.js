@@ -163,3 +163,34 @@ for (let i = 0; i < arr.length; i++) {
 
     console.log(str);
 }
+
+
+let arr = [1, 2, 2, 3, 3, 3];
+let result = [];
+
+for (let i = 0; i < arr.length; i++) {
+
+    // skip if already processed
+    let alreadySeen = false;
+    for (let k = 0; k < i; k++) {
+        if (arr[k] === arr[i]) {
+            alreadySeen = true;
+            break;
+        }
+    }
+
+    if (alreadySeen) continue;
+
+    let count = 0;
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[i] === arr[j]) {
+            count++;
+        }
+    }
+
+    if (count > 1) {
+        result.push(arr[i]);
+    }
+}
+
+console.log(result);
