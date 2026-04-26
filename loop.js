@@ -169,3 +169,26 @@ while (j < num.length) {
 }
 console.log(result);
 
+
+// ----------------COUNT THE NUMBER OF THE SUBARRAY WHICH IS DIVISIBLE BY K USING DATA STRUCTURE
+let arr = [2, 3, 1];
+let k = 3;
+
+let map = { 0: 1 }; // remainder count
+let sum = 0;
+let count = 0;
+
+for (let num of arr) {
+    sum += num;
+    let rem = sum % k;
+
+    if (rem < 0) rem += k;
+
+    if (map[rem]) {
+        count += map[rem];
+    }
+
+    map[rem] = (map[rem] || 0) + 1;
+}
+
+console.log(count);

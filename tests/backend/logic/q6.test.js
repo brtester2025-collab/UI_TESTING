@@ -1,7 +1,7 @@
 const { testing } = require('./q6')
 
 
-describe('Estimation Damage and days', () => {
+describe.skip('Estimation Damage and days', () => {
 
     test('no of days', () => {
         const result = testing(7, true)

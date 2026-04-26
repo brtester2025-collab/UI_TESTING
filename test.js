@@ -130,14 +130,84 @@ console.log(data);
 
 
 
+let r = ""
+
+for (let i = 0; i < n; i++) {
+    for (let j = 0; j < i; j++) {
+        r += 'A'
+
+    }
+}
+
+
+let result = "";
+
+for (let i = 1; i <= 3; i++) {
+    result = "";
+    for (let j = 1; j <= i; j++) {
+        result += j;
+    }
+    console.log(result);
+}
+
+
+console.log(" today  are printing");
+
+
+let resulte = 0;
+
+for (let i = 1; i <= 3; i++) {
+    let temp = 0;
+    for (let j = 1; j <= i; j++) {
+        temp += j;
+    }
+    resulte += temp;
+}
+
+console.log(resulte);
 
 
 
 
+let arr = [1, 2, 3];
+
+for (let i = 0; i < arr.length; i++) {
+    let str = "";
+
+    for (let j = 0; j < arr.length; j++) {
+        str += arr[i];
+    }
+
+    console.log(str);
+}
 
 
+let arr = [1, 2, 2, 3, 3, 3];
+let result = [];
 
+for (let i = 0; i < arr.length; i++) {
 
+    // skip if already processed
+    let alreadySeen = false;
+    for (let k = 0; k < i; k++) {
+        if (arr[k] === arr[i]) {
+            alreadySeen = true;
+            break;
+        }
+    }
 
+    if (alreadySeen) continue;
 
+    let count = 0;
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[i] === arr[j]) {
+            count++;
+        }
+    }
 
+    if (count > 1) {
+        result.push(arr[i]);
+    }
+}
+
+console.log(result);
