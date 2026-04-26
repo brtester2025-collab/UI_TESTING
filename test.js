@@ -82,6 +82,7 @@ console.log('testing ');
 console.log(a1.slice(0, st + 1))
 
 
+
 // Brute force
 
 
@@ -99,13 +100,29 @@ console.log(val);
 
 let n = 4
 
-for (let i = 0; i < n; i++) {
 
-    for (let j = 0; j < n; j++) {
-        console.log('*');
+for (let i = 0; i < n; i++) {
+    let row = " "
+    // row += " "
+    for (let j = 0; j <= i; j++) {
+        row += "*"
     }
-    console.log(" ");
+    console.log(row);
+
 }
+
+const arr = [1, 1, 2, 3, 3, 3, 3, 5, 5, 6]
+let i = 0
+let data = []
+for (let j = 1; j < arr.length; j++) {
+
+    if (arr[i] !== arr[j]) {
+        i++;
+        data[i] = arr[j]
+    }
+
+}
+console.log(data);
 
 
 

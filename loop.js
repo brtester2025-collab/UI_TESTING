@@ -70,7 +70,7 @@
 //         data += " "
 //     }
 //     for (let s = 0; s <= i; s++) {
-//         data += "*"
+//         data += "*" //this is for testing purpose only
 //     }
 //     console.log(data);
 // }
