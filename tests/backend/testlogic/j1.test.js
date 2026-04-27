@@ -1,7 +1,5 @@
 const { fetchUserData } = require('./j1')
 
-
-
 beforeEach(() => {
     global.fetch = jest.fn()
 })
@@ -50,15 +48,3 @@ describe("Fetch the user data", () => {
         await expect(fetchUserData(1)).rejects.toThrow()
     })
 })
-
-
-
-/**
- * 
- * 
- * Write a complete Jest test suite that covers:
-
-✅ Successful fetch — resolves with user data
-❌ Failed fetch — rejects when response.ok is false
-🌐 Network failure — rejects when fetch itself throws
- */
