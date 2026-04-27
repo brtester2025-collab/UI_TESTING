@@ -4,9 +4,7 @@ const { fetchUserData } = require('./j1')
 
 beforeEach(() => {
     global.fetch = jest.fn()
-
 })
-
 afterEach(() => {
     jest.resetAllMocks()
 })
@@ -35,14 +33,21 @@ describe("Fetch the user data", () => {
         expect(result).toEqual({ id: 2, name: 'test' })
     })
     test('to check the failure of the api', async () => {
-
-        const mockUser = { id: undefined, name: undefined }
-
+        const mockUser = { id: 1, name: undefined }
         global.fetch.mockResolvedValue({
             ok: false,
             json: jest.fn()
         })
         await expect(fetchUserData(1)).rejects.toThrow('User not found')
+    })
+    test('to check for the network error', async () => {
+        global.fetch.mockRejectedValue(new Error('Network error'))
+        await expect(fetchUserData(1)).rejects.toThrow()
+    })
+
+    test('to check for the network error', async () => {
+        global.fetch.mockRejectedValue(new Error('false'))
+        await expect(fetchUserData(1)).rejects.toThrow()
     })
 })
 
