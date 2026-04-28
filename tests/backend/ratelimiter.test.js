@@ -6,8 +6,6 @@ describe('RateLimiter-Testing', () => {
     beforeEach(() => {
         ratelimiter = makeRateLimiter({ maxAttempts: 3, windowMs: 1000 })
     })
-
-
     describe('Check', () => {
         test('To check for the records', () => {
             const result = ratelimiter.check('user1')

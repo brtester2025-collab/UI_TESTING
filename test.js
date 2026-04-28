@@ -111,78 +111,77 @@ for (let i = 0; i < n; i++) {
 
 }
 
-const arr = [1, 1, 2, 3, 3, 3, 3, 5, 5, 6]
-let i = 0
-let data = []
-for (let j = 1; j < arr.length; j++) {
+// const arr = [1, 1, 2, 3, 3, 3, 3, 5, 5, 6]
+// let i = 0
+// let data = []
+// for (let j = 1; j < arr.length; j++) {
 
-    if (arr[i] !== arr[j]) {
-        i++;
-        data[i] = arr[j]
-    }
+//     if (arr[i] !== arr[j]) {
+//         i++;
+//         data[i] = arr[j]
+//     }
 
-}
-console.log(data);
-
-
+// }
+// console.log(data);
 
 
 
 
+// let r = ""
 
-let r = ""
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < i; j++) {
+//         r += 'A'
 
-for (let i = 0; i < n; i++) {
-    for (let j = 0; j < i; j++) {
-        r += 'A'
-
-    }
-}
-
-
-let result = "";
-
-for (let i = 1; i <= 3; i++) {
-    result = "";
-    for (let j = 1; j <= i; j++) {
-        result += j;
-    }
-    console.log(result);
-}
+//     }
+// }
 
 
-console.log(" today  are printing");
+// let result = "";
+
+// for (let i = 1; i <= 3; i++) {
+//     result = "";
+//     for (let j = 1; j <= i; j++) {
+//         result += j;
+//     }
+//     console.log(result);
+// }
 
 
-let resulte = 0;
+// console.log(" today  are printing");
 
-for (let i = 1; i <= 3; i++) {
-    let temp = 0;
-    for (let j = 1; j <= i; j++) {
-        temp += j;
-    }
-    resulte += temp;
-}
 
-console.log(resulte);
+// let resulte = 0;
 
+// for (let i = 1; i <= 3; i++) {
+//     let temp = 0;
+//     for (let j = 1; j <= i; j++) {
+//         temp += j;
+//     }
+//     resulte += temp;
+// }
+
+// console.log(resulte);
 
 
 
-let arr = [1, 2, 3];
 
-for (let i = 0; i < arr.length; i++) {
-    let str = "";
+// let arr = [1, 2, 3];
 
-    for (let j = 0; j < arr.length; j++) {
-        str += arr[i];
-    }
+// for (let i = 0; i < arr.length; i++) {
+//     let str = "";
 
-    console.log(str);
-}
+//     for (let j = 0; j < arr.length; j++) {
+//         str += arr[i];
+//     }
+
+//     console.log(str);
+// }
 
 
-let arr = [1, 2, 2, 3, 3, 3];
+
+
+let arr = [1, 2, 2, 3, 3, 3];  // code for printing the duplicates value only
 let result = [];
 
 for (let i = 0; i < arr.length; i++) {
