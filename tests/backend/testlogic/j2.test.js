@@ -36,5 +36,7 @@ describe('Test cases for API TESTING', () => {
     test('for the multiple user status', async () => {
         global.fetch.mockRejectedValue(new Error(''))
 
+        await expect(fetchUserData()).rejects.toThrow()
     })
+
 })

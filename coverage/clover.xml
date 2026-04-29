@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777004591327" clover="3.2.0">
-  <project timestamp="1777004591327" name="All files">
-    <metrics statements="275" coveredstatements="246" conditionals="197" coveredconditionals="165" methods="38" coveredmethods="34" elements="510" coveredelements="445" complexity="0" loc="275" ncloc="275" packages="2" files="14" classes="14"/>
+<coverage generated="1777443907927" clover="3.2.0">
+  <project timestamp="1777443907927" name="All files">
+    <metrics statements="280" coveredstatements="251" conditionals="199" coveredconditionals="167" methods="39" coveredmethods="35" elements="518" coveredelements="453" complexity="0" loc="280" ncloc="280" packages="3" files="15" classes="15"/>
     <package name="backend">
       <metrics statements="228" coveredstatements="203" conditionals="167" coveredconditionals="139" methods="31" coveredmethods="28"/>
       <file name="cal.js" path="D:\automation\tests\backend\cal.js">
@@ -323,6 +323,17 @@
         <line num="12" count="7" type="stmt"/>
         <line num="15" count="9" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="backend.testlogic">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="j1.js" path="D:\automation\tests\backend\testlogic\j1.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
       </file>
     </package>
   </project>
