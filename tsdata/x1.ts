@@ -31,3 +31,16 @@ async function fetchProductlist() {
 }
 
 fetchProductlist();
+
+async function parllelTask() {
+  const [data, data1] = await Promise.all([
+    fetch("https://reqres.in/api/users"),
+    fetch("/bigoData"),
+  ]);
+
+  const [responser, responser1] = await Promise.all([
+    data.json(),
+    data1.json(),
+  ]);
+  return console.log([responser1, responser]);
+}

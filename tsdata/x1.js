@@ -63,7 +63,7 @@ function fetchProductlist() {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 3, , 4]);
-                    return [4 /*yield*/, fetch("https://pokeapi.co/api/v2/pokemon/1003819371398")];
+                    return [4 /*yield*/, fetch("https://pokeapi.co/api/v2/pokemon")];
                 case 1:
                     data = _a.sent();
                     if (!data.ok) {
@@ -84,3 +84,25 @@ function fetchProductlist() {
     });
 }
 fetchProductlist();
+function parllelTask() {
+    return __awaiter(this, void 0, void 0, function () {
+        var _a, data, data1, _b, responser, responser1;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0: return [4 /*yield*/, Promise.all([
+                        fetch("https://reqres.in/api/users"),
+                        fetch("/bigoData"),
+                    ])];
+                case 1:
+                    _a = _c.sent(), data = _a[0], data1 = _a[1];
+                    return [4 /*yield*/, Promise.all([
+                            data.json(),
+                            data1.json(),
+                        ])];
+                case 2:
+                    _b = _c.sent(), responser = _b[0], responser1 = _b[1];
+                    return [2 /*return*/, console.log([responser1, responser])];
+            }
+        });
+    });
+}
