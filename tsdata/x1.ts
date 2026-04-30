@@ -1,9 +1,9 @@
-// async function test() {
-//   const data = await fetch(`https://pokeapi.co/api/v2/pokemon`);
-//   const res = await data.json();
-//   console.log(res);
-// }
-// test();
+async function test() {
+  const data = await fetch(`https://pokeapi.co/api/v2/pokemon`);
+  const res = await data.json();
+  console.log(res);
+}
+test();
 
 async function add(a: number, b: number): Promise<number> {
   return a + b;
@@ -44,3 +44,42 @@ async function parllelTask() {
   ]);
   return console.log([responser1, responser]);
 }
+
+async function fetch1() {
+  // for catching the error
+  try {
+    const doubledata = await fetch("https://pokeapi.co/api/v2/pokemon/zx");
+    const res = await doubledata.json();
+    console.log(res);
+  } catch (error) {
+    console.error("FAULT ERROR", error);
+  }
+}
+
+fetch1();
+
+async function testingP() {
+  const [mockValue1, mockValue2] = await Promise.all([
+    fetch("user data"),
+    fetch("user data2"),
+  ]);
+  const [response1, response2] = await Promise.all([
+    mockValue1.json(),
+    mockValue2.json(),
+  ]);
+  console.log([response1, response2]);
+}
+
+async function demo() {
+  try {
+    const [d1, d2] = await Promise.all([
+      fetch("/req/user1").then((req) => req.json()),
+      fetch("./req/user2").then((req) => req.json()),
+    ]);
+
+    console.log([d1, d2]);
+  } catch (err) {
+    console.error("this is message", err);
+  }
+}
+demo();

@@ -40,69 +40,97 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-function add(a, b) {
+// async function add(a: number, b: number): Promise<number> {
+//   return a + b;
+// }
+// console.log(add(2, 3));
+// async function sub(a: string, b: string): Promise<{ a: string }> {
+//   return { a };
+// }
+// console.log(sub("tester", "zeta"));
+// async function fetchProductlist() {
+//   try {
+//     const data = await fetch(`https://pokeapi.co/api/v2/pokemon`);
+//     if (!data.ok) {
+//       throw new Error("error while fetching the api");
+//     }
+//     const response = await data.json();
+//     console.log(response);
+//   } catch (error) {
+//     console.error(`response  status`, error);
+//     throw error;
+//   }
+// }
+// fetchProductlist();
+// async function parllelTask() {
+//   const [data, data1] = await Promise.all([
+//     fetch("https://reqres.in/api/users"),
+//     fetch("/bigoData"),
+//   ]);
+//   const [responser, responser1] = await Promise.all([
+//     data.json(),
+//     data1.json(),
+//   ]);
+//   return console.log([responser1, responser]);
+// }
+function fetch1() {
     return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/, a + b];
-        });
-    });
-}
-console.log(add(2, 3));
-function sub(a, b) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/, { a: a }];
-        });
-    });
-}
-console.log(sub("tester", "zeta"));
-function fetchProductlist() {
-    return __awaiter(this, void 0, void 0, function () {
-        var data, response, error_1;
+        var doubledata, res, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 3, , 4]);
-                    return [4 /*yield*/, fetch("https://pokeapi.co/api/v2/pokemon")];
+                    return [4 /*yield*/, fetch("https://pokeapi.co/api/v2/pokemon/zx")];
                 case 1:
-                    data = _a.sent();
-                    if (!data.ok) {
-                        throw new Error("error while fetching the api");
-                    }
-                    return [4 /*yield*/, data.json()];
+                    doubledata = _a.sent();
+                    return [4 /*yield*/, doubledata.json()];
                 case 2:
-                    response = _a.sent();
-                    console.log(response);
+                    res = _a.sent();
+                    console.log(res);
                     return [3 /*break*/, 4];
                 case 3:
                     error_1 = _a.sent();
-                    console.error("response  status", error_1);
-                    throw error_1;
+                    console.error("FAULT ERROR", error_1);
+                    return [3 /*break*/, 4];
                 case 4: return [2 /*return*/];
             }
         });
     });
 }
-fetchProductlist();
-function parllelTask() {
+fetch1();
+// async function testingP() {
+//   const [mockValue1, mockValue2] = await Promise.all([
+//     fetch("user data"),
+//     fetch("user data2"),
+//   ]);
+//   const [response1, response2] = await Promise.all([
+//     mockValue1.json(),
+//     mockValue2.json(),
+//   ]);
+//   console.log([response1, response2]);
+// }
+function demo() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, data, data1, _b, responser, responser1;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0: return [4 /*yield*/, Promise.all([
-                        fetch("https://reqres.in/api/users"),
-                        fetch("/bigoData"),
-                    ])];
-                case 1:
-                    _a = _c.sent(), data = _a[0], data1 = _a[1];
+        var _a, d1, d2, err_1;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    _b.trys.push([0, 2, , 3]);
                     return [4 /*yield*/, Promise.all([
-                            data.json(),
-                            data1.json(),
+                            fetch("/req/user1").then(function (req) { return req.json(); }),
+                            fetch("./req/user2").then(function (req) { return req.json(); }),
                         ])];
+                case 1:
+                    _a = _b.sent(), d1 = _a[0], d2 = _a[1];
+                    console.log([d1, d2]);
+                    return [3 /*break*/, 3];
                 case 2:
-                    _b = _c.sent(), responser = _b[0], responser1 = _b[1];
-                    return [2 /*return*/, console.log([responser1, responser])];
+                    err_1 = _b.sent();
+                    console.error("this is message", err_1);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
             }
         });
     });
 }
+demo();
