@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
 
 });
 
-test.skip('Input Field Automation', async ({ page }) => {
+test('Input Field Automation', async ({ page }) => {
 
     await page.fill('#movieName', "inception");
     await page.locator('#appendText').click()
@@ -28,7 +28,7 @@ test.skip('Input Field Automation', async ({ page }) => {
 });
 
 
-test.skip('TC01: Verify successful movie name input', async ({ page }) => {
+test('TC01: Verify successful movie name input', async ({ page }) => {
     const input = await page.getByTestId("input-movie-name")
     const data = await page.getByPlaceholder('Enter hollywood movie name')
     expect(data).toBeVisible()
@@ -37,13 +37,13 @@ test.skip('TC01: Verify successful movie name input', async ({ page }) => {
     expect(result).toBe('Inception')
 })
 
-test.skip('TC02: Verify input placeholder disappears on typing', async ({ page }) => {
+test('TC02: Verify input placeholder disappears on typing', async ({ page }) => {
     const input = await page.getByPlaceholder("Enter hollywood movie name")
     expect(input).not.toBeVisible()
 })
 
 
-test.skip('TC03: Verify keyboard tab triggers focus change after append', async ({ page }) => {
+test('TC03: Verify keyboard tab triggers focus change after append', async ({ page }) => {
     const input = await page.getByTestId("input-append-text")
     await page.keyboard.press('End')
     await page.keyboard.type("This is X data for GenX")
