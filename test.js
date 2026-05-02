@@ -19,9 +19,6 @@
 //     }
 // }
 
-
-
-
 // const no = [10, 30, 50, 60, 70]
 // let st = 0;
 // let ed = no.length - 1
@@ -44,7 +41,6 @@
 //         ed--;
 //     }
 
-
 // }
 
 //Remove duplicate
@@ -56,7 +52,6 @@
 //     if (arr[i] != arr[j]) {
 //         console.log([i]);
 
-
 //     }
 //     else {
 //         i++;
@@ -64,51 +59,36 @@
 //     }
 // }
 
-
-
-
-
-// for sorted array 
+// for sorted array
 //Brute force approach
-const a1 = [1, 3, 23, 32, 43, 32] //6-1 = 5 
+const a1 = [1, 3, 23, 32, 43, 32]; //6-1 = 5
 let st = 0;
 for (let i = 1; i < a1.length; i++) {
-    if (a1[st] !== a1[i]) {
-        st++;
-        a1[st] = a1[i]
-    }
+  if (a1[st] !== a1[i]) {
+    st++;
+    a1[st] = a1[i];
+  }
 }
-console.log('testing ');
-console.log(a1.slice(0, st + 1))
-
-
+console.log("testing ");
+console.log(a1.slice(0, st + 1));
 
 // Brute force
 
-
-
-
-
-
-
 // for  the unsorted array data structure (SET) is used
-const val = [... new Set(a1)]
+const val = [...new Set(a1)];
 console.log(val);
-
 
 // star pattern
 
-let n = 4
-
+let n = 4;
 
 for (let i = 0; i < n; i++) {
-    let row = " "
-    // row += " "
-    for (let j = 0; j <= i; j++) {
-        row += "*"
-    }
-    console.log(row);
-
+  let row = " ";
+  // row += " "
+  for (let j = 0; j <= i; j++) {
+    row += "*";
+  }
+  console.log(row);
 }
 
 // const arr = [1, 1, 2, 3, 3, 3, 3, 5, 5, 6]
@@ -124,9 +104,6 @@ for (let i = 0; i < n; i++) {
 // }
 // console.log(data);
 
-
-
-
 // let r = ""
 
 // for (let i = 0; i < n; i++) {
@@ -135,7 +112,6 @@ for (let i = 0; i < n; i++) {
 
 //     }
 // }
-
 
 // let result = "";
 
@@ -147,9 +123,7 @@ for (let i = 0; i < n; i++) {
 //     console.log(result);
 // }
 
-
 // console.log(" today  are printing");
-
 
 // let resulte = 0;
 
@@ -163,9 +137,6 @@ for (let i = 0; i < n; i++) {
 
 // console.log(resulte);
 
-
-
-
 // let arr = [1, 2, 3];
 
 // for (let i = 0; i < arr.length; i++) {
@@ -178,35 +149,31 @@ for (let i = 0; i < n; i++) {
 //     console.log(str);
 // }
 
-
-
-
-let arr = [1, 2, 2, 3, 3, 3];  // code for printing the duplicates value only
+let arr = [1, 2, 2, 3, 3, 3]; // code for printing the duplicates value only
 let result = [];
 
 for (let i = 0; i < arr.length; i++) {
-
-    // skip if already processed
-    let alreadySeen = false;
-    for (let k = 0; k < i; k++) {
-        if (arr[k] === arr[i]) {
-            alreadySeen = true;
-            break;
-        }
+  // skip if already processed
+  let alreadySeen = false;
+  for (let k = 0; k < i; k++) {
+    if (arr[k] === arr[i]) {
+      alreadySeen = true;
+      break;
     }
+  }
 
-    if (alreadySeen) continue;
+  if (alreadySeen) continue;
 
-    let count = 0;
-    for (let j = 0; j < arr.length; j++) {
-        if (arr[i] === arr[j]) {
-            count++;
-        }
+  let count = 0;
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[i] === arr[j]) {
+      count++;
     }
+  }
 
-    if (count > 1) {
-        result.push(arr[i]);
-    }
+  if (count > 1) {
+    result.push(arr[i]);
+  }
 }
 
 console.log(result);

@@ -8,7 +8,6 @@
 //     }
 // }
 
-
 // const ids = [1, 2, 3, 5, 6, 7]
 
 // for (let i = 0; i < ids.length; i++) {
@@ -22,7 +21,6 @@
 //     }
 // }
 
-
 // const users = [1, 2, 3, 4, 2, 5, 6, 3]   ///   2  3
 
 // for (let i = 0; i < users.length; i++) {
@@ -30,7 +28,6 @@
 //         if (users[i] === users[j])
 //             console.log(users[i]);
 // }
-
 
 // const marks = [10, 80, 45, 99, 67, 100, 34]
 
@@ -42,8 +39,6 @@
 //     }
 // }
 // console.log(highest);
-
-
 
 // const user = [
 //     { id: 1, status: "pass" },
@@ -75,16 +70,11 @@
 //     console.log(data);
 // }
 
-
-
-
-
-
 // let n = 4;
 
 // for (let i = 0; i < n; i++) {
 //     let data = ""
-//     for (j = n - i - 1; j > 0; j--) {  /// for space looping 
+//     for (j = n - i - 1; j > 0; j--) {  /// for space looping
 //         data += " "
 //     }
 //     for (let s = 0; s < 2 * i + 1; s++) {  /// for printing the numbers
@@ -95,80 +85,59 @@
 
 // }
 
-
 // let text = "  hello world  ";
 
 // console.log(text.trim());
 // console.log(text.replace("world", "BR"));
 
-
-
 // let data = "apple.banana.mango";
 // console.log(data.split("."));
-
-
-
-
-
-
 
 let ed = "hello";
 let r = "";
 
-let i
+let i;
 for (i = ed.length - 1; i >= 0; i--) {
-    console.log([i]);
-
-
+  console.log([i]);
 }
-r += ed[i]
+r += ed[i];
 console.log(r);
 
-
 // palindrome
-
-
-
-
-
-
 
 // Duplicate users
 
 const users = [
-    { id: 1, status: "pass" },
-    { id: 2, status: "fail" }
+  { id: 1, status: "pass" },
+  { id: 2, status: "fail" },
 ];
 
 let cnt = 0;
 
 for (let i = 0; i < users.length; i++) {
-    if (users[i].status == "fail") {
-        cnt++;
-    }
+  if (users[i].status == "fail") {
+    cnt++;
+  }
 }
-
 
 console.log(cnt);
 
-const num = [1, 4, 2, 3, 1, 4]
-
+const num = [1, 4, 2, 3, 1, 4];
 
 let s = 0;
-let j = 1
+let j = 1;
 
-let result = []
-num.sort((s, j) => s - j)
+let result = [];
+num.sort((s, j) => s - j);
 
 while (j < num.length) {
-    if (num[s] === num[j]) {
-        result.push(num[s])
-    }
-    s++;
-    j++;
+  if (num[s] === num[j]) {
+    result.push(num[s]);
+  }
+  s++;
+  j++;
 }
 console.log(result);
-
 
 // ----------------COUNT THE NUMBER OF THE SUBARRAY WHICH IS DIVISIBLE BY K USING DATA STRUCTURE
 let arr = [2, 3, 1];
@@ -179,16 +148,16 @@ let sum = 0;
 let count = 0;
 
 for (let num of arr) {
-    sum += num;
-    let rem = sum % k;
+  sum += num;
+  let rem = sum % k;
 
-    if (rem < 0) rem += k;
+  if (rem < 0) rem += k;
 
-    if (map[rem]) {
-        count += map[rem];
-    }
+  if (map[rem]) {
+    count += map[rem];
+  }
 
-    map[rem] = (map[rem] || 0) + 1;
+  map[rem] = (map[rem] || 0) + 1;
 }
 
 console.log(count);
