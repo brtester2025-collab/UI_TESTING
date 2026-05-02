@@ -73,5 +73,47 @@ test('TC05: Verify text present inside input field matches expected value', asyn
 
 
 test('TC06: Verify getAttribute returns the correct input value', async ({ page }) => {
+    const input = await page.getByTestId('input-verify-text')
+    const verify = await input.getAttribute('value')
+    expect(verify).toBe('QA PlayGround')
+})
 
+test('TC07: Verify input field text can be cleared successfully', async ({ page }) => {
+    const input = await page.getByTestId('input-clear-text')
+    expect(input).toHaveValue('QA PlayGround Clear Me')
+    await input.fill('')
+    await expect(input).toHaveValue('')
+})
+
+
+test('TC08: Verify field is empty after executing clear action', async ({ page }) => {
+    const input = await page.getByTestId('input-clear-text')
+    await input.fill("This is meeeeee")
+    await input.clear()
+    await expect(input).toHaveValue('')
+})
+
+test('TC09: Verify disabled input field cannot be edited by user', async ({ page }) => {
+    const input = await page.getByTestId('input-disabled')
+    await expect(page.locator('#disabledInput')).toBeDisabled()
+    await input.type("Disaster")
+    await expect(input).toHaveValue('Enter')
+})
+
+
+test('TC10: Verify isEnabled() returns false for disabled input', () => {
+
+})
+
+test('TC11: Verify readonly input field does not accept user typing', async ({ page }) => {
+    const input = await page.getByTestId('input-readonly')
+    await expect(input).toHaveAttribute('readonly', "")
+    await input.type('YES this is me')
+    await expect(input).toHaveValue('This text is readonly')
+})
+
+test('TC12: Verify getAttribute returns correct readonly attribute value', async ({ page }) => {
+    const input = await page.getByTestId('input-readonly')
+    await input.getAttribute('value')
+    await expect(input).toHaveAttribute('readonly', '')
 })
