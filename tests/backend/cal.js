@@ -1,52 +1,52 @@
 function calculateShippingCost(userType, cartValue, isInternational) {
-    // Normalize user type
-    const type = userType === 'Premium' ? 'Premium' : 'Regular';
-    // const coupon = code === 'SAVE20';
-    // 1. Invalid input
-    if (cartValue <= 0) return 0;
+  // Normalize user type
+  const type = userType === "Premium" ? "Premium" : "Regular";
+  // const coupon = code === 'SAVE20';
+  // 1. Invalid input
+  if (cartValue <= 0) return 0;
 
-    // 2. Free shipping (only domestic)
-    if (!isInternational && cartValue > 2000) return 0;
+  // 2. Free shipping (only domestic)
+  if (!isInternational && cartValue > 2000) return 0;
 
-    // 3. Domestic Shipping
-    if (!isInternational) {
-        if (type === 'Regular') {
-            if (cartValue <= 500) return 50;
-            return 30;
-        }
-
-        if (type === 'Premium') {
-            if (cartValue <= 1000) return 20;
-            return 0;
-        }
+  // 3. Domestic Shipping
+  if (!isInternational) {
+    if (type === "Regular") {
+      if (cartValue <= 500) return 50;
+      return 30;
     }
 
-    // 4. International Shipping
-    if (isInternational) {
-        let shippingCost = 200;
+    if (type === "Premium") {
+      if (cartValue <= 1000) return 20;
+      return 0;
+    }
+  }
 
-        if (cartValue > 3000) {
-            shippingCost += 100;
-        }
+  // 4. International Shipping
+  if (isInternational) {
+    let shippingCost = 200;
 
-        if (type === 'Premium') {
-            shippingCost = shippingCost - (shippingCost * 0.1) + shippingCost;
-        }
-
-        return shippingCost;
+    if (cartValue > 3000) {
+      shippingCost += 100;
     }
 
-    if (cartValue > 1000) {
-        discount = 10;
-    }
-    if (type === 'Premium') {
-        discount += 5;
-    }
-    if (coupon === "SAVE20") {
-        discount += 20;
+    if (type === "Premium") {
+      shippingCost = shippingCost - shippingCost * 0.1 + shippingCost;
     }
 
-    return 0;
+    return shippingCost;
+  }
+
+  if (cartValue > 1000) {
+    discount = 10;
+  }
+  if (type === "Premium") {
+    discount += 5;
+  }
+  if (coupon === "SAVE20") {
+    discount += 20;
+  }
+
+  return 0;
 }
 
 module.exports = { calculateShippingCost };

@@ -1,185 +1,163 @@
-const { makeTokenService } = require('./tokenservice')
+const { makeTokenService } = require("./tokenservice");
 
-const jwt = require('jsonwebtoken')
-const crypto = require('crypto')
-const { error, time } = require('console')
+const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
+const { error, time } = require("console");
 
+jest.mock("jsonwebtoken");
+jest.mock("crypto");
 
-jest.mock('jsonwebtoken')
-jest.mock('crypto')
+describe("MakeToken service", () => {
+  const jwtSecret = "test-secret";
+  const jwtExpiresIn = "1h";
 
-describe('MakeToken service', () => {
-    const jwtSecret = 'test-secret';
-    const jwtExpiresIn = '1h';
+  let tokenService;
 
-    let tokenService;
+  beforeEach(() => {
+    tokenService = makeTokenService({ jwtSecret, jwtExpiresIn });
+    jest.clearAllMocks();
+  });
 
-    beforeEach(() => {
-        tokenService = makeTokenService({ jwtSecret, jwtExpiresIn })
-        jest.clearAllMocks();
-    })
+  describe("Generate Token Access", () => {
+    test("Checking the user sign-in", () => {
+      jwt.sign.mockReturnValue("mock-secret");
+      const token = tokenService.generateAccessToken({ userId: "T1" });
 
+      expect(jwt.sign).toHaveBeenCalledWith({ userId: "T1" }, jwtSecret, {
+        expiresIn: jwtExpiresIn,
+      });
+      expect(token).toBe("mock-secret");
+    });
 
-    describe('Generate Token Access', () => {
-        test('Checking the user sign-in', () => {
-            jwt.sign.mockReturnValue('mock-secret')
-            const token = tokenService.generateAccessToken({ userId: 'T1' })
+    test("Checking the user with additional information", () => {
+      jwt.sign.mockReturnValue("mock-secret");
 
-            expect(jwt.sign).toHaveBeenCalledWith(
-                { userId: 'T1' },
-                jwtSecret,
-                {
-                    expiresIn: jwtExpiresIn
-                }
-            )
-            expect(token).toBe('mock-secret')
-        })
+      const token = tokenService.generateAccessToken({
+        userId: "T1",
+        username: "tester",
+        email: "test@email.com",
+      });
 
-        test('Checking the user with additional information', () => {
-            jwt.sign.mockReturnValue('mock-secret')
+      expect(jwt.sign).toHaveBeenCalledWith(
+        {
+          userId: "T1",
+          username: "tester",
+          email: "test@email.com",
+        },
+        jwtSecret,
+        {
+          expiresIn: jwtExpiresIn,
+        },
+      );
+    });
+  });
 
-            const token = tokenService.generateAccessToken({
-                userId: 'T1',
-                username: 'tester',
-                email: 'test@email.com'
-            })
+  describe("GetRefresh token", () => {
+    test("to check the cases for Refresh token", () => {
+      const mockToken = Buffer.from("a".repeat(64));
+      crypto.randomBytes.mockReturnValue(mockToken);
 
-            expect(jwt.sign).toHaveBeenCalledWith(
-                {
-                    userId: 'T1',
-                    username: 'tester',
-                    email: 'test@email.com'
-                }, jwtSecret,
-                {
-                    expiresIn: jwtExpiresIn
-                }
-            )
-        })
+      const token = tokenService.generateRefreshToken();
 
+      expect(crypto.randomBytes).toHaveBeenCalledWith(64);
+      expect(typeof token).toBe("string");
+      expect(token.length).toBeGreaterThan(0);
+    });
+  });
 
+  describe("Verify Access token", () => {
+    test("verifying token", () => {
+      const mockPayload = { userId: "t1", twi: "123", exp: "456" };
+      jwt.verify.mockReturnValue(mockPayload);
 
-    })
+      const result = tokenService.verifyAccessToken("test-id");
 
+      expect(jwt.verify).toHaveBeenCalledWith("test-id", jwtSecret);
+      expect(result.valid).toBe(true);
+      expect(result.payload).toEqual(mockPayload);
+    });
 
-    describe('GetRefresh token', () => {
+    test("verifying the token ID requirement", () => {
+      expect(() => {
+        tokenService.verifyAccessToken(null);
+      }).toThrow("Token is required");
+    });
 
-        test('to check the cases for Refresh token', () => {
-            const mockToken = Buffer.from('a'.repeat(64))
-            crypto.randomBytes.mockReturnValue(mockToken)
+    test("verification of expired token", () => {
+      const ExpiredError = new Error("jwt-expired");
+      ExpiredError.name = "TokenExpiredError";
+      jwt.verify.mockImplementation(() => {
+        throw ExpiredError;
+      });
 
-            const token = tokenService.generateRefreshToken()
+      const result = tokenService.verifyAccessToken("expired-token");
 
-            expect(crypto.randomBytes).toHaveBeenCalledWith(64)
-            expect(typeof token).toBe('string')
-            expect(token.length).toBeGreaterThan(0)
+      expect(result.valid).toBe(false);
+      expect(result.error).toBe("TOKEN_EXPIRED");
+    });
 
-        })
-    })
+    test("verification of web Token", () => {
+      const ExpiredError = new Error("WebToken Expired");
+      ExpiredError.name = "JsonWebTokenError";
+      jwt.verify.mockImplementation(() => {
+        throw ExpiredError;
+      });
+      const result = tokenService.verifyAccessToken("expired-token");
+      expect(result.valid).toBe(false);
+      expect(result.error).toBe("TOKEN_INVALID");
+    });
 
+    test("token written error for unknown error", () => {
+      jwt.verify.mockImplementation(() => {
+        throw new error("Unknown error");
+      });
+      const result = tokenService.verifyAccessToken("some-token");
+      expect(result.valid).toBe(false);
+      expect(result.error).toBe("TOKEN_ERROR");
+    });
+  });
 
-    describe('Verify Access token', () => {
+  describe("Decode token without verification", () => {
+    test("if the token is null", () => {
+      jwt.decode.mockReturnValue({ userId: "r1", exp: 1234 });
+      const result = tokenService.decodeToken("some-token");
 
-        test('verifying token', () => {
-            const mockPayload = { userId: 't1', twi: '123', exp: '456' }
-            jwt.verify.mockReturnValue(mockPayload)
+      expect(jwt.decode).toHaveBeenCalledWith("some-token");
+      expect(result.userId).toBe("r1");
+    });
 
-            const result = tokenService.verifyAccessToken('test-id')
+    test("token is null", () => {
+      const result = tokenService.decodeToken(null);
+      expect(result).toBe(null);
+    });
 
-            expect(jwt.verify).toHaveBeenCalledWith('test-id', jwtSecret)
-            expect(result.valid).toBe(true)
-            expect(result.payload).toEqual(mockPayload)
-        })
+    test("Run error on decode-error", () => {
+      jwt.decode.mockImplementation(() => {
+        throw new Error("Decode Error");
+      });
 
-        test('verifying the token ID requirement', () => {
-            expect(() => {
-                tokenService.verifyAccessToken(null)
-            }).toThrow('Token is required')
+      const result = tokenService.decodeToken("error-token");
+      expect(result).toBeNull();
+    });
+  });
 
-        })
+  describe("Get Token expiry details", () => {
+    test("Token check for the empty conditions", () => {
+      const futureTime = Math.floor(Date.now() / 1000) + 3600;
+      jwt.decode.mockReturnValue({ exp: futureTime });
 
-        test('verification of expired token', () => {
-            const ExpiredError = new Error('jwt-expired')
-            ExpiredError.name = 'TokenExpiredError'
-            jwt.verify.mockImplementation(() => {
-                throw ExpiredError
-            })
+      const result = tokenService.isTokenExpired("valid-token");
 
-            const result = tokenService.verifyAccessToken('expired-token')
+      expect(result).toBe(false);
+    });
 
-            expect(result.valid).toBe(false)
-            expect(result.error).toBe('TOKEN_EXPIRED')
-        })
+    test("To check the token is empty", () => {
+      const pastTime = Math.floor(Date.now() / 1000) - 3600;
+      jwt.decode.mockReturnValue({ exp: pastTime });
 
+      const result = tokenService.isTokenExpired("invalid - token");
 
-        test('verification of web Token', () => {
-            const ExpiredError = new Error('WebToken Expired')
-            ExpiredError.name = 'JsonWebTokenError'
-            jwt.verify.mockImplementation(() => {
-                throw ExpiredError
-            })
-            const result = tokenService.verifyAccessToken('expired-token')
-            expect(result.valid).toBe(false)
-            expect(result.error).toBe('TOKEN_INVALID')
-        })
-
-        test('token written error for unknown error', () => {
-            jwt.verify.mockImplementation(() => {
-                throw new error('Unknown error')
-            })
-            const result = tokenService.verifyAccessToken('some-token')
-            expect(result.valid).toBe(false)
-            expect(result.error).toBe('TOKEN_ERROR')
-        })
-
-    })
-
-
-    describe('Decode token without verification', () => {
-        test('if the token is null', () => {
-            jwt.decode.mockReturnValue({ userId: 'r1', exp: 1234 })
-            const result = tokenService.decodeToken('some-token')
-
-            expect(jwt.decode).toHaveBeenCalledWith('some-token')
-            expect(result.userId).toBe('r1')
-
-        })
-
-        test('token is null', () => {
-            const result = tokenService.decodeToken(null)
-            expect(result).toBe(null)
-        })
-
-        test('Run error on decode-error', () => {
-            jwt.decode.mockImplementation(() => {
-                throw new Error('Decode Error')
-            })
-
-            const result = tokenService.decodeToken('error-token')
-            expect(result).toBeNull()
-        })
-    })
-
-    describe('Get Token expiry details', () => {
-        test('Token check for the empty conditions', () => {
-            const futureTime = Math.floor(Date.now() / 1000) + 3600;
-            jwt.decode.mockReturnValue({ exp: futureTime })
-
-            const result = tokenService.isTokenExpired('valid-token')
-
-            expect(result).toBe(false);
-        })
-
-        test('To check the token is empty', () => {
-            const pastTime = Math.floor(Date.now() / 1000) - 3600;
-            jwt.decode.mockReturnValue({ exp: pastTime })
-
-            const result = tokenService.isTokenExpired('invalid - token')
-
-            expect(result).toBe(true)
-
-        })
-    })
-
-})
-
-
+      expect(result).toBe(true);
+    });
+  });
+});

@@ -1,21 +1,17 @@
-
-
 function testing(failedAttempts, isAdmin) {
-    let failedAttemptsLimit = 3;
+  let failedAttemptsLimit = 3;
 
-    let lockAccount = false;
+  let lockAccount = false;
 
-    if (isAdmin) {
-        failedAttemptsLimit = 5;
-    }
+  if (isAdmin) {
+    failedAttemptsLimit = 5;
+  }
 
-    if (failedAttempts >= failedAttemptsLimit) {
-        lockAccount = true;
-    }
+  if (failedAttempts >= failedAttemptsLimit) {
+    lockAccount = true;
+  }
 
-    return lockAccount;
+  return lockAccount;
 }
 
-module.exports = { testing }
-
-
+module.exports = { testing };
