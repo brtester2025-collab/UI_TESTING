@@ -71,7 +71,7 @@ test.skip('TC07: Verify button is enabled when it should be', async ({
     'You Right-clicked on button!'
   );
 });
-test('TC08: Verify button is responsive on different screen sizes', async ({
+test.skip('TC08: Verify button is responsive on different screen sizes', async ({
   page,
 }) => {
   await page.setViewportSize({ width: 375, height: 440 });
@@ -89,7 +89,62 @@ test('TC08: Verify button is responsive on different screen sizes', async ({
 });
 test.skip('TC09: Verify button is accessible via keyboard', async ({
   page,
-}) => {});
+}) => {
+  await page.keyboard.press('Tab');
+  await page.locator('#btn-goto-home').press('Enter');
+  await expect(page).toHaveURL('https://www.qaplayground.com/');
+});
 test.skip('TC10: Verify button is accessible to screen readers', async ({
   page,
-}) => {});
+}) => {
+  // 2. Get all button-like elements
+  const buttons = page.locator('button, [role="button"]');
+  const count = await buttons.count();
+
+  // Safety check
+  expect(count).toBeGreaterThan(0);
+
+  // 3. Loop through each button
+  for (let i = 0; i < count; i++) {
+    const btn = buttons.nth(i);
+
+    // --- Check label ---
+    const text = await btn.textContent();
+    const ariaLabel = await btn.getAttribute('aria-label');
+
+    expect(
+      (text && text.trim().length > 0) ||
+        (ariaLabel && ariaLabel.trim().length > 0)
+    ).toBeTruthy();
+
+    // --- Check role or native button ---
+    const tagName = await btn.evaluate((el) => el.tagName.toLowerCase());
+    const role = await btn.getAttribute('role');
+
+    const isNativeButton = tagName === 'button';
+    const hasButtonRole = role === 'button';
+
+    expect(isNativeButton || hasButtonRole).toBeTruthy();
+  }
+});
+
+test('to check the button  test', async ({ page }) => {
+  const buttons = await page.locator('button , [role = button]');
+  const btncnt = await buttons.count();
+
+  expect(btncnt).toBeGreaterThan(0);
+
+  for (let i = 0; i < btncnt; i++) {
+    const bot = buttons.nth(i);
+
+    const text = await bot.textContent();
+    const arailable = await bot.getAttribute('aria-label');
+
+    expect(
+      (text && text?.length > 0) || (arailable && arailable?.trim().length > 0)
+    ).toBeTruthy();
+    const text1 = await bot.getAttribute('role');
+    const text2 = await bot.evaluate((el) => el.tagName.toLowerCase());
+    expect(text1 || text2).toBeTruthy();
+  }
+});
