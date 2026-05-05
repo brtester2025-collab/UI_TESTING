@@ -11,21 +11,21 @@ test.beforeEach('Button Automation', async ({ page }) => {
   await page.getByTestId('card-link-buttons').click();
 });
 
-test.skip('TC01: Verify button is clickable and triggers action', async ({
+test('TC01: Verify button is clickable and triggers action', async ({
   page,
 }) => {
   await page.getByTestId('btn-goto-home').click();
   await expect(page.locator('#main-content')).toBeVisible();
 });
 
-test.skip('TC02: Verify button displays the correct label text', async ({
+test('TC02: Verify button displays the correct label text', async ({
   page,
 }) => {
   await page.getByTestId('btn-goto-home');
   await expect(page.locator('#btn-goto-home')).toContainText('Go To Home');
 });
 
-test.skip('TC03: Verify button triggers the correct action on click', async ({
+test('TC03: Verify button triggers the correct action on click', async ({
   page,
 }) => {
   const buttons = await page.getByTestId('btn-goto-home');
@@ -33,7 +33,7 @@ test.skip('TC03: Verify button triggers the correct action on click', async ({
   await expect(page).toHaveURL('https://www.qaplayground.com/');
 });
 
-test.skip('TC04: Verify double-click button triggers double-click action', async ({
+test('TC04: Verify double-click button triggers double-click action', async ({
   page,
 }) => {
   const buttons = await page.getByTestId('btn-double-click').dblclick();
@@ -42,7 +42,7 @@ test.skip('TC04: Verify double-click button triggers double-click action', async
   );
 });
 
-test.skip('TC05: Verify right-click button triggers context menu action', async ({
+test('TC05: Verify right-click button triggers context menu action', async ({
   page,
 }) => {
   const button = await page
@@ -53,17 +53,13 @@ test.skip('TC05: Verify right-click button triggers context menu action', async 
   );
 });
 
-test.skip('TC06: Verify disabled button cannot be clicked', async ({
-  page,
-}) => {
+test('TC06: Verify disabled button cannot be clicked', async ({ page }) => {
   await expect(page.locator('#btn-disabled')).toBeDisabled();
   const button = await page.locator('#btn-disabled');
   await button.click({ force: true });
   await expect(page).toHaveURL('https://www.qaplayground.com/practice/buttons');
 });
-test.skip('TC07: Verify button is enabled when it should be', async ({
-  page,
-}) => {
+test('TC07: Verify button is enabled when it should be', async ({ page }) => {
   const buttons = await page.locator('#btn-right-click');
   await expect(buttons).toBeEnabled();
   await buttons.click({ button: 'right' });
@@ -71,7 +67,7 @@ test.skip('TC07: Verify button is enabled when it should be', async ({
     'You Right-clicked on button!'
   );
 });
-test.skip('TC08: Verify button is responsive on different screen sizes', async ({
+test('TC08: Verify button is responsive on different screen sizes', async ({
   page,
 }) => {
   await page.setViewportSize({ width: 375, height: 440 });
@@ -87,28 +83,22 @@ test.skip('TC08: Verify button is responsive on different screen sizes', async (
   await buttons.click();
   await expect(page).toHaveURL('https://www.qaplayground.com/');
 });
-test.skip('TC09: Verify button is accessible via keyboard', async ({
-  page,
-}) => {
+test('TC09: Verify button is accessible via keyboard', async ({ page }) => {
   await page.keyboard.press('Tab');
   await page.locator('#btn-goto-home').press('Enter');
   await expect(page).toHaveURL('https://www.qaplayground.com/');
 });
-test.skip('TC10: Verify button is accessible to screen readers', async ({
+test('TC10: Verify button is accessible to screen readers', async ({
   page,
 }) => {
-  // 2. Get all button-like elements
   const buttons = page.locator('button, [role="button"]');
   const count = await buttons.count();
 
-  // Safety check
   expect(count).toBeGreaterThan(0);
 
-  // 3. Loop through each button
   for (let i = 0; i < count; i++) {
     const btn = buttons.nth(i);
 
-    // --- Check label ---
     const text = await btn.textContent();
     const ariaLabel = await btn.getAttribute('aria-label');
 
@@ -117,7 +107,6 @@ test.skip('TC10: Verify button is accessible to screen readers', async ({
         (ariaLabel && ariaLabel.trim().length > 0)
     ).toBeTruthy();
 
-    // --- Check role or native button ---
     const tagName = await btn.evaluate((el) => el.tagName.toLowerCase());
     const role = await btn.getAttribute('role');
 
@@ -148,3 +137,37 @@ test('to check the button  test', async ({ page }) => {
     expect(text1 || text2).toBeTruthy();
   }
 });
+
+//
+test('TC11: Verify button hover state is visually distinct', async ({
+  page,
+}) => {
+  const buttons = await page.locator('#btn-find-color');
+  const set1 = await buttons.evaluate(
+    (el) => window.getComputedStyle(el).backgroundColor
+  );
+
+  await buttons.hover();
+
+  const set2 = await buttons.evaluate(
+    (el) => window.getComputedStyle(el).backgroundColor
+  );
+
+  expect(set2).toBe(set1);
+});
+
+// test('TC-Test', async ({ page }) => {
+//   const buttons = await page.locator('#test-id');
+
+//   const innerButton = await buttons.evaluate((el) =>
+//     window.getComputedStyle(el)
+//   );
+
+//   await buttons.hover();
+
+//   const outerbutton = await buttons.evaluate((el) =>
+//     window.getComputedStyle(el)
+//   );
+
+//   expect(outerbutton).toBe(innerButton);
+// });
