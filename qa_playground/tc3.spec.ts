@@ -113,11 +113,42 @@ test('TC08: Verify success message displays submitted name', async ({
   ).toHaveText('John Doe');
 });
 
-test('TC09: Verify reset button clears all fields', async ({ page }) => {});
+test('TC09: Verify reset button clears all fields', async ({ page }) => {
+  await page.locator('#firstName').fill('John');
+  await page.locator('#lastName').fill('Doe');
+  await page.locator('#email').fill('john@example.com');
+  await page.locator('#phone').fill('9876543210');
+  await page.fill('#dob', '1995-06-15');
+  await page.getByTestId('radio-gender-male').check();
+  await expect(page.getByTestId('radio-gender-male')).toBeChecked();
+  await page.getByTestId('select-country').click();
+  await page.getByRole('option', { name: 'India' }).click();
+  await page.locator('#city').fill('Mumbai');
+  await page.locator('#password').fill('pass123');
+  await page.locator('#confirmPassword').fill('pass123');
+  await page.getByTestId('checkbox-terms').check();
+  await expect(page.getByTestId('checkbox-terms')).toBeChecked();
+  await page.locator('#resetFormBtn').click();
+  await expect(page.locator('#firstName')).toBeEmpty();
+  await expect(page.locator('#lastName')).toBeEmpty();
+});
 
-test('TC10: Verify gender radio button selection', async ({ page }) => {});
+test('TC10: Verify gender radio button selection', async ({ page }) => {
+  await page.getByTestId('radio-gender-male').check();
+  await expect(page.getByTestId('radio-gender-male')).toBeChecked();
+  await expect(page.getByTestId('radio-gender-female')).not.toBeChecked();
+});
 
-test('TC11: Verify country dropdown selection', async ({ page }) => {});
+test('TC11: Verify country dropdown selection', async ({ page }) => {
+  await expect(page.getByTestId('select-country')).toContainText([
+    'India',
+    'USA',
+    'UK',
+    'AUSTRALIA',
+    'GERMANY',
+    'CAND',
+  ]);
+});
 
 test('TC12: Verify multiple interest checkboxes can be selected', async ({
   page,
