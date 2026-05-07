@@ -140,14 +140,16 @@ test('TC10: Verify gender radio button selection', async ({ page }) => {
 });
 
 test('TC11: Verify country dropdown selection', async ({ page }) => {
-  await expect(page.getByTestId('select-country')).toContainText([
-    'India',
-    'USA',
-    'UK',
-    'AUSTRALIA',
-    'GERMANY',
-    'CAND',
-  ]);
+  await page.goto('https://qaplayground.dev/apps/forms/');
+
+  // Locate select-country dropdown
+  const countryDropdown = page.locator('#select-country');
+
+  // Select USA
+  await countryDropdown.selectOption('USA');
+
+  // Assert selected value
+  await expect(countryDropdown).toHaveValue('USA');
 });
 
 test('TC12: Verify multiple interest checkboxes can be selected', async ({
