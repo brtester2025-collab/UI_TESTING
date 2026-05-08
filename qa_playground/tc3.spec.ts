@@ -141,20 +141,19 @@ test('TC10: Verify gender radio button selection', async ({ page }) => {
 
 test('TC11: Verify country dropdown selection', async ({ page }) => {
   await page.goto('https://qaplayground.dev/apps/forms/');
-
-  // Locate select-country dropdown
   const countryDropdown = page.locator('#select-country');
-
-  // Select USA
   await countryDropdown.selectOption('USA');
-
-  // Assert selected value
   await expect(countryDropdown).toHaveValue('USA');
 });
 
 test('TC12: Verify multiple interest checkboxes can be selected', async ({
   page,
-}) => {});
+}) => {
+  await page.getByTestId('checkbox-interest-selenium').check();
+  await page.getByTestId('checkbox-interest-playwright').check();
+  await expect(page.getByTestId('checkbox-interest-playwright')).toBeChecked();
+  await expect(page.getByTestId('checkbox-interest-playwright')).toBeChecked();
+});
 
 test('TC13: Verify form fields retain values after validation failure', async ({
   page,
@@ -162,6 +161,31 @@ test('TC13: Verify form fields retain values after validation failure', async ({
 
 test('TC14: Verify Fill Again button returns to empty form from success state', async ({
   page,
-}) => {});
+}) => {
+  await page.locator('#firstName').fill('John');
+  await page.locator('#lastName').fill('Doe');
+  await page.locator('#email').fill('john@example.com');
+  await page.locator('#phone').fill('9876543210');
+  await page.fill('#dob', '1995-06-15');
+  await page.getByTestId('radio-gender-male').check();
+  await expect(page.getByTestId('radio-gender-male')).toBeChecked();
+  await page.getByTestId('select-country').click();
+  await page.getByRole('option', { name: 'India' }).click();
+  await page.locator('#city').fill('Mumbai');
+  await page.locator('#password').fill('pass123');
+  await page.locator('#confirmPassword').fill('pass123');
+  await page.getByTestId('checkbox-terms').check();
+  await expect(page.getByTestId('checkbox-terms')).toBeChecked();
+  await page.locator('#submitFormBtn').click();
+  await expect(page.getByTestId('form-success-msg').locator('h3')).toHaveText(
+    'Form Submitted Successfully!'
+  );
+  await expect(
+    page.getByTestId('form-success-msg').locator('#submittedName')
+  ).toHaveText('John Doe');
+
+  await page.getByTestId('reset-form-btn').click();
+  await expect(page.getByTestId('user-registration-form')).toBeVisible();
+});
 
 test('TC15: Verify form page loads without errors', async ({ page }) => {});
