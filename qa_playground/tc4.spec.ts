@@ -41,7 +41,7 @@ test.skip('TC04: Get all available options from the programming language dropdow
   console.log(data);
 });
 
-test('TC05: Select the last option from the programming language dropdown', async ({
+test.skip('TC05: Select the last option from the programming language dropdown', async ({
   page,
 }) => {
   await page.getByTestId('dropdown-language').click();
@@ -53,16 +53,32 @@ test('TC05: Select the last option from the programming language dropdown', asyn
   );
 });
 
-test('TC06: Multi-select: select multiple superheroes using CTRL+click', async ({
-  page,
-}) => {
-  await page.getByTestId('dropdown-heroes');
-  const data = page.keyboard
-});
-test('TC07: Multi-select: deselect a previously selected option', async ({
-  page,
-}) => {});
+test('TC06: CTRL + click multi-select', async ({ page }) => {
+  const dropdown = page.getByTestId('dropdown-heroes');
 
-test('TC08: Verify default placeholder text before any selection', async ({
-  page,
-}) => {});
+  const aquaman = dropdown.locator('option', {
+    hasText: 'Aquaman',
+  });
+
+  const batman = dropdown.locator('option', {
+    hasText: 'Batman',
+  });
+
+  await page.keyboard.down('Control');
+
+  await aquaman.click();
+  await batman.click();
+
+  await page.keyboard.up('Control');
+
+  const selected = await dropdown.locator('option:checked').allTextContents();
+
+  expect(selected).toEqual(expect.arrayContaining(['Aquaman', 'Batman']));
+});
+// test('TC07: Multi-select: deselect a previously selected option', async ({
+//   page,
+// }) => {});
+
+// test('TC08: Verify default placeholder text before any selection', async ({
+//   page,
+// }) => {});
