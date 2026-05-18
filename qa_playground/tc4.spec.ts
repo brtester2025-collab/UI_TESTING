@@ -53,7 +53,7 @@ test.skip('TC05: Select the last option from the programming language dropdown',
   );
 });
 
-test('TC06: CTRL + click multi-select', async ({ page }) => {
+test.skip('TC06: CTRL + click multi-select', async ({ page }) => {
   const dropdown = page.getByTestId('dropdown-heroes');
 
   const aquaman = dropdown.locator('option', {
@@ -65,19 +65,44 @@ test('TC06: CTRL + click multi-select', async ({ page }) => {
   });
 
   await page.keyboard.down('Control');
-
   await aquaman.click();
   await batman.click();
-
   await page.keyboard.up('Control');
 
   const selected = await dropdown.locator('option:checked').allTextContents();
-
   expect(selected).toEqual(expect.arrayContaining(['Aquaman', 'Batman']));
 });
-// test('TC07: Multi-select: deselect a previously selected option', async ({
-//   page,
-// }) => {});
+
+test('TC for other dropdown Option', async ({ page }) => {
+  const dropdown = page.getByTestId('dropdown-heroes');
+
+  const antman = dropdown.locator('option', { hasText: 'Ant-man' });
+  const batman = dropdown.locator('option', { hasText: 'batman' });
+
+  await page.keyboard.down('Control');
+  await antman.click();
+  await batman.click();
+  // await page.keyboard.up('Control');
+
+  const select = await dropdown.locator('option:checked').allTextContents();
+  expect(select).toEqual(expect.arrayContaining(['Ant-Man', 'Batman']));
+});
+test('TC07: Multi-select: deselect a previously selected option', async ({
+  page,
+}) => {
+  const previous = page.getByTestId('dropdown-heroes');
+  const antman = previous.locator('option', { hasText: 'Ant-man' });
+  const batman = previous.locator('option', { hasText: 'batman' });
+  await page.keyboard.down('Control');
+  await antman.click();
+  await batman.click();
+
+  await page.keyboard.up('Control');
+  await antman.click();
+
+  const select = await previous.locator('option:checked').allTextContents();
+  expect(select).toEqual(expect.arrayContaining(['Ant-Man']));
+});
 
 // test('TC08: Verify default placeholder text before any selection', async ({
 //   page,
