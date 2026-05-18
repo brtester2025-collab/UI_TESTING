@@ -104,6 +104,14 @@ test('TC07: Multi-select: deselect a previously selected option', async ({
   expect(select).toEqual(expect.arrayContaining(['Ant-Man']));
 });
 
+test('TC10: Verify the total count of options in the country dropdown', async ({
+  page,
+}) => {
+  await page.getByTestId('dropdown-country').click();
+  const options = page.locator('[role="option"]');
+  await expect(options).toHaveCount(4);
+});
+
 // test('TC08: Verify default placeholder text before any selection', async ({
 //   page,
 // }) => {});
