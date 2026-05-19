@@ -12,9 +12,23 @@ test.beforeEach('Dropdown Automation', async ({ page }) => {
 test('TC01: Accept a simple browser alert and verify it closes', async ({
   page,
 }) => {
-  page.once('dialog', async (dialog) => {
+  page.on('dialog', async (dialog) => {
     console.log(dialog.message());
     await dialog.accept();
+  });
+  await page.locator('#btn-simple-alert').click();
+  const button = await page.locator('#btn-simple-alert');
+
+  await expect(button).toBeVisible();
+  await expect(button).toBeEnabled();
+});
+
+test('TC02: Get text from a simple browser alert before accepting', async ({
+  page,
+}) => {
+  page.on('dialog', async (d) => {
+    expect(d.message()).toBe('Welcome to QA PlayGround!');
+    await d.accept();
   });
   await page.locator('#btn-simple-alert').click();
 });
