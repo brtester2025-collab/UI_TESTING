@@ -86,7 +86,7 @@ test('TC05: Verify the table is not empty after page load', async ({
   await expect(data).toBeVisible();
   // how to extract the data ?
   await expect(page.locator('tbody tr').first()).toBeVisible();
-  expect(await data.count()).toBeGreaterThan(1);
+  expect(await data.count()).toBeGreaterThan(0);
 });
 
 test('TC06: Assert the ISBN column contains only string values', async ({
