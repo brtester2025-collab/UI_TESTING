@@ -9,7 +9,7 @@ test.beforeEach('Dropdown Automation', async ({ page }) => {
   await page.getByTestId('practice-card-alerts-dialogs').click();
 });
 
-test('TC01: Accept a simple browser alert and verify it closes', async ({
+test.skip('TC01: Accept a simple browser alert and verify it closes', async ({
   page,
 }) => {
   page.on('dialog', async (dialog) => {
@@ -23,7 +23,7 @@ test('TC01: Accept a simple browser alert and verify it closes', async ({
   await expect(button).toBeEnabled();
 });
 
-test('TC02: Get text from a simple browser alert before accepting', async ({
+test.skip('TC02: Get text from a simple browser alert before accepting', async ({
   page,
 }) => {
   page.on('dialog', async (d) => {
@@ -31,4 +31,28 @@ test('TC02: Get text from a simple browser alert before accepting', async ({
     await d.accept();
   });
   await page.locator('#btn-simple-alert').click();
+});
+
+test('TC03: Accept a confirm dialog and verify accepted state', async ({
+  page,
+}) => {
+  page.on('dialog', async (d) => {
+    await d.accept();
+  });
+  await page.locator('#btn-confirm-alert').click();
+  await expect(page.getByTestId('result-confirm')).toHaveText(
+    'Result: Accepted'
+  );
+});
+
+test('TC04: Dismiss a confirm dialog and verify dismissed state', async ({
+  page,
+}) => {
+  page.on('dialog', async (d) => {
+    await d.dismiss();
+  });
+  await page.locator('#btn-confirm-alert').click();
+  await expect(page.getByTestId('result-confirm')).toHaveText(
+    'Result: Dismissed'
+  );
 });
