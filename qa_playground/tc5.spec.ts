@@ -9,7 +9,7 @@ test.beforeEach('Dropdown Automation', async ({ page }) => {
   await page.getByTestId('card-link-data-table').click();
 });
 
-test.skip('TC01: Verify all table column headers are present // for checking the count in the table', async ({
+test('TC01: Verify all table column headers are present // for checking the count in the table', async ({
   page,
 }) => {
   await page.waitForSelector('[data-testid="books-table"]');
@@ -24,7 +24,7 @@ test.skip('TC01: Verify all table column headers are present // for checking the
   console.log('Columns:', colCount);
 });
 
-test.skip('to check all header', async ({ page }) => {
+test('to check all header', async ({ page }) => {
   await page.waitForSelector('[data-testid="books-table"]');
   const data = await page.locator('#books-table thead th').allTextContents();
   //   console.log(data);
@@ -39,7 +39,7 @@ test.skip('to check all header', async ({ page }) => {
   ]);
 });
 
-test.skip('TC02: Count the total number of rows in the data table', async ({
+test('TC02: Count the total number of rows in the data table', async ({
   page,
 }) => {
   const table = page.getByTestId('books-table');
@@ -49,7 +49,7 @@ test.skip('TC02: Count the total number of rows in the data table', async ({
   expect(rows).toBe(10);
 });
 
-test.skip('TC03: Read a cell value from a specific row and column', async ({
+test('TC03: Read a cell value from a specific row and column', async ({
   page,
 }) => {
   await page.waitForSelector('[data-testid="books-table"]');
@@ -60,7 +60,7 @@ test.skip('TC03: Read a cell value from a specific row and column', async ({
   console.log('cell value: ', containText);
 });
 
-test.skip('TC04: Find a book row by author name using XPath or filter', async ({
+test('TC04: Find a book row by author name using XPath or filter', async ({
   page,
 }) => {
   await page.waitForSelector('[data-testid="books-table"]');
@@ -87,4 +87,21 @@ test('TC05: Verify the table is not empty after page load', async ({
   // how to extract the data ?
   await expect(page.locator('tbody tr').first()).toBeVisible();
   expect(await data.count()).toBeGreaterThan(1);
+});
+
+test('TC06: Assert the ISBN column contains only string values', async ({
+  page,
+}) => {
+  await page.waitForSelector('[data-testid="table-row-1"]');
+  const count = await page
+    .locator('#books-table tbody tr:first-child td:nth-child(5)')
+    .allInnerTexts();
+
+  console.log(await page.locator('#books-table').count());
+  console.log(await page.locator('#books-table tr').count());
+  console.log(count);
+
+  for (let i of count) {
+    expect(i.trim()).not.toBe(' ');
+  }
 });
