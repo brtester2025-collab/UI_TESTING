@@ -49,7 +49,7 @@ test.skip('TC02: Count the total number of rows in the data table', async ({
   expect(rows).toBe(10);
 });
 
-test('TC03: Read a cell value from a specific row and column', async ({
+test.skip('TC03: Read a cell value from a specific row and column', async ({
   page,
 }) => {
   await page.waitForSelector('[data-testid="books-table"]');
@@ -58,4 +58,33 @@ test('TC03: Read a cell value from a specific row and column', async ({
     .locator('#books-table  tbody tr:nth-child(1) td:nth-child(4)')
     .textContent();
   console.log('cell value: ', containText);
+});
+
+test.skip('TC04: Find a book row by author name using XPath or filter', async ({
+  page,
+}) => {
+  await page.waitForSelector('[data-testid="books-table"]');
+  const authName = await page
+    .locator('#books-table tbody tr:first-child td:nth-child(4)')
+    .innerText();
+
+  const cleanName = authName?.trim();
+
+  const matchRow = await page
+    .locator('#books-table tbody tr')
+    .filter({ hasText: cleanName });
+  console.log(authName);
+  await expect(matchRow).toBeVisible();
+  await expect(matchRow).toHaveCount(1);
+});
+
+test('TC05: Verify the table is not empty after page load', async ({
+  page,
+}) => {
+  await page.waitForSelector('[data-testid="books-table"]');
+  const data = page.locator('tbody tr').first();
+  await expect(data).toBeVisible();
+  // how to extract the data ?
+  await expect(page.locator('tbody tr').first()).toBeVisible();
+  expect(await data.count()).toBeGreaterThan(1);
 });
