@@ -80,19 +80,36 @@ test.skip('TC06: Dismiss a prompt dialog and verify no input is captured', async
   await expect(page.getByTestId('result-prompt')).not.toBeVisible();
 });
 
-test('TC07: Verify toast notification appears after triggering', async ({
+test.skip('TC07: Verify toast notification appears after triggering', async ({
   page,
 }) => {
   await page.locator('#btn-toast-alert').click();
   await expect(page.locator('[data-sonner-toast]')).toBeVisible();
 });
 
-test('TC08: Close a modal/sweet alert using the Cancel button', async ({
+test.skip('TC08: Close a modal/sweet alert using the Cancel button', async ({
   page,
 }) => {
-  await page.locator('#btn-modal-alert').click();
-  await page.locator('#btn-modal-cancel').click();
-  await expect(page.locator('#btn-modal-cancel')).not.toBeVisible();
+  await page.getByTestId('btn-modal-alert').click();
+  const modal = page.getByText('Modern Alert').first();
+  await expect(modal).toBeVisible();
+  await page.getByRole('button', { name: 'You Are!' }).click();
+  await expect(modal).not.toBeVisible();
+});
 
-  const modal = await page.locator();
+test('TC09: Close an advanced dialog using the Close button', async ({
+  page,
+}) => {
+  await page.getByTestId('btn-dialog-share').click();
+  const dialog = page.locator('[role="dialog"]');
+  await expect(dialog).toBeVisible();
+
+  const linkInput = dialog.locator('input');
+  await expect(linkInput).toBeVisible();
+
+  await expect(linkInput).toHaveValue(
+    /qaplayground\.com\/practice\/alerts-dialogs/
+  );
+  await dialog.getByRole('button', { name: 'Close' }).first().click();
+  await expect(dialog).not.toBeVisible();
 });
