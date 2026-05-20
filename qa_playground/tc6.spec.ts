@@ -9,7 +9,7 @@ test.beforeEach('Dropdown Automation', async ({ page }) => {
   await page.getByTestId('practice-card-alerts-dialogs').click();
 });
 
-test.skip('TC01: Accept a simple browser alert and verify it closes', async ({
+test('TC01: Accept a simple browser alert and verify it closes', async ({
   page,
 }) => {
   page.on('dialog', async (dialog) => {
@@ -23,7 +23,7 @@ test.skip('TC01: Accept a simple browser alert and verify it closes', async ({
   await expect(button).toBeEnabled();
 });
 
-test.skip('TC02: Get text from a simple browser alert before accepting', async ({
+test('TC02: Get text from a simple browser alert before accepting', async ({
   page,
 }) => {
   page.on('dialog', async (d) => {
@@ -33,7 +33,7 @@ test.skip('TC02: Get text from a simple browser alert before accepting', async (
   await page.locator('#btn-simple-alert').click();
 });
 
-test.skip('TC03: Accept a confirm dialog and verify accepted state', async ({
+test('TC03: Accept a confirm dialog and verify accepted state', async ({
   page,
 }) => {
   page.on('dialog', async (d) => {
@@ -45,7 +45,7 @@ test.skip('TC03: Accept a confirm dialog and verify accepted state', async ({
   );
 });
 
-test.skip('TC04: Dismiss a confirm dialog and verify dismissed state', async ({
+test('TC04: Dismiss a confirm dialog and verify dismissed state', async ({
   page,
 }) => {
   page.on('dialog', async (d) => {
@@ -57,9 +57,7 @@ test.skip('TC04: Dismiss a confirm dialog and verify dismissed state', async ({
   );
 });
 
-test.skip('TC05: Enter text in a prompt dialog and accept it', async ({
-  page,
-}) => {
+test('TC05: Enter text in a prompt dialog and accept it', async ({ page }) => {
   page.on('dialog', async (d) => {
     await d.accept('John Doe');
   });
@@ -69,7 +67,7 @@ test.skip('TC05: Enter text in a prompt dialog and accept it', async ({
   );
 });
 
-test.skip('TC06: Dismiss a prompt dialog and verify no input is captured', async ({
+test('TC06: Dismiss a prompt dialog and verify no input is captured', async ({
   page,
 }) => {
   page.on('dialog', async (d) => {
@@ -80,14 +78,14 @@ test.skip('TC06: Dismiss a prompt dialog and verify no input is captured', async
   await expect(page.getByTestId('result-prompt')).not.toBeVisible();
 });
 
-test.skip('TC07: Verify toast notification appears after triggering', async ({
+test('TC07: Verify toast notification appears after triggering', async ({
   page,
 }) => {
   await page.locator('#btn-toast-alert').click();
   await expect(page.locator('[data-sonner-toast]')).toBeVisible();
 });
 
-test.skip('TC08: Close a modal/sweet alert using the Cancel button', async ({
+test('TC08: Close a modal/sweet alert using the Cancel button', async ({
   page,
 }) => {
   await page.getByTestId('btn-modal-alert').click();
