@@ -12,6 +12,4 @@ test.beforeEach('Radio & Checkbox Automation Practice', async ({ page }) => {
   await page.getByTestId('practice-card-radio-checkbox').click();
 });
 
-test('TC01: Verify radio button is selected on click', async ({ page }) => {
-  const button;
-});
+test('TC01: Verify radio button is selected on click', async ({ page }) => {});
