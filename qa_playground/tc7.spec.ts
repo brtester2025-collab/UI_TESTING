@@ -12,4 +12,47 @@ test.beforeEach('Radio & Checkbox Automation Practice', async ({ page }) => {
   await page.getByTestId('practice-card-radio-checkbox').click();
 });
 
-test('TC01: Verify radio button is selected on click', async ({ page }) => {});
+test.skip('TC01: Verify radio button is selected on click', async ({
+  page,
+}) => {
+  await page.getByTestId('radio-yes-1').check();
+  await expect(page.getByTestId('radio-yes-1')).toBeChecked();
+});
+
+test.skip('TC02: Verify selecting another radio deselects the previous one', async ({
+  page,
+}) => {
+  await page.getByTestId('radio-yes-1').check();
+  await expect(page.getByTestId('radio-yes-1')).toBeChecked();
+  await page.getByTestId('radio-no-1').check();
+  await expect(page.getByTestId('radio-yes-1')).not.toBeChecked();
+  await expect(page.getByTestId('radio-no-1')).toBeChecked();
+});
+
+test('TC03: Verify only one radio button can be selected at a time', async ({
+  page,
+}) => {
+  await page.getByTestId('radio-yes-1').check();
+  await page.getByTestId('radio-yes-2').check();
+  await page.getByTestId('radio-bug-yes').check();
+  await page.getByTestId('radio-foo').check();
+  await page.getByTestId('radio-going').check();
+  await page.getByTestId('checkbox-remember-me').check();
+  await page.getByTestId('checkbox-terms').check();
+
+  await expect(page.getByTestId('radio-yes-1')).toBeChecked();
+  await expect(page.getByTestId('radio-yes-2')).toBeChecked();
+  await expect(page.getByTestId('radio-bug-yes')).toBeChecked();
+  await expect(page.getByTestId('radio-foo')).toBeChecked();
+  await expect(page.getByTestId('radio-going')).toBeChecked();
+  await expect(page.getByTestId('checkbox-remember-me')).toBeChecked();
+  await expect(page.getByTestId('checkbox-terms')).toBeChecked();
+
+  await expect(page.getByTestId('radio-no-1')).not.toBeChecked();
+  await expect(page.getByTestId('radio-no-2')).not.toBeChecked();
+  await expect(page.getByTestId('radio-bug-no')).not.toBeChecked();
+  await expect(page.getByTestId('radio-bar')).not.toBeChecked();
+  await expect(page.getByTestId('radio-not-going')).not.toBeChecked();
+});
+
+test();
