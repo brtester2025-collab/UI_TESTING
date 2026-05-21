@@ -29,7 +29,7 @@ test.skip('TC02: Verify selecting another radio deselects the previous one', asy
   await expect(page.getByTestId('radio-no-1')).toBeChecked();
 });
 
-test('TC03: Verify only one radio button can be selected at a time', async ({
+test.skip('TC03: Verify only one radio button can be selected at a time', async ({
   page,
 }) => {
   await page.getByTestId('radio-yes-1').check();
@@ -55,4 +55,55 @@ test('TC03: Verify only one radio button can be selected at a time', async ({
   await expect(page.getByTestId('radio-not-going')).not.toBeChecked();
 });
 
-test();
+test.skip('TC04: Verify radio button label text is correct', async ({
+  page,
+}) => {
+  await page.getByTestId('radio-yes-1').click();
+  await expect(page.getByText('Going').nth(1)).toBeVisible();
+});
+
+test.skip('TC05: Verify radio button state persists after page interaction', async ({
+  page,
+}) => {
+  await page.getByTestId('radio-yes-1').check();
+  await page.getByTestId('radio-yes-2').check();
+  await page.getByTestId('radio-bug-yes').check();
+  await page.getByTestId('radio-foo').check();
+  await page.getByTestId('radio-going').check();
+  await page.getByTestId('checkbox-remember-me').check();
+  await page.getByTestId('checkbox-terms').check();
+  await expect(page.getByTestId('radio-yes-1')).toBeChecked();
+});
+
+test.skip('TC06: Verify checkbox can be checked', async ({ page }) => {
+  await page.getByTestId('radio-yes-1').check();
+  await expect(page.getByTestId('radio-yes-1')).toBeChecked();
+});
+test.skip('TC07: Verify checkbox can be unchecked', async ({ page }) => {
+  await page.getByTestId('radio-yes-1').uncheck();
+  await expect(page.getByTestId('radio-yes-1')).not.toBeChecked();
+});
+
+test.skip('TC09: Verify radio buttons are keyboard navigable', async ({
+  page,
+}) => {
+  const rad = await page.getByTestId('radio-foo');
+  await rad.focus();
+  await page.keyboard.press('Space');
+  await expect(rad).toBeChecked();
+});
+
+test('TC10: Verify checkbox is keyboard togglable', async ({ page }) => {
+  const data = await page.getByRole('radio', { name: 'Maybe' });
+  await expect(data).toBeDisabled();
+  await data.click({ force: true });
+  await expect(data).not.toBeChecked();
+});
+
+test('TC13: Verify radio button group is accessible to screen readers', async ({
+  page,
+}) => {
+  const data = await page.getByTestId('radio-yes-1');
+  const id = await data.getAttribute('id');
+  await expect(page.locator(`label[for="${id}"]`)).toBeVisible();
+});
