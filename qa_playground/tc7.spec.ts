@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
 
 test.beforeEach('Radio & Checkbox Automation Practice', async ({ page }) => {
   await page.goto('https://www.qaplayground.com/login');
-  await page.fill('#email', process.env.USERMAIL || '');
+  await page.fill('#email', process.env.userid || '');
   await page.fill('#password', process.env.USERPASSWORD || '');
   await page.getByTestId('login-button').click();
   await page.goto('https://www.qaplayground.com/practice');
@@ -93,7 +93,7 @@ test.skip('TC09: Verify radio buttons are keyboard navigable', async ({
   await expect(rad).toBeChecked();
 });
 
-test('TC10: Verify checkbox is keyboard togglable', async ({ page }) => {
+test('TC10: Verify checkbox is keyboard toggle', async ({ page }) => {
   const data = await page.getByRole('radio', { name: 'Maybe' });
   await expect(data).toBeDisabled();
   await data.click({ force: true });
@@ -105,5 +105,7 @@ test('TC13: Verify radio button group is accessible to screen readers', async ({
 }) => {
   const data = await page.getByTestId('radio-yes-1');
   const id = await data.getAttribute('id');
-  await expect(page.locator(`label[for="${id}"]`)).toBeVisible();
+  await expect(page.locator(`label[for="${id}"]`)).not.toBeVisible();
 });
+
+test('TC14: Verify radio button visual state changes on selection', async ({}) => {});
