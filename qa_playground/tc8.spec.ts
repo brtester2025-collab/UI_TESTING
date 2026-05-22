@@ -41,5 +41,16 @@ test("TC04: Verify date input rejects out-of-range date (min/max constraint)'", 
   const date = await page.getByTestId('input-date-restricted');
 
   await expect(date).toHaveAttribute('min', '2024-01-01');
+  await date.fill('2025-01-01');
+  const isValid = await date.evaluate((el: HTMLInputElement) =>
+    el.checkValidity()
+  );
+  expect(isValid).toBeFalsy();
+
   await expect(date).toHaveAttribute('max', '2024-12-31');
+  await date.fill('2024-01-01');
+  const isValidate = await date.evaluate((el: HTMLInputElement) =>
+    el.checkValidity()
+  );
+  expect(isValidate).toBeTruthy();
 });
