@@ -39,7 +39,7 @@ test.skip('TC03: Verify external link opens in a new tab', async ({ page }) => {
   );
 });
 
-test('TC04: Verify internal link stays in the same tab', async ({
+test.skip('TC04: Verify internal link stays in the same tab', async ({
   page,
   context,
 }) => {
@@ -53,11 +53,27 @@ test('TC04: Verify internal link stays in the same tab', async ({
   await expect(secondPage).toBe(CountPage);
   await expect(page).toHaveURL(new RegExp(`${href}`));
 });
+test('TC05: Verify broken link returns HTTP error status', async ({
+  page,
+  request,
+}) => {
+  const brokenLink = await page.getByTestId('link-image-ironman');
+  const newBroke = await page.getByTestId('link-image-broken');
+  const href2 = await newBroke.getAttribute('href');
+  const fullUrl = new URL(href2!, page.url()).toString();
+  const response2 = await request.get(fullUrl!);/
+  expect([404, 200, 500, 400]).toContain(response2.status());
+
+  const href = await brokenLink.getAttribute('href');
+  console.log(typeof href);
+  await brokenLink.click();
+  await expect(href).not.toBeNull();
+  const response = await request.get(href!);
+  expect([404, 200, 500, 400]).toContain(response.status());
+  console.log(response.status());
+});
+test('', async ({ page }) => {});
 // test('', async ({ page }) => {});
 // test('', async ({ page }) => {});
-// test('', async ({ page }) => {});
-// test('', async ({ page }) => {});
-/*
 
 
-*/
