@@ -73,7 +73,8 @@ test.skip('TC05: Verify broken link returns HTTP error status', async ({
   console.log(response.status());
 });
 test('TC06: Verify link is keyboard accessible', async ({ page }) => {
-  await page.getByRole('link', { name: 'Home' });
+  const homeLink = page.getByRole('link', { name: 'Home' });
+  await homeLink.focus();
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL('https://qaplayground.com/');
 });
