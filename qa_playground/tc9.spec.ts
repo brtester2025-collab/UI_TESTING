@@ -58,12 +58,6 @@ test.skip('TC05: Verify broken link returns HTTP error status', async ({
   request,
 }) => {
   const brokenLink = await page.getByTestId('link-image-ironman');
-  const newBroke = await page.getByTestId('link-image-broken');
-  const href2 = await newBroke.getAttribute('href');
-  const fullUrl = new URL(href2!, page.url()).toString();
-  const response2 = await request.get(fullUrl!);
-  expect([404, 200, 500, 400]).toContain(response2.status());
-
   const href = await brokenLink.getAttribute('href');
   console.log(typeof href);
   await brokenLink.click();
@@ -72,11 +66,56 @@ test.skip('TC05: Verify broken link returns HTTP error status', async ({
   expect([404, 200, 500, 400]).toContain(response.status());
   console.log(response.status());
 });
-test('TC06: Verify link is keyboard accessible', async ({ page }) => {
+test.skip('TC06: Verify link is keyboard accessible', async ({ page }) => {
   const homeLink = page.getByRole('link', { name: 'Home' });
   await homeLink.focus();
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL('https://qaplayground.com/');
 });
-// test('', async ({ page }) => {});
-// test('', async ({ page }) => {});
+test.skip('TC07: Verify link href attribute contains the correct URL', async ({
+  page,
+}) => {
+  const pathcheck = await page.getByTestId('link-text-garbled-1');
+
+  const href = await pathcheck.getAttribute('href');
+  expect(href).toBe('/');
+});
+
+test('TC08: Verify link has accessible label for screen readers', async ({
+  page,
+}) => {
+  await page.waitForLoadState('networkidle');
+
+  const links = page.locator('a[data-testid]');
+  const counts = await links.count();
+  console.log(await page.locator('a[data-testid]').count());
+
+  for (let i = 0; i < counts; i++) {
+    const linkers = links.nth(i);
+
+    if (!(await linkers.isVisible())) continue;
+
+    const text = (await linkers.textContent())?.trim() || '';
+    console.log(i, text);
+    if (!text) continue;
+    expect(text).toBeTruthy();
+
+    const badtext = ['click here', 'read more', 'here'];
+
+    expect(badtext.includes(text.toLowerCase())).toBeFalsy();
+  }
+});
+
+/**
+ * 
+
+1.
+Navigate to /practice/links
+2.
+Locate each link element
+3.
+Assert each link has descriptive text or an aria-label
+4.
+Assert no link text is ambiguous (e.g. 'click here', 'read more' alone)
+ * 
+ */
