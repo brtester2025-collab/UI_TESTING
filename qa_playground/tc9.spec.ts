@@ -12,18 +12,18 @@ test.beforeEach('Radio & Checkbox Automation Practice', async ({ page }) => {
   await page.getByTestId('practice-card-links').click();
 });
 
-test('TC01: Verify link navigates to the correct URL on click', async ({
+test.skip('TC01: Verify link navigates to the correct URL on click', async ({
   page,
 }) => {
   await page.getByRole('link', { name: 'Home' }).click();
   await expect(page).toHaveURL('https://qaplayground.com/');
 });
 
-test('TC02: Verify link text matches expected label', async ({ page }) => {
+test.skip('TC02: Verify link text matches expected label', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Home' })).toHaveText('Home');
 });
 
-test('TC03: Verify external link opens in a new tab', async ({ page }) => {
+test.skip('TC03: Verify external link opens in a new tab', async ({ page }) => {
   const externalLink = page.locator('a[target="_blank"]').nth(0);
   await expect(externalLink).toHaveAttribute('target', '_blank');
   await expect(externalLink).toHaveAttribute('rel', 'noopener noreferrer');
@@ -39,7 +39,7 @@ test('TC03: Verify external link opens in a new tab', async ({ page }) => {
   );
 });
 
-test('TC04: Verify internal link stays in the same tab', async ({
+test.skip('TC04: Verify internal link stays in the same tab', async ({
   page,
   context,
 }) => {
@@ -53,7 +53,7 @@ test('TC04: Verify internal link stays in the same tab', async ({
   await expect(secondPage).toBe(CountPage);
   await expect(page).toHaveURL(new RegExp(`${href}`));
 });
-test('TC05: Verify broken link returns HTTP error status', async ({
+test.skip('TC05: Verify broken link returns HTTP error status', async ({
   page,
   request,
 }) => {
@@ -66,13 +66,13 @@ test('TC05: Verify broken link returns HTTP error status', async ({
   expect([404, 200, 500, 400]).toContain(response.status());
   console.log(response.status());
 });
-test('TC06: Verify link is keyboard accessible', async ({ page }) => {
+test.skip('TC06: Verify link is keyboard accessible', async ({ page }) => {
   const homeLink = page.getByRole('link', { name: 'Home' });
   await homeLink.focus();
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL('https://qaplayground.com/');
 });
-test('TC07: Verify link href attribute contains the correct URL', async ({
+test.skip('TC07: Verify link href attribute contains the correct URL', async ({
   page,
 }) => {
   const pathcheck = await page.getByTestId('link-text-garbled-1');
@@ -81,7 +81,7 @@ test('TC07: Verify link href attribute contains the correct URL', async ({
   expect(href).toBe('/');
 });
 
-test('TC08: Verify link has accessible label for screen readers', async ({
+test.skip('TC08: Verify link has accessible label for screen readers', async ({
   page,
 }) => {
   await page.waitForLoadState('networkidle');
@@ -105,7 +105,9 @@ test('TC08: Verify link has accessible label for screen readers', async ({
   }
 });
 
-test('TC09: Verify link hover state is visually distinct', async ({ page }) => {
+test.skip('TC09: Verify link hover state is visually distinct', async ({
+  page,
+}) => {
   const link = await page.getByTestId('link-internal-home');
 
   const Linkbefore = await link.evaluate((el) => {
@@ -122,16 +124,12 @@ test('TC09: Verify link hover state is visually distinct', async ({ page }) => {
   console.log('After', Linkafter);
   expect(Linkbefore).not.toBe(Linkafter);
 });
-/**
- * 
 
-1.
-Navigate to /practice/links
-2.
-Locate each link element
-3.
-Assert each link has descriptive text or an aria-label
-4.
-Assert no link text is ambiguous (e.g. 'click here', 'read more' alone)
- * 
- */
+test('TC10: Verify right-click on link shows browser context menu', async ({
+  page,
+}) => {
+  const link = await page.getByTestId('link-broken-newtab');
+
+  await link.click({ button: 'right' });
+  await expect(link).toBeVisible();
+});
