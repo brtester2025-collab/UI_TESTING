@@ -53,7 +53,7 @@ test('TC03: Switch back to the parent window after switching to child', async ({
     'QA Playground — Practice Selenium, Playwright & Cypress'
   );
   await newpage.close();
-  await newpage.waitForLoadState();
+
   await expect(page).toHaveURL(
     'https://qaplayground.com/practice/tabs-windows'
   );
