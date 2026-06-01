@@ -9,7 +9,7 @@ test.beforeEach('Dropdown Automation', async ({ page }) => {
   await page.getByTestId('practice-card-dropdowns').click();
 });
 
-test.skip('TC01: Select "APPLE" from fruit dropdown by visible text', async ({
+test('TC01: Select "APPLE" from fruit dropdown by visible text', async ({
   page,
 }) => {
   await page.getByTestId('dropdown-fruit').click();
@@ -17,7 +17,7 @@ test.skip('TC01: Select "APPLE" from fruit dropdown by visible text', async ({
   await expect(page.locator('#dropdown-fruit')).toHaveText('Apple');
 });
 
-test.skip('TC02: Select "India" from country dropdown by value attribute', async ({
+test('TC02: Select "India" from country dropdown by value attribute', async ({
   page,
 }) => {
   await page.getByTestId('dropdown-country').click();
@@ -25,7 +25,7 @@ test.skip('TC02: Select "India" from country dropdown by value attribute', async
   await expect(page.locator('#dropdown-country')).toHaveText('India');
 });
 
-test.skip('to check the total count of', async ({ page }) => {
+test('to check the total count of', async ({ page }) => {
   await page.getByTestId('dropdown-fruit').click();
   const values = await page.getByRole('option').allTextContents();
   const counts = await page.getByRole('option').count();
@@ -33,7 +33,7 @@ test.skip('to check the total count of', async ({ page }) => {
   console.log(counts);
 });
 
-test.skip('TC04: Get all available options from the programming language dropdown', async ({
+test('TC04: Get all available options from the programming language dropdown', async ({
   page,
 }) => {
   await page.getByTestId('dropdown-language').click();
@@ -41,7 +41,7 @@ test.skip('TC04: Get all available options from the programming language dropdow
   console.log(data);
 });
 
-test.skip('TC05: Select the last option from the programming language dropdown', async ({
+test('TC05: Select the last option from the programming language dropdown', async ({
   page,
 }) => {
   await page.getByTestId('dropdown-language').click();
@@ -53,7 +53,7 @@ test.skip('TC05: Select the last option from the programming language dropdown',
   );
 });
 
-test.skip('TC06: CTRL + click multi-select', async ({ page }) => {
+test('TC06: CTRL + click multi-select', async ({ page }) => {
   const dropdown = page.getByTestId('dropdown-heroes');
 
   const aquaman = dropdown.locator('option', {
