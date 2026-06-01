@@ -57,7 +57,7 @@ test('TC06: Verify disabled button cannot be clicked', async ({ page }) => {
   await expect(page.locator('#btn-disabled')).toBeDisabled();
   const button = await page.locator('#btn-disabled');
   await button.click({ force: true });
-  await expect(page).toHaveURL('https://www.qaplayground.com/practice/buttons');
+  await expect(page).toHaveURL('https://qaplayground.com/practice/buttons');
 });
 test('TC07: Verify button is enabled when it should be', async ({ page }) => {
   const buttons = await page.locator('#btn-right-click');
@@ -81,12 +81,12 @@ test('TC08: Verify button is responsive on different screen sizes', async ({
   expect(box.x + box.width).toBeLessThanOrEqual(375);
   expect(box.y + box.height).toBeLessThanOrEqual(440);
   await buttons.click();
-  await expect(page).toHaveURL('https://www.qaplayground.com/');
+  await expect(page).toHaveURL('https://qaplayground.com/');
 });
 test('TC09: Verify button is accessible via keyboard', async ({ page }) => {
   await page.keyboard.press('Tab');
   await page.locator('#btn-goto-home').press('Enter');
-  await expect(page).toHaveURL('https://www.qaplayground.com/');
+  await expect(page).toHaveURL('https://qaplayground.com/');
 });
 test('TC10: Verify button is accessible to screen readers', async ({
   page,

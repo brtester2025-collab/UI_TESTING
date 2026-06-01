@@ -12,14 +12,12 @@ test.beforeEach('Radio & Checkbox Automation Practice', async ({ page }) => {
   await page.getByTestId('practice-card-radio-checkbox').click();
 });
 
-test.skip('TC01: Verify radio button is selected on click', async ({
-  page,
-}) => {
+test('TC01: Verify radio button is selected on click', async ({ page }) => {
   await page.getByTestId('radio-yes-1').check();
   await expect(page.getByTestId('radio-yes-1')).toBeChecked();
 });
 
-test.skip('TC02: Verify selecting another radio deselects the previous one', async ({
+test('TC02: Verify selecting another radio deselects the previous one', async ({
   page,
 }) => {
   await page.getByTestId('radio-yes-1').check();
@@ -29,7 +27,7 @@ test.skip('TC02: Verify selecting another radio deselects the previous one', asy
   await expect(page.getByTestId('radio-no-1')).toBeChecked();
 });
 
-test.skip('TC03: Verify only one radio button can be selected at a time', async ({
+test('TC03: Verify only one radio button can be selected at a time', async ({
   page,
 }) => {
   await page.getByTestId('radio-yes-1').check();
@@ -55,14 +53,12 @@ test.skip('TC03: Verify only one radio button can be selected at a time', async 
   await expect(page.getByTestId('radio-not-going')).not.toBeChecked();
 });
 
-test.skip('TC04: Verify radio button label text is correct', async ({
-  page,
-}) => {
+test('TC04: Verify radio button label text is correct', async ({ page }) => {
   await page.getByTestId('radio-yes-1').click();
   await expect(page.getByText('Going').nth(1)).toBeVisible();
 });
 
-test.skip('TC05: Verify radio button state persists after page interaction', async ({
+test('TC05: Verify radio button state persists after page interaction', async ({
   page,
 }) => {
   await page.getByTestId('radio-yes-1').check();
@@ -75,18 +71,16 @@ test.skip('TC05: Verify radio button state persists after page interaction', asy
   await expect(page.getByTestId('radio-yes-1')).toBeChecked();
 });
 
-test.skip('TC06: Verify checkbox can be checked', async ({ page }) => {
+test('TC06: Verify checkbox can be checked', async ({ page }) => {
   await page.getByTestId('radio-yes-1').check();
   await expect(page.getByTestId('radio-yes-1')).toBeChecked();
 });
-test.skip('TC07: Verify checkbox can be unchecked', async ({ page }) => {
+test('TC07: Verify checkbox can be unchecked', async ({ page }) => {
   await page.getByTestId('radio-yes-1').uncheck();
   await expect(page.getByTestId('radio-yes-1')).not.toBeChecked();
 });
 
-test.skip('TC09: Verify radio buttons are keyboard navigable', async ({
-  page,
-}) => {
+test('TC09: Verify radio buttons are keyboard navigable', async ({ page }) => {
   const rad = await page.getByTestId('radio-foo');
   await rad.focus();
   await page.keyboard.press('Space');
