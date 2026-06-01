@@ -12,7 +12,7 @@ test.beforeEach('Multi-Select Automation Practice', async ({ page }) => {
   await page.getByTestId('practice-card-multi-select').click();
 });
 
-test.skip('TC01: Select multiple fruits using Ctrl+click in a native multi-select', async ({
+test('TC01: Select multiple fruits using Ctrl+click in a native multi-select', async ({
   page,
 }) => {
   await page.selectOption('#fruitMultiSelect', ['Apple', 'Banana', 'Orange']);
@@ -20,7 +20,7 @@ test.skip('TC01: Select multiple fruits using Ctrl+click in a native multi-selec
     'apple, banana, orange'
   );
 });
-test.skip('TC02: Deselect a specific option from a pre-selected multi-select', async ({
+test('TC02: Deselect a specific option from a pre-selected multi-select', async ({
   page,
 }) => {
   // await page.selectOption('#fruitMultiSelect', ['Apple', 'Banana', 'Orange']);
@@ -54,7 +54,7 @@ test.skip('TC02: Deselect a specific option from a pre-selected multi-select', a
   );
   console.log(page1);
 });
-test.skip('TC03: Select all countries using the Select All button', async ({
+test('TC03: Select all countries using the Select All button', async ({
   page,
 }) => {
   await page.getByTestId('select-all-btn').click();
@@ -89,4 +89,14 @@ test('TC04: Check multiple checkboxes and verify selected output', async ({
   );
 });
 
-test.skip('TC05: Add a tag and then remove it from the chip-based multi-select', async () => {});
+test('TC05: Add a tag and then remove it from the chip-based multi-select', async ({
+  page,
+}) => {
+  await page.getByTestId('tag-option-automation').click();
+  await page.getByTestId('tag-option-selenium').click();
+
+  await expect(page.getByTestId('tag-badge-automation')).toBeVisible();
+
+  await page.getByTestId('remove-tag-automation').click();
+  await expect(page.getByTestId('tag-count')).toHaveText('1');
+});
