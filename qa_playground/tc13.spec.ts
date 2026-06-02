@@ -19,11 +19,11 @@ test('TC01: Verify a file can be selected for upload', async ({ page }) => {
   );
 });
 
-// test('TC02: Verify selected file name is displayed after selection', async ({
-//   page,
-// }) => {
-//   console.log('page is working');
-// });
+test('TC02: Verify selected file name is displayed after selection', async ({
+  page,
+}) => {
+  console.log('page is working');
+});
 
 // test('TC03: Verify upload button is enabled after file selection', async ({
 //   page,
