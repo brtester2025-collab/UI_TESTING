@@ -38,7 +38,7 @@ test('TC-DASH-01:Skeleton loading state appears on page load then data renders',
   await expect(page.getByTestId('transactions-count-card')).toHaveText(/\d+/);
 });
 
-test.only('TC-DASH-02:Stat card values match actual account and transaction data', async ({
+test('TC-DASH-02:Stat card values match actual account and transaction data', async ({
   page,
 }) => {
   await expect(page.locator('#dashboard-page-container')).toHaveAttribute(
@@ -80,4 +80,23 @@ test.only('TC-DASH-02:Stat card values match actual account and transaction data
   console.log(user);
 
   await expect(active).toBe(user);
+});
+
+test.only('TC-DASH-03:Quick Actions navigate to correct pages', async ({
+  page,
+}) => {
+  const clicker = page.getByTestId('quick-add-account');
+  await clicker.click();
+  await expect(page).toHaveURL(
+    'https://qaplayground.com/bank/accounts?action=add'
+  );
+  expect(new URL(page.url()).pathname).toBe('/bank/accounts');
+  await expect(page.getByTestId('account-modal')).toBeVisible();
+  await page.goto('https://qaplayground.com/bank/dashboard');
+  await page.waitForTimeout(3000);
+  const clicker2 = page.getByTestId('quick-new-transaction');
+  await clicker2.click();
+  await page.waitForTimeout(3000);
+
+  await expect(new URL(page.url()).pathname).toBe('/bank/transactions');
 });
