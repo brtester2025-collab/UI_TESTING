@@ -120,7 +120,6 @@ test('TC10: Verify button is accessible to screen readers', async ({
 test('to check the button  test', async ({ page }) => {
   const buttons = await page.locator('button , [role = button]');
   const btncnt = await buttons.count();
-
   expect(btncnt).toBeGreaterThan(0);
 
   for (let i = 0; i < btncnt; i++) {
@@ -148,11 +147,9 @@ test('TC11: Verify button hover state is visually distinct', async ({
   );
 
   await buttons.hover();
-
   const set2 = await buttons.evaluate(
     (el) => window.getComputedStyle(el).backgroundColor
   );
-
   expect(set2).toBe(set1);
 });
 
