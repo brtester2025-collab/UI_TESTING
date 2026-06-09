@@ -82,9 +82,7 @@ test('TC-DASH-02:Stat card values match actual account and transaction data', as
   await expect(active).toBe(user);
 });
 
-test.only('TC-DASH-03:Quick Actions navigate to correct pages', async ({
-  page,
-}) => {
+test('TC-DASH-03:Quick Actions navigate to correct pages', async ({ page }) => {
   const clicker = page.getByTestId('quick-add-account');
   await clicker.click();
   await expect(page).toHaveURL(
@@ -99,4 +97,14 @@ test.only('TC-DASH-03:Quick Actions navigate to correct pages', async ({
   await page.waitForTimeout(3000);
 
   await expect(new URL(page.url()).pathname).toBe('/bank/transactions');
+});
+
+test.only('TC-DASH-04:Recent Transactions table shows up to 5 latest transactions', async ({
+  page,
+}) => {
+  await page.getByTestId('recent-transactions-table');
+  const data = await page.getByTestId('transactions-tbody t').count();
+  console.log(data);
+
+  expect(data).toBe(5);
 });

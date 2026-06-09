@@ -104,4 +104,6 @@ test('TC06: Assert the ISBN column contains only string values', async ({
   for (let i of count) {
     expect(i.trim()).not.toBe(' ');
   }
+
+  console.log(count);
 });
