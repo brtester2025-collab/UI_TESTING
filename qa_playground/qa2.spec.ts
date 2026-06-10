@@ -103,8 +103,28 @@ test.only('TC-DASH-04:Recent Transactions table shows up to 5 latest transaction
   page,
 }) => {
   await page.getByTestId('recent-transactions-table');
-  const data = await page.getByTestId('transactions-tbody t').count();
-  console.log(data);
+  await page.locator("[id^='recent-transaction-row-id_']").waitFor();
+  const data = await page.getByTestId('transactions-tbody').locator('tr');
+  const counter = await data.count();
+  console.log(counter);
+  expect(counter).toBeGreaterThanOrEqual(0);
+  expect(counter).toBeLessThanOrEqual(5);
 
-  expect(data).toBe(5);
+  for (let i = 0; i < counter; i++) {
+    const map = data.nth(i).locator('td');
+    expect(map.nth(0)).not.toBeEmpty();
+    expect(map.nth(1)).not.toBeEmpty();
+    expect(map.nth(2)).not.toBeEmpty();
+    expect(map.nth(3)).not.toBeEmpty();
+    expect(map.nth(4)).not.toBeEmpty();
+  }
+
+  const header = ['Date', 'Type', 'Account', 'Amount', 'Status'];
+  await expect(page.locator('#recent-transactions-header th')).toHaveText(
+    header
+  );
+
+  for (let i = 0; i < counter; i++) {
+    await expect(data.nth(i).locator('td').nth(4)).toContainText('Completed');
+  }
 });
