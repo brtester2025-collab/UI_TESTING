@@ -99,7 +99,7 @@ test('TC-DASH-03:Quick Actions navigate to correct pages', async ({ page }) => {
   await expect(new URL(page.url()).pathname).toBe('/bank/transactions');
 });
 
-test.only('TC-DASH-04:Recent Transactions table shows up to 5 latest transactions', async ({
+test('TC-DASH-04:Recent Transactions table shows up to 5 latest transactions', async ({
   page,
 }) => {
   await page.getByTestId('recent-transactions-table');
@@ -127,4 +127,32 @@ test.only('TC-DASH-04:Recent Transactions table shows up to 5 latest transaction
   for (let i = 0; i < counter; i++) {
     await expect(data.nth(i).locator('td').nth(4)).toContainText('Completed');
   }
+});
+
+test.only('TC-DASH-05:Pinned Accounts section supports drag-and-drop reorder', async ({
+  page,
+}) => {
+  const load = await page.locator('[data-testid^="draggable-account-"]');
+
+  await load.first().waitFor();
+
+  const data = await page
+    .locator('[data-testid^="draggable-account-"]')
+    .first();
+  const count = await load.count();
+  console.log(count);
+
+  expect(count).toBeGreaterThan(0);
+
+  await expect(data).toHaveAttribute('draggable', 'true');
+
+  const first = load.nth(0);
+
+  const second = load.nth(1);
+  console.log(second);
+
+  const textforFirst = await first.textContent();
+  console.log(textforFirst);
+
+  await first.dragTo(second);
 });
