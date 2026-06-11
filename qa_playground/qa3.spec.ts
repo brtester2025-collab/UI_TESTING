@@ -19,6 +19,15 @@ test.only('TC-ACC-02:Edit account name inline by double-clicking the name cell',
 }) => {
   await page.goto('https://qaplayground.com/bank/accounts');
   await page.waitForTimeout(1000);
+  const find = page.getByTestId('account-name').first();
 
-  await page.ge;
+  await expect(find).toHaveAttribute('data-editable', 'true');
+  await expect(find).toHaveAttribute('data-editing', 'false');
+
+  const Edit = await page
+    .getByRole('link', { name: 'Primary Saving' })
+    .dblclick();
+
+  await expect(page.getByTestId('inline-edit-input')).toBeVisible();
+  //the first account name cell with data-editable='true'
 });
