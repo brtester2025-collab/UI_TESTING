@@ -132,13 +132,13 @@ test('TC-DASH-04:Recent Transactions table shows up to 5 latest transactions', a
 test.only('TC-DASH-05:Pinned Accounts section supports drag-and-drop reorder', async ({
   page,
 }) => {
-  const load = await page.locator('[data-testid^="draggable-account-"]');
+  //basic locator
+
+  const load = page.locator('[data-testid^="draggable-account-"]');
 
   await load.first().waitFor();
 
-  const data = await page
-    .locator('[data-testid^="draggable-account-"]')
-    .first();
+  const data = page.locator('[data-testid^="draggable-account-"]').first();
   const count = await load.count();
   console.log(count);
 
@@ -150,9 +150,11 @@ test.only('TC-DASH-05:Pinned Accounts section supports drag-and-drop reorder', a
 
   const second = load.nth(1);
   console.log(second);
-
-  const textforFirst = await first.textContent();
-  console.log(textforFirst);
-
   await first.dragTo(second);
+
+  const t6 = page.getByTestId('drop-zone');
+
+  await first.hover();
+  await page.mouse.down();
+  console.log(await t6.getAttribute('data-drop-active'));
 });
