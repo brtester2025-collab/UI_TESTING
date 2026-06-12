@@ -29,5 +29,6 @@ test.only('TC-ACC-02:Edit account name inline by double-clicking the name cell',
     .dblclick();
 
   await expect(page.getByTestId('inline-edit-input')).toBeVisible();
-  //the first account name cell with data-editable='true'
+
+  await expect(data).toBeTrue;
 });
