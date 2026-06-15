@@ -71,6 +71,8 @@ test.only('TC-ACC-04:Filter accounts by account type', async ({ page }) => {
     .locator('tr');
   await page.waitForTimeout(2000);
 
+  const c = await Rcount.count();
+
   const rows3 = page
     .getByTestId('accounts-tbody')
     .locator('[data-testid^="account-row-id_"]');
@@ -82,4 +84,15 @@ test.only('TC-ACC-04:Filter accounts by account type', async ({ page }) => {
   await page.getByText('Savings').last().click();
   await page.waitForTimeout(1000);
   await expect(Rcount).toContainText('Saving');
+
+  await dataFilter.click();
+  await page.getByText('Credit').click();
+  await page.waitForTimeout(1000);
+
+  await expect(Rcount).toContainText('No accounts found');
+
+  const clicker = await page.getByTestId('reset-filters-button');
+  await clicker.click();
+
+  await expect(c).toBe(2);
 });
