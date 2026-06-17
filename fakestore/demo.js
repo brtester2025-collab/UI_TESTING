@@ -23,4 +23,38 @@ person.test();
 
 person2.test2("thunder");
 
-call;
+function test(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const data = new test("tester", 40);
+
+console.log(data.name);
+console.log(data.age);
+
+class dat {
+  constructor(names, ages, emails) {
+    this.name = names;
+    this.age = ages;
+    this.email = emails;
+  }
+}
+
+const result = new dat("arthur", 30, "test@mail.com");
+
+console.log(result.name);
+console.log(result.age);
+console.log(result.email);
+
+
+
+class testerz {
+  constructor(name){
+    this zr: name;
+  }
+}
+
+const result2 = new testerz('Zerif')
+
+console.log(result2.name2);
