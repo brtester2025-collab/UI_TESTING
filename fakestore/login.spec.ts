@@ -10,6 +10,6 @@ test("TC-LOGIN page", async ({ page }) => {
     process.env.usernamez || " ",
     process.env.password || "",
   );
-
   await newData.clickButton();
+  await expect(page).toHaveURL("https://letcode.in/home");
 });

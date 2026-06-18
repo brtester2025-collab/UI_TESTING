@@ -8,6 +8,7 @@ export class HomePageLogin {
   readonly password: Locator;
   readonly loginButton: Locator;
   readonly register: Locator;
+  readonly emailandPasswordError: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -17,6 +18,9 @@ export class HomePageLogin {
     this.username = page.locator("#signin-email");
     this.password = page.locator("#signin-password");
     this.loginButton = page.getByRole("button", { name: "Sign In" });
+    this.emailandPasswordError = page.getByText(
+      " Email or Mobile Number is required",
+    );
   }
 
   async goto() {
