@@ -9,6 +9,7 @@ export class HomePageLogin {
   readonly loginButton: Locator;
   readonly register: Locator;
   readonly emailandPasswordError: Locator;
+  readonly addToCart: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -21,6 +22,7 @@ export class HomePageLogin {
     this.emailandPasswordError = page.getByText(
       " Email or Mobile Number is required",
     );
+    this.addToCart = page.getByRole("button", { name: "ADD TO CART" });
   }
 
   async goto() {
@@ -46,5 +48,9 @@ export class HomePageLogin {
 
   async signClick() {
     await this.loginButton.click();
+  }
+
+  async addCart() {
+    await this.addToCart.click();
   }
 }

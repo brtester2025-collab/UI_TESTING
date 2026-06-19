@@ -19,7 +19,40 @@ test("login page", async ({ page }) => {
 });
 
 test("check if the user name is not empty", async ({ page }) => {
-  await login.loginData(" ", "test");
+  await login.loginData("", "test");
   await login.signClick();
-  await expect(login.emailandPasswordError).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      name: "Please enter both email and password.",
+    }),
+  ).toBeVisible();
+});
+
+test("To check password cannot be empty", async ({ page }) => {
+  await login.loginData("testzeta@mailinator.com", "");
+  await login.signClick();
+  await expect(
+    page.getByRole("heading", {
+      name: "Please enter both email and password.",
+    }),
+  ).toBeVisible();
+});
+
+test("username and password field with empty space", async ({ page }) => {
+  await login.loginData(" ", " ");
+  await login.signClick();
+  await expect(
+    page.getByRole("heading", {
+      name: "Please enter your mobile or email",
+    }),
+  ).toBeVisible();
+});
+test("Invalid username and password", async ({ page }) => {
+  await login.loginData("testzeta@mailinator.com", "123456");
+  await login.signClick();
+  await expect(
+    page.getByRole("heading", {
+      name: "No account found with this email or mobile. Please check your email or create a new account.",
+    }),
+  ).toBeVisible;
 });
