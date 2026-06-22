@@ -19,6 +19,26 @@ test("Go the deal Page", async ({ page }) => {
 });
 
 test("Go to flower Page", async ({ page }) => {
-  await addcart.selectCategory(" Flowers ");
-  await expect(page).toHaveURL();
+  await addcart.selectCategory(" FLOWER ");
+  await expect(page).toHaveURL("https://redrootstrading.ca/shop/Flower_flower");
+});
+
+test("Go to flower Page", async ({ page }) => {
+  await addcart.selectCategory("  PRE-ROLLS ");
+  await expect(page).toHaveURL("https://redrootstrading.ca/shop/Pre-Rolls_pre-rolls");
+});
+test("Go to flower Page", async ({ page }) => {
+  await addcart.selectCategory(" FLOWER ");
+  await expect(page).toHaveURL("https://redrootstrading.ca/shop/Flower_flower");
+});
+test("Go to flower Page", async ({ page }) => {
+  await addcart.selectCategory("  EDIBLES ");
+  await expect(page).toHaveURL("https://redrootstrading.ca/shop/Flower_flower");
+});test("Go to flower Page", async ({ page }) => {
+  await addcart.selectCategory(" FLOWER ");
+  await expect(page).toHaveURL("https://redrootstrading.ca/shop/Flower_flower");
+});
+test("Go to flower Page", async ({ page }) => {
+  await addcart.selectCategory(" FLOWER ");
+  await expect(page).toHaveURL("https://redrootstrading.ca/shop/Flower_flower");
 });
