@@ -15,7 +15,10 @@ test.beforeEach("Product count check", async ({ page }) => {
   await login.storeName();
 });
 
-test("test to count the page", async ({ page }) => {
-  const data = await count.countProduct();
-  expect(data).toBe(52);
+test("Product count on the Home page", async ({ page }) => {
+  const datas = await count.countProduct();
+  console.log("the answer is corrent: ", datas);
+  expect(datas).toBe(52);
 });
+
+test("Product count on the Deal Page", async ({ page }) => {});
