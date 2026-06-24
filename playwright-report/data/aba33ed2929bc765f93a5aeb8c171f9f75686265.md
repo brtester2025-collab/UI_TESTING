@@ -1,0 +1,312 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - paragraph:
+    - link "Skip to Main Content" [ref=e5] [cursor=pointer]:
+      - /url: "#main-content"
+  - banner [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e12]:
+        - marquee [ref=e13]: Express Delivery Across Ottawa & Gatineau & Reliable Mail Order Shipping Across Canada ✈️
+        - marquee [ref=e14]: Payments by Interac e-Transfer ONLY
+        - marquee [ref=e15]: The Best Deals And Products in Canada i Always by Indigenous Craft Growers
+        - marquee [ref=e16]: Proudly Serving Ottawa, Gatineau & Fellow Canadians Since 2023!
+        - marquee [ref=e17]: Welcome to Red Roots Trading Co NEW Website | Open Daily Until Midnight
+        - marquee [ref=e18]: DISCRETE Nation-Wide Canada Shipping From the Reserve - Straight to Your Door!
+        - marquee [ref=e19]: Express Delivery Across Ottawa & Gatineau & Reliable Mail Order Shipping Across Canada ✈️
+        - marquee [ref=e20]: Payments by Interac e-Transfer ONLY
+        - marquee [ref=e21]: The Best Deals And Products in Canada i Always by Indigenous Craft Growers
+        - marquee [ref=e22]: Proudly Serving Ottawa, Gatineau & Fellow Canadians Since 2023!
+        - marquee [ref=e23]: Welcome to Red Roots Trading Co NEW Website | Open Daily Until Midnight
+        - marquee [ref=e24]: DISCRETE Nation-Wide Canada Shipping From the Reserve - Straight to Your Door!
+      - generic [ref=e25]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - link "header.logo_aria" [ref=e30] [cursor=pointer]:
+              - /url: /
+              - img "Red Roots Trading Company" [ref=e31]
+            - heading "Indigenous Trade Done Right " [level=4] [ref=e33]:
+              - text: Indigenous Trade Done Right
+              - generic [ref=e34] [cursor=pointer]: 
+          - group [ref=e37]:
+            - generic [ref=e38]:
+              - textbox "SMART SEARCH for cannabis products" [ref=e39]:
+                - /placeholder: Smart Search
+              - button [ref=e40] [cursor=pointer]:
+                - img [ref=e41]
+          - list [ref=e45]:
+            - listitem [ref=e46]:
+              - generic [ref=e48]:
+                - button "🇨🇦 EN" [ref=e49] [cursor=pointer]:
+                  - generic [ref=e50]: 🇨🇦
+                  - generic [ref=e51]: EN
+                  - img [ref=e52]
+                - listbox:
+                  - generic:
+                    - generic:
+                      - generic: Language
+                      - generic: Langue
+                    - option "🇨🇦 English Canada":
+                      - generic: 🇨🇦
+                      - generic:
+                        - generic: English
+                        - generic: Canada
+                      - img
+                    - option "🇨🇦 Français Canada":
+                      - generic: 🇨🇦
+                      - generic:
+                        - generic: Français
+                        - generic: Canada
+            - listitem [ref=e54]:
+              - link "header.profile_aria" [ref=e55] [cursor=pointer]:
+                - /url: /login
+                - img [ref=e56]
+                - generic [ref=e59]: Login/Register
+            - listitem [ref=e60]:
+              - 'link "Open Cart, Products in cart: 0" [ref=e61] [cursor=pointer]':
+                - /url: /cart
+                - img [ref=e62]
+                - generic [ref=e66]: "0"
+            - listitem [ref=e67]:
+              - generic "Open side navigation menu" [ref=e68] [cursor=pointer]:
+                - img [ref=e69]
+        - navigation [ref=e81]:
+          - list [ref=e82]:
+            - listitem [ref=e83]:
+              - link "Deals" [ref=e84] [cursor=pointer]:
+                - /url: /shop/deals
+                - generic [ref=e85]: Deals
+            - listitem "Product category" [ref=e86]:
+              - link "FLOWER " [ref=e87] [cursor=pointer]:
+                - /url: /shop/Flower_flower
+                - generic [ref=e88]: FLOWER
+                - generic [ref=e89]: 
+            - listitem "Product category" [ref=e90]:
+              - link "PRE-ROLLS " [ref=e91] [cursor=pointer]:
+                - /url: /shop/Pre-Rolls_pre-rolls
+                - generic [ref=e92]: PRE-ROLLS
+                - generic [ref=e93]: 
+            - listitem "Product category" [ref=e94]:
+              - link "EDIBLES " [ref=e95] [cursor=pointer]:
+                - /url: /shop/Edibles_edibles
+                - generic [ref=e96]: EDIBLES
+                - generic [ref=e97]: 
+            - listitem "Product category" [ref=e98]:
+              - link "CONCENTRATES " [ref=e99] [cursor=pointer]:
+                - /url: /shop/Concentrates_concentrates
+                - generic [ref=e100]: CONCENTRATES
+                - generic [ref=e101]: 
+            - listitem "Product category" [ref=e102]:
+              - link "HASH " [ref=e103] [cursor=pointer]:
+                - /url: /shop/Hash_hash
+                - generic [ref=e104]: HASH
+                - generic [ref=e105]: 
+            - listitem "Product category" [ref=e106]:
+              - link "THC VAPES " [ref=e107] [cursor=pointer]:
+                - /url: /shop/THC%20Vapes_vaporizers
+                - generic [ref=e108]: THC VAPES
+                - generic [ref=e109]: 
+            - listitem "Product category" [ref=e110]:
+              - link "TOBACCO " [ref=e111] [cursor=pointer]:
+                - /url: /shop/Tobacco_tobacco
+                - generic [ref=e112]: TOBACCO
+                - generic [ref=e113]: 
+            - listitem "Product category" [ref=e114]:
+              - link "WELLNESS " [ref=e115] [cursor=pointer]:
+                - /url: /shop/Wellness_wellness
+                - generic [ref=e116]: WELLNESS
+                - generic [ref=e117]: 
+            - listitem "Product category" [ref=e118]:
+              - link "ACCESSORIES " [ref=e119] [cursor=pointer]:
+                - /url: /shop/Accessories_accessories
+                - generic [ref=e120]: ACCESSORIES
+                - generic [ref=e121]: 
+            - listitem "Product category" [ref=e122]:
+              - link "SNACKS" [ref=e123] [cursor=pointer]:
+                - /url: /shop/Snacks_snacks
+                - generic [ref=e124]: SNACKS
+            - listitem "Product category" [ref=e125]:
+              - link "RAFFLE" [ref=e126] [cursor=pointer]:
+                - /url: /shop/Raffle_raffle
+                - generic [ref=e127]: RAFFLE
+            - listitem "Product category" [ref=e128]:
+              - link "MERCHANDISE " [ref=e129] [cursor=pointer]:
+                - /url: /shop/Merchandise_merch
+                - generic [ref=e130]: MERCHANDISE
+                - generic [ref=e131]: 
+    - text:  
+    - dialog "Open side navigation menu":           
+  - text: 
+  - main [ref=e132]:
+    - generic [ref=e133]:
+      - navigation "breadcrumb" [ref=e134]:
+        - list [ref=e136]:
+          - listitem [ref=e137]:
+            - link "Home" [ref=e138] [cursor=pointer]:
+              - /url: javascript:void(0);
+          - listitem [ref=e139]: / Login
+      - generic [ref=e141]:
+        - generic [ref=e143]:
+          - heading "Welcome to our new website!" [level=2] [ref=e144]
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - generic [ref=e147]: 👋
+              - generic [ref=e148]:
+                - heading "To Login" [level=4] [ref=e149]
+                - paragraph [ref=e150]: Use your same email or phone number you always logged in with.
+            - generic [ref=e151]:
+              - generic [ref=e152]: 🔑
+              - generic [ref=e153]:
+                - heading "Temporary Password" [level=4] [ref=e154]
+                - paragraph [ref=e155]: Please use temporary password REDROOTS to login.
+            - generic [ref=e156]:
+              - generic [ref=e157]: 🔒
+              - generic [ref=e158]:
+                - heading "Change Password" [level=4] [ref=e159]
+                - paragraph [ref=e160]: Once you login you will be required to change your password.
+          - generic [ref=e161]:
+            - heading "Need Help?" [level=5] [ref=e162]
+            - paragraph [ref=e163]: "If your experiencing any technical difficulties logging in - please contact us at:"
+            - link "(613) 296-3441" [ref=e164] [cursor=pointer]:
+              - /url: tel:6132963441
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]: Red Roots Trading Co.
+            - heading "Welcome Back!" [level=1] [ref=e168]:
+              - text: Welcome
+              - emphasis [ref=e169]: Back!
+          - generic [ref=e170]:
+            - img [ref=e171]
+            - paragraph [ref=e173]:
+              - strong [ref=e174]: Sign in to continue to your account
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - generic [ref=e180]:
+                - generic [ref=e181]:
+                  - text: Email / Mobile Number
+                  - generic [ref=e182]: "*"
+                - textbox "Email / Mobile Number" [ref=e184]: testqa@mailinator.com
+              - generic [ref=e189]:
+                - generic [ref=e190]:
+                  - text: Password
+                  - generic [ref=e191]: "*"
+                - textbox "Password" [ref=e193]: "123456"
+                - button "Show password" [ref=e195] [cursor=pointer]:
+                  - img [ref=e196]: visibility_off
+              - link "This button takes you to the Forgot Password screen, where you can reset your password." [ref=e201] [cursor=pointer]:
+                - /url: /forgot-password/email
+                - text: Forgot Password?
+              - button "Sign In" [active] [ref=e202] [cursor=pointer]:
+                - generic [ref=e203]: Sign In
+            - generic [ref=e206]: New here?
+            - link "Create Account" [ref=e208] [cursor=pointer]:
+              - /url: /register
+              - img [ref=e209]
+              - text: Create Account
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - img [ref=e214]
+                - text: Secure Login
+              - generic [ref=e217]:
+                - img [ref=e218]
+                - text: Privacy Protected
+              - generic [ref=e220]:
+                - img [ref=e221]
+                - text: Verified Business
+  - contentinfo [ref=e224]:
+    - contentinfo [ref=e225]:
+      - generic [ref=e226]:
+        - generic [ref=e227]: Red Roots Trading Company
+        - generic [ref=e229]: "License #360185"
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - generic [ref=e232]:
+            - img "Footer Logo" [ref=e235]
+            - generic "Footer Text" [ref=e236]: Your Purchase Makes A Difference
+            - paragraph [ref=e237]:
+              - paragraph [ref=e238]: Red Roots is a Sovereign Indigenous Algonquin-owned and operated business. 16% of our net sales are reinvested into our local clan. Miigwetch & thank you!
+          - generic [ref=e239]:
+            - generic [ref=e240]: Useful Links
+            - list [ref=e241]:
+              - listitem [ref=e242]:
+                - link "Flower" [ref=e243] [cursor=pointer]:
+                  - /url: /shop/Flower_flower
+              - listitem [ref=e244]:
+                - link "Pre-Roll" [ref=e245] [cursor=pointer]:
+                  - /url: /shop/Pre-Rolls_pre-rolls
+              - listitem [ref=e246]:
+                - link "Edibles" [ref=e247] [cursor=pointer]:
+                  - /url: /shop/Edibles_edibles
+              - listitem [ref=e248]:
+                - link "Deals" [ref=e249] [cursor=pointer]:
+                  - /url: /shop/deals
+              - listitem [ref=e250]:
+                - link "Contact Us" [ref=e251] [cursor=pointer]:
+                  - /url: /contact-us
+              - listitem [ref=e252]:
+                - link "Blogs" [ref=e253] [cursor=pointer]:
+                  - /url: /blogs
+              - listitem [ref=e254]:
+                - link "FAQs" [ref=e255] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e256]:
+                - link "Delivery Area" [ref=e257] [cursor=pointer]:
+                  - /url: /delivery-area
+              - listitem [ref=e258]:
+                - link "Sitemap" [ref=e259] [cursor=pointer]:
+                  - /url: /sitemap
+          - generic [ref=e260]:
+            - generic [ref=e261]: Contact Information
+            - generic [ref=e262]:
+              - generic [ref=e264]: 
+              - generic [ref=e265]:
+                - generic [ref=e266]: Email
+                - link "Support Mail info@redrootstrading.ca" [ref=e268] [cursor=pointer]:
+                  - /url: mailto:info@redrootstrading.ca
+                  - text: info@redrootstrading.ca
+            - generic [ref=e269]:
+              - generic [ref=e271]: 
+              - generic [ref=e272]:
+                - generic [ref=e273]: Phone
+                - link "Support Phone Number 6132963441" [ref=e275] [cursor=pointer]:
+                  - /url: tel:6132963441
+                  - text: (613) 296-3441
+            - generic [ref=e276]:
+              - generic [ref=e277]: Accepted Payment
+              - img "Interac payment logo" [ref=e280]
+          - generic [ref=e281]:
+            - generic [ref=e282]: My Account
+            - list [ref=e283]:
+              - listitem [ref=e284]:
+                - link "Sign In" [ref=e285] [cursor=pointer]:
+                  - /url: /login
+              - listitem [ref=e286]:
+                - link "Register" [ref=e287] [cursor=pointer]:
+                  - /url: /register
+            - generic [ref=e288]: Get In Touch
+            - generic [ref=e289]:
+              - link "Link for Instagram" [ref=e291] [cursor=pointer]:
+                - /url: https://www.instagram.com/redroots_zibi/
+                - img "instagram" [ref=e292]
+              - link "Link for Facebook" [ref=e294] [cursor=pointer]:
+                - /url: https://www.facebook.com/people/Red-Roots-Trading-Co/61569257407340/
+                - img "facebook" [ref=e295]
+              - link "Link for Twitter" [ref=e297] [cursor=pointer]:
+                - /url: ""
+                - img "twitter" [ref=e298]
+              - link "Link for YouTube" [ref=e300] [cursor=pointer]:
+                - /url: ""
+                - img "youtube" [ref=e301]
+              - link "Link for LinkedIn" [ref=e303] [cursor=pointer]:
+                - /url: ""
+                - img "linkedin" [ref=e304]
+        - generic [ref=e306]:
+          - paragraph [ref=e308]: Copyright © 2023-2026 Red Roots Trading Company
+          - generic [ref=e309]:
+            - link "Privacy Policy" [ref=e310] [cursor=pointer]:
+              - /url: /privacypolicy
+            - generic [ref=e311]: /
+            - link "Terms and Conditions" [ref=e312] [cursor=pointer]:
+              - /url: /termsandcondition
+```

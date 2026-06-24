@@ -47,6 +47,9 @@ jobs:
       - name: Run Jest tests
         run: npm run test:unit
 
+      - name: Debug Playwright Discovery
+        run: npx playwright test --list
+
       # 6. Run Playwright
       - name: Run Playwright tests
         run: npx playwright test || echo "No Playwright tests found, skipping..."

@@ -10,14 +10,18 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 2
+    },
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "D:/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "e2e",
         "name": "e2e",
         "testDir": "D:/automation/tests/e2e",
@@ -31,7 +35,9 @@
         "outputDir": "D:/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "redroot",
         "name": "redroot",
         "testDir": "D:/automation/redroot/test",
@@ -99,8 +105,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9081,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:02.259Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6f3fddf37186c72b552e-6c79c507210cf9e6c7a9",
@@ -119,8 +139,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8783,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:02.372Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6f3fddf37186c72b552e-f30a013cae5626ce7c99",
@@ -139,8 +173,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 294,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:11.475Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6f3fddf37186c72b552e-fb81e68a0d7f790fe2eb",
@@ -176,8 +224,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1140,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:11.552Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "24e4b3ac21f7f473b7e5-1d0cfb8752ff90eab8bb",
@@ -196,8 +258,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1222,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:11.795Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "24e4b3ac21f7f473b7e5-0b38c58cee7789f051bc",
@@ -216,8 +292,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1435,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:12.723Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "24e4b3ac21f7f473b7e5-a500d0f03f204245135c",
@@ -236,8 +326,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1142,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:13.041Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "24e4b3ac21f7f473b7e5-336f8262aa7f3cd6c924",
@@ -256,8 +360,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1495,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:14.178Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "24e4b3ac21f7f473b7e5-1116543aed21f63d2aac",
@@ -276,8 +394,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1383,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:14.199Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "24e4b3ac21f7f473b7e5-97b42a81b6f6df0aab25",
@@ -304,7 +436,7 @@
           "specs": [
             {
               "title": "to contain tne element is visible",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -313,8 +445,70 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30801,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\tests\\e2e\\createaccount.spec.js:4:8",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text= Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:15.608Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-a3394-tain-tne-element-is-visible-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-a3394-tain-tne-element-is-visible-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-a3394-tain-tne-element-is-visible-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "be7dea37474dbccb9988-dd572b85a2814416643e",
@@ -324,7 +518,7 @@
             },
             {
               "title": "Error for the Empty field validation",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -333,8 +527,70 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30799,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\tests\\e2e\\createaccount.spec.js:4:8",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text= Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:15.696Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-d853b--the-Empty-field-validation-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-d853b--the-Empty-field-validation-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Pag-d853b--the-Empty-field-validation-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "be7dea37474dbccb9988-633eb8c5b3a2e1ec9981",
@@ -344,7 +600,7 @@
             },
             {
               "title": "form Submit",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -353,8 +609,70 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30578,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\tests\\e2e\\createaccount.spec.js:4:8",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text= Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\createaccount.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:49.042Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Page-form-Submit-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Page-form-Submit-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\createaccount-Register-Page-form-Submit-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\createaccount.spec.js",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "be7dea37474dbccb9988-0a6a63ff267c6650beae",
@@ -381,7 +699,7 @@
           "specs": [
             {
               "title": "Create Account For data visible",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -390,8 +708,70 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30634,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js:4:8",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:08:49.206Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\findBanquet-fbregister-Reg-42f2a-te-Account-For-data-visible-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\findBanquet-fbregister-Reg-42f2a-te-Account-For-data-visible-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\findBanquet-fbregister-Reg-42f2a-te-Account-For-data-visible-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "e6af5182eb2a5b94fc68-d991a194fd9308287cbc",
@@ -401,7 +781,7 @@
             },
             {
               "title": "Input validation test",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -410,8 +790,70 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30729,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js:4:8",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Register Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:09:22.497Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\findBanquet-fbregister-Register-Page-Input-validation-test-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\findBanquet-fbregister-Register-Page-Input-validation-test-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\findBanquet-fbregister-Register-Page-Input-validation-test-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\findBanquet\\fbregister.spec.js",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "e6af5182eb2a5b94fc68-4ac3b90fe7b80ca52e9b",
@@ -447,8 +889,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 29633,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:09:22.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "f1028418f2fb42e0654f-e350fe3f96e1bf2b0c3a",
@@ -458,7 +914,7 @@
             },
             {
               "title": "login page for user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -467,8 +923,54 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30709,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\findBanquet\\findbanquet.spec.js",
+                            "column": 16,
+                            "line": 13
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"login page for user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text =Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://findbanquet.com/login\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\findBanquet\\findbanquet.spec.js:13:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:09:52.281Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\findBanquet-findbanquet-Find-banquet-login-page-for-user-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\findBanquet-findbanquet-Find-banquet-login-page-for-user-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\findBanquet-findbanquet-Find-banquet-login-page-for-user-e2e\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "f1028418f2fb42e0654f-b40a3df406dde1fd0cd2",
@@ -495,7 +997,7 @@
           "specs": [
             {
               "title": "Create Account page",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -504,8 +1006,54 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31093,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\findbanquetregiester.spec.js",
+                            "column": 16,
+                            "line": 8
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text= Manage Users')\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   test(\u001b[32m\"Create Account page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"text= Manage Users\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign In\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://findbanquet.com/login\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign up now\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\findbanquetregiester.spec.js:8:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:09:58.552Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\findbanquetregiester-Register-Page-Create-Account-page-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\findbanquetregiester-Register-Page-Create-Account-page-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\findbanquetregiester-Register-Page-Create-Account-page-e2e\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "5759877e605344e94d48-34597664cca1a34b8754",
@@ -541,8 +1089,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10477,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:10:26.524Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6c2c5843d1d13bdd83a6-e1d94ea0da841a4a7ca0",
@@ -561,8 +1123,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14597,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:10:32.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6c2c5843d1d13bdd83a6-6c9d1b0fc831bf8ef6eb",
@@ -581,8 +1157,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12305,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:10:37.176Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6c2c5843d1d13bdd83a6-7361cacdf5cadb606f3d",
@@ -601,8 +1191,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23016,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:10:47.199Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6c2c5843d1d13bdd83a6-8e380fb721ac5d8531a2",
@@ -612,7 +1216,7 @@
             },
             {
               "title": "Footer Section Link",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -621,8 +1225,62 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30574,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\tests\\e2e\\home_page.spec.js:4:8",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Main Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"Main Page\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Home Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://findbanquet.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"domcontentloaded\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\home_page.spec.js:4:8\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:10:49.504Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Footer-Section-Link-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Footer-Section-Link-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\home_page-Main-Page-Footer-Section-Link-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\home_page.spec.js",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "6c2c5843d1d13bdd83a6-702349b6741c38804a15",
@@ -641,8 +1299,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24684,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:10.233Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "6c2c5843d1d13bdd83a6-ae555b1216c835b9484b",
@@ -678,8 +1350,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1163,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:22.162Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "c390ab8e6da1717769ef-f7446c3ae0becadcb72c",
@@ -715,8 +1401,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 790,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:23.549Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "badc1754af1944f68b2b-38ba7d798ed2fb7ee240",
@@ -735,8 +1435,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1022,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:24.371Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "badc1754af1944f68b2b-af848fdcf98b95fb56dc",
@@ -755,8 +1469,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1233,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:25.424Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "badc1754af1944f68b2b-119b0f1a11cecc9d2af2",
@@ -775,8 +1503,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 878,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:26.711Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "badc1754af1944f68b2b-b3075e1dda402e8948a8",
@@ -795,8 +1537,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 794,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:27.619Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "badc1754af1944f68b2b-8f8b80fbbad53726fb10",
@@ -815,8 +1571,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 941,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:28.436Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "badc1754af1944f68b2b-1686e1f69ca58aee2260",
@@ -852,8 +1622,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:29.406Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-ded6b541168cf06c4aca",
@@ -872,8 +1656,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1311,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:30.360Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-4250ad52e867898b4b08",
@@ -892,8 +1690,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4648,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:31.711Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-fece3cca18d4a72cfab1",
@@ -912,8 +1724,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1486,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:34.961Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-8c723babc6e11b99da55",
@@ -932,8 +1758,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1275,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:36.389Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-b67bfcbf4aaaf826d526",
@@ -952,8 +1792,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1320,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:36.484Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-6d887e5d8ca412652c26",
@@ -972,8 +1826,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1451,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:37.693Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-8c9f3cf3b32cb527c797",
@@ -992,8 +1860,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1357,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:37.831Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "acdf0ae4f62a43156007-a0c747b82b24b7149cd6",
@@ -1020,7 +1902,7 @@
           "specs": [
             {
               "title": "login page visual snapshot",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -1029,8 +1911,72 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1522,
+                      "error": {
+                        "message": "Error: A snapshot doesn't exist at D:\\automation\\tests\\e2e\\responsive.spec.js-snapshots\\login-page-e2e-win32.png, writing actual.",
+                        "stack": "Error: A snapshot doesn't exist at D:\\automation\\tests\\e2e\\responsive.spec.js-snapshots\\login-page-e2e-win32.png, writing actual.\n    at D:\\automation\\tests\\e2e\\responsive.spec.js:6:5",
+                        "location": {
+                          "file": "D:\\automation\\tests\\e2e\\responsive.spec.js",
+                          "column": 5,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m\"login page visual snapshot\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.saucedemo.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"login-page.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m   |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.05\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\automation\\tests\\e2e\\responsive.spec.js",
+                            "column": 5,
+                            "line": 6
+                          },
+                          "message": "Error: A snapshot doesn't exist at D:\\automation\\tests\\e2e\\responsive.spec.js-snapshots\\login-page-e2e-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m\"login page visual snapshot\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.saucedemo.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"login-page.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m   |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.05\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\responsive.spec.js:6:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:39.186Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "login-page-expected.png",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\tests\\e2e\\responsive.spec.js-snapshots\\login-page-e2e-win32.png"
+                        },
+                        {
+                          "name": "login-page-actual.png",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\responsive-responsive-login-page-visual-snapshot-e2e\\login-page-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\automation\\test-results\\responsive-responsive-login-page-visual-snapshot-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\automation\\test-results\\responsive-responsive-login-page-visual-snapshot-e2e\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\automation\\test-results\\responsive-responsive-login-page-visual-snapshot-e2e\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\automation\\tests\\e2e\\responsive.spec.js",
+                        "column": 5,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "68833bfb7a01a66a4f98-bc0ba6c50202c41ac332",
@@ -1049,8 +1995,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 950,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:39.235Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "68833bfb7a01a66a4f98-965f1fa51ab448770808",
@@ -1069,8 +2029,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1032,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:40.207Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "68833bfb7a01a66a4f98-5ac52696ce5bbd15ee59",
@@ -1089,8 +2063,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1200,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:43.699Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "68833bfb7a01a66a4f98-2b3238a59012449b20a8",
@@ -1109,8 +2097,22 @@
                   "expectedStatus": "passed",
                   "projectId": "e2e",
                   "projectName": "e2e",
-                  "results": [],
-                  "status": "skipped"
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 795,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-24T11:11:41.257Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "68833bfb7a01a66a4f98-746e990c7b5d02bce9f6",
@@ -1130,7 +2132,7 @@
       "specs": [
         {
           "title": "test",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1139,8 +2141,54 @@
               "expectedStatus": "passed",
               "projectId": "e2e",
               "projectName": "e2e",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30400,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\automation\\tests\\e2e\\test-1.spec.ts",
+                        "column": 56,
+                        "line": 37
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Send OTP' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" _ngcontent-ng-c887848284=\"\" class=\"w-full py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center bg-gradient-to-r from-emerald-600 to-sky-500 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] disabled:from-gray-400 disabled:to-gray-500 disabled:cursor-not-allowed disabled:opacity-90 disabled:hover:scale-100 text-white focus:outline-none focus:ring-4 focus:ring-emerald-500/30\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    22 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"textbox\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Mobile Number\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"textbox\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Mobile Number\"\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m\"000000000\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Send OTP\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\n \u001b[90m 39 |\u001b[39m     \u001b[33m.\u001b[39mgetByRole(\u001b[32m\"textbox\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Enter Verification Code Enter\"\u001b[39m })\n \u001b[90m 40 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\tests\\e2e\\test-1.spec.ts:37:56\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:11:42.087Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\test-1-test-e2e\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\test-1-test-e2e\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\test-1-test-e2e\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "492d4a3e7e76c4aacf4a-5fff31504d1c95cd6cd2",
@@ -1167,8 +2215,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9565,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:11:47.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-432f2dd6c8893d61a7f4",
@@ -1178,7 +2240,7 @@
         },
         {
           "title": "Go to flower Page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1187,8 +2249,54 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31424,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                        "column": 22,
+                        "line": 23
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Flower_flower\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    6 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m test(\u001b[32m\"Go to flower Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m addcart\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" FLOWER \"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://redrootstrading.ca/shop/Flower_flower\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m test(\u001b[32m\"Go to Pre-Rolls Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\addtocart.spec.ts:23:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:11:57.431Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-flower-Page-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-flower-Page-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-flower-Page-redroot\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "1774d6ce15798038045f-c56c56ecbb5fc0b14c61",
@@ -1207,8 +2315,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13895,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:12:16.131Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-979db8af2507454a52a5",
@@ -1227,8 +2349,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:12:30.593Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-f7cda7451323e386ed40",
@@ -1247,8 +2383,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 20135,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:12:33.271Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-2e3932ce0c5044c38e82",
@@ -1267,8 +2417,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9889,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:12:40.872Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-3ffbd9c1d340d195e992",
@@ -1278,7 +2442,7 @@
         },
         {
           "title": "Go to Tobacco Page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1287,8 +2451,62 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12766,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Tobacco_tobacco\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Tobacco_tobacco\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n\n    at D:\\automation\\redroot\\test\\addtocart.spec.ts:50:22",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                      "column": 22,
+                      "line": 50
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 48 |\u001b[39m test(\u001b[32m\"Go to Tobacco Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 49 |\u001b[39m   \u001b[36mawait\u001b[39m addcart\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" TOBACCO \"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[32m\"https://redrootstrading.ca/shop/Tobacco_tobacco\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 52 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                        "column": 22,
+                        "line": 50
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Tobacco_tobacco\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 48 |\u001b[39m test(\u001b[32m\"Go to Tobacco Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 49 |\u001b[39m   \u001b[36mawait\u001b[39m addcart\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" TOBACCO \"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[32m\"https://redrootstrading.ca/shop/Tobacco_tobacco\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 52 |\u001b[39m   )\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\addtocart.spec.ts:50:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:12:50.795Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-Tobacco-Page-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-Tobacco-Page-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-Tobacco-Page-redroot\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                    "column": 22,
+                    "line": 50
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "1774d6ce15798038045f-b2eae77b45576cfbc5ed",
@@ -1307,8 +2525,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 25357,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:12:53.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-644b51c4edad6406e7cc",
@@ -1327,8 +2559,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:07.745Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-f7711b13f638af1eb754",
@@ -1338,7 +2584,7 @@
         },
         {
           "title": "Go to Snacks Page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1347,8 +2593,62 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14432,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Snacks_snacks\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Snacks_snacks\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n\n    at D:\\automation\\redroot\\test\\addtocart.spec.ts:71:22",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                      "column": 22,
+                      "line": 71
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m test(\u001b[32m\"Go to Snacks Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 70 |\u001b[39m   \u001b[36mawait\u001b[39m addcart\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" SNACKS \"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://redrootstrading.ca/shop/Snacks_snacks\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m test(\u001b[32m\"Go to Raffle Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                        "column": 22,
+                        "line": 71
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\u001b[7mshop/Snacks_snacks\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 69 |\u001b[39m test(\u001b[32m\"Go to Snacks Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 70 |\u001b[39m   \u001b[36mawait\u001b[39m addcart\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" SNACKS \"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://redrootstrading.ca/shop/Snacks_snacks\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m test(\u001b[32m\"Go to Raffle Page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\addtocart.spec.ts:71:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:18.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-Snacks-Page-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-Snacks-Page-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\addtocart-Go-to-Snacks-Page-redroot\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\test\\addtocart.spec.ts",
+                    "column": 22,
+                    "line": 71
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "1774d6ce15798038045f-b9cb74fd47c3924cea03",
@@ -1367,8 +2667,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:19.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-b80b9ffe038e2e204d60",
@@ -1387,8 +2701,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:29.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1774d6ce15798038045f-18578d2dfb12d2570fc7",
@@ -1415,8 +2743,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 936,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "----------------API WORKING----------------\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:38.464Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1ea1b1599cbc08f16936-846e68d5754aa6b694d5",
@@ -1435,8 +2781,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:38.310Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "1ea1b1599cbc08f16936-ca780f0fe7833da1778b",
@@ -1454,7 +2814,7 @@
       "specs": [
         {
           "title": "login page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1463,8 +2823,66 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 20696,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/login\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/login\"\u001b[22m\n\n    at D:\\automation\\redroot\\test\\login.spec.ts:18:22",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\test\\login.spec.ts",
+                      "column": 22,
+                      "line": 18
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mloginData(\u001b[32m\"testqa@mailinator.com\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"123456\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39msignClick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://redrootstrading.ca/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m test(\u001b[32m\"check if the user name is not empty\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\login.spec.ts",
+                        "column": 22,
+                        "line": 18
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://redrootstrading.ca/\"\u001b[39m\nReceived: \u001b[31m\"https://redrootstrading.ca/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://redrootstrading.ca/login\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mloginData(\u001b[32m\"testqa@mailinator.com\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"123456\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39msignClick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://redrootstrading.ca/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m test(\u001b[32m\"check if the user name is not empty\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\login.spec.ts:18:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "https://redrootstrading.ca/login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:38.343Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\login-login-page-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\login-login-page-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\login-login-page-redroot\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\test\\login.spec.ts",
+                    "column": 22,
+                    "line": 18
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "41d3fd2474a19feb00a1-ce235d2388ab8bcaa946",
@@ -1474,7 +2892,7 @@
         },
         {
           "title": "check if the user name is not empty",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1483,8 +2901,65 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31003,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\automation\\redroot\\test\\login.spec.ts:7:6",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\test\\login.spec.ts",
+                      "column": 6,
+                      "line": 7
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m \u001b[36mlet\u001b[39m login\u001b[33m:\u001b[39m \u001b[33mHomePageLogin\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Login Case\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHomePageLogin\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mverification()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\login.spec.ts",
+                        "column": 6,
+                        "line": 7
+                      },
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m \u001b[36mlet\u001b[39m login\u001b[33m:\u001b[39m \u001b[33mHomePageLogin\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[32m\"Login Case\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHomePageLogin\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mverification()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\login.spec.ts:7:6\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\page\\loginr.ts",
+                        "column": 21,
+                        "line": 38
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://redrootstrading.ca/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39mredroot\\page\\loginr.ts:38\n\n\u001b[0m \u001b[90m 36 |\u001b[39m\n \u001b[90m 37 |\u001b[39m   \u001b[36masync\u001b[39m registerClick() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://redrootstrading.ca/login\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m loginData(nam\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at HomePageLogin.registerClick (D:\\automation\\redroot\\page\\loginr.ts:38:21)\u001b[22m\n\u001b[2m    at D:\\automation\\redroot\\test\\login.spec.ts:12:15\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:13:39.453Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\login-check-if-the-user-name-is-not-empty-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\login-check-if-the-user-name-is-not-empty-redroot\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\test\\login.spec.ts",
+                    "column": 6,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "41d3fd2474a19feb00a1-114cd78bc42f0f544463",
@@ -1503,8 +2978,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 18464,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "https://redrootstrading.ca/login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:14:03.075Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "41d3fd2474a19feb00a1-797d7657498f421cda9b",
@@ -1523,8 +3016,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18297,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "https://redrootstrading.ca/login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:14:15.463Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "41d3fd2474a19feb00a1-72f693b28ccf6dd7f3ea",
@@ -1543,8 +3054,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15679,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "https://redrootstrading.ca/login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:14:21.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "41d3fd2474a19feb00a1-ba4bc59783e4eb225717",
@@ -1571,8 +3100,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18799,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "the answer is corrent:  \u001b[33m52\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:14:34.103Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-7cc29bdc0c5b00157506",
@@ -1591,8 +3138,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 23935,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for deal sections \u001b[33m50\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:14:37.557Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-e4858f914849d65ef70d",
@@ -1611,8 +3176,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16210,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for flower section \u001b[33m50\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:14:52.941Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-51620ae3654eb2864302",
@@ -1631,8 +3214,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 23068,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for pre-rolls section \u001b[33m18\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:15:01.540Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-3f2425222cca41b03820",
@@ -1651,8 +3252,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16645,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for CONCENTRATES section \u001b[33m10\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:15:09.210Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-e494480edfc4fdf7e16b",
@@ -1671,8 +3290,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 23336,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for HASH section \u001b[33m30\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:15:24.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-41a4bb269383dcb5363d",
@@ -1691,8 +3328,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22486,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for THC VAPES section \u001b[33m27\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:15:25.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-4356116418ea894d30f2",
@@ -1711,8 +3366,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 20982,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for TOBACCO section \u001b[33m50\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:15:48.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-016334a680d64d36a069",
@@ -1722,7 +3395,7 @@
         },
         {
           "title": "Product count on the WELLNESS page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1731,8 +3404,66 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 18861,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m5\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m5\u001b[39m\n    at D:\\automation\\redroot\\test\\productcount.spec.ts:81:17",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\test\\productcount.spec.ts",
+                      "column": 17,
+                      "line": 81
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 79 |\u001b[39m   \u001b[36mconst\u001b[39m datas \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m count\u001b[33m.\u001b[39mcountProduct()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"for WELLNESS section\"\u001b[39m\u001b[33m,\u001b[39m datas)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m   expect(datas)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m\n \u001b[90m 84 |\u001b[39m test(\u001b[32m\"Product count on the ACCESSORIES  page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\productcount.spec.ts",
+                        "column": 17,
+                        "line": 81
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m5\u001b[39m\n\n\u001b[0m \u001b[90m 79 |\u001b[39m   \u001b[36mconst\u001b[39m datas \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m count\u001b[33m.\u001b[39mcountProduct()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"for WELLNESS section\"\u001b[39m\u001b[33m,\u001b[39m datas)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m   expect(datas)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m\n \u001b[90m 84 |\u001b[39m test(\u001b[32m\"Product count on the ACCESSORIES  page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\productcount.spec.ts:81:17\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "for WELLNESS section \u001b[33m5\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:15:48.421Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\productcount-Product-count-on-the-WELLNESS-page-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\productcount-Product-count-on-the-WELLNESS-page-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\productcount-Product-count-on-the-WELLNESS-page-redroot\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\test\\productcount.spec.ts",
+                    "column": 17,
+                    "line": 81
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-535995fec0b0a0b3a3b6",
@@ -1751,8 +3482,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 17487,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for ACCESSORIES section \u001b[33m21\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:16:09.061Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-62e300bfc9898e6563f2",
@@ -1771,8 +3520,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14599,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for SNACKS section \u001b[33m35\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:16:14.955Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-b9e0c315862fb89b5a19",
@@ -1782,7 +3549,7 @@
         },
         {
           "title": "Product count on the RAFFLE page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1791,8 +3558,66 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 22220,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m0\u001b[39m\n    at D:\\automation\\redroot\\test\\productcount.spec.ts:101:17",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\test\\productcount.spec.ts",
+                      "column": 17,
+                      "line": 101
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m   \u001b[36mconst\u001b[39m datas \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m count\u001b[33m.\u001b[39mcountProduct()\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"for RAFFLE section\"\u001b[39m\u001b[33m,\u001b[39m datas)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m   expect(datas)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m test(\u001b[32m\"Product count on the MERCHANDISE page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 104 |\u001b[39m   \u001b[36mawait\u001b[39m visit\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" MERCHANDISE \"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\test\\productcount.spec.ts",
+                        "column": 17,
+                        "line": 101
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m  99 |\u001b[39m   \u001b[36mconst\u001b[39m datas \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m count\u001b[33m.\u001b[39mcountProduct()\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"for RAFFLE section\"\u001b[39m\u001b[33m,\u001b[39m datas)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m   expect(datas)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m test(\u001b[32m\"Product count on the MERCHANDISE page\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 104 |\u001b[39m   \u001b[36mawait\u001b[39m visit\u001b[33m.\u001b[39mselectCategory(\u001b[32m\" MERCHANDISE \"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\automation\\redroot\\test\\productcount.spec.ts:101:17\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "for RAFFLE section \u001b[33m0\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:16:26.585Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\productcount-Product-count-on-the-RAFFLE-page-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\productcount-Product-count-on-the-RAFFLE-page-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\productcount-Product-count-on-the-RAFFLE-page-redroot\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\test\\productcount.spec.ts",
+                    "column": 17,
+                    "line": 101
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-354df99e2bf4a36ad808",
@@ -1811,8 +3636,26 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19949,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "for MERCHANDISE section \u001b[33m32\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:16:30.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "e13845f94d4e300c0b5d-76f565bdfdc469d84960",
@@ -1830,7 +3673,7 @@
       "specs": [
         {
           "title": "Product Found",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -1839,8 +3682,62 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8748,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.pc-name')\nExpected: visible\nError: strict mode violation: locator('.pc-name') resolved to 52 elements:\n    1) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Neo Passion Flower 14g </a> aka getByText('Neo Passion Flower 14g').first()\n    2) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Pablo Nicotine Pouch  </a> aka getByText('Pablo Nicotine Pouch').first()\n    3) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Mahigan Wellness Products </a> aka getByText('Mahigan Wellness Products').first()\n    4) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Zyn 11mg Nicotine Pouches </a> aka getByText('Zyn 11mg Nicotine Pouches').first()\n    5) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Orbito 120k Nicotine Vapes </a> aka getByText('Orbito 120k Nicotine Vapes').first()\n    6) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> STLTH 60k Nicotine Vapes - 20mg/mL </a> aka getByText('STLTH 60k Nicotine Vapes -').first()\n    7) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Neo Passion Flower 14g </a> aka getByText('Neo Passion Flower 14g').nth(1)\n    8) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> White Runtz Flower (Exotic) - 7g </a> aka getByText('White Runtz Flower (Exotic')\n    9) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> White Runtz (exotic) Flower - 28g </a> aka getByText('White Runtz (exotic) Flower')\n    10) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Zkittlez Smalls Flower (Exotic) - 28g </a> aka getByText('Zkittlez Smalls Flower (')\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pc-name')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.pc-name')\nExpected: visible\nError: strict mode violation: locator('.pc-name') resolved to 52 elements:\n    1) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Neo Passion Flower 14g </a> aka getByText('Neo Passion Flower 14g').first()\n    2) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Pablo Nicotine Pouch  </a> aka getByText('Pablo Nicotine Pouch').first()\n    3) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Mahigan Wellness Products </a> aka getByText('Mahigan Wellness Products').first()\n    4) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Zyn 11mg Nicotine Pouches </a> aka getByText('Zyn 11mg Nicotine Pouches').first()\n    5) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Orbito 120k Nicotine Vapes </a> aka getByText('Orbito 120k Nicotine Vapes').first()\n    6) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> STLTH 60k Nicotine Vapes - 20mg/mL </a> aka getByText('STLTH 60k Nicotine Vapes -').first()\n    7) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Neo Passion Flower 14g </a> aka getByText('Neo Passion Flower 14g').nth(1)\n    8) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> White Runtz Flower (Exotic) - 7g </a> aka getByText('White Runtz Flower (Exotic')\n    9) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> White Runtz (exotic) Flower - 28g </a> aka getByText('White Runtz (exotic) Flower')\n    10) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Zkittlez Smalls Flower (Exotic) - 28g </a> aka getByText('Zkittlez Smalls Flower (')\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pc-name')\u001b[22m\n\n    at Searching.productVisible (D:\\automation\\redroot\\page\\searchbar.ts:29:49)\n    at D:\\automation\\redroot\\test\\searchbar.spec.ts:21:16",
+                    "location": {
+                      "file": "D:\\automation\\redroot\\page\\searchbar.ts",
+                      "column": 49,
+                      "line": 29
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mredroot\\page\\searchbar.ts:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36masync\u001b[39m productVisible(name\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\".pc-name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\".pc-name\"\u001b[39m)\u001b[33m.\u001b[39mallTextContents())\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m     console\u001b[33m.\u001b[39mlog(name)\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\automation\\redroot\\page\\searchbar.ts",
+                        "column": 49,
+                        "line": 29
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.pc-name')\nExpected: visible\nError: strict mode violation: locator('.pc-name') resolved to 52 elements:\n    1) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Neo Passion Flower 14g </a> aka getByText('Neo Passion Flower 14g').first()\n    2) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Pablo Nicotine Pouch  </a> aka getByText('Pablo Nicotine Pouch').first()\n    3) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Mahigan Wellness Products </a> aka getByText('Mahigan Wellness Products').first()\n    4) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Zyn 11mg Nicotine Pouches </a> aka getByText('Zyn 11mg Nicotine Pouches').first()\n    5) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Orbito 120k Nicotine Vapes </a> aka getByText('Orbito 120k Nicotine Vapes').first()\n    6) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> STLTH 60k Nicotine Vapes - 20mg/mL </a> aka getByText('STLTH 60k Nicotine Vapes -').first()\n    7) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Neo Passion Flower 14g </a> aka getByText('Neo Passion Flower 14g').nth(1)\n    8) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> White Runtz Flower (Exotic) - 7g </a> aka getByText('White Runtz Flower (Exotic')\n    9) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> White Runtz (exotic) Flower - 28g </a> aka getByText('White Runtz (exotic) Flower')\n    10) <a tabindex=\"0\" class=\"pc-name\" _ngcontent-serverapp-c1186850551=\"\"> Zkittlez Smalls Flower (Exotic) - 28g </a> aka getByText('Zkittlez Smalls Flower (')\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pc-name')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mredroot\\page\\searchbar.ts:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36masync\u001b[39m productVisible(name\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\".pc-name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\".pc-name\"\u001b[39m)\u001b[33m.\u001b[39mallTextContents())\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m     console\u001b[33m.\u001b[39mlog(name)\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[2m    at Searching.productVisible (D:\\automation\\redroot\\page\\searchbar.ts:29:49)\u001b[22m\n\u001b[2m    at D:\\automation\\redroot\\test\\searchbar.spec.ts:21:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:16:50.248Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\automation\\test-results\\searchbar-Product-Found-redroot\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\automation\\test-results\\searchbar-Product-Found-redroot\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\automation\\test-results\\searchbar-Product-Found-redroot\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\automation\\redroot\\page\\searchbar.ts",
+                    "column": 49,
+                    "line": 29
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "9f9d38e1ccf57602dc8a-8a039a2ec85d653af303",
@@ -1859,8 +3756,22 @@
               "expectedStatus": "passed",
               "projectId": "redroot",
               "projectName": "redroot",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10053,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-24T11:16:52.920Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
           "id": "9f9d38e1ccf57602dc8a-f7e979201ea229062f5f",
@@ -1873,11 +3784,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-24T11:01:33.090Z",
-    "duration": 296.212,
-    "expected": 0,
-    "skipped": 78,
-    "unexpected": 0,
+    "startTime": "2026-06-24T11:07:59.780Z",
+    "duration": 543737.894,
+    "expected": 60,
+    "skipped": 0,
+    "unexpected": 18,
     "flaky": 0
   }
 }

@@ -1,0 +1,320 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - paragraph:
+      - link "Skip to Main Content" [ref=e5] [cursor=pointer]:
+        - /url: "#main-content"
+    - banner [ref=e6]:
+      - banner [ref=e7]:
+        - generic [ref=e12]:
+          - marquee [ref=e13]: Express Delivery Across Ottawa & Gatineau & Reliable Mail Order Shipping Across Canada ✈️
+          - marquee [ref=e14]: Payments by Interac e-Transfer ONLY
+          - marquee [ref=e15]: The Best Deals And Products in Canada i Always by Indigenous Craft Growers
+          - marquee [ref=e16]: Proudly Serving Ottawa, Gatineau & Fellow Canadians Since 2023!
+          - marquee [ref=e17]: Welcome to Red Roots Trading Co NEW Website | Open Daily Until Midnight
+          - marquee [ref=e18]: DISCRETE Nation-Wide Canada Shipping From the Reserve - Straight to Your Door!
+          - marquee [ref=e19]: Express Delivery Across Ottawa & Gatineau & Reliable Mail Order Shipping Across Canada ✈️
+          - marquee [ref=e20]: Payments by Interac e-Transfer ONLY
+          - marquee [ref=e21]: The Best Deals And Products in Canada i Always by Indigenous Craft Growers
+          - marquee [ref=e22]: Proudly Serving Ottawa, Gatineau & Fellow Canadians Since 2023!
+          - marquee [ref=e23]: Welcome to Red Roots Trading Co NEW Website | Open Daily Until Midnight
+          - marquee [ref=e24]: DISCRETE Nation-Wide Canada Shipping From the Reserve - Straight to Your Door!
+        - generic [ref=e25]:
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - link "header.logo_aria" [ref=e30] [cursor=pointer]:
+                - /url: /
+                - img "Red Roots Trading Company" [ref=e31]
+              - heading "Indigenous Trade Done Right " [level=4] [ref=e33]:
+                - text: Indigenous Trade Done Right
+                - generic [ref=e34] [cursor=pointer]: 
+            - group [ref=e37]:
+              - generic [ref=e38]:
+                - textbox "SMART SEARCH for cannabis products" [ref=e39]:
+                  - /placeholder: Smart Search
+                - button [ref=e40] [cursor=pointer]:
+                  - img [ref=e41]
+            - list [ref=e45]:
+              - listitem [ref=e46]:
+                - generic [ref=e48]:
+                  - button "🇨🇦 EN" [ref=e49] [cursor=pointer]:
+                    - generic [ref=e50]: 🇨🇦
+                    - generic [ref=e51]: EN
+                    - img [ref=e52]
+                  - listbox:
+                    - generic:
+                      - generic:
+                        - generic: Language
+                        - generic: Langue
+                      - option "🇨🇦 English Canada":
+                        - generic: 🇨🇦
+                        - generic:
+                          - generic: English
+                          - generic: Canada
+                        - img
+                      - option "🇨🇦 Français Canada":
+                        - generic: 🇨🇦
+                        - generic:
+                          - generic: Français
+                          - generic: Canada
+              - listitem [ref=e54]:
+                - link "header.profile_aria" [ref=e55] [cursor=pointer]:
+                  - /url: /login
+                  - img [ref=e56]
+                  - generic [ref=e59]: Login/Register
+              - listitem [ref=e60]:
+                - 'link "Open Cart, Products in cart: 0" [ref=e61] [cursor=pointer]':
+                  - /url: /cart
+                  - img [ref=e62]
+                  - generic [ref=e66]: "0"
+              - listitem [ref=e67]:
+                - generic "Open side navigation menu" [ref=e68] [cursor=pointer]:
+                  - img [ref=e69]
+          - navigation [ref=e81]:
+            - list [ref=e82]:
+              - listitem [ref=e83]:
+                - link "Deals" [ref=e84] [cursor=pointer]:
+                  - /url: /shop/deals
+                  - generic [ref=e85]: Deals
+              - listitem "Product category" [ref=e86]:
+                - link "FLOWER " [ref=e87] [cursor=pointer]:
+                  - /url: /shop/Flower_flower
+                  - generic [ref=e88]: FLOWER
+                  - generic [ref=e89]: 
+              - listitem "Product category" [ref=e90]:
+                - link "PRE-ROLLS " [ref=e91] [cursor=pointer]:
+                  - /url: /shop/Pre-Rolls_pre-rolls
+                  - generic [ref=e92]: PRE-ROLLS
+                  - generic [ref=e93]: 
+              - listitem "Product category" [ref=e94]:
+                - link "EDIBLES " [ref=e95] [cursor=pointer]:
+                  - /url: /shop/Edibles_edibles
+                  - generic [ref=e96]: EDIBLES
+                  - generic [ref=e97]: 
+              - listitem "Product category" [ref=e98]:
+                - link "CONCENTRATES " [ref=e99] [cursor=pointer]:
+                  - /url: /shop/Concentrates_concentrates
+                  - generic [ref=e100]: CONCENTRATES
+                  - generic [ref=e101]: 
+              - listitem "Product category" [ref=e102]:
+                - link "HASH " [ref=e103] [cursor=pointer]:
+                  - /url: /shop/Hash_hash
+                  - generic [ref=e104]: HASH
+                  - generic [ref=e105]: 
+              - listitem "Product category" [ref=e106]:
+                - link "THC VAPES " [ref=e107] [cursor=pointer]:
+                  - /url: /shop/THC%20Vapes_vaporizers
+                  - generic [ref=e108]: THC VAPES
+                  - generic [ref=e109]: 
+              - listitem "Product category" [ref=e110]:
+                - link "TOBACCO " [active] [ref=e111] [cursor=pointer]:
+                  - /url: /shop/Tobacco_tobacco
+                  - generic [ref=e112]: TOBACCO
+                  - generic [ref=e113]: 
+                - list [ref=e115]:
+                  - listitem [ref=e116]:
+                    - link "CIGARETTES/CIGARS" [ref=e117] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_cigarettes
+                      - generic [ref=e118]: CIGARETTES/CIGARS
+                  - listitem [ref=e119]:
+                    - link "LOOSE TOBACCO" [ref=e120] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_loose-tobacco
+                      - generic [ref=e121]: LOOSE TOBACCO
+                  - listitem [ref=e122]:
+                    - link "NICOTINE VAPES" [ref=e123] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_nicotine-vapes
+                      - generic [ref=e124]: NICOTINE VAPES
+                  - listitem [ref=e125]:
+                    - link "BACKWOODS" [ref=e126] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_backwoods
+                      - generic [ref=e127]: BACKWOODS
+                  - listitem [ref=e128]:
+                    - link "NICOTINE POUCHES" [ref=e129] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_nicotine-pouches
+                      - generic [ref=e130]: NICOTINE POUCHES
+                  - listitem [ref=e131]:
+                    - link "GRABBA" [ref=e132] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_grabba
+                      - generic [ref=e133]: GRABBA
+                  - listitem [ref=e134]:
+                    - link "WHOLESALE (BULK)" [ref=e135] [cursor=pointer]:
+                      - /url: /shop/subProduct/tobacco_bulk-cigarettes-cases
+                      - generic [ref=e136]: WHOLESALE (BULK)
+              - listitem "Product category" [ref=e137]:
+                - link "WELLNESS " [ref=e138] [cursor=pointer]:
+                  - /url: /shop/Wellness_wellness
+                  - generic [ref=e139]: WELLNESS
+                  - generic [ref=e140]: 
+              - listitem "Product category" [ref=e141]:
+                - link "ACCESSORIES " [ref=e142] [cursor=pointer]:
+                  - /url: /shop/Accessories_accessories
+                  - generic [ref=e143]: ACCESSORIES
+                  - generic [ref=e144]: 
+              - listitem "Product category" [ref=e145]:
+                - link "SNACKS" [ref=e146] [cursor=pointer]:
+                  - /url: /shop/Snacks_snacks
+                  - generic [ref=e147]: SNACKS
+              - listitem "Product category" [ref=e148]:
+                - link "RAFFLE" [ref=e149] [cursor=pointer]:
+                  - /url: /shop/Raffle_raffle
+                  - generic [ref=e150]: RAFFLE
+              - listitem "Product category" [ref=e151]:
+                - link "MERCHANDISE " [ref=e152] [cursor=pointer]:
+                  - /url: /shop/Merchandise_merch
+                  - generic [ref=e153]: MERCHANDISE
+                  - generic [ref=e154]: 
+      - text:  
+      - dialog "Open side navigation menu":           
+    - text: 
+    - main [ref=e155]:
+      - main [ref=e157]:
+        - heading "Tobacco" [level=1] [ref=e160]
+        - navigation "breadcrumb" [ref=e161]:
+          - generic [ref=e163]:
+            - list [ref=e164]:
+              - listitem [ref=e165]: shop - Tobacco
+              - listitem
+            - combobox "Sort" [ref=e168] [cursor=pointer]:
+              - option "Sort" [selected]
+              - option "THC, Low to High"
+              - option "THC, High to Low"
+              - option "CBD, Low to High"
+              - option "CBD, High to Low"
+              - option "Price, Low to High"
+              - option "Price, High to Low"
+        - complementary [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e175]: Filters
+              - button "Clear Search" [ref=e176] [cursor=pointer]: Clear ×
+            - generic [ref=e178]:
+              - button "" [ref=e179] [cursor=pointer]:
+                - generic [ref=e180]: 
+              - textbox "Smart Search" [ref=e181]
+            - generic [ref=e182]:
+              - button "New Arrivals" [ref=e183] [cursor=pointer]
+              - button "Deals" [ref=e184] [cursor=pointer]
+            - group [ref=e185]:
+              - generic "Strain Type" [ref=e186] [cursor=pointer]:
+                - text: Strain Type
+                - generic [ref=e187]: +
+            - group [ref=e188]:
+              - generic "Tags" [ref=e189] [cursor=pointer]:
+                - text: Tags
+                - generic [ref=e190]: +
+            - group [ref=e191]:
+              - generic "Brands +" [ref=e192] [cursor=pointer]:
+                - text: Brands
+                - generic [ref=e193]: +
+            - group [ref=e194]:
+              - generic "THC +" [ref=e195] [cursor=pointer]:
+                - text: THC
+                - generic [ref=e196]: +
+            - group [ref=e197]:
+              - generic "CBD +" [ref=e198] [cursor=pointer]:
+                - text: CBD
+                - generic [ref=e199]: +
+            - group [ref=e200]:
+              - generic "Weight +" [ref=e201] [cursor=pointer]:
+                - text: Weight
+                - generic [ref=e202]: +
+    - contentinfo [ref=e262]:
+      - contentinfo [ref=e263]:
+        - generic [ref=e264]:
+          - generic [ref=e265]:
+            - generic [ref=e266]:
+              - img "Footer Logo" [ref=e269]
+              - generic "Footer Text" [ref=e270]: Your Purchase Makes A Difference
+              - paragraph [ref=e271]:
+                - paragraph [ref=e272]: Red Roots is a Sovereign Indigenous Algonquin-owned and operated business. 16% of our net sales are reinvested into our local clan. Miigwetch & thank you!
+            - generic [ref=e273]:
+              - generic [ref=e274]: Useful Links
+              - list [ref=e275]:
+                - listitem [ref=e276]:
+                  - link "Flower" [ref=e277] [cursor=pointer]:
+                    - /url: /shop/Flower_flower
+                - listitem [ref=e278]:
+                  - link "Pre-Roll" [ref=e279] [cursor=pointer]:
+                    - /url: /shop/Pre-Rolls_pre-rolls
+                - listitem [ref=e280]:
+                  - link "Edibles" [ref=e281] [cursor=pointer]:
+                    - /url: /shop/Edibles_edibles
+                - listitem [ref=e282]:
+                  - link "Deals" [ref=e283] [cursor=pointer]:
+                    - /url: /shop/deals
+                - listitem [ref=e284]:
+                  - link "Contact Us" [ref=e285] [cursor=pointer]:
+                    - /url: /contact-us
+                - listitem [ref=e286]:
+                  - link "Blogs" [ref=e287] [cursor=pointer]:
+                    - /url: /blogs
+                - listitem [ref=e288]:
+                  - link "FAQs" [ref=e289] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e290]:
+                  - link "Delivery Area" [ref=e291] [cursor=pointer]:
+                    - /url: /delivery-area
+                - listitem [ref=e292]:
+                  - link "Sitemap" [ref=e293] [cursor=pointer]:
+                    - /url: /sitemap
+            - generic [ref=e294]:
+              - generic [ref=e295]: Contact Information
+              - generic [ref=e296]:
+                - generic [ref=e298]: 
+                - generic [ref=e299]:
+                  - generic [ref=e300]: Email
+                  - generic [ref=e301]:
+                    - link "Support Mail null":
+                      - /url: "mailto:"
+              - generic [ref=e302]:
+                - generic [ref=e304]: 
+                - generic [ref=e305]:
+                  - generic [ref=e306]: Phone
+                  - link "Support Phone Number (613) 296-3441" [ref=e308] [cursor=pointer]:
+                    - /url: tel:(613) 296-3441
+                    - text: (613) 296-3441
+              - generic [ref=e309]:
+                - generic [ref=e310]: Accepted Payment
+                - img "Interac payment logo" [ref=e313]
+            - generic [ref=e314]:
+              - generic [ref=e315]: My Account
+              - list [ref=e316]:
+                - listitem [ref=e317]:
+                  - link "Sign In" [ref=e318] [cursor=pointer]:
+                    - /url: /login
+                - listitem [ref=e319]:
+                  - link "Register" [ref=e320] [cursor=pointer]:
+                    - /url: /register
+              - generic [ref=e321]: Get In Touch
+              - generic [ref=e322]:
+                - link "Link for Instagram" [ref=e324] [cursor=pointer]:
+                  - /url: ""
+                  - img "instagram" [ref=e325]
+                - link "Link for Facebook" [ref=e327] [cursor=pointer]:
+                  - /url: ""
+                  - img "facebook" [ref=e328]
+                - link "Link for Twitter" [ref=e330] [cursor=pointer]:
+                  - /url: ""
+                  - img "twitter" [ref=e331]
+                - link "Link for YouTube" [ref=e333] [cursor=pointer]:
+                  - /url: ""
+                  - img "youtube" [ref=e334]
+                - link "Link for LinkedIn" [ref=e336] [cursor=pointer]:
+                  - /url: ""
+                  - img "linkedin" [ref=e337]
+                - link "Link for Snapchat" [ref=e339] [cursor=pointer]:
+                  - /url: ""
+                  - img "snapchat" [ref=e340]
+          - generic [ref=e342]:
+            - generic:
+              - paragraph
+            - generic [ref=e343]:
+              - link "Privacy Policy" [ref=e344] [cursor=pointer]:
+                - /url: /privacypolicy
+              - generic [ref=e345]: /
+              - link "Terms and Conditions" [ref=e346] [cursor=pointer]:
+                - /url: /termsandcondition
+  - text:  
+```

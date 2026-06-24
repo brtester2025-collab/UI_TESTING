@@ -12,9 +12,7 @@ test.beforeEach('File Upload & Download Automation', async ({ page }) => {
   await page.getByTestId('card-link-file-upload').click();
 });
 
-test.skip('TC01: Verify a file can be selected for upload', async ({
-  page,
-}) => {
+test('TC01: Verify a file can be selected for upload', async ({ page }) => {
   const fileInput = await page.getByTestId('file-upload-input');
 
   await fileInput.setInputFiles('./test.docx');
@@ -24,7 +22,7 @@ test.skip('TC01: Verify a file can be selected for upload', async ({
   await expect(verification).toBe('test.docx');
 });
 
-test.skip('TC02: Verify selected file name is displayed after selection', async ({
+test('TC02: Verify selected file name is displayed after selection', async ({
   page,
 }) => {
   const data1 = await page.getByTestId('file-upload-input');

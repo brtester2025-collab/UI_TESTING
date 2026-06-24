@@ -1,0 +1,1384 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - paragraph:
+      - link "Skip to Main Content" [ref=e5] [cursor=pointer]:
+        - /url: "#main-content"
+    - banner [ref=e6]:
+      - banner [ref=e7]:
+        - generic [ref=e12]:
+          - marquee [ref=e13]: Express Delivery Across Ottawa & Gatineau & Reliable Mail Order Shipping Across Canada ✈️
+          - marquee [ref=e14]: Payments by Interac e-Transfer ONLY
+          - marquee [ref=e15]: The Best Deals And Products in Canada i Always by Indigenous Craft Growers
+          - marquee [ref=e16]: Proudly Serving Ottawa, Gatineau & Fellow Canadians Since 2023!
+          - marquee [ref=e17]: Welcome to Red Roots Trading Co NEW Website | Open Daily Until Midnight
+          - marquee [ref=e18]: DISCRETE Nation-Wide Canada Shipping From the Reserve - Straight to Your Door!
+          - marquee [ref=e19]: Express Delivery Across Ottawa & Gatineau & Reliable Mail Order Shipping Across Canada ✈️
+          - marquee [ref=e20]: Payments by Interac e-Transfer ONLY
+          - marquee [ref=e21]: The Best Deals And Products in Canada i Always by Indigenous Craft Growers
+          - marquee [ref=e22]: Proudly Serving Ottawa, Gatineau & Fellow Canadians Since 2023!
+          - marquee [ref=e23]: Welcome to Red Roots Trading Co NEW Website | Open Daily Until Midnight
+          - marquee [ref=e24]: DISCRETE Nation-Wide Canada Shipping From the Reserve - Straight to Your Door!
+        - generic [ref=e25]:
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - link "header.logo_aria" [ref=e30] [cursor=pointer]:
+                - /url: /
+                - img "Red Roots Trading Company" [ref=e31]
+              - heading "Indigenous Trade Done Right " [level=4] [ref=e33]:
+                - text: Indigenous Trade Done Right
+                - generic [ref=e34] [cursor=pointer]: 
+            - group [ref=e37]:
+              - generic [ref=e38]:
+                - textbox "SMART SEARCH for cannabis products" [ref=e39]:
+                  - /placeholder: Smart Search
+                - button [ref=e40] [cursor=pointer]:
+                  - img [ref=e41]
+            - list [ref=e45]:
+              - listitem [ref=e46]:
+                - generic [ref=e48]:
+                  - button "🇨🇦 EN" [ref=e49] [cursor=pointer]:
+                    - generic [ref=e50]: 🇨🇦
+                    - generic [ref=e51]: EN
+                    - img [ref=e52]
+                  - listbox:
+                    - generic:
+                      - generic:
+                        - generic: Language
+                        - generic: Langue
+                      - option "🇨🇦 English Canada":
+                        - generic: 🇨🇦
+                        - generic:
+                          - generic: English
+                          - generic: Canada
+                        - img
+                      - option "🇨🇦 Français Canada":
+                        - generic: 🇨🇦
+                        - generic:
+                          - generic: Français
+                          - generic: Canada
+              - listitem [ref=e54]:
+                - link "header.profile_aria" [ref=e55] [cursor=pointer]:
+                  - /url: /login
+                  - img [ref=e56]
+                  - generic [ref=e59]: Login/Register
+              - listitem [ref=e60]:
+                - 'link "Open Cart, Products in cart: 0" [ref=e61] [cursor=pointer]':
+                  - /url: /cart
+                  - img [ref=e62]
+                  - generic [ref=e66]: "0"
+              - listitem [ref=e67]:
+                - generic "Open side navigation menu" [ref=e68] [cursor=pointer]:
+                  - img [ref=e69]
+          - navigation [ref=e81]:
+            - list [ref=e82]:
+              - listitem [ref=e83]:
+                - link "Deals" [ref=e84] [cursor=pointer]:
+                  - /url: /shop/deals
+                  - generic [ref=e85]: Deals
+              - listitem "Product category" [ref=e86]:
+                - link "FLOWER " [active] [ref=e87] [cursor=pointer]:
+                  - /url: /shop/Flower_flower
+                  - generic [ref=e88]: FLOWER
+                  - generic [ref=e89]: 
+                - list [ref=e91]:
+                  - listitem [ref=e92]:
+                    - link "EXOTIC GAS 💎" [ref=e93] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_exotic-gas
+                      - generic [ref=e94]: EXOTIC GAS 💎
+                  - listitem [ref=e95]:
+                    - link "EIGHTH (3.5G)" [ref=e96] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_3-grams
+                      - generic [ref=e97]: EIGHTH (3.5G)
+                  - listitem [ref=e98]:
+                    - link "QUARTER OUNCE (7G)" [ref=e99] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_quarter-oz-7g
+                      - generic [ref=e100]: QUARTER OUNCE (7G)
+                  - listitem [ref=e101]:
+                    - link "HALF OUNCE (14G)" [ref=e102] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_half-ounce-14g
+                      - generic [ref=e103]: HALF OUNCE (14G)
+                  - listitem [ref=e104]:
+                    - link "FULL OUNCE (28G)" [ref=e105] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_full-ounce-28g
+                      - generic [ref=e106]: FULL OUNCE (28G)
+                  - listitem [ref=e107]:
+                    - link "1/4, 1/2 & FULL LB'S" [ref=e108] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_12-full-pounds
+                      - generic [ref=e109]: 1/4, 1/2 & FULL LB'S
+                  - listitem [ref=e110]:
+                    - link "WHOLESALE (BULK)" [ref=e111] [cursor=pointer]:
+                      - /url: /shop/subProduct/flower_bulk-wholesale
+                      - generic [ref=e112]: WHOLESALE (BULK)
+              - listitem "Product category" [ref=e113]:
+                - link "PRE-ROLLS " [ref=e114] [cursor=pointer]:
+                  - /url: /shop/Pre-Rolls_pre-rolls
+                  - generic [ref=e115]: PRE-ROLLS
+                  - generic [ref=e116]: 
+              - listitem "Product category" [ref=e117]:
+                - link "EDIBLES " [ref=e118] [cursor=pointer]:
+                  - /url: /shop/Edibles_edibles
+                  - generic [ref=e119]: EDIBLES
+                  - generic [ref=e120]: 
+              - listitem "Product category" [ref=e121]:
+                - link "CONCENTRATES " [ref=e122] [cursor=pointer]:
+                  - /url: /shop/Concentrates_concentrates
+                  - generic [ref=e123]: CONCENTRATES
+                  - generic [ref=e124]: 
+              - listitem "Product category" [ref=e125]:
+                - link "HASH " [ref=e126] [cursor=pointer]:
+                  - /url: /shop/Hash_hash
+                  - generic [ref=e127]: HASH
+                  - generic [ref=e128]: 
+              - listitem "Product category" [ref=e129]:
+                - link "THC VAPES " [ref=e130] [cursor=pointer]:
+                  - /url: /shop/THC%20Vapes_vaporizers
+                  - generic [ref=e131]: THC VAPES
+                  - generic [ref=e132]: 
+              - listitem "Product category" [ref=e133]:
+                - link "TOBACCO " [ref=e134] [cursor=pointer]:
+                  - /url: /shop/Tobacco_tobacco
+                  - generic [ref=e135]: TOBACCO
+                  - generic [ref=e136]: 
+              - listitem "Product category" [ref=e137]:
+                - link "WELLNESS " [ref=e138] [cursor=pointer]:
+                  - /url: /shop/Wellness_wellness
+                  - generic [ref=e139]: WELLNESS
+                  - generic [ref=e140]: 
+              - listitem "Product category" [ref=e141]:
+                - link "ACCESSORIES " [ref=e142] [cursor=pointer]:
+                  - /url: /shop/Accessories_accessories
+                  - generic [ref=e143]: ACCESSORIES
+                  - generic [ref=e144]: 
+              - listitem "Product category" [ref=e145]:
+                - link "SNACKS" [ref=e146] [cursor=pointer]:
+                  - /url: /shop/Snacks_snacks
+                  - generic [ref=e147]: SNACKS
+              - listitem "Product category" [ref=e148]:
+                - link "RAFFLE" [ref=e149] [cursor=pointer]:
+                  - /url: /shop/Raffle_raffle
+                  - generic [ref=e150]: RAFFLE
+              - listitem "Product category" [ref=e151]:
+                - link "MERCHANDISE " [ref=e152] [cursor=pointer]:
+                  - /url: /shop/Merchandise_merch
+                  - generic [ref=e153]: MERCHANDISE
+                  - generic [ref=e154]: 
+      - text:  
+      - dialog "Open side navigation menu":           
+    - text: 
+    - main [ref=e155]:
+      - main [ref=e157]:
+        - generic [ref=e160]:
+          - link "RR Online 1" [ref=e162] [cursor=pointer]:
+            - /url: https://redrootstrading.ca/shop/flower_flower
+            - img "RR Online 1" [ref=e163]
+          - link "Previous" [ref=e164] [cursor=pointer]:
+            - /url: "#carouselExampleSlidesOnly"
+            - generic [ref=e166]: Previous
+          - link "Next" [ref=e167] [cursor=pointer]:
+            - /url: "#carouselExampleSlidesOnly"
+            - generic [ref=e169]: Next
+        - heading "Premium Cannabis Dispensary in Ottawa" [level=1] [ref=e170]
+        - generic [ref=e173]:
+          - generic [ref=e175]:
+            - generic [ref=e176]: "01"
+            - generic [ref=e177]:
+              - img "undefined logo featuring a clean, minimalist design" [ref=e179]
+              - paragraph [ref=e182]:
+                - text: FREE* FAST,
+                - strong [ref=e183]: INSTANT Delivery!
+            - paragraph [ref=e184]:
+              - paragraph [ref=e185]:
+                - strong [ref=e186]: Need it NOW?
+                - text: Immediate
+                - strong [ref=e187]: Cigerattes, Cigars & Nicotine
+                - text: delivery
+                - strong [ref=e188]: within an hour
+                - text: up to 30km from the
+                - link "Ottawa" [ref=e189] [cursor=pointer]:
+                  - /url: https://redrootstrading.ca/delivery-area
+                  - strong [ref=e190]: Ottawa
+                - strong [ref=e191]
+                - text: city center to
+                - link "Gatineau" [ref=e192] [cursor=pointer]:
+                  - /url: https://redrootstrading.ca/delivery-area
+                  - strong [ref=e193]: Gatineau
+                - text: "&"
+                - link "Surrounding" [ref=e194] [cursor=pointer]:
+                  - /url: https://redrootstrading.ca/delivery-area
+                  - strong [ref=e195]: Surrounding
+                - text: areas. Drivers are standing by!
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - img "Fast" [ref=e199]
+                - generic [ref=e200]: Fast
+                - generic [ref=e201]: Within an hour
+              - generic [ref=e202]:
+                - img "Local" [ref=e204]
+                - generic [ref=e205]: Local
+                - generic [ref=e206]: Ottawa & Surrounding
+              - generic [ref=e207]:
+                - img "Reliable" [ref=e209]
+                - generic [ref=e210]: Reliable
+                - generic [ref=e211]: Drivers standing by
+          - generic [ref=e213]:
+            - generic [ref=e214]: "02"
+            - generic [ref=e215]:
+              - img "undefined logo featuring a clean, minimalist design" [ref=e217]
+              - paragraph [ref=e220]:
+                - text: Quick Easy Steps to
+                - strong [ref=e221]: Ordering!
+            - paragraph [ref=e222]:
+              - paragraph [ref=e223]:
+                - strong [ref=e224]: 1. Add
+                - text: Your Items 🛒
+                - strong [ref=e225]: 2. Check Out
+                - text: ⏳
+                - strong [ref=e226]: 3. Send
+                - text: Your e-Transfer
+                - strong [ref=e227]: 💸
+                - strong [ref=e228]: "4."
+                - text: Get Your
+                - strong [ref=e229]: ID Ready 🔍
+                - strong [ref=e230]: 5. Meet
+                - text: Your Driver
+                - strong [ref=e231]: 🙋‍♂️
+                - strong [ref=e232]: 6. ENJOY!!! 🎉🔥🌞
+            - generic [ref=e234]:
+              - img "Marijuana leaf" [ref=e235]
+              - generic [ref=e236]:
+                - heading "SIMPLE. FAST. SECURE." [level=4] [ref=e237]
+                - paragraph [ref=e238]: Your Satisfaction, Guaranteed.
+          - generic [ref=e240]:
+            - generic [ref=e241]: "03"
+            - generic [ref=e242]:
+              - img "undefined logo featuring a clean, minimalist design" [ref=e244]
+              - paragraph [ref=e247]:
+                - text: Shipped Anywhere
+                - strong [ref=e248]: Across Canada
+            - paragraph [ref=e249]:
+              - paragraph [ref=e250]:
+                - strong [ref=e251]: Not in Ottawa
+                - text: or headed up to camp? We offer blazing fast & discrete
+                - strong [ref=e252]: mail-order shipping
+                - strong [ref=e253]: nation-wide
+                - strong [ref=e254]: across Canada!
+            - generic [ref=e256]:
+              - img "Location map" [ref=e257]
+              - img "Canada delivery" [ref=e258]
+              - generic [ref=e259]:
+                - heading "FAST. DISCREET." [level=4] [ref=e260]
+                - paragraph [ref=e261]: NATION-WIDE. WE DELIVER.
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - heading "New Arrivals" [level=3] [ref=e266]
+              - paragraph [ref=e267]: Discover the latest strains, products, & exclusive drops. Always something new!
+            - link "View All Products" [ref=e269] [cursor=pointer]:
+              - /url: /shop/NewArrivals
+              - generic [ref=e270]: View All Products
+          - generic [ref=e272]:
+            - group "1 / 6" [ref=e273]:
+              - generic [ref=e274] [cursor=pointer]:
+                - generic [ref=e275]: Sale
+                - img "Neo Passion Flower 14g" [ref=e279]
+                - generic [ref=e280]: THC 29%
+                - generic [ref=e282]:
+                  - generic [ref=e283]: RED ROOTS TRADING CO.
+                  - generic [ref=e284]: Neo Passion Flower 14g
+                  - generic [ref=e285]:
+                    - generic "Product Price 60$" [ref=e286]:
+                      - generic [ref=e287]: $60
+                      - generic [ref=e288]: $75
+                    - button "Add To Cart" [ref=e290]: ADD TO CART
+                    - generic [ref=e292]:
+                      - generic [ref=e293]: AAA
+                      - generic [ref=e294]: ½ OZ
+            - group "2 / 6" [ref=e295]:
+              - generic [ref=e296] [cursor=pointer]:
+                - generic [ref=e297]:
+                  - generic [ref=e298]: "N"
+                  - text: Nicotine
+                - img "Pablo Nicotine Pouch" [ref=e302]
+                - generic [ref=e305]:
+                  - generic [ref=e306]: PABLO POUCHES
+                  - generic [ref=e307]: Pablo Nicotine Pouch
+                  - generic [ref=e308]:
+                    - generic "Product Price 22$" [ref=e309]:
+                      - generic [ref=e310]: $22
+                    - button "Add To Cart" [ref=e312]: 8 OPTIONS
+                    - generic [ref=e314]:
+                      - generic [ref=e315]: 24MG NIC
+                      - generic [ref=e316]: 50MG NIC
+            - group "3 / 6" [ref=e317]:
+              - generic [ref=e318] [cursor=pointer]:
+                - generic [ref=e319]: Sale
+                - img "Mahigan Wellness Products" [ref=e323]
+                - generic [ref=e326]:
+                  - generic [ref=e327]: MAHIGAN WELLNESS
+                  - generic [ref=e328]: Mahigan Wellness Products
+                  - generic [ref=e329]:
+                    - generic "Product Price 55$" [ref=e330]:
+                      - generic [ref=e331]: $55
+                      - generic [ref=e332]: $85
+                    - button "Add To Cart" [ref=e334]: 6 OPTIONS
+            - group "4 / 6" [ref=e336]:
+              - generic [ref=e337] [cursor=pointer]:
+                - generic [ref=e338]:
+                  - generic [ref=e339]: "N"
+                  - text: Nicotine
+                - img "Zyn 11mg Nicotine Pouches" [ref=e343]
+                - generic [ref=e346]:
+                  - generic [ref=e347]: ZYN
+                  - generic [ref=e348]: Zyn 11mg Nicotine Pouches
+                  - generic [ref=e349]:
+                    - generic "Product Price 22$" [ref=e350]:
+                      - generic [ref=e351]: $22
+                    - button "Add To Cart" [ref=e353]: 16 OPTIONS
+                    - generic [ref=e356]: 11MG NIC
+            - group "5 / 6" [ref=e357]:
+              - generic [ref=e358] [cursor=pointer]:
+                - generic [ref=e359]:
+                  - generic [ref=e360]: "N"
+                  - text: Nicotine
+                - generic [ref=e361]: Sale
+                - img "Orbito 120k Nicotine Vapes" [ref=e365]
+                - generic [ref=e368]:
+                  - generic [ref=e369]: ORBITO
+                  - generic [ref=e370]: Orbito 120k Nicotine Vapes
+                  - generic [ref=e371]:
+                    - generic "Product Price 45$" [ref=e372]:
+                      - generic [ref=e373]: $45
+                      - generic [ref=e374]: $50
+                    - button "Add To Cart" [ref=e376]: 4 OPTIONS
+                    - generic [ref=e379]: 20MG/2% NIC
+            - group "6 / 6" [ref=e380]:
+              - generic [ref=e381] [cursor=pointer]:
+                - generic [ref=e382]:
+                  - generic [ref=e383]: "N"
+                  - text: Nicotine
+                - img "STLTH 60k Nicotine Vapes - 20mg/mL" [ref=e387]
+                - generic [ref=e390]:
+                  - generic [ref=e391]: STLTH
+                  - generic [ref=e392]: STLTH 60k Nicotine Vapes - 20mg/mL
+                  - generic [ref=e393]:
+                    - generic "Product Price 45$" [ref=e394]:
+                      - generic [ref=e395]: $45
+                    - button "Add To Cart" [ref=e397]: ADD TO CART
+                    - generic [ref=e400]: 20MG NIC
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - heading "Flower" [level=3] [ref=e405]
+              - paragraph [ref=e406]: Top-shelf craft-grown flower, cultivated for amazing aroma, flavour, & effects.
+            - link "View All Products" [ref=e408] [cursor=pointer]:
+              - /url: /shop/flower_flower
+              - generic [ref=e409]: View All Products
+          - generic [ref=e411]:
+            - group "1 / 6" [ref=e412]:
+              - generic [ref=e413] [cursor=pointer]:
+                - generic [ref=e414]: Sale
+                - img "Neo Passion Flower 14g" [ref=e418]
+                - generic [ref=e419]: THC 29%
+                - generic [ref=e421]:
+                  - generic [ref=e422]: RED ROOTS TRADING CO.
+                  - generic [ref=e423]: Neo Passion Flower 14g
+                  - generic [ref=e424]:
+                    - generic "Product Price 60$" [ref=e425]:
+                      - generic [ref=e426]: $60
+                      - generic [ref=e427]: $75
+                    - button "Add To Cart" [ref=e429]: ADD TO CART
+                    - generic [ref=e431]:
+                      - generic [ref=e432]: AAA
+                      - generic [ref=e433]: ½ OZ
+            - group "2 / 6" [ref=e434]:
+              - generic [ref=e435] [cursor=pointer]:
+                - generic [ref=e436]:
+                  - generic [ref=e437]: H
+                  - text: Hybrid
+                - generic [ref=e438]: Sale
+                - img "White Runtz Flower (Exotic) - 7g" [ref=e442]
+                - generic [ref=e443]: THC 33%
+                - generic [ref=e445]:
+                  - generic [ref=e446]: RED ROOTS TRADING CO.
+                  - generic [ref=e447]: White Runtz Flower (Exotic) - 7g
+                  - generic [ref=e448]:
+                    - generic "Product Price 45$" [ref=e449]:
+                      - generic [ref=e450]: $45
+                      - generic [ref=e451]: $70
+                    - button "Add To Cart" [ref=e453]: ADD TO CART
+                    - generic [ref=e455]:
+                      - generic [ref=e456]: CRAFT
+                      - generic [ref=e457]: AAAAA
+                      - generic [ref=e458]: EXOTIC GAS 💎
+                      - generic [ref=e459]: ¼ Oz
+            - group "3 / 6" [ref=e460]:
+              - generic [ref=e461] [cursor=pointer]:
+                - generic [ref=e462]:
+                  - generic [ref=e463]: H
+                  - text: Hybrid
+                - img "White Runtz (exotic) Flower - 28g" [ref=e467]
+                - generic [ref=e468]: THC 33%
+                - generic [ref=e470]:
+                  - generic [ref=e471]: RED ROOTS TRADING CO.
+                  - generic [ref=e472]: White Runtz (exotic) Flower - 28g
+                  - generic [ref=e473]:
+                    - generic "Product Price 145$" [ref=e474]:
+                      - generic [ref=e475]: $145
+                    - button "Add To Cart" [ref=e477]: ADD TO CART
+                    - generic [ref=e479]:
+                      - generic [ref=e480]: CRAFT
+                      - generic [ref=e481]: AAAAA
+                      - generic [ref=e482]: EXOTIC GAS 💎
+                      - generic [ref=e483]: FULL OZ
+            - group "4 / 6" [ref=e484]:
+              - generic [ref=e485] [cursor=pointer]:
+                - generic [ref=e486]:
+                  - generic [ref=e487]: I
+                  - text: Indica
+                - generic [ref=e488]: Sale
+                - img "Zkittlez Smalls Flower (Exotic) - 28g" [ref=e492]
+                - generic [ref=e493]: THC 33%
+                - generic [ref=e495]:
+                  - generic [ref=e496]: RED ROOTS TRADING CO.
+                  - generic [ref=e497]: Zkittlez Smalls Flower (Exotic) - 28g
+                  - generic [ref=e498]:
+                    - generic "Product Price 110$" [ref=e499]:
+                      - generic [ref=e500]: $110
+                      - generic [ref=e501]: $225
+                    - button "Add To Cart" [ref=e503]: ADD TO CART
+                    - generic [ref=e505]:
+                      - generic [ref=e506]: CRAFT
+                      - generic [ref=e507]: AAAAA
+                      - generic [ref=e508]: EXOTIC GAS 💎
+                      - generic [ref=e509]: FULL OZ
+            - group "5 / 6" [ref=e510]:
+              - generic [ref=e511] [cursor=pointer]:
+                - generic [ref=e512]:
+                  - generic [ref=e513]: I
+                  - text: Indica
+                - generic [ref=e514]: Sale
+                - img "Candy Cane Flower (Exotic) - 28g" [ref=e518]
+                - generic [ref=e519]: THC 29%
+                - generic [ref=e521]:
+                  - generic [ref=e522]: RED ROOTS TRADING CO.
+                  - generic [ref=e523]: Candy Cane Flower (Exotic) - 28g
+                  - generic [ref=e524]:
+                    - generic "Product Price 150$" [ref=e525]:
+                      - generic [ref=e526]: $150
+                      - generic [ref=e527]: $220
+                    - button "Add To Cart" [ref=e529]: ADD TO CART
+                    - generic [ref=e531]:
+                      - generic [ref=e532]: CRAFT
+                      - generic [ref=e533]: AAAAA
+                      - generic [ref=e534]: EXOTIC GAS 💎
+                      - generic [ref=e535]: FULL OZ
+            - group "6 / 6" [ref=e536]:
+              - generic [ref=e537] [cursor=pointer]:
+                - generic [ref=e538]:
+                  - generic [ref=e539]: I
+                  - text: Indica
+                - img "Mimosa Punch Flower - 28g" [ref=e543]
+                - generic [ref=e544]: THC 29%
+                - generic [ref=e546]:
+                  - generic [ref=e547]: RED ROOTS TRADING CO.
+                  - generic [ref=e548]: Mimosa Punch Flower - 28g
+                  - generic [ref=e549]:
+                    - generic "Product Price 70$" [ref=e550]:
+                      - generic [ref=e551]: $70
+                    - button "Add To Cart" [ref=e553]: ADD TO CART
+                    - generic [ref=e555]:
+                      - generic [ref=e556]: AAA
+                      - generic [ref=e557]: FULL OZ
+        - generic [ref=e559]:
+          - generic [ref=e560]:
+            - generic [ref=e561]:
+              - heading "Pre-Rolls" [level=3] [ref=e562]
+              - paragraph [ref=e563]: Expertly rolled for convenience and consistency. No grinding or packing necessary.
+            - link "View All Products" [ref=e565] [cursor=pointer]:
+              - /url: /shop/pre-rolls_pre-rolls
+              - generic [ref=e566]: View All Products
+          - generic [ref=e568]:
+            - group "1 / 5" [ref=e569]:
+              - generic [ref=e570] [cursor=pointer]:
+                - generic [ref=e571]:
+                  - generic [ref=e572]: H
+                  - text: Hybrid
+                - img "Distillate Infused Hybrid Single Pre-Roll - 0.7g" [ref=e576]
+                - generic [ref=e577]: THC 35%
+                - generic [ref=e579]:
+                  - generic [ref=e580]: RED ROOTS TRADING CO.
+                  - generic [ref=e581]: Distillate Infused Hybrid Single Pre-Roll - 0.7g
+                  - generic [ref=e582]:
+                    - generic "Product Price 10$" [ref=e583]:
+                      - generic [ref=e584]: $10
+                    - button "Add To Cart" [ref=e586]: ADD TO CART
+                    - generic [ref=e588]:
+                      - generic [ref=e589]: Staff Pick
+                      - generic [ref=e590]: High THC 📈
+                      - generic [ref=e591]: Local Legend
+            - group "2 / 5" [ref=e592]:
+              - generic [ref=e593] [cursor=pointer]:
+                - generic [ref=e594]:
+                  - generic [ref=e595]: H
+                  - text: Hybrid
+                - generic [ref=e596]: Sale
+                - img "Spliffs Pre-rolls - Single Pack - 10ct" [ref=e600]
+                - generic [ref=e601]: THC 31%
+                - generic [ref=e603]:
+                  - generic [ref=e604]: SPLIFFS
+                  - generic [ref=e605]: Spliffs Pre-rolls - Single Pack - 10ct
+                  - generic [ref=e606]:
+                    - generic "Product Price 25$" [ref=e607]:
+                      - generic [ref=e608]: $25
+                      - generic [ref=e609]: $30
+                    - button "Add To Cart" [ref=e611]: ADD TO CART
+                    - generic [ref=e613]:
+                      - generic [ref=e614]: Staff Pick
+                      - generic [ref=e615]: 10-Pack
+                      - generic [ref=e616]: AAAA
+            - group "3 / 5" [ref=e617]:
+              - generic [ref=e618] [cursor=pointer]:
+                - generic [ref=e619]:
+                  - generic [ref=e620]: I
+                  - text: Indica
+                - generic [ref=e621]: Sale
+                - img "POP Tropical Flavour Party Infused Pre-Rolls - Pack & Lighter - 5pk - 1g Per Joint" [ref=e625]
+                - generic [ref=e626]: THC 30%
+                - generic [ref=e628]:
+                  - generic [ref=e629]: RED ROOTS TRADING CO.
+                  - generic [ref=e630]: POP Tropical Flavour Party Infused Pre-Rolls - Pack & Lighter - 5pk - 1g Per Joint
+                  - generic [ref=e631]:
+                    - generic "Product Price 35$" [ref=e632]:
+                      - generic [ref=e633]: $35
+                      - generic [ref=e634]: $45
+                    - button "Add To Cart" [ref=e636]: ADD TO CART
+                    - generic [ref=e639]: 5-Pack
+            - group "4 / 5" [ref=e640]:
+              - generic [ref=e641] [cursor=pointer]:
+                - generic [ref=e642]:
+                  - generic [ref=e643]: I
+                  - text: Indica
+                - img "Peach Pie Infused Pre-Rolls - 2pk - 1.3g Per Joint" [ref=e647]
+                - generic [ref=e648]: THC 40%
+                - generic [ref=e650]:
+                  - generic [ref=e651]: BACKWOODS EXTRACTS
+                  - generic [ref=e652]: Peach Pie Infused Pre-Rolls - 2pk - 1.3g Per Joint
+                  - generic [ref=e653]:
+                    - generic "Product Price 30$" [ref=e654]:
+                      - generic [ref=e655]: $30
+                    - button "Add To Cart" [ref=e657]: ADD TO CART
+                    - generic [ref=e659]:
+                      - generic [ref=e660]: High THC 📈
+                      - generic [ref=e661]: 2-Pack
+            - group "5 / 5" [ref=e662]:
+              - generic [ref=e663] [cursor=pointer]:
+                - generic [ref=e664]:
+                  - generic [ref=e665]: H
+                  - text: Hybrid
+                - img "Drizzle Slims Live Resin Infused Pre-Roll Pack - 10x0.7g" [ref=e669]
+                - generic [ref=e670]: THC 45%
+                - generic [ref=e672]:
+                  - generic [ref=e673]: DRIZZLE FACTORY
+                  - generic [ref=e674]: Drizzle Slims Live Resin Infused Pre-Roll Pack - 10x0.7g
+                  - generic [ref=e675]:
+                    - generic "Product Price 60$" [ref=e676]:
+                      - generic [ref=e677]: $60
+                    - button "Add To Cart" [ref=e679]: ADD TO CART
+                    - generic [ref=e681]:
+                      - generic [ref=e682]: High THC 📈
+                      - generic [ref=e683]: 10-Pack
+        - generic [ref=e685]:
+          - generic [ref=e686]:
+            - generic [ref=e687]:
+              - heading "Edibles" [level=3] [ref=e688]
+              - paragraph [ref=e689]: Delicious gummies, chocolates, & more. Precise dosing for a flavourful experience.
+            - link "View All Products" [ref=e691] [cursor=pointer]:
+              - /url: /shop/edibles_edibles
+              - generic [ref=e692]: View All Products
+          - generic [ref=e694]:
+            - group "1 / 6" [ref=e695]:
+              - generic [ref=e696] [cursor=pointer]:
+                - generic [ref=e697]:
+                  - generic [ref=e698]: I
+                  - text: Indica
+                - img "Happy Hippie Indica Gummies - 1500mg" [ref=e702]
+                - generic [ref=e703]: THC 1500MG
+                - generic [ref=e705]:
+                  - generic [ref=e706]: HAPPY HIPPIE EDIBLES
+                  - generic [ref=e707]: Happy Hippie Indica Gummies - 1500mg
+                  - generic [ref=e708]:
+                    - generic "Product Price 50$" [ref=e709]:
+                      - generic [ref=e710]: $50
+                    - button "Add To Cart" [ref=e712]: ADD TO CART
+                    - generic [ref=e714]:
+                      - generic [ref=e715]: 30-PACK
+                      - generic [ref=e716]: 50mg Dose
+                      - generic [ref=e717]: VEGAN 🌿
+            - group "2 / 6" [ref=e718]:
+              - generic [ref=e719] [cursor=pointer]:
+                - generic [ref=e720]:
+                  - generic [ref=e721]: H
+                  - text: Hybrid
+                - img "Mellow Vibes Live Resin Gummies - 600mg" [ref=e725]
+                - generic [ref=e726]: THC 600mg
+                - generic [ref=e728]:
+                  - generic [ref=e729]: MELLOW VIBES
+                  - generic [ref=e730]: Mellow Vibes Live Resin Gummies - 600mg
+                  - generic [ref=e731]:
+                    - generic "Product Price 35$" [ref=e732]:
+                      - generic [ref=e733]: $35
+                    - button "Add To Cart" [ref=e735]: ADD TO CART
+                    - generic [ref=e737]:
+                      - generic [ref=e738]: 30-PACK
+                      - generic [ref=e739]: 20MG DOSE
+                      - generic [ref=e740]: VEGAN 🌿
+            - group "3 / 6" [ref=e741]:
+              - generic [ref=e742] [cursor=pointer]:
+                - generic [ref=e743]:
+                  - generic [ref=e744]: "1"
+                  - text: 1:1
+                - img "Mellow Vibes 1:1 (THC & CBD) Live Resin Gummies - 1200mg" [ref=e748]
+                - generic [ref=e749]: THC 600mgCBD 600mg
+                - generic [ref=e751]:
+                  - generic [ref=e752]: MELLOW VIBES
+                  - generic [ref=e753]: Mellow Vibes 1:1 (THC & CBD) Live Resin Gummies - 1200mg
+                  - generic [ref=e754]:
+                    - generic "Product Price 50$" [ref=e755]:
+                      - generic [ref=e756]: $50
+                    - button "Add To Cart" [ref=e758]: ADD TO CART
+                    - generic [ref=e760]:
+                      - generic [ref=e761]: 20-Pack
+                      - generic [ref=e762]: 30MG DOSE
+                      - generic [ref=e763]: VEGAN 🌿
+            - group "4 / 6" [ref=e764]:
+              - generic [ref=e765] [cursor=pointer]:
+                - generic [ref=e766]:
+                  - generic [ref=e767]: H
+                  - text: Hybrid
+                - img "Dream Catcher Shatter Gummies - 150mg" [ref=e771]
+                - generic [ref=e772]: THC 150mg
+                - generic [ref=e774]:
+                  - generic [ref=e775]: DREAM CATCHER
+                  - generic [ref=e776]: Dream Catcher Shatter Gummies - 150mg
+                  - generic [ref=e777]:
+                    - generic "Product Price 20$" [ref=e778]:
+                      - generic [ref=e779]: $20
+                    - button "Add To Cart" [ref=e781]: ADD TO CART
+                    - generic [ref=e783]:
+                      - generic [ref=e784]: 20-Pack
+                      - generic [ref=e785]: 7.5mg Dose
+            - group "5 / 6" [ref=e786]:
+              - generic [ref=e787] [cursor=pointer]:
+                - generic [ref=e788]:
+                  - generic [ref=e789]: S
+                  - text: Sativa
+                - img "Red Roots Sativa Shatter Gummies - 100mg" [ref=e793]
+                - generic [ref=e794]: THC 100mg
+                - generic [ref=e796]:
+                  - generic [ref=e797]: RED ROOTS TRADING CO.
+                  - generic [ref=e798]: Red Roots Sativa Shatter Gummies - 100mg
+                  - generic [ref=e799]:
+                    - generic "Product Price 15$" [ref=e800]:
+                      - generic [ref=e801]: $15
+                    - button "Add To Cart" [ref=e803]: ADD TO CART
+                    - generic [ref=e805]:
+                      - generic [ref=e806]: 20-Pack
+                      - generic [ref=e807]: 5mg Dose
+            - group "6 / 6" [ref=e808]:
+              - generic [ref=e809] [cursor=pointer]:
+                - generic [ref=e810]:
+                  - generic [ref=e811]: H
+                  - text: Hybrid
+                - img "Legacy 420 Raspberry Lemonade Drink Shot - 10mg" [ref=e815]
+                - generic [ref=e816]: THC 10mg
+                - generic [ref=e818]:
+                  - generic [ref=e819]: LEGACY 420
+                  - generic [ref=e820]: Legacy 420 Raspberry Lemonade Drink Shot - 10mg
+                  - generic [ref=e821]:
+                    - generic "Product Price 9$" [ref=e822]:
+                      - generic [ref=e823]: $9
+                    - button "Add To Cart" [ref=e825]: ADD TO CART
+                    - generic [ref=e828]: 10mg Dose
+        - generic [ref=e830]:
+          - generic [ref=e831]:
+            - generic [ref=e832]:
+              - heading "Concentrates" [level=3] [ref=e833]
+              - paragraph [ref=e834]: Pure, powerful extracts, wax, shatter, and live resin for an elevated experience.
+            - link "View All Products" [ref=e836] [cursor=pointer]:
+              - /url: /shop/concentrates_concentrates
+              - generic [ref=e837]: View All Products
+          - generic [ref=e839]:
+            - group "1 / 6" [ref=e840]:
+              - generic [ref=e841] [cursor=pointer]:
+                - img "Honey Bee Wellness Rick Simpson Oil (RSO) - 5g" [ref=e845]
+                - generic [ref=e846]: THC 3750mgCBD 500mg
+                - generic [ref=e848]:
+                  - generic [ref=e849]: HONEY BEE WELLNESS
+                  - generic [ref=e850]: Honey Bee Wellness Rick Simpson Oil (RSO) - 5g
+                  - generic [ref=e851]:
+                    - generic "Product Price 110$" [ref=e852]:
+                      - generic [ref=e853]: $110
+                    - button "Add To Cart" [ref=e855]: ADD TO CART
+                    - generic [ref=e857]:
+                      - generic [ref=e858]: Staff Pick
+                      - generic [ref=e859]: CRAFT
+                      - generic [ref=e860]: High THC 📈
+                      - generic [ref=e861]: Local Legend
+            - group "2 / 6" [ref=e862]:
+              - generic [ref=e863] [cursor=pointer]:
+                - generic [ref=e864]:
+                  - generic [ref=e865]: I
+                  - text: Indica
+                - img "Permanent Gas Full Melt Hash - 1g 🔥 (Staff Pick)" [ref=e869]
+                - generic [ref=e870]: THC 60%
+                - generic [ref=e872]:
+                  - generic [ref=e873]: RED ROOTS TRADING CO.
+                  - generic [ref=e874]: Permanent Gas Full Melt Hash - 1g 🔥 (Staff Pick)
+                  - generic [ref=e875]:
+                    - generic "Product Price 30$" [ref=e876]:
+                      - generic [ref=e877]: $30
+                    - button "Add To Cart" [ref=e879]: ADD TO CART
+                    - generic [ref=e881]:
+                      - generic [ref=e882]: CRAFT
+                      - generic [ref=e883]: High THC 📈
+                      - generic [ref=e884]: AAAAA
+                      - generic [ref=e885]: 1 GRAM
+            - group "3 / 6" [ref=e886]:
+              - generic [ref=e887] [cursor=pointer]:
+                - img "Honey Bee Wellness Rick Simpson Oil (RSO) - 1g" [ref=e891]
+                - generic [ref=e892]: THC 750mgCBD 100mg
+                - generic [ref=e894]:
+                  - generic [ref=e895]: HONEY BEE WELLNESS
+                  - generic [ref=e896]: Honey Bee Wellness Rick Simpson Oil (RSO) - 1g
+                  - generic [ref=e897]:
+                    - generic "Product Price 30$" [ref=e898]:
+                      - generic [ref=e899]: $30
+                    - button "Add To Cart" [ref=e901]: ADD TO CART
+                    - generic [ref=e903]:
+                      - generic [ref=e904]: Staff Pick
+                      - generic [ref=e905]: CRAFT
+                      - generic [ref=e906]: High THC 📈
+                      - generic [ref=e907]: Local Legend
+            - group "4 / 6" [ref=e908]:
+              - generic [ref=e909] [cursor=pointer]:
+                - generic [ref=e910]:
+                  - generic [ref=e911]: I
+                  - text: Indica
+                - img "Rockstar Shatter - 3g" [ref=e915]
+                - generic [ref=e916]: THC 78%
+                - generic [ref=e918]:
+                  - generic [ref=e919]: RED ROOTS TRADING CO.
+                  - generic [ref=e920]: Rockstar Shatter - 3g
+                  - generic [ref=e921]:
+                    - generic "Product Price 50$" [ref=e922]:
+                      - generic [ref=e923]: $50
+                    - button "Add To Cart" [ref=e925]: ADD TO CART
+                    - generic [ref=e927]:
+                      - generic [ref=e928]: High THC 📈
+                      - generic [ref=e929]: 3 GRAMS
+            - group "5 / 6" [ref=e930]:
+              - generic [ref=e931] [cursor=pointer]:
+                - generic [ref=e932]: Sale
+                - img "Red Roots THCa Diamonds - 3g" [ref=e936]
+                - generic [ref=e937]: THC 90%
+                - generic [ref=e939]:
+                  - generic [ref=e940]: RED ROOTS TRADING CO.
+                  - generic [ref=e941]: Red Roots THCa Diamonds - 3g
+                  - generic [ref=e942]:
+                    - generic "Product Price 55$" [ref=e943]:
+                      - generic [ref=e944]: $55
+                      - generic [ref=e945]: $105
+                    - button "Add To Cart" [ref=e947]: ADD TO CART
+                    - generic [ref=e949]:
+                      - generic [ref=e950]: CRAFT
+                      - generic [ref=e951]: High THC 📈
+            - group "6 / 6" [ref=e952]:
+              - generic [ref=e953] [cursor=pointer]:
+                - generic [ref=e954]:
+                  - generic [ref=e955]: I
+                  - text: Indica
+                - img "Grand Daddy Purple Shatter - 3g" [ref=e959]
+                - generic [ref=e960]: THC 77%
+                - generic [ref=e962]:
+                  - generic [ref=e963]: RED ROOTS TRADING CO.
+                  - generic [ref=e964]: Grand Daddy Purple Shatter - 3g
+                  - generic [ref=e965]:
+                    - generic "Product Price 40$" [ref=e966]:
+                      - generic [ref=e967]: $40
+                    - button "Add To Cart" [ref=e969]: ADD TO CART
+                    - generic [ref=e971]:
+                      - generic [ref=e972]: High THC 📈
+                      - generic [ref=e973]: 3 GRAMS
+        - generic [ref=e975]:
+          - generic [ref=e976]:
+            - generic [ref=e977]:
+              - heading "THC Vapes" [level=3] [ref=e978]
+              - paragraph [ref=e979]: Discreet, potent, and portable. Enjoy the finest collection of premium vapes.
+            - link "View All Products" [ref=e981] [cursor=pointer]:
+              - /url: /shop/vaporizers_vaporizers
+              - generic [ref=e982]: View All Products
+          - generic [ref=e984]:
+            - group "1 / 6" [ref=e985]:
+              - generic [ref=e986] [cursor=pointer]:
+                - generic [ref=e987]: Sale
+                - generic [ref=e989]:
+                  - generic:
+                    - img "100 Dizzie Vapes - (BULK ORDER)"
+                - generic [ref=e992]:
+                  - generic [ref=e993]: DIZZIES
+                  - generic [ref=e994]: 100 Dizzie Vapes - (BULK ORDER)
+                  - generic [ref=e995]:
+                    - generic "Product Price 1800$" [ref=e996]:
+                      - generic [ref=e997]: $1,800
+                      - generic [ref=e998]: $2,100
+                    - button "Add To Cart" [ref=e1000]: ADD TO CART
+                    - generic [ref=e1002]:
+                      - generic [ref=e1003]: High THC 📈
+                      - generic [ref=e1004]: WHOLESALE 🚚
+            - group "2 / 6" [ref=e1005]:
+              - generic [ref=e1006] [cursor=pointer]:
+                - generic [ref=e1008]:
+                  - generic:
+                    - img "Drizzle TerpSlurps Live Resin Vape - 1g"
+                - generic [ref=e1009]: THC 90%
+                - generic [ref=e1011]:
+                  - generic [ref=e1012]: DRIZZLE FACTORY
+                  - generic [ref=e1013]: Drizzle TerpSlurps Live Resin Vape - 1g
+                  - generic [ref=e1014]:
+                    - generic "Product Price 35$" [ref=e1015]:
+                      - generic [ref=e1016]: $35
+                    - button "Add To Cart" [ref=e1018]: ADD TO CART
+                    - generic [ref=e1021]: Staff Pick
+            - group "3 / 6" [ref=e1022]:
+              - generic [ref=e1023] [cursor=pointer]:
+                - generic [ref=e1025]:
+                  - generic:
+                    - img "Drizzle Distillate Vape Cartridge - 2g"
+                - generic [ref=e1026]: THC 97%
+                - generic [ref=e1028]:
+                  - generic [ref=e1029]: DRIZZLE FACTORY
+                  - generic [ref=e1030]: Drizzle Distillate Vape Cartridge - 2g
+                  - generic [ref=e1031]:
+                    - generic "Product Price 50$" [ref=e1032]:
+                      - generic [ref=e1033]: $50
+                    - button "Add To Cart" [ref=e1035]: ADD TO CART
+                    - generic [ref=e1038]: Staff Pick
+            - group "4 / 6" [ref=e1039]:
+              - generic [ref=e1040] [cursor=pointer]:
+                - generic [ref=e1041]:
+                  - generic [ref=e1042]: H
+                  - text: Hybrid
+                - generic [ref=e1044]:
+                  - generic:
+                    - img "Dizzies Golden Yuzu CO₂ Distillate Vape - 2g"
+                - generic [ref=e1045]: THC 95%
+                - generic [ref=e1047]:
+                  - generic [ref=e1048]: DIZZIES
+                  - generic [ref=e1049]: Dizzies Golden Yuzu CO₂ Distillate Vape - 2g
+                  - generic [ref=e1050]:
+                    - generic "Product Price 30$" [ref=e1051]:
+                      - generic [ref=e1052]: $30
+                    - button "Add To Cart" [ref=e1054]: ADD TO CART
+                    - generic [ref=e1057]: High THC 📈
+            - group "5 / 6" [ref=e1058]:
+              - generic [ref=e1059] [cursor=pointer]:
+                - generic [ref=e1061]:
+                  - generic:
+                    - img "Dizzies White Gummy CO₂ Distillate Vape - 2g"
+                - generic [ref=e1062]: THC 95%
+                - generic [ref=e1064]:
+                  - generic [ref=e1065]: DIZZIES
+                  - generic [ref=e1066]: Dizzies White Gummy CO₂ Distillate Vape - 2g
+                  - generic [ref=e1067]:
+                    - generic "Product Price 30$" [ref=e1068]:
+                      - generic [ref=e1069]: $30
+                    - button "Add To Cart" [ref=e1071]: ADD TO CART
+                    - generic [ref=e1074]: High THC 📈
+            - group "6 / 6" [ref=e1075]:
+              - generic [ref=e1076] [cursor=pointer]:
+                - generic [ref=e1077]: Sale
+                - generic [ref=e1079]:
+                  - generic:
+                    - img "BOUTIQ Switch (v5) Liquid Live Diamonds Triple Flavour Vape - 2g"
+                - generic [ref=e1080]: THC 98%
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]: BOUTIQ
+                  - generic [ref=e1084]: BOUTIQ Switch (v5) Liquid Live Diamonds Triple Flavour Vape - 2g
+                  - generic [ref=e1085]:
+                    - generic "Product Price 70$" [ref=e1086]:
+                      - generic [ref=e1087]: $70
+                      - generic [ref=e1088]: $100
+                    - button "Add To Cart" [ref=e1090]: ADD TO CART
+                    - generic [ref=e1092]:
+                      - generic [ref=e1093]: New Release
+                      - generic [ref=e1094]: Local Legend
+        - generic [ref=e1096]:
+          - generic [ref=e1097]:
+            - generic [ref=e1098]:
+              - heading "Hash" [level=3] [ref=e1099]
+              - paragraph [ref=e1100]:
+                - paragraph [ref=e1101]: Premium Indigenous handcrafted hash. Potent, aromatic, and smooth.
+            - link "View All Products" [ref=e1103] [cursor=pointer]:
+              - /url: /shop/hash_hash
+              - generic [ref=e1104]: View All Products
+          - generic [ref=e1106]:
+            - group "1 / 6" [ref=e1107]:
+              - generic [ref=e1108] [cursor=pointer]:
+                - generic [ref=e1109]:
+                  - generic [ref=e1110]: I
+                  - text: Indica
+                - generic [ref=e1112]:
+                  - generic:
+                    - img "Lava Cake Cold-cured Bubble Hash - 1g 🔥"
+                - generic [ref=e1113]: THC 80%
+                - generic [ref=e1115]:
+                  - generic [ref=e1116]: RED ROOTS TRADING CO.
+                  - generic [ref=e1117]: Lava Cake Cold-cured Bubble Hash - 1g 🔥
+                  - generic [ref=e1118]:
+                    - generic "Product Price 25$" [ref=e1119]:
+                      - generic [ref=e1120]: $25
+                    - button "Add To Cart" [ref=e1122]: ADD TO CART
+                    - generic [ref=e1125]: 1 GRAM
+            - group "2 / 6" [ref=e1126]:
+              - generic [ref=e1127] [cursor=pointer]:
+                - generic [ref=e1128]:
+                  - generic [ref=e1129]: H
+                  - text: Hybrid
+                - generic [ref=e1131]:
+                  - generic:
+                    - img "Mintos Hash 3.5g"
+                - generic [ref=e1132]: THC 55%
+                - generic [ref=e1134]:
+                  - generic [ref=e1135]: RED ROOTS TRADING CO.
+                  - generic [ref=e1136]: Mintos Hash 3.5g
+                  - generic [ref=e1137]:
+                    - generic "Product Price 35$" [ref=e1138]:
+                      - generic [ref=e1139]: $35
+                    - button "Add To Cart" [ref=e1141]: ADD TO CART
+                    - generic [ref=e1143]:
+                      - generic [ref=e1144]: CRAFT
+                      - generic [ref=e1145]: AAAA
+                      - generic [ref=e1146]: 1⁄8 Oz
+            - group "3 / 6" [ref=e1147]:
+              - generic [ref=e1148] [cursor=pointer]:
+                - generic [ref=e1149]:
+                  - generic [ref=e1150]: I
+                  - text: Indica
+                - generic [ref=e1152]:
+                  - generic:
+                    - img "Romeo Hash Group - 14g"
+                - generic [ref=e1153]: THC 44%
+                - generic [ref=e1155]:
+                  - generic [ref=e1156]: RED ROOTS TRADING CO.
+                  - generic [ref=e1157]: Romeo Hash Group - 14g
+                  - generic [ref=e1158]:
+                    - generic "Product Price 100$" [ref=e1159]:
+                      - generic [ref=e1160]: $100
+                    - button "Add To Cart" [ref=e1162]: ADD TO CART
+                    - generic [ref=e1164]:
+                      - generic [ref=e1165]: AAAA
+                      - generic [ref=e1166]: ½ OZ
+            - group "4 / 6" [ref=e1167]:
+              - generic [ref=e1168] [cursor=pointer]:
+                - generic [ref=e1169]:
+                  - generic [ref=e1170]: I
+                  - text: Indica
+                - generic [ref=e1171]: Sale
+                - generic [ref=e1173]:
+                  - generic:
+                    - img "Cold-cured Bubble Hash - Slurricane 7g 🔥"
+                - generic [ref=e1174]: THC 80%
+                - generic [ref=e1176]:
+                  - generic [ref=e1177]: RED ROOTS TRADING CO.
+                  - generic [ref=e1178]: Cold-cured Bubble Hash - Slurricane 7g 🔥
+                  - generic [ref=e1179]:
+                    - generic "Product Price 80$" [ref=e1180]:
+                      - generic [ref=e1181]: $80
+                      - generic [ref=e1182]: $105
+                    - button "Add To Cart" [ref=e1184]: ADD TO CART
+                    - generic [ref=e1186]:
+                      - generic [ref=e1187]: CRAFT
+                      - generic [ref=e1188]: High THC 📈
+                      - generic [ref=e1189]: AAAAA
+                      - generic [ref=e1190]: ¼ Oz
+            - group "5 / 6" [ref=e1191]:
+              - generic [ref=e1192] [cursor=pointer]:
+                - generic [ref=e1193]:
+                  - generic [ref=e1194]: H
+                  - text: Hybrid
+                - generic [ref=e1196]:
+                  - generic:
+                    - img "Lebanese Rose Hash - 7g"
+                - generic [ref=e1197]: THC 40%
+                - generic [ref=e1199]:
+                  - generic [ref=e1200]: RED ROOTS TRADING CO.
+                  - generic [ref=e1201]: Lebanese Rose Hash - 7g
+                  - generic [ref=e1202]:
+                    - generic "Product Price 55$" [ref=e1203]:
+                      - generic [ref=e1204]: $55
+                    - button "Add To Cart" [ref=e1206]: ADD TO CART
+                    - generic [ref=e1208]:
+                      - generic [ref=e1209]: LEBANESE
+                      - generic [ref=e1210]: ¼ Oz
+            - group "6 / 6" [ref=e1211]:
+              - generic [ref=e1212] [cursor=pointer]:
+                - generic [ref=e1213]:
+                  - generic [ref=e1214]: I
+                  - text: Indica
+                - img "Permanent Gas Full Melt Hash - 1g 🔥 (Staff Pick)" [ref=e1218]
+                - generic [ref=e1219]: THC 60%
+                - generic [ref=e1221]:
+                  - generic [ref=e1222]: RED ROOTS TRADING CO.
+                  - generic [ref=e1223]: Permanent Gas Full Melt Hash - 1g 🔥 (Staff Pick)
+                  - generic [ref=e1224]:
+                    - generic "Product Price 30$" [ref=e1225]:
+                      - generic [ref=e1226]: $30
+                    - button "Add To Cart" [ref=e1228]: ADD TO CART
+                    - generic [ref=e1230]:
+                      - generic [ref=e1231]: CRAFT
+                      - generic [ref=e1232]: High THC 📈
+                      - generic [ref=e1233]: AAAAA
+                      - generic [ref=e1234]: 1 GRAM
+        - generic [ref=e1236]:
+          - generic [ref=e1237]:
+            - generic [ref=e1238]:
+              - heading "Tobacco" [level=3] [ref=e1239]
+              - paragraph [ref=e1240]:
+                - paragraph [ref=e1241]: Smooth, rich tobacco blends for refined enjoyment.
+            - link "View All Products" [ref=e1243] [cursor=pointer]:
+              - /url: /shop/tobacco_tobacco
+              - generic [ref=e1244]: View All Products
+          - generic [ref=e1246]:
+            - group "1 / 6" [ref=e1247]:
+              - generic [ref=e1248] [cursor=pointer]:
+                - generic [ref=e1249]:
+                  - generic [ref=e1250]: "N"
+                  - text: Nicotine
+                - img "Pablo Nicotine Pouch" [ref=e1254]
+                - generic [ref=e1257]:
+                  - generic [ref=e1258]: PABLO POUCHES
+                  - generic [ref=e1259]: Pablo Nicotine Pouch
+                  - generic [ref=e1260]:
+                    - generic "Product Price 22$" [ref=e1261]:
+                      - generic [ref=e1262]: $22
+                    - button "Add To Cart" [ref=e1264]: 8 OPTIONS
+                    - generic [ref=e1266]:
+                      - generic [ref=e1267]: 24MG NIC
+                      - generic [ref=e1268]: 50MG NIC
+            - group "2 / 6" [ref=e1269]:
+              - generic [ref=e1270] [cursor=pointer]:
+                - generic [ref=e1271]:
+                  - generic [ref=e1272]: "N"
+                  - text: Nicotine
+                - img "Zyn 11mg Nicotine Pouches" [ref=e1276]
+                - generic [ref=e1279]:
+                  - generic [ref=e1280]: ZYN
+                  - generic [ref=e1281]: Zyn 11mg Nicotine Pouches
+                  - generic [ref=e1282]:
+                    - generic "Product Price 22$" [ref=e1283]:
+                      - generic [ref=e1284]: $22
+                    - button "Add To Cart" [ref=e1286]: 16 OPTIONS
+                    - generic [ref=e1289]: 11MG NIC
+            - group "3 / 6" [ref=e1290]:
+              - generic [ref=e1291] [cursor=pointer]:
+                - generic [ref=e1292]:
+                  - generic [ref=e1293]: "N"
+                  - text: Nicotine
+                - generic [ref=e1294]: Sale
+                - img "Orbito 120k Nicotine Vapes" [ref=e1298]
+                - generic [ref=e1301]:
+                  - generic [ref=e1302]: ORBITO
+                  - generic [ref=e1303]: Orbito 120k Nicotine Vapes
+                  - generic [ref=e1304]:
+                    - generic "Product Price 45$" [ref=e1305]:
+                      - generic [ref=e1306]: $45
+                      - generic [ref=e1307]: $50
+                    - button "Add To Cart" [ref=e1309]: 4 OPTIONS
+                    - generic [ref=e1312]: 20MG/2% NIC
+            - group "4 / 6" [ref=e1313]:
+              - generic [ref=e1314] [cursor=pointer]:
+                - generic [ref=e1315]:
+                  - generic [ref=e1316]: "N"
+                  - text: Nicotine
+                - img "STLTH 60k Nicotine Vapes - 20mg/mL" [ref=e1320]
+                - generic [ref=e1323]:
+                  - generic [ref=e1324]: STLTH
+                  - generic [ref=e1325]: STLTH 60k Nicotine Vapes - 20mg/mL
+                  - generic [ref=e1326]:
+                    - generic "Product Price 45$" [ref=e1327]:
+                      - generic [ref=e1328]: $45
+                    - button "Add To Cart" [ref=e1330]: ADD TO CART
+                    - generic [ref=e1333]: 20MG NIC
+            - group "5 / 6" [ref=e1334]:
+              - generic [ref=e1335] [cursor=pointer]:
+                - generic [ref=e1336]:
+                  - generic [ref=e1337]: "N"
+                  - text: Nicotine
+                - generic [ref=e1338]: Sale
+                - generic [ref=e1340]:
+                  - generic:
+                    - img "Rocky Vapour 20mg Nic Vape E-Liquid"
+                - generic [ref=e1343]:
+                  - generic [ref=e1344]: ROCKY VAPOR
+                  - generic [ref=e1345]: Rocky Vapour 20mg Nic Vape E-Liquid
+                  - generic [ref=e1346]:
+                    - generic "Product Price 30$" [ref=e1347]:
+                      - generic [ref=e1348]: $30
+                      - generic [ref=e1349]: $40
+                    - button "Add To Cart" [ref=e1351]: 16 OPTIONS
+                    - generic [ref=e1354]: 20MG NIC
+            - group "6 / 6" [ref=e1355]:
+              - generic [ref=e1356] [cursor=pointer]:
+                - generic [ref=e1358]:
+                  - generic:
+                    - img "Maximum Light 20's Cigarettes - Carton"
+                - generic [ref=e1361]:
+                  - generic [ref=e1362]: MAXIMUM
+                  - generic [ref=e1363]: Maximum Light 20's Cigarettes - Carton
+                  - generic [ref=e1364]:
+                    - generic "Product Price 35$" [ref=e1365]:
+                      - generic [ref=e1366]: $35
+                    - button "Add To Cart" [ref=e1368]: ADD TO CART
+                    - generic [ref=e1371]: CARTON
+        - generic [ref=e1373]:
+          - generic [ref=e1374]:
+            - generic [ref=e1375]:
+              - heading "Wellness" [level=3] [ref=e1376]
+              - paragraph [ref=e1377]:
+                - paragraph [ref=e1378]: Natural THC, CBD, CBG, CBN, & more for relaxation and recovery.
+            - link "View All Products" [ref=e1380] [cursor=pointer]:
+              - /url: /shop/wellness_wellness
+              - generic [ref=e1381]: View All Products
+          - generic [ref=e1383]:
+            - group "1 / 5" [ref=e1384]:
+              - generic [ref=e1385] [cursor=pointer]:
+                - generic [ref=e1386]: Sale
+                - img "Mahigan Wellness Products" [ref=e1390]
+                - generic [ref=e1393]:
+                  - generic [ref=e1394]: MAHIGAN WELLNESS
+                  - generic [ref=e1395]: Mahigan Wellness Products
+                  - generic [ref=e1396]:
+                    - generic "Product Price 55$" [ref=e1397]:
+                      - generic [ref=e1398]: $55
+                      - generic [ref=e1399]: $85
+                    - button "Add To Cart" [ref=e1401]: 6 OPTIONS
+            - group "2 / 5" [ref=e1403]:
+              - generic [ref=e1404] [cursor=pointer]:
+                - generic [ref=e1406]:
+                  - generic:
+                    - img "AKI Wellness Ultra Strength 1:1 Pain Cream - 5000mg CBD & THC"
+                - generic [ref=e1407]: THC 5000mgCBD 5000mg
+                - generic [ref=e1409]:
+                  - generic [ref=e1410]: AKI WELLNESS
+                  - generic [ref=e1411]: AKI Wellness Ultra Strength 1:1 Pain Cream - 5000mg CBD & THC
+                  - generic [ref=e1412]:
+                    - generic "Product Price 125$" [ref=e1413]:
+                      - generic [ref=e1414]: $125
+                    - button "Add To Cart" [ref=e1416]: ADD TO CART
+                    - generic [ref=e1418]:
+                      - generic [ref=e1419]: Staff Pick
+                      - generic [ref=e1420]: CRAFT
+            - group "3 / 5" [ref=e1421]:
+              - generic [ref=e1422] [cursor=pointer]:
+                - img "Honey Bee Wellness Rick Simpson Oil (RSO) - 5g" [ref=e1426]
+                - generic [ref=e1427]: THC 3750mgCBD 500mg
+                - generic [ref=e1429]:
+                  - generic [ref=e1430]: HONEY BEE WELLNESS
+                  - generic [ref=e1431]: Honey Bee Wellness Rick Simpson Oil (RSO) - 5g
+                  - generic [ref=e1432]:
+                    - generic "Product Price 110$" [ref=e1433]:
+                      - generic [ref=e1434]: $110
+                    - button "Add To Cart" [ref=e1436]: ADD TO CART
+                    - generic [ref=e1438]:
+                      - generic [ref=e1439]: Staff Pick
+                      - generic [ref=e1440]: CRAFT
+                      - generic [ref=e1441]: High THC 📈
+                      - generic [ref=e1442]: Local Legend
+            - group "4 / 5" [ref=e1443]:
+              - generic [ref=e1444] [cursor=pointer]:
+                - img "Honey Bee Wellness Rick Simpson Oil (RSO) - 1g" [ref=e1448]
+                - generic [ref=e1449]: THC 750mgCBD 100mg
+                - generic [ref=e1451]:
+                  - generic [ref=e1452]: HONEY BEE WELLNESS
+                  - generic [ref=e1453]: Honey Bee Wellness Rick Simpson Oil (RSO) - 1g
+                  - generic [ref=e1454]:
+                    - generic "Product Price 30$" [ref=e1455]:
+                      - generic [ref=e1456]: $30
+                    - button "Add To Cart" [ref=e1458]: ADD TO CART
+                    - generic [ref=e1460]:
+                      - generic [ref=e1461]: Staff Pick
+                      - generic [ref=e1462]: CRAFT
+                      - generic [ref=e1463]: High THC 📈
+                      - generic [ref=e1464]: Local Legend
+            - group "5 / 5" [ref=e1465]:
+              - generic [ref=e1466] [cursor=pointer]:
+                - generic [ref=e1468]:
+                  - generic:
+                    - img "Legacy 420 1:1 Rectal Suppository - 50mg CBD & THC"
+                - generic [ref=e1469]: THC 50mgCBD 50mg
+                - generic [ref=e1471]:
+                  - generic [ref=e1472]: LEGACY 420
+                  - generic [ref=e1473]: Legacy 420 1:1 Rectal Suppository - 50mg CBD & THC
+                  - generic [ref=e1474]:
+                    - generic "Product Price 25$" [ref=e1475]:
+                      - generic [ref=e1476]: $25
+                    - button "Add To Cart" [ref=e1478]: ADD TO CART
+                    - generic [ref=e1481]: 2-Pack
+        - generic [ref=e1483]:
+          - generic [ref=e1486]: Some of Our Favourite Brands
+          - generic [ref=e1487]:
+            - img "Backwoods brand link to brand details page" [ref=e1491] [cursor=pointer]
+            - img "GAS GANG brand link to brand details page" [ref=e1495] [cursor=pointer]
+            - img "Buddha Boys brand link to brand details page" [ref=e1499] [cursor=pointer]
+            - img "Dream Catcher brand link to brand details page" [ref=e1503] [cursor=pointer]
+            - img "RED ROOTS TRADING CO. brand link to brand details page" [ref=e1507] [cursor=pointer]
+            - img "AKI Wellness brand link to brand details page" [ref=e1511] [cursor=pointer]
+            - img "Heisenberg Extractions brand link to brand details page" [ref=e1515] [cursor=pointer]
+            - img "Mellow Vibes brand link to brand details page" [ref=e1519] [cursor=pointer]
+            - img "Drizzle Factory brand link to brand details page" [ref=e1523] [cursor=pointer]
+            - img "Legacy 420 brand link to brand details page" [ref=e1527] [cursor=pointer]
+            - img "ZIBI Smoke Co. brand link to brand details page" [ref=e1531] [cursor=pointer]
+            - img "Rocket Pops brand link to brand details page" [ref=e1535] [cursor=pointer]
+        - list [ref=e1538]:
+          - listitem [ref=e1539]:
+            - generic [ref=e1540]:
+              - img "undefined" [ref=e1542]
+              - generic [ref=e1543]:
+                - heading "Massive Assortment" [level=6] [ref=e1544]:
+                  - paragraph [ref=e1545]: Massive Assortment
+                - paragraph [ref=e1546]:
+                  - paragraph [ref=e1547]: Look no further for the best selection of premium cannabis & tobacco products at our trusted cannabis dispensary in Ottawa.
+          - listitem [ref=e1548]:
+            - generic [ref=e1549]:
+              - img "undefined" [ref=e1551]
+              - generic [ref=e1552]:
+                - heading "Top-Shelf Quality" [level=6] [ref=e1553]:
+                  - paragraph [ref=e1554]: Top-Shelf Quality
+                - paragraph [ref=e1555]:
+                  - paragraph [ref=e1556]: All products available through our cannabis delivery service are 100% tested by accredited third-party laboratories. Shop with confidence!
+          - listitem [ref=e1557]:
+            - generic [ref=e1558]:
+              - img "undefined" [ref=e1560]
+              - generic [ref=e1561]:
+                - heading "Quick Local Delivery" [level=6] [ref=e1562]:
+                  - paragraph [ref=e1563]: Quick Local Delivery
+                - paragraph [ref=e1564]:
+                  - paragraph [ref=e1565]: Need it fast? Our local weed delivery service in Ottawa & Gatineau brings premium cannabis straight to your door. We offer blazing fast delivery up to 30km from the city centre in under an hour.
+        - generic [ref=e1566]:
+          - generic [ref=e1567]:
+            - img "People enjoying nature and outdoor lifestyle in Canada" [ref=e1570]
+            - img "Couple enjoying a relaxed cannabis lifestyle outdoors" [ref=e1573]
+            - img "Friends enjoying cannabis together in a social setting" [ref=e1576]
+            - img "Interior of Red Roots Trading Company cannabis store" [ref=e1579]
+          - generic [ref=e1580]:
+            - generic [ref=e1581]: Your Purchase Makes A Difference
+            - heading "Welcome to Red Roots Trading Company" [level=2] [ref=e1582]
+            - paragraph [ref=e1584]:
+              - heading "Indigenous Medicine Delivered to Ottawa, Gatineau & Beyond" [level=2] [ref=e1585]
+              - paragraph [ref=e1586]: All of our products are Indigenous produced and tested to ensure their quality and safety.
+          - generic [ref=e1587]:
+            - img "Man relaxing at home enjoying a calm cannabis experience" [ref=e1590]
+            - img "CBD topical cream applied to hands for wellness and pain relief" [ref=e1593]
+            - img "Red Roots Trading Company storefront in Ottawa" [ref=e1596]
+            - img "Woman holding premium cannabis flower from Indigenous growers" [ref=e1599]
+    - contentinfo [ref=e1600]:
+      - contentinfo [ref=e1601]:
+        - generic [ref=e1602]:
+          - generic [ref=e1603]:
+            - generic [ref=e1604]:
+              - img "Footer Logo" [ref=e1607]
+              - generic "Footer Text" [ref=e1608]: Your Purchase Makes A Difference
+              - paragraph [ref=e1609]:
+                - paragraph [ref=e1610]: Red Roots is a Sovereign Indigenous Algonquin-owned and operated business. 16% of our net sales are reinvested into our local clan. Miigwetch & thank you!
+            - generic [ref=e1611]:
+              - generic [ref=e1612]: Useful Links
+              - list [ref=e1613]:
+                - listitem [ref=e1614]:
+                  - link "Flower" [ref=e1615] [cursor=pointer]:
+                    - /url: /shop/Flower_flower
+                - listitem [ref=e1616]:
+                  - link "Pre-Roll" [ref=e1617] [cursor=pointer]:
+                    - /url: /shop/Pre-Rolls_pre-rolls
+                - listitem [ref=e1618]:
+                  - link "Edibles" [ref=e1619] [cursor=pointer]:
+                    - /url: /shop/Edibles_edibles
+                - listitem [ref=e1620]:
+                  - link "Deals" [ref=e1621] [cursor=pointer]:
+                    - /url: /shop/deals
+                - listitem [ref=e1622]:
+                  - link "Contact Us" [ref=e1623] [cursor=pointer]:
+                    - /url: /contact-us
+                - listitem [ref=e1624]:
+                  - link "Blogs" [ref=e1625] [cursor=pointer]:
+                    - /url: /blogs
+                - listitem [ref=e1626]:
+                  - link "FAQs" [ref=e1627] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e1628]:
+                  - link "Delivery Area" [ref=e1629] [cursor=pointer]:
+                    - /url: /delivery-area
+                - listitem [ref=e1630]:
+                  - link "Sitemap" [ref=e1631] [cursor=pointer]:
+                    - /url: /sitemap
+            - generic [ref=e1632]:
+              - generic [ref=e1633]: Contact Information
+              - generic [ref=e1634]:
+                - generic [ref=e1636]: 
+                - generic [ref=e1637]:
+                  - generic [ref=e1638]: Email
+                  - generic [ref=e1639]:
+                    - link "Support Mail null":
+                      - /url: "mailto:"
+              - generic [ref=e1640]:
+                - generic [ref=e1642]: 
+                - generic [ref=e1643]:
+                  - generic [ref=e1644]: Phone
+                  - link "Support Phone Number (613) 296-3441" [ref=e1646] [cursor=pointer]:
+                    - /url: tel:(613) 296-3441
+                    - text: (613) 296-3441
+              - generic [ref=e1647]:
+                - generic [ref=e1648]: Accepted Payment
+                - img "Interac payment logo" [ref=e1651]
+            - generic [ref=e1652]:
+              - generic [ref=e1653]: My Account
+              - list [ref=e1654]:
+                - listitem [ref=e1655]:
+                  - link "Sign In" [ref=e1656] [cursor=pointer]:
+                    - /url: /login
+                - listitem [ref=e1657]:
+                  - link "Register" [ref=e1658] [cursor=pointer]:
+                    - /url: /register
+              - generic [ref=e1659]: Get In Touch
+              - generic [ref=e1660]:
+                - link "Link for Instagram" [ref=e1662] [cursor=pointer]:
+                  - /url: ""
+                  - img "instagram" [ref=e1663]
+                - link "Link for Facebook" [ref=e1665] [cursor=pointer]:
+                  - /url: ""
+                  - img "facebook" [ref=e1666]
+                - link "Link for Twitter" [ref=e1668] [cursor=pointer]:
+                  - /url: ""
+                  - img "twitter" [ref=e1669]
+                - link "Link for YouTube" [ref=e1671] [cursor=pointer]:
+                  - /url: ""
+                  - img "youtube" [ref=e1672]
+                - link "Link for LinkedIn" [ref=e1674] [cursor=pointer]:
+                  - /url: ""
+                  - img "linkedin" [ref=e1675]
+                - link "Link for Snapchat" [ref=e1677] [cursor=pointer]:
+                  - /url: ""
+                  - img "snapchat" [ref=e1678]
+          - generic [ref=e1680]:
+            - generic:
+              - paragraph
+            - generic [ref=e1681]:
+              - link "Privacy Policy" [ref=e1682] [cursor=pointer]:
+                - /url: /privacypolicy
+              - generic [ref=e1683]: /
+              - link "Terms and Conditions" [ref=e1684] [cursor=pointer]:
+                - /url: /termsandcondition
+  - text:  
+```
