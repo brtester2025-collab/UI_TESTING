@@ -1,0 +1,1883 @@
+{
+  "config": {
+    "configFile": "D:\\automation\\playwright.config.js",
+    "rootDir": "D:/automation",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "e2e",
+        "name": "e2e",
+        "testDir": "D:/automation/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "redroot",
+        "name": "redroot",
+        "testDir": "D:/automation/redroot/test",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\e2e\\Accessibility.spec.js",
+      "file": "tests/e2e/Accessibility.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Accessibility UI test",
+          "file": "tests/e2e/Accessibility.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "All the images should have alt text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6f3fddf37186c72b552e-6c79c507210cf9e6c7a9",
+              "file": "tests/e2e/Accessibility.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "form inputs should have associated labels or aria labels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6f3fddf37186c72b552e-f30a013cae5626ce7c99",
+              "file": "tests/e2e/Accessibility.spec.js",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "Checking the discount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6f3fddf37186c72b552e-fb81e68a0d7f790fe2eb",
+              "file": "tests/e2e/Accessibility.spec.js",
+              "line": 31,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\checkout.spec.js",
+      "file": "tests/e2e/checkout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "checkout page",
+          "file": "tests/e2e/checkout.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display cart item correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "24e4b3ac21f7f473b7e5-1d0cfb8752ff90eab8bb",
+              "file": "tests/e2e/checkout.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should remove item from cart page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "24e4b3ac21f7f473b7e5-0b38c58cee7789f051bc",
+              "file": "tests/e2e/checkout.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should continue shopping from cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "24e4b3ac21f7f473b7e5-a500d0f03f204245135c",
+              "file": "tests/e2e/checkout.spec.js",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "Cart Checkout page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "24e4b3ac21f7f473b7e5-336f8262aa7f3cd6c924",
+              "file": "tests/e2e/checkout.spec.js",
+              "line": 32,
+              "column": 3
+            },
+            {
+              "title": "show the error for the empty field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "24e4b3ac21f7f473b7e5-1116543aed21f63d2aac",
+              "file": "tests/e2e/checkout.spec.js",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "should enter the product deatils for the page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "24e4b3ac21f7f473b7e5-97b42a81b6f6df0aab25",
+              "file": "tests/e2e/checkout.spec.js",
+              "line": 45,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\createaccount.spec.js",
+      "file": "tests/e2e/createaccount.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Page",
+          "file": "tests/e2e/createaccount.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "to contain tne element is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "be7dea37474dbccb9988-dd572b85a2814416643e",
+              "file": "tests/e2e/createaccount.spec.js",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "Error for the Empty field validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "be7dea37474dbccb9988-633eb8c5b3a2e1ec9981",
+              "file": "tests/e2e/createaccount.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "form Submit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "be7dea37474dbccb9988-0a6a63ff267c6650beae",
+              "file": "tests/e2e/createaccount.spec.js",
+              "line": 48,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\findBanquet\\fbregister.spec.js",
+      "file": "tests/e2e/findBanquet/fbregister.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Page",
+          "file": "tests/e2e/findBanquet/fbregister.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create Account For data visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e6af5182eb2a5b94fc68-d991a194fd9308287cbc",
+              "file": "tests/e2e/findBanquet/fbregister.spec.js",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "Input validation test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e6af5182eb2a5b94fc68-4ac3b90fe7b80ca52e9b",
+              "file": "tests/e2e/findBanquet/fbregister.spec.js",
+              "line": 25,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\findBanquet\\findbanquet.spec.js",
+      "file": "tests/e2e/findBanquet/findbanquet.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Find banquet",
+          "file": "tests/e2e/findBanquet/findbanquet.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Home Page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f1028418f2fb42e0654f-e350fe3f96e1bf2b0c3a",
+              "file": "tests/e2e/findBanquet/findbanquet.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "login page for user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f1028418f2fb42e0654f-b40a3df406dde1fd0cd2",
+              "file": "tests/e2e/findBanquet/findbanquet.spec.js",
+              "line": 11,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\findbanquetregiester.spec.js",
+      "file": "tests/e2e/findbanquetregiester.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Page",
+          "file": "tests/e2e/findbanquetregiester.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create Account page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5759877e605344e94d48-34597664cca1a34b8754",
+              "file": "tests/e2e/findbanquetregiester.spec.js",
+              "line": 6,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\home_page.spec.js",
+      "file": "tests/e2e/home_page.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Main Page",
+          "file": "tests/e2e/home_page.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Searching the Shop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-e1d94ea0da841a4a7ca0",
+              "file": "tests/e2e/home_page.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Popular Categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-6c9d1b0fc831bf8ef6eb",
+              "file": "tests/e2e/home_page.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "Categories Header Section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-7361cacdf5cadb606f3d",
+              "file": "tests/e2e/home_page.spec.js",
+              "line": 62,
+              "column": 3
+            },
+            {
+              "title": "Quick Links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-8e380fb721ac5d8531a2",
+              "file": "tests/e2e/home_page.spec.js",
+              "line": 80,
+              "column": 3
+            },
+            {
+              "title": "Footer Section Link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-702349b6741c38804a15",
+              "file": "tests/e2e/home_page.spec.js",
+              "line": 96,
+              "column": 3
+            },
+            {
+              "title": "Download App link ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6c2c5843d1d13bdd83a6-ae555b1216c835b9484b",
+              "file": "tests/e2e/home_page.spec.js",
+              "line": 133,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\Homepage.spec.js",
+      "file": "tests/e2e/Homepage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HomePage",
+          "file": "tests/e2e/Homepage.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should have correct title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c390ab8e6da1717769ef-f7446c3ae0becadcb72c",
+              "file": "tests/e2e/Homepage.spec.js",
+              "line": 8,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\login.spec.js",
+      "file": "tests/e2e/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login form",
+          "file": "tests/e2e/login.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Test to contain all the elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-38ba7d798ed2fb7ee240",
+              "file": "tests/e2e/login.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "Test for the correct placeholder Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-af848fdcf98b95fb56dc",
+              "file": "tests/e2e/login.spec.js",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "To show username is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-119b0f1a11cecc9d2af2",
+              "file": "tests/e2e/login.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "To show password is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-b3075e1dda402e8948a8",
+              "file": "tests/e2e/login.spec.js",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "For the invalid username and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-8f8b80fbbad53726fb10",
+              "file": "tests/e2e/login.spec.js",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "for the successfully login details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-1686e1f69ca58aee2260",
+              "file": "tests/e2e/login.spec.js",
+              "line": 60,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\product.spec.js",
+      "file": "tests/e2e/product.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Product Page",
+          "file": "tests/e2e/product.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Checking the Product count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-ded6b541168cf06c4aca",
+              "file": "tests/e2e/product.spec.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "checking the product has price,image and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-4250ad52e867898b4b08",
+              "file": "tests/e2e/product.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "To have the price tag of dollar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-fece3cca18d4a72cfab1",
+              "file": "tests/e2e/product.spec.js",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "Sorting of price from low to high",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-8c723babc6e11b99da55",
+              "file": "tests/e2e/product.spec.js",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "Sorting the price from high to low",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-b67bfcbf4aaaf826d526",
+              "file": "tests/e2e/product.spec.js",
+              "line": 49,
+              "column": 3
+            },
+            {
+              "title": "Sort the product A-Z",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-6d887e5d8ca412652c26",
+              "file": "tests/e2e/product.spec.js",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "To add the multiple products and check the cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-8c9f3cf3b32cb527c797",
+              "file": "tests/e2e/product.spec.js",
+              "line": 70,
+              "column": 3
+            },
+            {
+              "title": "Cart badge is not visible when no product is added to the cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "acdf0ae4f62a43156007-a0c747b82b24b7149cd6",
+              "file": "tests/e2e/product.spec.js",
+              "line": 83,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\responsive.spec.js",
+      "file": "tests/e2e/responsive.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "responsive",
+          "file": "tests/e2e/responsive.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "login page visual snapshot",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68833bfb7a01a66a4f98-bc0ba6c50202c41ac332",
+              "file": "tests/e2e/responsive.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile port",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68833bfb7a01a66a4f98-965f1fa51ab448770808",
+              "file": "tests/e2e/responsive.spec.js",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on table port",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68833bfb7a01a66a4f98-5ac52696ce5bbd15ee59",
+              "file": "tests/e2e/responsive.spec.js",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on laptop port",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68833bfb7a01a66a4f98-2b3238a59012449b20a8",
+              "file": "tests/e2e/responsive.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "page should load within 5 sec",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "e2e",
+                  "projectName": "e2e",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68833bfb7a01a66a4f98-746e990c7b5d02bce9f6",
+              "file": "tests/e2e/responsive.spec.js",
+              "line": 31,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\test-1.spec.ts",
+      "file": "tests/e2e/test-1.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "492d4a3e7e76c4aacf4a-5fff31504d1c95cd6cd2",
+          "file": "tests/e2e/test-1.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "redroot\\test\\addtocart.spec.ts",
+      "file": "redroot/test/addtocart.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Go the deal Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-432f2dd6c8893d61a7f4",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "Go to flower Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-c56c56ecbb5fc0b14c61",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "Go to Pre-Rolls Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-979db8af2507454a52a5",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "Go to Concentrates Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-f7cda7451323e386ed40",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 32,
+          "column": 5
+        },
+        {
+          "title": "Go to Hash Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-2e3932ce0c5044c38e82",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "Go to THC Vapes Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-3ffbd9c1d340d195e992",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 42,
+          "column": 5
+        },
+        {
+          "title": "Go to Tobacco Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-b2eae77b45576cfbc5ed",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 48,
+          "column": 5
+        },
+        {
+          "title": "Go to Wellness Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-644b51c4edad6406e7cc",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "Go to Accessories Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-f7711b13f638af1eb754",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 62,
+          "column": 5
+        },
+        {
+          "title": "Go to Snacks Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-b9cb74fd47c3924cea03",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 69,
+          "column": 5
+        },
+        {
+          "title": "Go to Raffle Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-b80b9ffe038e2e204d60",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 74,
+          "column": 5
+        },
+        {
+          "title": "Go to Merchandise Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1774d6ce15798038045f-18578d2dfb12d2570fc7",
+          "file": "redroot/test/addtocart.spec.ts",
+          "line": 79,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "redroot\\test\\api.spec.ts",
+      "file": "redroot/test/api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API test cases",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-846e68d5754aa6b694d5",
+          "file": "redroot/test/api.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Methods checking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-ca780f0fe7833da1778b",
+          "file": "redroot/test/api.spec.ts",
+          "line": 15,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "redroot\\test\\login.spec.ts",
+      "file": "redroot/test/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "login page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-ce235d2388ab8bcaa946",
+          "file": "redroot/test/login.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "check if the user name is not empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-114cd78bc42f0f544463",
+          "file": "redroot/test/login.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "To check password cannot be empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-797d7657498f421cda9b",
+          "file": "redroot/test/login.spec.ts",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "title": "username and password field with empty space",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-72f693b28ccf6dd7f3ea",
+          "file": "redroot/test/login.spec.ts",
+          "line": 41,
+          "column": 5
+        },
+        {
+          "title": "Invalid username and password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-ba4bc59783e4eb225717",
+          "file": "redroot/test/login.spec.ts",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "redroot\\test\\productcount.spec.ts",
+      "file": "redroot/test/productcount.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Product count on the Home page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-7cc29bdc0c5b00157506",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "Product count on the Deal Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-e4858f914849d65ef70d",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 28,
+          "column": 5
+        },
+        {
+          "title": "Product count on the flower Page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-51620ae3654eb2864302",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 35,
+          "column": 5
+        },
+        {
+          "title": "Product count on the Pre-Roll page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-3f2425222cca41b03820",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 42,
+          "column": 5
+        },
+        {
+          "title": "Product count on the CONCENTRATES page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-e494480edfc4fdf7e16b",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 49,
+          "column": 5
+        },
+        {
+          "title": "Product count on the HASH page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-41a4bb269383dcb5363d",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 56,
+          "column": 5
+        },
+        {
+          "title": "Product count on the THC VAPES page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-4356116418ea894d30f2",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "Product count on the TOBACCO page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-016334a680d64d36a069",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 70,
+          "column": 5
+        },
+        {
+          "title": "Product count on the WELLNESS page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-535995fec0b0a0b3a3b6",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 77,
+          "column": 5
+        },
+        {
+          "title": "Product count on the ACCESSORIES  page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-62e300bfc9898e6563f2",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 84,
+          "column": 5
+        },
+        {
+          "title": "Product count on the SNACKS  page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-b9e0c315862fb89b5a19",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 91,
+          "column": 5
+        },
+        {
+          "title": "Product count on the RAFFLE page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-354df99e2bf4a36ad808",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 97,
+          "column": 5
+        },
+        {
+          "title": "Product count on the MERCHANDISE page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e13845f94d4e300c0b5d-76f565bdfdc469d84960",
+          "file": "redroot/test/productcount.spec.ts",
+          "line": 103,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "redroot\\test\\searchbar.spec.ts",
+      "file": "redroot/test/searchbar.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Product Found",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "9f9d38e1ccf57602dc8a-8a039a2ec85d653af303",
+          "file": "redroot/test/searchbar.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "Product Not found",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "redroot",
+              "projectName": "redroot",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "9f9d38e1ccf57602dc8a-f7e979201ea229062f5f",
+          "file": "redroot/test/searchbar.spec.ts",
+          "line": 24,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-24T11:01:33.090Z",
+    "duration": 296.212,
+    "expected": 0,
+    "skipped": 78,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

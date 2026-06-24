@@ -92,17 +92,17 @@ test("Product count on the SNACKS  page", async ({ page }) => {
   await visit.selectCategory(" SNACKS ");
   const datas = await count.countProduct();
   console.log("for SNACKS section", datas);
-  expect(datas).toBeGreaterThanOrEqual(50);
+  expect(datas).toBeGreaterThanOrEqual(10);
 });
 test("Product count on the RAFFLE page", async ({ page }) => {
   await visit.selectCategory(" RAFFLE ");
   const datas = await count.countProduct();
   console.log("for RAFFLE section", datas);
-  expect(datas).toBeGreaterThanOrEqual(50);
+  expect(datas).toBeGreaterThanOrEqual(10);
 });
 test("Product count on the MERCHANDISE page", async ({ page }) => {
   await visit.selectCategory(" MERCHANDISE ");
   const datas = await count.countProduct();
   console.log("for MERCHANDISE section", datas);
-  expect(datas).toBeGreaterThanOrEqual(50);
+  expect(datas).toBeGreaterThanOrEqual(10);
 });

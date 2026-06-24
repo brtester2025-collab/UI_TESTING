@@ -12,7 +12,7 @@
           - generic:
             - img
           - textbox [ref=e13]
-          - generic: Search For Decorators...
+          - generic: Search For Wedding Events...
         - generic [ref=e14]:
           - button "User Sign In" [ref=e16]:
             - img [ref=e18]

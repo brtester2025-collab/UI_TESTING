@@ -12,7 +12,7 @@
           - generic:
             - img
           - textbox [ref=e13]
-          - generic: Search For Decorators...
+          - generic: Search For Wedding Events...
         - generic [ref=e14]:
           - button "User Sign In" [ref=e16]:
             - img [ref=e18]
@@ -306,15 +306,15 @@
                     - img [ref=e364]
             - generic [ref=e366] [cursor=pointer]:
               - generic [ref=e367]:
-                - img "Sanaluxurystudio" [ref=e368]
+                - img "Dnyana makeup studio & acedemy" [ref=e368]
                 - generic [ref=e370]:
                   - img [ref=e371]
                   - text: Premium
               - generic [ref=e373]:
-                - heading "Sanaluxurystudio" [level=3] [ref=e374]
+                - heading "Dnyana makeup studio & acedemy" [level=3] [ref=e374]
                 - generic [ref=e376]:
                   - img [ref=e377]
-                  - generic [ref=e380]: New Delhi, Delhi
+                  - generic [ref=e380]: Pune, Maharashtra
                 - generic [ref=e381]:
                   - generic [ref=e382]:
                     - generic [ref=e383]: Starting From
@@ -324,195 +324,195 @@
                     - img [ref=e387]
             - generic [ref=e389] [cursor=pointer]:
               - generic [ref=e390]:
-                - img "SAY Bridal Studio By Anukeerthana" [ref=e391]
+                - img "Sanaluxurystudio" [ref=e391]
                 - generic [ref=e393]:
                   - img [ref=e394]
                   - text: Premium
               - generic [ref=e396]:
-                - heading "SAY Bridal Studio By Anukeerthana" [level=3] [ref=e397]
+                - heading "Sanaluxurystudio" [level=3] [ref=e397]
                 - generic [ref=e399]:
                   - img [ref=e400]
-                  - generic [ref=e403]: Chennai, Tamil Nadu
+                  - generic [ref=e403]: New Delhi, Delhi
                 - generic [ref=e404]:
                   - generic [ref=e405]:
                     - generic [ref=e406]: Starting From
-                    - generic [ref=e407]: ₹13k
+                    - generic [ref=e407]: Price on request
                   - button "Chat Now" [ref=e409]:
                     - text: Chat Now
                     - img [ref=e410]
             - generic [ref=e412] [cursor=pointer]:
               - generic [ref=e413]:
-                - img "Aarti Makeup Artist" [ref=e414]
+                - img "SAY Bridal Studio By Anukeerthana" [ref=e414]
                 - generic [ref=e416]:
                   - img [ref=e417]
                   - text: Premium
               - generic [ref=e419]:
-                - heading "Aarti Makeup Artist" [level=3] [ref=e420]
+                - heading "SAY Bridal Studio By Anukeerthana" [level=3] [ref=e420]
                 - generic [ref=e422]:
                   - img [ref=e423]
-                  - generic [ref=e426]: Nashik, Maharashtra
+                  - generic [ref=e426]: Chennai, Tamil Nadu
                 - generic [ref=e427]:
                   - generic [ref=e428]:
                     - generic [ref=e429]: Starting From
-                    - generic [ref=e430]: ₹8k
+                    - generic [ref=e430]: ₹13k
                   - button "Chat Now" [ref=e432]:
                     - text: Chat Now
                     - img [ref=e433]
             - generic [ref=e435] [cursor=pointer]:
               - generic [ref=e436]:
-                - img "Krishna Mehndi Artist" [ref=e437]
+                - img "Aarti Makeup Artist" [ref=e437]
                 - generic [ref=e439]:
                   - img [ref=e440]
                   - text: Premium
               - generic [ref=e442]:
-                - heading "Krishna Mehndi Artist" [level=3] [ref=e443]
+                - heading "Aarti Makeup Artist" [level=3] [ref=e443]
                 - generic [ref=e445]:
                   - img [ref=e446]
-                  - generic [ref=e449]: Bengaluru, Karnataka
+                  - generic [ref=e449]: Nashik, Maharashtra
                 - generic [ref=e450]:
                   - generic [ref=e451]:
                     - generic [ref=e452]: Starting From
-                    - generic [ref=e453]: ₹2k
+                    - generic [ref=e453]: ₹8k
                   - button "Chat Now" [ref=e455]:
                     - text: Chat Now
                     - img [ref=e456]
             - generic [ref=e458] [cursor=pointer]:
               - generic [ref=e459]:
-                - img "Punam Das Makeup Artist" [ref=e460]
+                - img "Krishna Mehndi Artist" [ref=e460]
                 - generic [ref=e462]:
                   - img [ref=e463]
                   - text: Premium
               - generic [ref=e465]:
-                - heading "Punam Das Makeup Artist" [level=3] [ref=e466]
+                - heading "Krishna Mehndi Artist" [level=3] [ref=e466]
                 - generic [ref=e468]:
                   - img [ref=e469]
-                  - generic [ref=e472]: Bhubaneswar, Odisha
+                  - generic [ref=e472]: Bengaluru, Karnataka
                 - generic [ref=e473]:
                   - generic [ref=e474]:
                     - generic [ref=e475]: Starting From
-                    - generic [ref=e476]: ₹20k
+                    - generic [ref=e476]: ₹2k
                   - button "Chat Now" [ref=e478]:
                     - text: Chat Now
                     - img [ref=e479]
             - generic [ref=e481] [cursor=pointer]:
               - generic [ref=e482]:
-                - img "Ishabanga Makeup Artist" [ref=e483]
+                - img "Punam Das Makeup Artist" [ref=e483]
                 - generic [ref=e485]:
                   - img [ref=e486]
                   - text: Premium
               - generic [ref=e488]:
-                - heading "Ishabanga Makeup Artist" [level=3] [ref=e489]
+                - heading "Punam Das Makeup Artist" [level=3] [ref=e489]
                 - generic [ref=e491]:
                   - img [ref=e492]
-                  - generic [ref=e495]: New Delhi, Delhi
+                  - generic [ref=e495]: Bhubaneswar, Odisha
                 - generic [ref=e496]:
                   - generic [ref=e497]:
                     - generic [ref=e498]: Starting From
-                    - generic [ref=e499]: ₹5k
+                    - generic [ref=e499]: ₹20k
                   - button "Chat Now" [ref=e501]:
                     - text: Chat Now
                     - img [ref=e502]
             - generic [ref=e504] [cursor=pointer]:
               - generic [ref=e505]:
-                - img "Divya Mestri Makeup and Mehndi Artist" [ref=e506]
+                - img "Ishabanga Makeup Artist" [ref=e506]
                 - generic [ref=e508]:
                   - img [ref=e509]
                   - text: Premium
               - generic [ref=e511]:
-                - heading "Divya Mestri Makeup and Mehndi Artist" [level=3] [ref=e512]
+                - heading "Ishabanga Makeup Artist" [level=3] [ref=e512]
                 - generic [ref=e514]:
                   - img [ref=e515]
-                  - generic [ref=e518]: Mangaon, Maharashtra
+                  - generic [ref=e518]: New Delhi, Delhi
                 - generic [ref=e519]:
                   - generic [ref=e520]:
                     - generic [ref=e521]: Starting From
-                    - generic [ref=e522]: ₹500
+                    - generic [ref=e522]: ₹5k
                   - button "Chat Now" [ref=e524]:
                     - text: Chat Now
                     - img [ref=e525]
             - generic [ref=e527] [cursor=pointer]:
               - generic [ref=e528]:
-                - img "Ritu Singh" [ref=e529]
+                - img "Divya Mestri Makeup and Mehndi Artist" [ref=e529]
                 - generic [ref=e531]:
                   - img [ref=e532]
                   - text: Premium
               - generic [ref=e534]:
-                - heading "Ritu Singh" [level=3] [ref=e535]
+                - heading "Divya Mestri Makeup and Mehndi Artist" [level=3] [ref=e535]
                 - generic [ref=e537]:
                   - img [ref=e538]
-                  - generic [ref=e541]: Ghaziabad, Uttar Pradesh
+                  - generic [ref=e541]: Mangaon, Maharashtra
                 - generic [ref=e542]:
                   - generic [ref=e543]:
                     - generic [ref=e544]: Starting From
-                    - generic [ref=e545]: ₹6k
+                    - generic [ref=e545]: ₹500
                   - button "Chat Now" [ref=e547]:
                     - text: Chat Now
                     - img [ref=e548]
             - generic [ref=e550] [cursor=pointer]:
               - generic [ref=e551]:
-                - img "Hasina Shaikh Makeup and Mehndi Artist" [ref=e552]
+                - img "Ritu Singh" [ref=e552]
                 - generic [ref=e554]:
                   - img [ref=e555]
                   - text: Premium
               - generic [ref=e557]:
-                - heading "Hasina Shaikh Makeup and Mehndi Artist" [level=3] [ref=e558]
+                - heading "Ritu Singh" [level=3] [ref=e558]
                 - generic [ref=e560]:
                   - img [ref=e561]
-                  - generic [ref=e564]: Pune, Maharashtra
+                  - generic [ref=e564]: Ghaziabad, Uttar Pradesh
                 - generic [ref=e565]:
                   - generic [ref=e566]:
                     - generic [ref=e567]: Starting From
-                    - generic [ref=e568]: ₹7k
+                    - generic [ref=e568]: ₹6k
                   - button "Chat Now" [ref=e570]:
                     - text: Chat Now
                     - img [ref=e571]
             - generic [ref=e573] [cursor=pointer]:
               - generic [ref=e574]:
-                - img "Aditya Makeup and Mehndi Artist" [ref=e575]
+                - img "Hasina Shaikh Makeup and Mehndi Artist" [ref=e575]
                 - generic [ref=e577]:
                   - img [ref=e578]
                   - text: Premium
               - generic [ref=e580]:
-                - heading "Aditya Makeup and Mehndi Artist" [level=3] [ref=e581]
+                - heading "Hasina Shaikh Makeup and Mehndi Artist" [level=3] [ref=e581]
                 - generic [ref=e583]:
                   - img [ref=e584]
-                  - generic [ref=e587]: Ghaziabad, Uttar Pradesh
+                  - generic [ref=e587]: Pune, Maharashtra
                 - generic [ref=e588]:
                   - generic [ref=e589]:
                     - generic [ref=e590]: Starting From
-                    - generic [ref=e591]: ₹17k
+                    - generic [ref=e591]: ₹7k
                   - button "Chat Now" [ref=e593]:
                     - text: Chat Now
                     - img [ref=e594]
             - generic [ref=e596] [cursor=pointer]:
               - generic [ref=e597]:
-                - img "Shraddha Makeup Artist" [ref=e598]
+                - img "Aditya Makeup and Mehndi Artist" [ref=e598]
                 - generic [ref=e600]:
                   - img [ref=e601]
                   - text: Premium
               - generic [ref=e603]:
-                - heading "Shraddha Makeup Artist" [level=3] [ref=e604]
+                - heading "Aditya Makeup and Mehndi Artist" [level=3] [ref=e604]
                 - generic [ref=e606]:
                   - img [ref=e607]
-                  - generic [ref=e610]: Umred, Maharashtra
+                  - generic [ref=e610]: Ghaziabad, Uttar Pradesh
                 - generic [ref=e611]:
                   - generic [ref=e612]:
                     - generic [ref=e613]: Starting From
-                    - generic [ref=e614]: ₹15k
+                    - generic [ref=e614]: ₹17k
                   - button "Chat Now" [ref=e616]:
                     - text: Chat Now
                     - img [ref=e617]
             - generic [ref=e619] [cursor=pointer]:
               - generic [ref=e620]:
-                - img "Khushi Ladies Beauty Salon" [ref=e621]
+                - img "Shraddha Makeup Artist" [ref=e621]
                 - generic [ref=e623]:
                   - img [ref=e624]
                   - text: Premium
               - generic [ref=e626]:
-                - heading "Khushi Ladies Beauty Salon" [level=3] [ref=e627]
+                - heading "Shraddha Makeup Artist" [level=3] [ref=e627]
                 - generic [ref=e629]:
                   - img [ref=e630]
-                  - generic [ref=e633]: Patna, Bihar
+                  - generic [ref=e633]: Umred, Maharashtra
                 - generic [ref=e634]:
                   - generic [ref=e635]:
                     - generic [ref=e636]: Starting From
@@ -522,127 +522,127 @@
                     - img [ref=e640]
             - generic [ref=e642] [cursor=pointer]:
               - generic [ref=e643]:
-                - img "Embellished Makeup Studio" [ref=e644]
+                - img "Khushi Ladies Beauty Salon" [ref=e644]
                 - generic [ref=e646]:
                   - img [ref=e647]
                   - text: Premium
               - generic [ref=e649]:
-                - heading "Embellished Makeup Studio" [level=3] [ref=e650]
+                - heading "Khushi Ladies Beauty Salon" [level=3] [ref=e650]
                 - generic [ref=e652]:
                   - img [ref=e653]
-                  - generic [ref=e656]: Moradabad, Uttar Pradesh
+                  - generic [ref=e656]: Patna, Bihar
                 - generic [ref=e657]:
                   - generic [ref=e658]:
                     - generic [ref=e659]: Starting From
-                    - generic [ref=e660]: ₹6k
+                    - generic [ref=e660]: ₹15k
                   - button "Chat Now" [ref=e662]:
                     - text: Chat Now
                     - img [ref=e663]
             - generic [ref=e665] [cursor=pointer]:
               - generic [ref=e666]:
-                - img "Prerna Makeup Artist" [ref=e667]
+                - img "Embellished Makeup Studio" [ref=e667]
                 - generic [ref=e669]:
                   - img [ref=e670]
                   - text: Premium
               - generic [ref=e672]:
-                - heading "Prerna Makeup Artist" [level=3] [ref=e673]
+                - heading "Embellished Makeup Studio" [level=3] [ref=e673]
                 - generic [ref=e675]:
                   - img [ref=e676]
-                  - generic [ref=e679]: Kolkata, West Bengal
+                  - generic [ref=e679]: Moradabad, Uttar Pradesh
                 - generic [ref=e680]:
                   - generic [ref=e681]:
                     - generic [ref=e682]: Starting From
-                    - generic [ref=e683]: ₹15k
+                    - generic [ref=e683]: ₹6k
                   - button "Chat Now" [ref=e685]:
                     - text: Chat Now
                     - img [ref=e686]
             - generic [ref=e688] [cursor=pointer]:
               - generic [ref=e689]:
-                - img "Mansi Makeup Artist" [ref=e690]
+                - img "Prerna Makeup Artist" [ref=e690]
                 - generic [ref=e692]:
                   - img [ref=e693]
                   - text: Premium
               - generic [ref=e695]:
-                - heading "Mansi Makeup Artist" [level=3] [ref=e696]
+                - heading "Prerna Makeup Artist" [level=3] [ref=e696]
                 - generic [ref=e698]:
                   - img [ref=e699]
-                  - generic [ref=e702]: Noida, Uttar Pradesh
+                  - generic [ref=e702]: Kolkata, West Bengal
                 - generic [ref=e703]:
                   - generic [ref=e704]:
                     - generic [ref=e705]: Starting From
-                    - generic [ref=e706]: ₹7k
+                    - generic [ref=e706]: ₹15k
                   - button "Chat Now" [ref=e708]:
                     - text: Chat Now
                     - img [ref=e709]
             - generic [ref=e711] [cursor=pointer]:
               - generic [ref=e712]:
-                - img "Fatima Mehndi Artist" [ref=e713]
+                - img "Mansi Makeup Artist" [ref=e713]
                 - generic [ref=e715]:
                   - img [ref=e716]
                   - text: Premium
               - generic [ref=e718]:
-                - heading "Fatima Mehndi Artist" [level=3] [ref=e719]
+                - heading "Mansi Makeup Artist" [level=3] [ref=e719]
                 - generic [ref=e721]:
                   - img [ref=e722]
-                  - generic [ref=e725]: Sambhal, Uttar Pradesh
+                  - generic [ref=e725]: Noida, Uttar Pradesh
                 - generic [ref=e726]:
                   - generic [ref=e727]:
                     - generic [ref=e728]: Starting From
-                    - generic [ref=e729]: ₹6k
+                    - generic [ref=e729]: ₹7k
                   - button "Chat Now" [ref=e731]:
                     - text: Chat Now
                     - img [ref=e732]
             - generic [ref=e734] [cursor=pointer]:
               - generic [ref=e735]:
-                - img "Rishita Makeup Artist" [ref=e736]
+                - img "Fatima Mehndi Artist" [ref=e736]
                 - generic [ref=e738]:
                   - img [ref=e739]
                   - text: Premium
               - generic [ref=e741]:
-                - heading "Rishita Makeup Artist" [level=3] [ref=e742]
+                - heading "Fatima Mehndi Artist" [level=3] [ref=e742]
                 - generic [ref=e744]:
                   - img [ref=e745]
-                  - generic [ref=e748]: Gurugram, Haryana
+                  - generic [ref=e748]: Sambhal, Uttar Pradesh
                 - generic [ref=e749]:
                   - generic [ref=e750]:
                     - generic [ref=e751]: Starting From
-                    - generic [ref=e752]: ₹15k
+                    - generic [ref=e752]: ₹6k
                   - button "Chat Now" [ref=e754]:
                     - text: Chat Now
                     - img [ref=e755]
             - generic [ref=e757] [cursor=pointer]:
               - generic [ref=e758]:
-                - img "Pooja Pawale Makeup Artist" [ref=e759]
+                - img "Rishita Makeup Artist" [ref=e759]
                 - generic [ref=e761]:
                   - img [ref=e762]
                   - text: Premium
               - generic [ref=e764]:
-                - heading "Pooja Pawale Makeup Artist" [level=3] [ref=e765]
+                - heading "Rishita Makeup Artist" [level=3] [ref=e765]
                 - generic [ref=e767]:
                   - img [ref=e768]
-                  - generic [ref=e771]: Pimpri-Chinchwad, Maharashtra
+                  - generic [ref=e771]: Gurugram, Haryana
                 - generic [ref=e772]:
                   - generic [ref=e773]:
                     - generic [ref=e774]: Starting From
-                    - generic [ref=e775]: ₹10k
+                    - generic [ref=e775]: ₹15k
                   - button "Chat Now" [ref=e777]:
                     - text: Chat Now
                     - img [ref=e778]
             - generic [ref=e780] [cursor=pointer]:
               - generic [ref=e781]:
-                - img "Pranali Makeup and Mehndi Artist" [ref=e782]
+                - img "Pooja Pawale Makeup Artist" [ref=e782]
                 - generic [ref=e784]:
                   - img [ref=e785]
                   - text: Premium
               - generic [ref=e787]:
-                - heading "Pranali Makeup and Mehndi Artist" [level=3] [ref=e788]
+                - heading "Pooja Pawale Makeup Artist" [level=3] [ref=e788]
                 - generic [ref=e790]:
                   - img [ref=e791]
-                  - generic [ref=e794]: Yavatmal, Maharashtra
+                  - generic [ref=e794]: Pimpri-Chinchwad, Maharashtra
                 - generic [ref=e795]:
                   - generic [ref=e796]:
                     - generic [ref=e797]: Starting From
-                    - generic [ref=e798]: ₹5k
+                    - generic [ref=e798]: ₹10k
                   - button "Chat Now" [ref=e800]:
                     - text: Chat Now
                     - img [ref=e801]
