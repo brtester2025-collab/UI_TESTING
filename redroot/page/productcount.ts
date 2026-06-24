@@ -11,10 +11,6 @@ export class ProductCount {
 
   async countProduct() {
     await this.page.waitForLoadState("networkidle");
-    // return count;
-    // for (let i = 0; i < count; i++) {
-    //   console.log(i + 1, await this.statuscount.nth(i).textContent());
-    // }
     const data = await this.statuscount.count();
     return data;
   }

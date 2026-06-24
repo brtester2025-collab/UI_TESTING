@@ -12,7 +12,7 @@ export class AddChart {
   }
 
   async selectCategory(name: string) {
-    await this.page.locator('#header').getByRole("link",{name}).click();
+    await this.page.locator("#header").getByRole("link", { name }).click();
   }
 
   async addCart() {

@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { HomePageLogin } from "../page/login.ts";
+import { HomePageLogin } from "../page/loginr.ts";
 import { AddChart } from "../page/addtocart.ts";
 
 let login: HomePageLogin;
