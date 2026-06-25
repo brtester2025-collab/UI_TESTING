@@ -5,7 +5,8 @@ export class AdChart {
     readonly cartclick: Locator;
 
     constructor(page: Page) {
-        this.add_button = page.getByRole("button", { name: " ADD TO CART " });
+        this.add_button = page.getByRole("button", { name: "ADD TO CART" })
+            .first();
         this.cartclick = page.locator(
             ".lucide.lucide-shopping-cart-icon.lucide-shopping-cart",
         );

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 
 import { HomePageLogin } from "../page/loginr.ts";
 import { Searching } from "../page/searchbar.ts";
@@ -11,6 +11,7 @@ test.beforeEach("Searching menu", async ({ page }) => {
   search = new Searching(page);
   await login.goto();
   await login.verification();
+
   await login.storeName();
 });
 

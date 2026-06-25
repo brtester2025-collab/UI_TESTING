@@ -10,16 +10,19 @@ let addchart: AdChart;
 
 test.beforeEach("add to cart ", async ({ page }) => {
     login = new HomePageLogin(page);
-    addchart = new AdChart(page);
     search = new Searching(page);
+    addchart = new AdChart(page);
 
     await login.goto();
     await login.verification();
+
     await login.storeName();
 });
 
 test("add to chart at guest", async ({ page }) => {
     await search.searchItem("Neo Passion Flower 14g");
+    await search.searchButtonCLick();
+
     await addchart.addtoCart();
     await addchart.cartViewSection();
     await expect(page).toHaveURL("https://redrootstrading.ca/cart");

@@ -1,4 +1,4 @@
-import { type Page, type Locator } from "@playwright/test";
+import { type Locator, type Page } from "@playwright/test";
 
 export class HomePageLogin {
   readonly page: Page;
@@ -27,10 +27,12 @@ export class HomePageLogin {
     await this.page.goto("https://redrootstrading.ca");
   }
   async verification() {
+    await this.page.waitForLoadState("networkidle");
     await this.pageVerification.click();
   }
 
   async storeName() {
+    await this.page.waitForLoadState("networkidle");
     await this.storeSelection.click();
   }
 

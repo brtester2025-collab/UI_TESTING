@@ -18,6 +18,7 @@ export class Searching {
   }
 
   async searchButtonCLick() {
+    await this.page.waitForLoadState("networkidle");
     await this.searchbutton.click();
   }
 
