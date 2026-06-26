@@ -9,21 +9,32 @@ let search: Searching;
 let addchart: AdChart;
 
 test.beforeEach("add to cart ", async ({ page }) => {
-    login = new HomePageLogin(page);
-    search = new Searching(page);
-    addchart = new AdChart(page);
+  login = new HomePageLogin(page);
+  search = new Searching(page);
+  addchart = new AdChart(page);
 
-    await login.goto();
-    await login.verification();
+  await login.goto();
+  await login.verification();
 
-    await login.storeName();
+  await login.storeName();
 });
 
-test("add to chart at guest", async ({ page }) => {
-    await search.searchItem("Neo Passion Flower 14g");
-    await search.searchButtonCLick();
+test("Verify the cart URL", async ({ page }) => {
+  await search.searchItem("Neo Passion Flower 14g");
+  await search.searchButtonCLick();
 
-    await addchart.addtoCart();
-    await addchart.cartViewSection();
-    await expect(page).toHaveURL("https://redrootstrading.ca/cart");
+  await addchart.addtoCart();
+  await addchart.cartViewSection();
+  await expect(page).toHaveURL("https://redrootstrading.ca/cart");
+});
+
+test.only("guest serach the product and add to the cart", async ({ page }) => {
+  await search.searchItem("test");
+  await search.searchButtonCLick();
+
+  await addchart.cartViewSection();
+  await addchart.addtoCart();
+  await expect(addchart.addmsg).toBeVisible();
+
+  expect(addchart.productCount).toBe(1);
 });

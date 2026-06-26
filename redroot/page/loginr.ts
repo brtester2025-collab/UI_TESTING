@@ -27,7 +27,6 @@ export class HomePageLogin {
     await this.page.goto("https://redrootstrading.ca");
   }
   async verification() {
-    await this.page.waitForLoadState("networkidle");
     await this.pageVerification.click();
   }
 
@@ -47,6 +46,7 @@ export class HomePageLogin {
   }
 
   async signClick() {
+    await this.page.waitForLoadState("networkidle");
     await this.loginButton.click();
   }
 }
