@@ -6,6 +6,7 @@ export class AdChart {
   readonly cartclick: Locator;
   readonly addmsg: Locator;
   readonly countP: Locator;
+  readonly no_msg: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -19,6 +20,10 @@ export class AdChart {
     });
 
     this.countP = page.locator(".count");
+    this.no_msg = page.getByRole("heading", {
+      name: "No products found",
+      level: 2,
+    });
   }
   async cartViewSection() {
     this.cartclick.click();
@@ -31,6 +36,10 @@ export class AdChart {
 
   async message() {
     await this.addmsg.isVisible();
+  }
+
+  async notFound() {
+    await this.no_msg.isVisible();
   }
 
   async productCount() {

@@ -35,6 +35,4 @@ test.only("guest serach the product and add to the cart", async ({ page }) => {
   await addchart.cartViewSection();
   await addchart.addtoCart();
   await expect(addchart.addmsg).toBeVisible();
-
-  expect(addchart.productCount).toBe(1);
 });

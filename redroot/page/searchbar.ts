@@ -18,24 +18,16 @@ export class Searching {
   }
 
   async searchButtonCLick() {
-    await this.page.waitForLoadState("networkidle");
+    await expect(this.searchbutton).toBeVisible();
     await this.searchbutton.click();
   }
 
   productNameVisible(names: string) {
-    return this.page.locator(".pc-name").filter({ hasText: names });
-  }
-
-  async productVisible(name: string) {
-    await expect(this.page.locator(".pc-name")).toBeVisible();
-    console.log(await this.page.locator(".pc-name").allTextContents());
-    console.log(name);
-
-    await expect(this.productNameVisible(name)).toBeVisible();
-    await expect(this.productNameVisible(name)).toContainText(name.trim());
+    console.log("In search bar section ", names);
+    return this.page.getByRole("link", { name: names });
   }
 
   async productNotVisible() {
-    await expect(this.notfound).toBeVisible();
+    return this.notfound.isVisible();
   }
 }

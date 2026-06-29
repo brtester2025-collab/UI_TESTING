@@ -9,11 +9,13 @@ export class HomePageLogin {
   readonly loginButton: Locator;
   readonly register: Locator;
   readonly emailandPasswordError: Locator;
+  readonly storeButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.pageVerification = page.locator(".get-verified");
-    this.storeSelection = page.locator(".shop-btn").first();
+    this.storeSelection = page.locator(".store-card.ottawa");
+    this.storeButton = page.locator(".shop-btn").first();
     this.register = page.locator('a[href="/login"]');
     this.username = page.locator("#signin-email");
     this.password = page.locator("#signin-password");
@@ -31,8 +33,11 @@ export class HomePageLogin {
   }
 
   async storeName() {
-    await this.page.waitForLoadState("networkidle");
-    await this.storeSelection.click();
+    await this.storeSelection.waitFor({
+      state: "visible",
+      timeout: 60000,
+    });
+    await this.storeButton.click();
   }
 
   async registerClick() {

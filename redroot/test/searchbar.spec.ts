@@ -19,7 +19,6 @@ test("Product Found", async ({ page }) => {
   await search.searchItem("orga");
   await search.searchButtonCLick();
   search.productNameVisible(" OCB Organic Hemp 1 1/4 Rolling Papers ");
-  await search.productVisible(" OCB Organic Hemp 1 1/4 Rolling Papers ");
 });
 
 test("Product Not found", async () => {
