@@ -21,14 +21,21 @@ test("find the product in serach and click on the product detail page", async ()
   const data = "testTRx";
   await search.searchItem(data);
   await search.searchButtonCLick();
-
   await expect(search.productNameVisible(data)).toBeVisible();
   await search.productClick(data);
   await productData.productPrice(" $100 ");
+
   expect(await productData.productImage()).toBe(true);
+});
 
-  // await productData.productImage();
-
-  // await productData.productName(data);
-  // await productData.productPrice("100");
+test.only("verify the product desc and reviews is visible", async () => {
+  const data = "testTRx";
+  await search.searchItem(data);
+  await search.searchButtonCLick();
+  await search.productClick(data);
+  await productData.brandClick();
+  expect(await productData.verfiydesc()).toBe(true);
+  await productData.descriptionClick();
+  await productData.verifydescContent();
+  expect(await productData.verfiydesc()).toBe(true);
 });

@@ -11,7 +11,9 @@ export class productDetail {
   readonly addButton: Locator;
 
   readonly description: Locator;
+  readonly descriptionContent: Locator;
   readonly Brand: Locator;
+  readonly brandContent: Locator;
   readonly shortDesc: Locator;
   readonly reviews: Locator;
 
@@ -25,8 +27,11 @@ export class productDetail {
     this.addqty = page.locator(".btn-quantity btn-increase");
     this.addButton = page.getByRole("button", { name: "Add to chart" });
 
-    this.description = page.locator(".home");
-    this.Brand = page.locator(".blog");
+    this.description = page.locator(".home").nth(1);
+    this.descriptionContent = page.locator(".home text");
+    this.Brand = page.locator(".blog").first();
+    this.brandContent = page.locator(".product-detail-text-content");
+
     this.shortDesc = page.locator(".help");
     this.reviews = page.locator(".Reviews");
   }
@@ -41,5 +46,28 @@ export class productDetail {
 
   async productPrice(prices: any) {
     await expect(this.price).toContainText(prices);
+  }
+
+  async descriptionClick() {
+    await this.description.click();
+  }
+  async brandClick() {
+    await this.Brand.click();
+  }
+
+  async shortdescClick() {
+    await this.shortDesc.click();
+  }
+
+  async reviewClick() {
+    await this.reviews.click();
+  }
+
+  async verfiydesc() {
+    const data = await this.brandContent.isVisible();
+    return data;
+  }
+  async verifydescContent() {
+    await expect(this.descriptionContent).toBeVisible();
   }
 }
