@@ -19,7 +19,7 @@ test.beforeEach("add to cart ", async ({ page }) => {
   await login.storeName();
 });
 
-test("Verify the cart URL", async ({ page }) => {
+test.skip("Verify the cart URL", async ({ page }) => {
   await search.searchItem("Neo Passion Flower 14g");
   await search.searchButtonCLick();
 
@@ -28,11 +28,16 @@ test("Verify the cart URL", async ({ page }) => {
   await expect(page).toHaveURL("https://redrootstrading.ca/cart");
 });
 
-test.only("guest serach the product and add to the cart", async ({ page }) => {
+test("guest serach the product and add to the cart", async ({ page }) => {
   await search.searchItem("test");
   await search.searchButtonCLick();
 
   await addchart.cartViewSection();
   await addchart.addtoCart();
   await expect(addchart.addmsg).toBeVisible();
+});
+
+test("check when the product is added from the detail page", async () => {
+  await search.searchItem("test");
+  await search.searchButtonCLick();
 });

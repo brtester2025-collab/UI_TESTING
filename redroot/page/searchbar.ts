@@ -24,7 +24,12 @@ export class Searching {
 
   productNameVisible(names: string) {
     console.log("In search bar section ", names);
-    return this.page.getByRole("link", { name: names });
+    return this.page.getByText(names);
+  }
+
+  async productClick(name: string) {
+    const data = await this.page.getByText(name);
+    await data.click();
   }
 
   async productNotVisible() {

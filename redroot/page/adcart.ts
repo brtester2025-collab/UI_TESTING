@@ -30,7 +30,7 @@ export class AdChart {
   }
 
   async addtoCart() {
-    await this.page.waitForLoadState("networkidle");
+    // await this.page.waitForLoadState("networkidle", { timeout: 10000000 });
     await this.add_button.click();
   }
 

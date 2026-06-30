@@ -32,7 +32,8 @@ export class productDetail {
   }
 
   async productImage() {
-    await this.image.isVisible();
+    const data = await this.image.isVisible();
+    return data;
   }
   async productName(names: string) {
     await expect(this.name).toContainText(names);
