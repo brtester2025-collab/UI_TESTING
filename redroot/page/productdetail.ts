@@ -10,6 +10,7 @@ export class productDetail {
   readonly subqty: Locator;
   readonly addButton: Locator;
   readonly errorMsg: Locator;
+  readonly variant: Locator;
 
   readonly description: Locator;
   readonly descriptionContent: Locator;
@@ -22,6 +23,8 @@ export class productDetail {
     this.image = page.locator(".main-image-area");
     this.name = page.locator(".product-infor-name mb-12");
     this.price = page.locator(".price-on-sale");
+
+    this.variant = page.getByText(" Choose Option ", { exact: true });
 
     this.showcount = page.locator("#qty");
     this.addqty = page.locator(".fi-rr-plus");
@@ -87,5 +90,16 @@ export class productDetail {
       await this.addqty.click();
     }
     await expect(this.showcount).toHaveValue(count.toString());
+  }
+
+  async decreaseQty(click: number) {
+    const first = Number(await this.showcount.inputValue());
+    for (let i = 0; i < click; i++) {
+      await this.subqty.click();
+    }
+  }
+
+  async varinatOption() {
+    await expect(this.variant).toBeVisible();
   }
 }

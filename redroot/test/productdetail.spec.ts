@@ -52,7 +52,7 @@ test("to check the add to cart button ", async ({ page }) => {
   await addCharts.message();
 });
 
-test.only("to check the  quantity of the product variant", async ({ page }) => {
+test("to check the  quantity of the product variant", async ({ page }) => {
   const data = "testTRx";
   await search.searchItem(data);
   await search.searchButtonCLick();
