@@ -23,12 +23,14 @@ export class Searching {
   }
 
   productNameVisible(names: string) {
+    this.page.waitForTimeout(3000);
     console.log("In search bar section ", names);
     return this.page.getByText(names);
   }
 
   async productClick(name: string) {
-    const data = await this.page.getByText(name);
+    const data = this.page.getByText(name);
+
     await data.click();
   }
 

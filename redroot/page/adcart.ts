@@ -1,4 +1,4 @@
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page, expect } from "@playwright/test";
 
 export class AdChart {
   readonly page: Page;
@@ -35,7 +35,7 @@ export class AdChart {
   }
 
   async message() {
-    await this.addmsg.isVisible();
+    await expect(this.addmsg).toBeVisible();
   }
 
   async notFound() {
